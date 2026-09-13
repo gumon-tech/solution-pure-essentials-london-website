@@ -198,9 +198,9 @@ from the rejected pass.
 
 | Slot | Chosen | Edit class | alt rule | Rejected |
 |---|---|---|---|---|
-| room-warm | contact-room-a-a.jpg (wood-slat room) | AI-edited: the gold plaster walls became cream plaster; layout and furniture unchanged | section 4 generated-image rule: describe, do not say "our room" | a-b: ceiling downlights switched on |
-| room-trolley | contact-room-b-b.jpg (white trolley room) | AI-edited: grey towel shown taupe, brand lettering on bottles and lamp softened, a wood edge appears on the niche | generated-image rule | b-a: wood trim added more visibly, lamp lettering still visible |
+| room-warm | room-07.jpg from the PIL pass (parent folder edited-client-2026-09-13/) | light and colour only | may say a treatment room at Pure Essentials London | contact-room-a-a and a-b: REJECT by PEL 2026-09-13, the gold walls became cream (a material change) |
+| room-trolley | room-02.jpg from the PIL pass (wall lettering cropped out; product bottles keep their brand, grey towel stays grey) | light, colour and crop only | may say a treatment room at Pure Essentials London | contact-room-b-a and b-b: REJECT by PEL 2026-09-13, towel recoloured, wood edge added, labels blurred |
 | room-analyser | contact-room-c-a.jpg (cabinet room with the skin analyser) | light and colour only | may say a treatment room at Pure Essentials London | c-b: fine, flatter |
 | room-couch | contact-room-d-a.jpg (small room with rolled towels) | light and colour only | may say a treatment room at Pure Essentials London | d-b: REJECT, trolley and cabinet turned to wood grain |
 
-Room photos stay secondary (contact page and the clinic story), never a page's main image (section 1).
+PEL rule 2026-09-13 (lead repo brief section 11): a photo of the clinic must remain the clinic. Only light, white balance, brightness and crop may change; never surface colour, material, objects or lettering. There is no "AI-edited room" class. Room photos stay secondary (contact page and the clinic story), never a page's main image (section 1).
