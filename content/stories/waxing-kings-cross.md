@@ -2,6 +2,7 @@
 title: "Waxing in King's Cross | Pure Essentials London"
 description: "Waxing for ladies and men at 155 King's Cross Road, London, from £10. Every treatment starts with a free consultation."
 h1: "Waxing in King's Cross"
+short: "Waxing"
 ---
 
 ## hero

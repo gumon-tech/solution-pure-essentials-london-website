@@ -1,5 +1,7 @@
 import Link from "next/link";
 import ArchImage from "@/components/ArchImage";
+import { ReadMoreLabel } from "@/components/ReadMoreLink";
+import { FAMILY_IMAGE_SLOT } from "@/lib/family-images";
 import { IMAGES, type ImageSlot } from "@/lib/images";
 import { waLink } from "@/lib/services";
 import { SITE } from "@/lib/site";
@@ -36,34 +38,9 @@ const GROUP_FALLBACK_SLOT: Record<GroupId, ImageSlot> = {
   wellness: "wellness-card",
 };
 
-// One image slot per family page, keyed by the family's slug in lib/families.ts. Used
-// as that family's hero and as its card in every other page's "You may also like", so
-// a built page never shows the same picture twice (owner 2026-09-13: the category slot
-// appeared 2 to 4 times per page). Slot names are neutral: no brand or medicine name.
-// A family with no entry here falls back to heroSlotFor (its category slot).
-const FAMILY_IMAGE_SLOT: Partial<Record<string, ImageSlot>> = {
-  aesthetics_1_hifu: "fam-hifu-face",
-  aesthetics_1_cryopen: "fam-cryotherapy",
-  aesthetics_1_etherea_mx: "fam-light-platform",
-  aesthetics_1_ipl_intense_pulsed_light: "fam-ipl",
-  aesthetics_1_pico_laser: "fam-pico-laser",
-  aesthetics_body_tattoo_removal: "fam-tattoo-removal",
-  aesthetics_1_golden_micro_needling: "fam-gold-microneedling",
-  aesthetics_1_microneedling: "fam-microneedling",
-  aesthetics_1_skymedic_chemical_peels: "fam-chemical-peel",
-  aesthetics_body_indiba_deep_beauty: "fam-radiofrequency",
-  aesthetics_body_profhilo_body: "fam-skin-booster-body",
-  injections_profhilo_skin_booster: "fam-skin-booster-face",
-  injections_restylane_skin_boosters: "fam-skin-booster-hydration",
-  aesthetics_body_3d_lipo: "fam-fat-reduction",
-  aesthetics_body_emsculpt: "fam-muscle-toning",
-  aesthetics_body_hifu_body: "fam-hifu-body",
-  aesthetics_body_laser_hair_removal_2F_ipl: "fam-laser-hair",
-  aesthetics_1_hydro_facial: "fam-hydrating-facial",
-  facials_1_age_defence_sensitive_skin_treatment: "fam-sensitive-skin-facial",
-  facials_1_diamondtome_microdermabrasion: "fam-microdermabrasion",
-  facials_1_eberlin_facial: "fam-botanical-facial",
-};
+// One image slot per family page (lib/family-images.ts), used as that family's hero and as
+// its card in every other page's "You may also like", so a built page never shows the same
+// picture twice. A family with no entry there falls back to heroSlotFor (its category slot).
 
 /** The family's own slot when it has one, otherwise its category slot. */
 function slotForFamily(page: FamilyPageData): ImageSlot {
@@ -167,6 +144,7 @@ function RelatedCard({ page }: { page: FamilyPageData }) {
       <p className="mt-3 font-display text-lg text-espresso group-hover:text-oak">
         {page.title}
       </p>
+      <ReadMoreLabel className="mt-1">Read more</ReadMoreLabel>
     </Link>
   );
 }

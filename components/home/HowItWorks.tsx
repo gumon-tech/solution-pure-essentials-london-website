@@ -1,3 +1,4 @@
+import ReadMoreLink from "@/components/ReadMoreLink";
 import { IMAGES, type ImageSlot } from "@/lib/images";
 
 // These 4 step images sit right after the group cards, not in the initial
@@ -66,6 +67,10 @@ export default function HowItWorks() {
               </div>
             );
           })}
+        </div>
+
+        <div className="reveal mt-10">
+          <ReadMoreLink href="/first-visit-guide/">Read the first visit guide</ReadMoreLink>
         </div>
       </div>
     </section>

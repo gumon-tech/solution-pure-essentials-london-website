@@ -282,8 +282,9 @@ function main() {
   console.log("");
 
   // Family page markup must be unchanged: still exactly 2 blocks (BreadcrumbList +
-  // Service), per components/FamilyPage.tsx.
-  const familyHtmlPath = path.join(outDir, "treatments", "aesthetics_1_hifu", "index.html");
+  // Service), per components/FamilyPage.tsx. Queue row Q36 retired aesthetics_1_hifu into
+  // its story, so a kept skin-laser page is checked instead.
+  const familyHtmlPath = path.join(outDir, "treatments", "aesthetics_1_pico_laser", "index.html");
   console.log(`== family page unchanged check (${familyHtmlPath}) ==`);
   if (!existsSync(familyHtmlPath)) {
     console.log(`  MISSING BUILD OUTPUT: ${familyHtmlPath}`);
@@ -293,9 +294,126 @@ function main() {
     const familyBlocks = extractJsonLdBlocks(familyHtml);
     console.log(`  application/ld+json blocks found: ${familyBlocks.length} (expected 2)`);
     if (familyBlocks.length !== 2) {
-      problems.push(`aesthetics_1_hifu: expected 2 application/ld+json blocks, found ${familyBlocks.length}`);
+      problems.push(`aesthetics_1_pico_laser: expected 2 application/ld+json blocks, found ${familyBlocks.length}`);
     }
   }
+
+  // Retired family paths (scripts/internal-redirects.json) are redirect stubs: family
+  // JSON-LD must be on kept pages only, so each stub must carry 0 blocks.
+  const internalMap = JSON.parse(readText("scripts/internal-redirects.json"));
+  let retiredWithJsonLd = 0;
+  for (const e of internalMap.entries) {
+    const stubPath = path.join(outDir, e.old.replace(/^\/+/, ""), "index.html");
+    if (!existsSync(stubPath)) continue; // presence is scripts/check-redirect-stubs.mjs's job
+    if (extractJsonLdBlocks(readText(stubPath)).length > 0) {
+      retiredWithJsonLd++;
+      problems.push(`${e.old}: retired family path carries application/ld+json`);
+    }
+  }
+  console.log(`  retired family paths with JSON-LD: ${retiredWithJsonLd} of ${internalMap.entries.length} (expected 0)`);
+
+  // Queue row Q36, PEL brief section 34 condition 2: each story page carries 1 Service node
+  // per family retired into it, with name, provider (the clinic @id), areaServed, and Offers
+  // from that family's live priced rows. Re-derived here from the text of
+  // scripts/internal-redirects.json, content/treatment-descriptions.md, lib/families.ts,
+  // lib/site.ts and data/services.json, not from the TypeScript that builds the nodes.
+  console.log("");
+  console.log("== story page Service nodes ==");
+  const siteUrl = (/url:\s*"(https:\/\/[^"]+)"/.exec(readText("lib/site.ts"))?.[1] ?? "").replace(/\/+$/, "");
+  const descTitles = new Map(
+    [...readText("content/treatment-descriptions.md").matchAll(/^## (\S+)\s*\ntitle:\s*(.+)$/gm)].map((m) => [m[1], m[2].trim()]),
+  );
+  const famSrc = readText("lib/families.ts");
+  const famBody = famSrc.slice(famSrc.indexOf("export const FAMILIES"));
+  const pricedOf = new Map(
+    [...famBody.matchAll(/slug:\s*"([^"]+)"[^}]*?priced:\s*\[([^\]]*)\]/g)].map((m) => [
+      m[1],
+      [...m[2].matchAll(/"([^"]+)"/g)].map((p) => p[1]),
+    ]),
+  );
+  const liveServiceBySlug = new Map(
+    JSON.parse(readText("data/services.json")).services.filter((s) => s.status === "live").map((s) => [s.slug, s]),
+  );
+  const expectedByStory = new Map();
+  for (const e of internalMap.entries) {
+    const famSlug = e.old.split("/").pop();
+    const story = e.target.replace(/^\/+|\/+$/g, "");
+    const prices = (pricedOf.get(famSlug) ?? [])
+      .map((s) => liveServiceBySlug.get(s))
+      .filter((s) => s && typeof s.price_gbp === "number")
+      .map((s) => s.price_gbp)
+      .sort((a, b) => a - b);
+    if (!descTitles.has(famSlug)) problems.push(`${famSlug}: no title in content/treatment-descriptions.md`);
+    const list = expectedByStory.get(story) ?? [];
+    list.push({ slug: famSlug, name: descTitles.get(famSlug), prices });
+    expectedByStory.set(story, list);
+  }
+  const storyPages = [
+    "hifu-kings-cross",
+    "laser-hair-removal-kings-cross",
+    "facials-kings-cross",
+    "body-contouring-kings-cross",
+    "massage-kings-cross",
+    "waxing-kings-cross",
+    "microneedling-peels-kings-cross",
+    "skin-boosters-kings-cross",
+    "our-clinic-kings-cross",
+    "your-visit",
+    "first-visit-guide",
+  ];
+  let serviceNodesTotal = 0;
+  for (const story of storyPages) {
+    const htmlPath = path.join(outDir, story, "index.html");
+    if (!existsSync(htmlPath)) {
+      problems.push(`${story}: built file missing at ${htmlPath}`);
+      continue;
+    }
+    const nodes = extractJsonLdBlocks(readText(htmlPath)).flatMap((raw) => {
+      try {
+        const parsed = JSON.parse(raw);
+        return Array.isArray(parsed) ? parsed : [parsed];
+      } catch (err) {
+        problems.push(`${story}: JSON-LD parse error: ${err.message}`);
+        return [];
+      }
+    });
+    const serviceNodes = nodes.filter((n) => n["@type"] === "Service");
+    serviceNodesTotal += serviceNodes.length;
+    const expected = expectedByStory.get(story) ?? [];
+    console.log(
+      `  ${story}: Service nodes ${serviceNodes.length} (expected ${expected.length})` +
+        (serviceNodes.length ? `: ${serviceNodes.map((s) => `${s.name} [${(s.offers ?? []).length} offers]`).join(", ")}` : ""),
+    );
+    if (serviceNodes.length !== expected.length) {
+      problems.push(`${story}: ${serviceNodes.length} Service nodes, expected ${expected.length}`);
+    }
+    for (const exp of expected) {
+      const node = serviceNodes.find((s) => s.name === exp.name);
+      if (!node) {
+        problems.push(`${story}: no Service node named "${exp.name}" (family ${exp.slug})`);
+        continue;
+      }
+      if (node.areaServed !== "King's Cross, London") {
+        problems.push(`${story} / ${exp.name}: areaServed ${JSON.stringify(node.areaServed)}`);
+      }
+      if (!node.provider || node.provider["@id"] !== `${siteUrl}/#clinic`) {
+        problems.push(`${story} / ${exp.name}: provider @id is not ${siteUrl}/#clinic`);
+      }
+      const offers = node.offers ?? [];
+      const gotPrices = offers.map((o) => o.price).sort((a, b) => a - b);
+      if (JSON.stringify(gotPrices) !== JSON.stringify(exp.prices)) {
+        problems.push(`${story} / ${exp.name}: offer prices ${JSON.stringify(gotPrices)}, expected ${JSON.stringify(exp.prices)}`);
+      }
+      if (offers.some((o) => o["@type"] !== "Offer" || o.priceCurrency !== "GBP")) {
+        problems.push(`${story} / ${exp.name}: an offer is not an Offer in GBP`);
+      }
+      const keys = new Set();
+      collectKeys(node, keys);
+      const bad = [...keys].filter((k) => FORBIDDEN_KEYS.has(k));
+      if (bad.length) problems.push(`${story} / ${exp.name}: forbidden key(s) ${bad.join(", ")}`);
+    }
+  }
+  console.log(`  Service nodes on story pages: ${serviceNodesTotal} (expected ${internalMap.entries.length})`);
   console.log("");
 
   if (problems.length > 0) {

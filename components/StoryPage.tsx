@@ -1,5 +1,24 @@
 import Link from "next/link";
+import { Fragment } from "react";
 import ArchImage from "@/components/ArchImage";
+import ReadMoreLink from "@/components/ReadMoreLink";
+import { getStoryFamilies } from "@/lib/family-pages";
+import { FAMILY_IMAGE_SLOT } from "@/lib/family-images";
+import { getStoryPages } from "@/lib/stories";
+
+/** Every image slot placed by an [image: ...] block in any story file. */
+function storySlotsInFiles(): Set<ImageSlot> {
+  const slots = new Set<ImageSlot>();
+  for (const story of getStoryPages()) {
+    for (const section of story.sections) {
+      for (const block of section.blocks) {
+        if (block.kind === "image") slots.add(block.slot);
+      }
+    }
+  }
+  return slots;
+}
+import { familyServiceJsonLd } from "@/lib/structured-data";
 import type { ImageSlot } from "@/lib/images";
 import type { StoryBlock, StoryButton, StoryPage as StoryPageData, StoryPriceRow } from "@/lib/stories";
 
@@ -253,8 +272,53 @@ export default function StoryPage({ page }: { page: StoryPageData }) {
 
   let sideCounter = 0;
 
+  // Queue row Q36, PEL brief section 34: the families whose pages were retired into this
+  // story. Their approved descriptions (content/treatment-descriptions.md, word for word)
+  // render after "what-it-is", and each keeps a Service JSON-LD node.
+  const families = getStoryFamilies(page.slug);
+  // PEL brief section 38: a family's own image (lib/family-images.ts) shows beside its h3,
+  // unless a story file already places that slot as an [image: ...] block, so no slot shows
+  // twice on a page or twice across the stories.
+  const slotsInStoryFiles = storySlotsInFiles();
+  const familiesSection =
+    families.length > 0 ? (
+      <section className="mx-auto max-w-6xl px-4 py-8 md:px-6">
+        <h2 className="reveal font-display text-2xl text-espresso md:text-3xl">Treatments in this group</h2>
+        <div className="mt-6 grid gap-x-12 gap-y-8 md:grid-cols-2">
+          {families.map((family) => {
+            const slot = FAMILY_IMAGE_SLOT[family.slug];
+            const showImage = slot !== undefined && !slotsInStoryFiles.has(slot);
+            return (
+              <div key={family.slug} className="reveal flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
+                {showImage ? (
+                  <div className="w-36 shrink-0">
+                    <ArchImage slot={slot} sizes="144px" className="w-full" />
+                  </div>
+                ) : null}
+                <div>
+                  <h3 className="font-display text-xl text-espresso">{family.title}</h3>
+                  <div className="mt-2 space-y-3 text-cocoa">
+                    {family.paragraphs.map((paragraph, i) => (
+                      <p key={i}>{paragraph}</p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    ) : null;
+
   return (
     <main className="bg-cream">
+      {families.map((family) => (
+        <script
+          key={family.slug}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(familyServiceJsonLd(family)) }}
+        />
+      ))}
       <section className="mx-auto max-w-6xl px-4 pb-6 pt-10 md:px-6">
         <div className="grid items-center gap-8 lg:grid-cols-[1.2fr_1fr]">
           <ArchImage
@@ -269,7 +333,8 @@ export default function StoryPage({ page }: { page: StoryPageData }) {
       </section>
 
       {otherSections.map((section) => (
-        <section key={section.id} className="mx-auto max-w-6xl px-4 py-8 md:px-6">
+        <Fragment key={section.id}>
+        <section className="mx-auto max-w-6xl px-4 py-8 md:px-6">
           <div className="space-y-10">
             {groupBlocks(section.blocks).map((group, i) => {
               if (group.type === "table") {
@@ -294,7 +359,18 @@ export default function StoryPage({ page }: { page: StoryPageData }) {
               );
             })}
           </div>
+          {section.id === "prices" && page.pricesLink ? (
+            // Queue row Q36: straight after the story's prices, a way to the full price list
+            // for this category (lib/story-map.ts).
+            <div className="reveal mt-8">
+              <ReadMoreLink href={page.pricesLink.href} variant="pill">
+                {page.pricesLink.label}
+              </ReadMoreLink>
+            </div>
+          ) : null}
         </section>
+        {section.id === "what-it-is" ? familiesSection : null}
+        </Fragment>
       ))}
 
       {faqSection && (

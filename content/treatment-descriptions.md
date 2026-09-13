@@ -14,7 +14,7 @@ sources:
 - aftercare and consultation lines: PEL ruling 8 and the PEL-approved consultation fact
 
 ## aesthetics_1_cryopen
-title: Cryopen
+title: CryoPen
 
 The CryoPen is a device that applies nitrous oxide to the surface of the skin, with control over how deep the nitrous oxide goes and over the border of the area it covers. Its session length is not on the price list yet, so ask on WhatsApp before you book. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
 

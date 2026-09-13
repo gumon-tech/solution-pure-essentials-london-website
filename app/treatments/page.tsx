@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import ArchImage from "@/components/ArchImage";
+import ReadMoreLink from "@/components/ReadMoreLink";
 import CategoryChips from "@/components/CategoryChips";
 import PriceList from "@/components/PriceList";
 import { buildTreatmentsView } from "@/lib/treatments-view";
+import { categoryAnchor } from "@/lib/story-map";
 
 // Description sourced from content/treatments-intro.md (PEL's copy, cut; see
 // content/COPY-SOURCES.md) per the Q8 spec's "description from PEL's copy if
@@ -32,7 +33,7 @@ const GROUP_LINE: Record<string, string> = {
 export default function TreatmentsPage() {
   const groups = buildTreatmentsView();
   const chips = groups.flatMap((group) =>
-    group.categories.map((category) => ({ id: category.id, title: category.title })),
+    group.categories.map((category) => ({ id: categoryAnchor(category.id), title: category.title })),
   );
 
   return (
@@ -72,7 +73,9 @@ export default function TreatmentsPage() {
             {group.categories.map((category) => (
               <div
                 key={category.id}
-                id={category.id}
+                // "cat-" prefix: groups body and laser share their names with categories,
+                // and every id on the page must be unique (lib/story-map.ts categoryAnchor).
+                id={categoryAnchor(category.id)}
                 // Clears the sticky chips nav (measured ~63px); the sticky header (72px)
                 // plus 16px of air is already cleared by html's scroll-padding-top in
                 // app/globals.css, so a chip's anchor jump lands the heading below both.
@@ -80,16 +83,13 @@ export default function TreatmentsPage() {
               >
                 <h3 className="reveal font-display text-2xl text-espresso">{category.title}</h3>
 
-                {category.familyLinks.length > 0 ? (
-                  <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
-                    {category.familyLinks.map((family) => (
-                      <li key={family.slug}>
-                        <Link
-                          href={`/treatments/${family.slug}/`}
-                          className="text-sm text-oak underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-arch"
-                        >
-                          {`About ${family.title}`}
-                        </Link>
+                {category.readMore.length > 0 ? (
+                  <ul className="reveal mt-4 flex flex-wrap gap-3">
+                    {category.readMore.map((link) => (
+                      <li key={link.href}>
+                        <ReadMoreLink href={link.href} variant="pill">
+                          {link.label}
+                        </ReadMoreLink>
                       </li>
                     ))}
                   </ul>

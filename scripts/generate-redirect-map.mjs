@@ -13,7 +13,17 @@ const inv = readFileSync(invFile, "utf8").trim().split("\n").slice(1).map((l) =>
 });
 const data = JSON.parse(readFileSync("data/services.json", "utf8"));
 const bySlug = new Map(data.services.map((s) => [s.slug, s]));
-const built = (p) => existsSync(path.join("out", p, "index.html"));
+// A redirect stub (scripts/build-redirect-stubs.mjs) is not a built page. Queue row Q36
+// retired 16 family pages into their category story, so an old URL must go straight to the
+// story, never to the family stub (no double hop).
+const STUB_MARKER = "<!-- pweb-redirect-stub Q28 -->";
+const built = (p) => {
+  const f = path.join("out", p, "index.html");
+  return existsSync(f) && !readFileSync(f, "utf8").includes(STUB_MARKER);
+};
+const internalRedirects = new Map(
+  JSON.parse(readFileSync("scripts/internal-redirects.json", "utf8")).entries.map((e) => [e.old, e.target]),
+);
 
 // lib/families.ts parsed as text: booking slug -> family slug (priced membership).
 const famSrc = readFileSync("lib/families.ts", "utf8").slice(readFileSync("lib/families.ts", "utf8").indexOf("export const FAMILIES"));
@@ -144,7 +154,9 @@ for (const url of urls) {
         // PEL ruling 2026-09-13, rule 5 amended: a live row with no family page goes to its
         // category's story page, closer than /treatments/ for someone with a bookmark.
         target = CATEGORY_STORY[row.category];
-        evidence += `; no family page lists this row, so the story page of category "${row.category}" per PEL ruling 2026-09-13 (rule 5 amended)`;
+        evidence += fam && internalRedirects.has(`/treatments/${fam}`)
+          ? `; lib/families.ts lists "${rowSlug}" under family "${fam}", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category "${row.category}"`
+          : `; no family page lists this row, so the story page of category "${row.category}" per PEL ruling 2026-09-13 (rule 5 amended)`;
       } else {
         target = "/treatments/";
         evidence += fam ? `; family "${fam}" lists it but has no built page` : "; no family in lib/families.ts lists this row in its priced list";
@@ -175,7 +187,13 @@ for (const url of urls) {
       rule = 1;
       if (!CMS_DRAFT[old]) fail("no section 7 draft target for " + old);
       target = CMS_DRAFT[old];
-      evidence += `; no family page built for ${rowSlug} (listed under held-back in content/treatment-descriptions.md), so the section 7 draft target`;
+      const retiredTo = internalRedirects.get(`/treatments/${rowSlug}`);
+      if (retiredTo && retiredTo !== target) {
+        fail(`section 7 draft target ${target} and scripts/internal-redirects.json target ${retiredTo} disagree for ${old}`);
+      }
+      evidence += retiredTo
+        ? `; family page ${rowSlug} retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target`
+        : `; no family page built for ${rowSlug} (listed under held-back in content/treatment-descriptions.md), so the section 7 draft target`;
     }
   } else {
     const s = STATIC[old];

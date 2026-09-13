@@ -1,4 +1,5 @@
 import Picture from "@/components/Picture";
+import ReadMoreLink from "@/components/ReadMoreLink";
 import { SITE } from "@/lib/site";
 
 // Verbatim from content/home.md's "## the-clinic" section.
@@ -31,6 +32,10 @@ export default function Clinic() {
               ))}
             </tbody>
           </table>
+
+          <div className="mt-6">
+            <ReadMoreLink href="/our-clinic-kings-cross/">Read about our clinic</ReadMoreLink>
+          </div>
         </div>
       </div>
     </section>

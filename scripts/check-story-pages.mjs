@@ -290,6 +290,26 @@ function main() {
   console.log(`story files found: ${files.length}`);
   console.log("");
 
+  // Queue row Q36, PEL brief section 38: components/StoryPage.tsx adds 1 picture beside the
+  // h3 of each family retired into a story (scripts/internal-redirects.json) whose slot in
+  // lib/family-images.ts is not already an [image: ...] line in any story file. Re-derived
+  // here from those 2 files and the markdown, so the expected picture count per page is the
+  // [image: ...] line count plus these family pictures, and each must be in the HTML.
+  const allMdSlots = new Set();
+  for (const file of files) {
+    for (const m of readText(path.join(storiesDir, file)).matchAll(/^\[image: ([a-z0-9-]+)\]$/gm)) allMdSlots.add(m[1]);
+  }
+  const familySlot = new Map(
+    [...readText("lib/family-images.ts").matchAll(/^\s*([A-Za-z0-9_]+):\s*"(fam-[a-z0-9-]+)",?$/gm)].map((m) => [m[1], m[2]]),
+  );
+  const familyPicturesByStory = new Map();
+  for (const e of JSON.parse(readText("scripts/internal-redirects.json")).entries) {
+    const slot = familySlot.get(e.old.split("/").pop());
+    if (!slot || allMdSlots.has(slot)) continue;
+    const story = e.target.replace(/^\/+|\/+$/g, "");
+    familyPicturesByStory.set(story, [...(familyPicturesByStory.get(story) ?? []), slot]);
+  }
+
   let pagesChecked = 0;
 
   for (const file of files) {
@@ -321,11 +341,19 @@ function main() {
     const text = toVisibleText(rawHtml);
 
     const pictureCount = (rawHtml.match(/<picture[\s>]/gi) ?? []).length;
-    console.log(`  pictures: ${pictureCount}, [image: ...] lines: ${imageLineCount}`);
-    if (pictureCount !== imageLineCount) {
+    const familyPictures = familyPicturesByStory.get(slug) ?? [];
+    const expectedPictures = imageLineCount + familyPictures.length;
+    console.log(
+      `  pictures: ${pictureCount}, [image: ...] lines: ${imageLineCount}, family pictures: ${familyPictures.length}` +
+        (familyPictures.length ? ` (${familyPictures.join(", ")})` : ""),
+    );
+    if (pictureCount !== expectedPictures) {
       problems.push(
-        `${slug}: picture count (${pictureCount}) does not match [image: ...] line count (${imageLineCount})`,
+        `${slug}: picture count (${pictureCount}) does not match [image: ...] lines plus family pictures (${expectedPictures})`,
       );
+    }
+    for (const s of familyPictures) {
+      if (!rawHtml.includes(`/${s}-`)) problems.push(`${slug}: family picture ${s} not in the built HTML`);
     }
 
     const missingSentences = proseSentences.filter(

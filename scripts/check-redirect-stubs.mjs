@@ -1,7 +1,9 @@
 #!/usr/bin/env node
-// Post-build check for queue row Q28 (redirect stubs for old Wix URLs). Dependency-free
-// (Node 22, no npm packages). Run after `next build` and scripts/build-redirect-stubs.mjs.
-// Deliberately does not import the build script: it re-derives what a stub must contain.
+// Post-build check for queue row Q28 (redirect stubs for old Wix URLs) and queue row Q36
+// (stubs for the family pages retired into their category story, from
+// scripts/internal-redirects.json). Dependency-free (Node 22, no npm packages). Run after
+// `next build` and scripts/build-redirect-stubs.mjs. Deliberately does not import the
+// build script: it re-derives what a stub must contain.
 //
 // Asserts:
 //   - every map entry with a target has out/<stub_path>index.html holding exactly
@@ -9,9 +11,12 @@
 //     <link rel="canonical" href="<SITE.url>TARGET">, <meta name="robots" content="noindex">,
 //     a <title> and <a href="TARGET">
 //   - the target is a real built page (out/TARGET/index.html, not itself a stub)
+//   - no target in either map is a stub path of any entry in either map (no double hop)
 //   - a stub directory is not a Next-built route (no index.txt) and is not in sitemap.xml
 //   - rule cross-checks against data/services.json: service-page and CMS entries have a
 //     target only when their row is live; product, shop and consent entries never do
+//   - internal entries: old is /treatments/<slug> with no trailing slash, and has a target
+//     and a reason; no old path appears twice across both maps
 //   - entries with no stub have no out/<path>/index.html, except "same-path" entries,
 //     which must be Next-built pages
 //   - the number of stub files found anywhere in out/ equals the number expected
@@ -56,6 +61,13 @@ function main() {
   const outDir = process.argv[2] ?? "out";
   const origin = siteOrigin();
   const map = JSON.parse(readFileSync("scripts/redirects.json", "utf8"));
+  const internal = JSON.parse(readFileSync("scripts/internal-redirects.json", "utf8"));
+  const internalEntries = internal.entries.map((e) => ({
+    ...e,
+    rule: "internal",
+    stub_paths: [`${String(e.old).replace(/\/+$/, "")}/`],
+  }));
+  const allEntries = [...map.entries, ...internalEntries];
   const services = new Map(JSON.parse(readFileSync("data/services.json", "utf8")).services.map((s) => [s.slug, s]));
   const problems = [];
 
@@ -69,11 +81,35 @@ function main() {
     }
   }
 
+  // Internal map shape.
+  for (const e of internalEntries) {
+    if (!/^\/treatments\/[A-Za-z0-9_]+$/.test(e.old)) {
+      problems.push(`${e.old}: internal redirect old path must be /treatments/<family slug> with no trailing slash`);
+    }
+    if (!e.target) problems.push(`${e.old}: internal redirect has no target`);
+    if (!e.reason) problems.push(`${e.old}: internal redirect has no reason`);
+  }
+  const seenOld = new Set();
+  for (const e of allEntries) {
+    if (seenOld.has(relDir(e.old))) problems.push(`${e.old}: old path listed twice across the redirect maps`);
+    seenOld.add(relDir(e.old));
+  }
+
+  // No target may be a stub path of any entry (no double hop), whatever out/ holds.
+  const stubDirSet = new Set(allEntries.filter((e) => e.target).flatMap((e) => (e.stub_paths ?? []).map(relDir)));
+  let targetsThatAreStubs = 0;
+  for (const e of allEntries) {
+    if (e.target && stubDirSet.has(relDir(e.target))) {
+      targetsThatAreStubs++;
+      problems.push(`${e.old}: target ${e.target} is itself a stub path in a redirect map`);
+    }
+  }
+
   const stubsByRule = {};
   const noStubByKind = {};
   let stubFilesChecked = 0;
 
-  for (const e of map.entries) {
+  for (const e of allEntries) {
     const segs = e.old.split("/").filter(Boolean);
 
     // Rule cross-checks against the data file.
@@ -151,15 +187,16 @@ function main() {
     problems.push(`stub files in ${outDir}: ${found.length}, expected ${stubFilesChecked} (orphan or missing stubs)`);
   }
   const sitemapStubHits = [...sitemapPaths].filter((p) =>
-    map.entries.some((e) => e.target && (e.stub_paths ?? []).some((sp) => relDir(sp) === p)),
+    allEntries.some((e) => e.target && (e.stub_paths ?? []).some((sp) => relDir(sp) === p)),
   ).length;
 
   const stubEntries = Object.values(stubsByRule).reduce((a, b) => a + b, 0);
   console.log(`origin: ${origin}`);
-  console.log(`map entries: ${map.entries.length}`);
+  console.log(`map entries: ${allEntries.length} (redirects.json ${map.entries.length}, internal-redirects.json ${internalEntries.length})`);
   console.log(`entries with a stub: ${stubEntries} by rule ${JSON.stringify(stubsByRule)}`);
   console.log(`stub files checked: ${stubFilesChecked}; stub files found in ${outDir}: ${found.length}`);
-  console.log(`entries with no stub: ${map.entries.length - stubEntries} by reason ${JSON.stringify(noStubByKind)}`);
+  console.log(`entries with no stub: ${allEntries.length - stubEntries} by reason ${JSON.stringify(noStubByKind)}`);
+  console.log(`targets that are themselves stub paths: ${targetsThatAreStubs}`);
   console.log(`sitemap.xml URLs: ${sitemapPaths.size}; stub paths in sitemap: ${sitemapStubHits}`);
 
   if (stubFilesChecked === 0) problems.push("0 stubs checked");

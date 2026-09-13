@@ -1,10 +1,8 @@
-import Link from "next/link";
 import type { TreatmentRow } from "@/lib/treatments-view";
 
-/** The priced-or-quote rows for 1 category, each ending in a WhatsApp link. Rows
- * whose booking slug is priced under a built family page (lib/treatments-view.ts's
- * `familyHref`) link their name to that page (Q12 part 2); other rows stay plain
- * text. */
+/** The priced-or-quote rows for 1 category, each ending in a WhatsApp link. Row names
+ * are plain text, never links (queue row Q36: the price list is for looking up prices
+ * and asking; the category's "Read about" button leads to its story). */
 export default function PriceList({ rows }: { rows: TreatmentRow[] }) {
   return (
     <ul className="reveal divide-y divide-beige">
@@ -14,16 +12,7 @@ export default function PriceList({ rows }: { rows: TreatmentRow[] }) {
           className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 py-4"
         >
           <div className="min-w-0">
-            {row.familyHref ? (
-              <Link
-                href={row.familyHref}
-                className="text-espresso hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-arch"
-              >
-                {row.name}
-              </Link>
-            ) : (
-              <p className="text-espresso">{row.name}</p>
-            )}
+            <p className="text-espresso">{row.name}</p>
             {row.duration ? <p className="text-walnut text-sm">{row.duration}</p> : null}
           </div>
           <div className="flex items-center gap-4">

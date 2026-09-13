@@ -187,16 +187,42 @@ function main() {
   const mdRaw = readText("content/treatment-descriptions.md");
   const sections = parseDescriptions(mdRaw);
 
+  // Queue row Q36: families retired into their category story are redirect stubs, not
+  // pages. The expected page list is derived, never hardcoded: described + live families,
+  // minus the entries of scripts/internal-redirects.json (16 on 2026-09-13, leaving the 5
+  // skin-laser pages).
+  const internalMap = JSON.parse(readText("scripts/internal-redirects.json"));
+  const retiredTargets = new Map(
+    internalMap.entries
+      .map((e) => [/^\/treatments\/([A-Za-z0-9_]+)$/.exec(e.old)?.[1], e.target])
+      .filter(([slug]) => Boolean(slug)),
+  );
+  if (retiredTargets.size !== internalMap.entries.length) {
+    problems.push("scripts/internal-redirects.json: every old path must be /treatments/<family slug>");
+  }
+
   const expectedFamilies = [];
+  const retiredFamilies = [];
   const skipped = [];
   for (const family of families) {
     const section = sections.get(family.slug);
     if (!section) {
       skipped.push(`${family.slug}: no description section (held-back, or missing)`);
+      if (retiredTargets.has(family.slug)) problems.push(`${family.slug}: in internal-redirects.json but never had a page`);
       continue;
     }
     if (!liveBySlug.has(family.slug)) {
       skipped.push(`${family.slug}: not a live row in data/services.json`);
+      if (retiredTargets.has(family.slug)) problems.push(`${family.slug}: in internal-redirects.json but never had a page`);
+      continue;
+    }
+    if (retiredTargets.has(family.slug)) {
+      retiredFamilies.push({
+        slug: family.slug,
+        target: retiredTargets.get(family.slug),
+        title: section.title,
+        paragraphs: section.paragraphs,
+      });
       continue;
     }
     const priced = family.priced
@@ -300,6 +326,70 @@ function main() {
   }
 
   console.log(`pages checked: ${pagesChecked}`);
+
+  // Retired families: out/treatments/<slug>/index.html must be a redirect stub to the
+  // story (written by scripts/build-redirect-stubs.mjs), with no page markup.
+  const unknownRetired = [...retiredTargets.keys()].filter((slug) => !families.some((f) => f.slug === slug));
+  for (const slug of unknownRetired) problems.push(`${slug}: in internal-redirects.json but not a family in lib/families.ts`);
+  let retiredOk = 0;
+  for (const r of retiredFamilies) {
+    const htmlPath = path.join(outDir, "treatments", r.slug, "index.html");
+    if (!existsSync(htmlPath)) {
+      problems.push(`${r.slug}: retired family has no redirect stub at ${htmlPath} (run scripts/build-redirect-stubs.mjs)`);
+      continue;
+    }
+    const html = readText(htmlPath);
+    if (!html.includes("<!-- pweb-redirect-stub Q28 -->") || !html.includes(`content="0; url=${r.target}"`)) {
+      problems.push(`${r.slug}: ${htmlPath} is not a redirect stub to ${r.target}`);
+      continue;
+    }
+    if (/application\/ld\+json/.test(html)) {
+      problems.push(`${r.slug}: redirect stub carries JSON-LD`);
+      continue;
+    }
+    retiredOk++;
+  }
+  console.log(`retired families (redirect stubs): ${retiredFamilies.length}, stubs ok ${retiredOk}`);
+
+  // PEL brief section 34 condition 1: nothing approved is lost. Each retired family's title
+  // (as an h3) and every sentence of its description appear on its story page.
+  let descriptionsLanded = 0;
+  for (const r of retiredFamilies) {
+    const storyPath = path.join(outDir, r.target.replace(/^\/+|\/+$/g, ""), "index.html");
+    if (!existsSync(storyPath)) {
+      problems.push(`${r.slug}: story page ${storyPath} missing`);
+      continue;
+    }
+    const storyText = toSearchableText(readText(storyPath));
+    const sentences = r.paragraphs.flatMap(splitSentences);
+    const missing = sentences.filter((s) => !storyText.includes(normalizeWhitespace(s)));
+    const titleFound = storyText.includes(`>${r.title}</h3>`);
+    console.log(
+      `  - ${r.slug} -> ${r.target}: h3 "${r.title}" ${titleFound ? "found" : "MISSING"}, description sentences ${sentences.length - missing.length}/${sentences.length}`,
+    );
+    for (const s of missing) console.log(`      missing: ${s}`);
+    if (!titleFound) problems.push(`${r.slug}: h3 "${r.title}" not on ${r.target}`);
+    if (missing.length > 0) problems.push(`${r.slug}: ${missing.length} description sentence(s) not on ${r.target}`);
+    if (titleFound && missing.length === 0) descriptionsLanded++;
+  }
+  console.log(`retired descriptions found whole on their story: ${descriptionsLanded}/${retiredFamilies.length}`);
+
+  // Queue row Q36: every id on /treatments/ is unique. Groups "body" and "laser" share their
+  // names with categories, so category blocks and chips use "cat-<category>".
+  const treatmentsPath = path.join(outDir, "treatments", "index.html");
+  if (!existsSync(treatmentsPath)) {
+    problems.push(`${treatmentsPath} missing`);
+  } else {
+    const ids = [...readText(treatmentsPath).matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]);
+    const counts = new Map();
+    for (const id of ids) counts.set(id, (counts.get(id) ?? 0) + 1);
+    const duplicates = [...counts].filter(([, n]) => n > 1);
+    console.log(`/treatments/ ids: ${ids.length}, duplicated: ${duplicates.length}${duplicates.length ? ` ${JSON.stringify(duplicates)}` : ""}`);
+    if (duplicates.length > 0) problems.push(`/treatments/ has duplicate id(s): ${duplicates.map(([id]) => id).join(", ")}`);
+    for (const group of ["face", "body", "laser", "wellness"]) {
+      if (!ids.includes(group)) problems.push(`/treatments/ group anchor #${group} missing`);
+    }
+  }
 
   if (pagesChecked === 0) {
     problems.push("0 pages were checked");

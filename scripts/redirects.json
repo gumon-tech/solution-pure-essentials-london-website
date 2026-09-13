@@ -61,32 +61,32 @@
     {
       "old": "/aesthetics-1/golden-micro-needling",
       "rule": 1,
-      "target": "/treatments/aesthetics_1_golden_micro_needling/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/aesthetics-1/golden-micro-needling/"
       ],
       "row_slug": "aesthetics_1_golden_micro_needling",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_golden_micro_needling, name \"GOLDEN MICRO NEEDLING\") = collection \"aesthetics-1\" + item slug \"golden-micro-needling\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; out/treatments/aesthetics_1_golden_micro_needling/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_golden_micro_needling, name \"GOLDEN MICRO NEEDLING\") = collection \"aesthetics-1\" + item slug \"golden-micro-needling\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; family page aesthetics_1_golden_micro_needling retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/aesthetics-1/hifu",
       "rule": 1,
-      "target": "/treatments/aesthetics_1_hifu/",
+      "target": "/hifu-kings-cross/",
       "stub_paths": [
         "/aesthetics-1/hifu/"
       ],
       "row_slug": "aesthetics_1_hifu",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_hifu, name \"HIFU\") = collection \"aesthetics-1\" + item slug \"hifu\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category hifu; out/treatments/aesthetics_1_hifu/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_hifu, name \"HIFU\") = collection \"aesthetics-1\" + item slug \"hifu\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category hifu; family page aesthetics_1_hifu retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/aesthetics-1/hydro-facial",
       "rule": 1,
-      "target": "/treatments/aesthetics_1_hydro_facial/",
+      "target": "/facials-kings-cross/",
       "stub_paths": [
         "/aesthetics-1/hydro-facial/"
       ],
       "row_slug": "aesthetics_1_hydro_facial",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_hydro_facial, name \"HYDRO FACIAL\") = collection \"aesthetics-1\" + item slug \"hydro-facial\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; out/treatments/aesthetics_1_hydro_facial/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_hydro_facial, name \"HYDRO FACIAL\") = collection \"aesthetics-1\" + item slug \"hydro-facial\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; family page aesthetics_1_hydro_facial retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/aesthetics-1/ipl-(intense-pulsed-light)",
@@ -119,12 +119,12 @@
     {
       "old": "/aesthetics-1/microneedling",
       "rule": 1,
-      "target": "/treatments/aesthetics_1_microneedling/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/aesthetics-1/microneedling/"
       ],
       "row_slug": "aesthetics_1_microneedling",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_microneedling, name \"MICRONEEDLING\") = collection \"aesthetics-1\" + item slug \"microneedling\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; out/treatments/aesthetics_1_microneedling/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_microneedling, name \"MICRONEEDLING\") = collection \"aesthetics-1\" + item slug \"microneedling\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; family page aesthetics_1_microneedling retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/aesthetics-1/pico-laser",
@@ -139,22 +139,22 @@
     {
       "old": "/aesthetics-1/skymedic-chemical-peels",
       "rule": 1,
-      "target": "/treatments/aesthetics_1_skymedic_chemical_peels/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/aesthetics-1/skymedic-chemical-peels/"
       ],
       "row_slug": "aesthetics_1_skymedic_chemical_peels",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_skymedic_chemical_peels, name \"SKYMEDIC CHEMICAL PEELS\") = collection \"aesthetics-1\" + item slug \"skymedic-chemical-peels\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; out/treatments/aesthetics_1_skymedic_chemical_peels/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_skymedic_chemical_peels, name \"SKYMEDIC CHEMICAL PEELS\") = collection \"aesthetics-1\" + item slug \"skymedic-chemical-peels\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; family page aesthetics_1_skymedic_chemical_peels retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/aesthetics-body/3d-lipo",
       "rule": 1,
-      "target": "/treatments/aesthetics_body_3d_lipo/",
+      "target": "/body-contouring-kings-cross/",
       "stub_paths": [
         "/aesthetics-body/3d-lipo/"
       ],
       "row_slug": "aesthetics_body_3d_lipo",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_3d_lipo, name \"3D LIPO\") = collection \"aesthetics-body\" + item slug \"3d-lipo\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category body; out/treatments/aesthetics_body_3d_lipo/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_3d_lipo, name \"3D LIPO\") = collection \"aesthetics-body\" + item slug \"3d-lipo\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category body; family page aesthetics_body_3d_lipo retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/aesthetics-body/carboxytherapy",
@@ -169,53 +169,53 @@
     {
       "old": "/aesthetics-body/emsculpt",
       "rule": 1,
-      "target": "/treatments/aesthetics_body_emsculpt/",
+      "target": "/body-contouring-kings-cross/",
       "stub_paths": [
         "/aesthetics-body/emsculpt/"
       ],
       "row_slug": "aesthetics_body_emsculpt",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_emsculpt, name \"EMSCULPT\") = collection \"aesthetics-body\" + item slug \"emsculpt\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category body; out/treatments/aesthetics_body_emsculpt/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_emsculpt, name \"EMSCULPT\") = collection \"aesthetics-body\" + item slug \"emsculpt\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category body; family page aesthetics_body_emsculpt retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/aesthetics-body/hifu-body",
       "rule": 1,
-      "target": "/treatments/aesthetics_body_hifu_body/",
+      "target": "/body-contouring-kings-cross/",
       "stub_paths": [
         "/aesthetics-body/hifu-body/"
       ],
       "row_slug": "aesthetics_body_hifu_body",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_hifu_body, name \"HIFU BODY\") = collection \"aesthetics-body\" + item slug \"hifu-body\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category body; out/treatments/aesthetics_body_hifu_body/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_hifu_body, name \"HIFU BODY\") = collection \"aesthetics-body\" + item slug \"hifu-body\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category body; family page aesthetics_body_hifu_body retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/aesthetics-body/indiba-deep-beauty",
       "rule": 1,
-      "target": "/treatments/aesthetics_body_indiba_deep_beauty/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/aesthetics-body/indiba-deep-beauty/"
       ],
       "row_slug": "aesthetics_body_indiba_deep_beauty",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_indiba_deep_beauty, name \"INDIBA DEEP BEAUTY\") = collection \"aesthetics-body\" + item slug \"indiba-deep-beauty\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; out/treatments/aesthetics_body_indiba_deep_beauty/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_indiba_deep_beauty, name \"INDIBA DEEP BEAUTY\") = collection \"aesthetics-body\" + item slug \"indiba-deep-beauty\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; family page aesthetics_body_indiba_deep_beauty retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/aesthetics-body/laser-hair-removal-%2F-ipl",
       "rule": 1,
-      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "target": "/laser-hair-removal-kings-cross/",
       "stub_paths": [
         "/aesthetics-body/laser-hair-removal-/-ipl/",
         "/aesthetics-body/laser-hair-removal-%2F-ipl/"
       ],
       "row_slug": "aesthetics_body_laser_hair_removal_2F_ipl",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_laser_hair_removal_2F_ipl, name \"LASER HAIR REMOVAL / IPL\") = collection \"aesthetics-body\" + item slug \"laser-hair-removal-%2F-ipl\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category hair; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_laser_hair_removal_2F_ipl, name \"LASER HAIR REMOVAL / IPL\") = collection \"aesthetics-body\" + item slug \"laser-hair-removal-%2F-ipl\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category hair; family page aesthetics_body_laser_hair_removal_2F_ipl retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/aesthetics-body/profhilo-body",
       "rule": 1,
-      "target": "/treatments/aesthetics_body_profhilo_body/",
+      "target": "/skin-boosters-kings-cross/",
       "stub_paths": [
         "/aesthetics-body/profhilo-body/"
       ],
       "row_slug": "aesthetics_body_profhilo_body",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_profhilo_body, name \"PROFHILO BODY\") = collection \"aesthetics-body\" + item slug \"profhilo-body\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skinboosters; out/treatments/aesthetics_body_profhilo_body/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_profhilo_body, name \"PROFHILO BODY\") = collection \"aesthetics-body\" + item slug \"profhilo-body\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skinboosters; family page aesthetics_body_profhilo_body retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/aesthetics-body/tattoo-removal-",
@@ -324,32 +324,32 @@
     {
       "old": "/facials-1/age-defence-sensitive-skin-treatment-",
       "rule": 1,
-      "target": "/treatments/facials_1_age_defence_sensitive_skin_treatment/",
+      "target": "/facials-kings-cross/",
       "stub_paths": [
         "/facials-1/age-defence-sensitive-skin-treatment-/"
       ],
       "row_slug": "facials_1_age_defence_sensitive_skin_treatment",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_age_defence_sensitive_skin_treatment, name \"AGE DEFENCE SENSITIVE SKIN TREATMENT\") = collection \"facials-1\" + item slug \"age-defence-sensitive-skin-treatment-\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; out/treatments/facials_1_age_defence_sensitive_skin_treatment/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_age_defence_sensitive_skin_treatment, name \"AGE DEFENCE SENSITIVE SKIN TREATMENT\") = collection \"facials-1\" + item slug \"age-defence-sensitive-skin-treatment-\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; family page facials_1_age_defence_sensitive_skin_treatment retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/facials-1/diamondtome-microdermabrasion",
       "rule": 1,
-      "target": "/treatments/facials_1_diamondtome_microdermabrasion/",
+      "target": "/facials-kings-cross/",
       "stub_paths": [
         "/facials-1/diamondtome-microdermabrasion/"
       ],
       "row_slug": "facials_1_diamondtome_microdermabrasion",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_diamondtome_microdermabrasion, name \"DIAMONDTOME MICRODERMABRASION\") = collection \"facials-1\" + item slug \"diamondtome-microdermabrasion\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; out/treatments/facials_1_diamondtome_microdermabrasion/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_diamondtome_microdermabrasion, name \"DIAMONDTOME MICRODERMABRASION\") = collection \"facials-1\" + item slug \"diamondtome-microdermabrasion\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; family page facials_1_diamondtome_microdermabrasion retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/facials-1/eberlin-facial",
       "rule": 1,
-      "target": "/treatments/facials_1_eberlin_facial/",
+      "target": "/facials-kings-cross/",
       "stub_paths": [
         "/facials-1/eberlin-facial/"
       ],
       "row_slug": "facials_1_eberlin_facial",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_eberlin_facial, name \"EBERLIN FACIAL\") = collection \"facials-1\" + item slug \"eberlin-facial\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; out/treatments/facials_1_eberlin_facial/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_eberlin_facial, name \"EBERLIN FACIAL\") = collection \"facials-1\" + item slug \"eberlin-facial\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; family page facials_1_eberlin_facial retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/facials-1/mesotherapy-radio-frequency",
@@ -426,22 +426,22 @@
     {
       "old": "/injections/profhilo-skin-booster-",
       "rule": 1,
-      "target": "/treatments/injections_profhilo_skin_booster/",
+      "target": "/skin-boosters-kings-cross/",
       "stub_paths": [
         "/injections/profhilo-skin-booster-/"
       ],
       "row_slug": "injections_profhilo_skin_booster",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_profhilo_skin_booster, name \"PROFHILO SKIN BOOSTER\") = collection \"injections\" + item slug \"profhilo-skin-booster-\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skinboosters; out/treatments/injections_profhilo_skin_booster/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_profhilo_skin_booster, name \"PROFHILO SKIN BOOSTER\") = collection \"injections\" + item slug \"profhilo-skin-booster-\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skinboosters; family page injections_profhilo_skin_booster retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/injections/restylane-skin-boosters",
       "rule": 1,
-      "target": "/treatments/injections_restylane_skin_boosters/",
+      "target": "/skin-boosters-kings-cross/",
       "stub_paths": [
         "/injections/restylane-skin-boosters/"
       ],
       "row_slug": "injections_restylane_skin_boosters",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_restylane_skin_boosters, name \"RESTYLANE SKIN BOOSTERS\") = collection \"injections\" + item slug \"restylane-skin-boosters\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skinboosters; out/treatments/injections_restylane_skin_boosters/index.html built"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_restylane_skin_boosters, name \"RESTYLANE SKIN BOOSTERS\") = collection \"injections\" + item slug \"restylane-skin-boosters\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skinboosters; family page injections_restylane_skin_boosters retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {
       "old": "/injections/s-dna-skin-booster",
@@ -613,12 +613,12 @@
     {
       "old": "/service-page/3d-lipo",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_3d_lipo/",
+      "target": "/body-contouring-kings-cross/",
       "stub_paths": [
         "/service-page/3d-lipo/"
       ],
       "row_slug": "3d_lipo",
-      "evidence": "service-page slug \"3d-lipo\" with hyphens as underscores = data/services.json row \"3d_lipo\" (source booking, name \"3D Lipo\", status live, category body); lib/families.ts lists \"3d_lipo\" in the priced list of family \"aesthetics_body_3d_lipo\"; out/treatments/aesthetics_body_3d_lipo/index.html built"
+      "evidence": "service-page slug \"3d-lipo\" with hyphens as underscores = data/services.json row \"3d_lipo\" (source booking, name \"3D Lipo\", status live, category body); lib/families.ts lists \"3d_lipo\" under family \"aesthetics_body_3d_lipo\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"body\""
     },
     {
       "old": "/service-page/acne",
@@ -731,12 +731,12 @@
     {
       "old": "/service-page/cheeks-jaw-line-nasolabial-1ml",
       "rule": 3,
-      "target": "/treatments/injections_restylane_skin_boosters/",
+      "target": "/skin-boosters-kings-cross/",
       "stub_paths": [
         "/service-page/cheeks-jaw-line-nasolabial-1ml/"
       ],
       "row_slug": "cheeks_jaw_line_nasolabial_1ml",
-      "evidence": "service-page slug \"cheeks-jaw-line-nasolabial-1ml\" with hyphens as underscores = data/services.json row \"cheeks_jaw_line_nasolabial_1ml\" (source booking, name \"Cheeks, jaw line, nasolabial (1ml)\", status live, category skinboosters); lib/families.ts lists \"cheeks_jaw_line_nasolabial_1ml\" in the priced list of family \"injections_restylane_skin_boosters\"; out/treatments/injections_restylane_skin_boosters/index.html built"
+      "evidence": "service-page slug \"cheeks-jaw-line-nasolabial-1ml\" with hyphens as underscores = data/services.json row \"cheeks_jaw_line_nasolabial_1ml\" (source booking, name \"Cheeks, jaw line, nasolabial (1ml)\", status live, category skinboosters); lib/families.ts lists \"cheeks_jaw_line_nasolabial_1ml\" under family \"injections_restylane_skin_boosters\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"skinboosters\""
     },
     {
       "old": "/service-page/collagen",
@@ -883,12 +883,12 @@
     {
       "old": "/service-page/emsculpt",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_emsculpt/",
+      "target": "/body-contouring-kings-cross/",
       "stub_paths": [
         "/service-page/emsculpt/"
       ],
       "row_slug": "emsculpt",
-      "evidence": "service-page slug \"emsculpt\" with hyphens as underscores = data/services.json row \"emsculpt\" (source booking, name \"Emsculpt\", status live, category body); lib/families.ts lists \"emsculpt\" in the priced list of family \"aesthetics_body_emsculpt\"; out/treatments/aesthetics_body_emsculpt/index.html built"
+      "evidence": "service-page slug \"emsculpt\" with hyphens as underscores = data/services.json row \"emsculpt\" (source booking, name \"Emsculpt\", status live, category body); lib/families.ts lists \"emsculpt\" under family \"aesthetics_body_emsculpt\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"body\""
     },
     {
       "old": "/service-page/eye-bags",
@@ -948,12 +948,12 @@
     {
       "old": "/service-page/facial-fillers",
       "rule": 3,
-      "target": "/treatments/injections_restylane_skin_boosters/",
+      "target": "/skin-boosters-kings-cross/",
       "stub_paths": [
         "/service-page/facial-fillers/"
       ],
       "row_slug": "facial_fillers",
-      "evidence": "service-page slug \"facial-fillers\" with hyphens as underscores = data/services.json row \"facial_fillers\" (source booking, name \"Facial Fillers\", status live, category skinboosters); lib/families.ts lists \"facial_fillers\" in the priced list of family \"injections_restylane_skin_boosters\"; out/treatments/injections_restylane_skin_boosters/index.html built"
+      "evidence": "service-page slug \"facial-fillers\" with hyphens as underscores = data/services.json row \"facial_fillers\" (source booking, name \"Facial Fillers\", status live, category skinboosters); lib/families.ts lists \"facial_fillers\" under family \"injections_restylane_skin_boosters\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"skinboosters\""
     },
     {
       "old": "/service-page/fat-dissolve",
@@ -977,42 +977,42 @@
     {
       "old": "/service-page/full-face",
       "rule": 3,
-      "target": "/treatments/aesthetics_1_hifu/",
+      "target": "/hifu-kings-cross/",
       "stub_paths": [
         "/service-page/full-face/"
       ],
       "row_slug": "full_face",
-      "evidence": "service-page slug \"full-face\" with hyphens as underscores = data/services.json row \"full_face\" (source booking, name \"Full Face\", status live, category hifu); lib/families.ts lists \"full_face\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+      "evidence": "service-page slug \"full-face\" with hyphens as underscores = data/services.json row \"full_face\" (source booking, name \"Full Face\", status live, category hifu); lib/families.ts lists \"full_face\" under family \"aesthetics_1_hifu\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hifu\""
     },
     {
       "old": "/service-page/full-face-1",
       "rule": 3,
-      "target": "/treatments/aesthetics_1_hifu/",
+      "target": "/hifu-kings-cross/",
       "stub_paths": [
         "/service-page/full-face-1/"
       ],
       "row_slug": "full_face_1",
-      "evidence": "service-page slug \"full-face-1\" with hyphens as underscores = data/services.json row \"full_face_1\" (source booking, name \"Full Face\", status live, category hifu); lib/families.ts lists \"full_face_1\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+      "evidence": "service-page slug \"full-face-1\" with hyphens as underscores = data/services.json row \"full_face_1\" (source booking, name \"Full Face\", status live, category hifu); lib/families.ts lists \"full_face_1\" under family \"aesthetics_1_hifu\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hifu\""
     },
     {
       "old": "/service-page/full-face-chin-neck",
       "rule": 3,
-      "target": "/treatments/aesthetics_1_hifu/",
+      "target": "/hifu-kings-cross/",
       "stub_paths": [
         "/service-page/full-face-chin-neck/"
       ],
       "row_slug": "full_face_chin_neck",
-      "evidence": "service-page slug \"full-face-chin-neck\" with hyphens as underscores = data/services.json row \"full_face_chin_neck\" (source booking, name \"Full Face + Chin + Neck\", status live, category hifu); lib/families.ts lists \"full_face_chin_neck\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+      "evidence": "service-page slug \"full-face-chin-neck\" with hyphens as underscores = data/services.json row \"full_face_chin_neck\" (source booking, name \"Full Face + Chin + Neck\", status live, category hifu); lib/families.ts lists \"full_face_chin_neck\" under family \"aesthetics_1_hifu\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hifu\""
     },
     {
       "old": "/service-page/full-face-neck",
       "rule": 3,
-      "target": "/treatments/aesthetics_1_hifu/",
+      "target": "/hifu-kings-cross/",
       "stub_paths": [
         "/service-page/full-face-neck/"
       ],
       "row_slug": "full_face_neck",
-      "evidence": "service-page slug \"full-face-neck\" with hyphens as underscores = data/services.json row \"full_face_neck\" (source booking, name \"Full Face + Neck\", status live, category hifu); lib/families.ts lists \"full_face_neck\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+      "evidence": "service-page slug \"full-face-neck\" with hyphens as underscores = data/services.json row \"full_face_neck\" (source booking, name \"Full Face + Neck\", status live, category hifu); lib/families.ts lists \"full_face_neck\" under family \"aesthetics_1_hifu\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hifu\""
     },
     {
       "old": "/service-page/gycolic-acid-peel",
@@ -1036,12 +1036,12 @@
     {
       "old": "/service-page/half-face",
       "rule": 3,
-      "target": "/treatments/aesthetics_1_hifu/",
+      "target": "/hifu-kings-cross/",
       "stub_paths": [
         "/service-page/half-face/"
       ],
       "row_slug": "half_face",
-      "evidence": "service-page slug \"half-face\" with hyphens as underscores = data/services.json row \"half_face\" (source booking, name \"Half Face\", status live, category hifu); lib/families.ts lists \"half_face\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+      "evidence": "service-page slug \"half-face\" with hyphens as underscores = data/services.json row \"half_face\" (source booking, name \"Half Face\", status live, category hifu); lib/families.ts lists \"half_face\" under family \"aesthetics_1_hifu\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hifu\""
     },
     {
       "old": "/service-page/half-face-with-led-and-mask",
@@ -1065,22 +1065,22 @@
     {
       "old": "/service-page/hifu-med-area-flappy-arms-lovehandle",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_hifu_body/",
+      "target": "/body-contouring-kings-cross/",
       "stub_paths": [
         "/service-page/hifu-med-area-flappy-arms-lovehandle/"
       ],
       "row_slug": "hifu_med_area_flappy_arms_lovehandle",
-      "evidence": "service-page slug \"hifu-med-area-flappy-arms-lovehandle\" with hyphens as underscores = data/services.json row \"hifu_med_area_flappy_arms_lovehandle\" (source booking, name \"Hifu Med Area (Flappy arms/lovehandle)\", status live, category body); lib/families.ts lists \"hifu_med_area_flappy_arms_lovehandle\" in the priced list of family \"aesthetics_body_hifu_body\"; out/treatments/aesthetics_body_hifu_body/index.html built"
+      "evidence": "service-page slug \"hifu-med-area-flappy-arms-lovehandle\" with hyphens as underscores = data/services.json row \"hifu_med_area_flappy_arms_lovehandle\" (source booking, name \"Hifu Med Area (Flappy arms/lovehandle)\", status live, category body); lib/families.ts lists \"hifu_med_area_flappy_arms_lovehandle\" under family \"aesthetics_body_hifu_body\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"body\""
     },
     {
       "old": "/service-page/hifu-small-area-knees-armpit-bust-lift",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_hifu_body/",
+      "target": "/body-contouring-kings-cross/",
       "stub_paths": [
         "/service-page/hifu-small-area-knees-armpit-bust-lift/"
       ],
       "row_slug": "hifu_small_area_knees_armpit_bust_lift",
-      "evidence": "service-page slug \"hifu-small-area-knees-armpit-bust-lift\" with hyphens as underscores = data/services.json row \"hifu_small_area_knees_armpit_bust_lift\" (source booking, name \"Hifu Small Area (Knees/Armpit/Bust lift)\", status live, category body); lib/families.ts lists \"hifu_small_area_knees_armpit_bust_lift\" in the priced list of family \"aesthetics_body_hifu_body\"; out/treatments/aesthetics_body_hifu_body/index.html built"
+      "evidence": "service-page slug \"hifu-small-area-knees-armpit-bust-lift\" with hyphens as underscores = data/services.json row \"hifu_small_area_knees_armpit_bust_lift\" (source booking, name \"Hifu Small Area (Knees/Armpit/Bust lift)\", status live, category body); lib/families.ts lists \"hifu_small_area_knees_armpit_bust_lift\" under family \"aesthetics_body_hifu_body\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"body\""
     },
     {
       "old": "/service-page/hydrating",
@@ -1095,12 +1095,12 @@
     {
       "old": "/service-page/hydrofacial",
       "rule": 3,
-      "target": "/treatments/aesthetics_1_hydro_facial/",
+      "target": "/facials-kings-cross/",
       "stub_paths": [
         "/service-page/hydrofacial/"
       ],
       "row_slug": "hydrofacial",
-      "evidence": "service-page slug \"hydrofacial\" with hyphens as underscores = data/services.json row \"hydrofacial\" (source booking, name \"Hydrofacial\", status live, category facials); lib/families.ts lists \"hydrofacial\" in the priced list of family \"aesthetics_1_hydro_facial\"; out/treatments/aesthetics_1_hydro_facial/index.html built"
+      "evidence": "service-page slug \"hydrofacial\" with hyphens as underscores = data/services.json row \"hydrofacial\" (source booking, name \"Hydrofacial\", status live, category facials); lib/families.ts lists \"hydrofacial\" under family \"aesthetics_1_hydro_facial\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"facials\""
     },
     {
       "old": "/service-page/hyperpigmentation",
@@ -1114,42 +1114,42 @@
     {
       "old": "/service-page/ipl-extra-large-area",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "target": "/laser-hair-removal-kings-cross/",
       "stub_paths": [
         "/service-page/ipl-extra-large-area/"
       ],
       "row_slug": "ipl_extra_large_area",
-      "evidence": "service-page slug \"ipl-extra-large-area\" with hyphens as underscores = data/services.json row \"ipl_extra_large_area\" (source booking, name \"IPL Extra Large Area\", status live, category hair); lib/families.ts lists \"ipl_extra_large_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+      "evidence": "service-page slug \"ipl-extra-large-area\" with hyphens as underscores = data/services.json row \"ipl_extra_large_area\" (source booking, name \"IPL Extra Large Area\", status live, category hair); lib/families.ts lists \"ipl_extra_large_area\" under family \"aesthetics_body_laser_hair_removal_2F_ipl\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hair\""
     },
     {
       "old": "/service-page/ipl-large-area",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "target": "/laser-hair-removal-kings-cross/",
       "stub_paths": [
         "/service-page/ipl-large-area/"
       ],
       "row_slug": "ipl_large_area",
-      "evidence": "service-page slug \"ipl-large-area\" with hyphens as underscores = data/services.json row \"ipl_large_area\" (source booking, name \"IPL Large Area\", status live, category hair); lib/families.ts lists \"ipl_large_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+      "evidence": "service-page slug \"ipl-large-area\" with hyphens as underscores = data/services.json row \"ipl_large_area\" (source booking, name \"IPL Large Area\", status live, category hair); lib/families.ts lists \"ipl_large_area\" under family \"aesthetics_body_laser_hair_removal_2F_ipl\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hair\""
     },
     {
       "old": "/service-page/ipl-medium-area",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "target": "/laser-hair-removal-kings-cross/",
       "stub_paths": [
         "/service-page/ipl-medium-area/"
       ],
       "row_slug": "ipl_medium_area",
-      "evidence": "service-page slug \"ipl-medium-area\" with hyphens as underscores = data/services.json row \"ipl_medium_area\" (source booking, name \"IPL Medium Area\", status live, category hair); lib/families.ts lists \"ipl_medium_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+      "evidence": "service-page slug \"ipl-medium-area\" with hyphens as underscores = data/services.json row \"ipl_medium_area\" (source booking, name \"IPL Medium Area\", status live, category hair); lib/families.ts lists \"ipl_medium_area\" under family \"aesthetics_body_laser_hair_removal_2F_ipl\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hair\""
     },
     {
       "old": "/service-page/ipl-small-area",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "target": "/laser-hair-removal-kings-cross/",
       "stub_paths": [
         "/service-page/ipl-small-area/"
       ],
       "row_slug": "ipl_small_area",
-      "evidence": "service-page slug \"ipl-small-area\" with hyphens as underscores = data/services.json row \"ipl_small_area\" (source booking, name \"IPL Small Area\", status live, category hair); lib/families.ts lists \"ipl_small_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+      "evidence": "service-page slug \"ipl-small-area\" with hyphens as underscores = data/services.json row \"ipl_small_area\" (source booking, name \"IPL Small Area\", status live, category hair); lib/families.ts lists \"ipl_small_area\" under family \"aesthetics_body_laser_hair_removal_2F_ipl\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hair\""
     },
     {
       "old": "/service-page/iv-prp-therapy",
@@ -1409,42 +1409,42 @@
     {
       "old": "/service-page/laser-hair-removal-extra-large-area",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "target": "/laser-hair-removal-kings-cross/",
       "stub_paths": [
         "/service-page/laser-hair-removal-extra-large-area/"
       ],
       "row_slug": "laser_hair_removal_extra_large_area",
-      "evidence": "service-page slug \"laser-hair-removal-extra-large-area\" with hyphens as underscores = data/services.json row \"laser_hair_removal_extra_large_area\" (source booking, name \"Laser Hair Removal Extra Large Area\", status live, category hair); lib/families.ts lists \"laser_hair_removal_extra_large_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+      "evidence": "service-page slug \"laser-hair-removal-extra-large-area\" with hyphens as underscores = data/services.json row \"laser_hair_removal_extra_large_area\" (source booking, name \"Laser Hair Removal Extra Large Area\", status live, category hair); lib/families.ts lists \"laser_hair_removal_extra_large_area\" under family \"aesthetics_body_laser_hair_removal_2F_ipl\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hair\""
     },
     {
       "old": "/service-page/laser-hair-removal-large-area",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "target": "/laser-hair-removal-kings-cross/",
       "stub_paths": [
         "/service-page/laser-hair-removal-large-area/"
       ],
       "row_slug": "laser_hair_removal_large_area",
-      "evidence": "service-page slug \"laser-hair-removal-large-area\" with hyphens as underscores = data/services.json row \"laser_hair_removal_large_area\" (source booking, name \"Laser Hair Removal Large Area\", status live, category hair); lib/families.ts lists \"laser_hair_removal_large_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+      "evidence": "service-page slug \"laser-hair-removal-large-area\" with hyphens as underscores = data/services.json row \"laser_hair_removal_large_area\" (source booking, name \"Laser Hair Removal Large Area\", status live, category hair); lib/families.ts lists \"laser_hair_removal_large_area\" under family \"aesthetics_body_laser_hair_removal_2F_ipl\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hair\""
     },
     {
       "old": "/service-page/laser-hair-removal-medium-area",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "target": "/laser-hair-removal-kings-cross/",
       "stub_paths": [
         "/service-page/laser-hair-removal-medium-area/"
       ],
       "row_slug": "laser_hair_removal_medium_area",
-      "evidence": "service-page slug \"laser-hair-removal-medium-area\" with hyphens as underscores = data/services.json row \"laser_hair_removal_medium_area\" (source booking, name \"Laser Hair Removal Medium Area\", status live, category hair); lib/families.ts lists \"laser_hair_removal_medium_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+      "evidence": "service-page slug \"laser-hair-removal-medium-area\" with hyphens as underscores = data/services.json row \"laser_hair_removal_medium_area\" (source booking, name \"Laser Hair Removal Medium Area\", status live, category hair); lib/families.ts lists \"laser_hair_removal_medium_area\" under family \"aesthetics_body_laser_hair_removal_2F_ipl\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hair\""
     },
     {
       "old": "/service-page/lip-0-55ml",
       "rule": 3,
-      "target": "/treatments/injections_restylane_skin_boosters/",
+      "target": "/skin-boosters-kings-cross/",
       "stub_paths": [
         "/service-page/lip-0-55ml/"
       ],
       "row_slug": "lip_0_55ml",
-      "evidence": "service-page slug \"lip-0-55ml\" with hyphens as underscores = data/services.json row \"lip_0_55ml\" (source booking, name \"Lip (0.55ml)\", status live, category skinboosters); lib/families.ts lists \"lip_0_55ml\" in the priced list of family \"injections_restylane_skin_boosters\"; out/treatments/injections_restylane_skin_boosters/index.html built"
+      "evidence": "service-page slug \"lip-0-55ml\" with hyphens as underscores = data/services.json row \"lip_0_55ml\" (source booking, name \"Lip (0.55ml)\", status live, category skinboosters); lib/families.ts lists \"lip_0_55ml\" under family \"injections_restylane_skin_boosters\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"skinboosters\""
     },
     {
       "old": "/service-page/localised-fat",
@@ -1594,32 +1594,32 @@
     {
       "old": "/service-page/microneedling-face",
       "rule": 3,
-      "target": "/treatments/aesthetics_1_microneedling/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/microneedling-face/"
       ],
       "row_slug": "microneedling_face",
-      "evidence": "service-page slug \"microneedling-face\" with hyphens as underscores = data/services.json row \"microneedling_face\" (source booking, name \"Microneedling Face\", status live, category skin); lib/families.ts lists \"microneedling_face\" in the priced list of family \"aesthetics_1_microneedling\"; out/treatments/aesthetics_1_microneedling/index.html built"
+      "evidence": "service-page slug \"microneedling-face\" with hyphens as underscores = data/services.json row \"microneedling_face\" (source booking, name \"Microneedling Face\", status live, category skin); lib/families.ts lists \"microneedling_face\" under family \"aesthetics_1_microneedling\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"skin\""
     },
     {
       "old": "/service-page/microneedling-face-neck",
       "rule": 3,
-      "target": "/treatments/aesthetics_1_microneedling/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/microneedling-face-neck/"
       ],
       "row_slug": "microneedling_face_neck",
-      "evidence": "service-page slug \"microneedling-face-neck\" with hyphens as underscores = data/services.json row \"microneedling_face_neck\" (source booking, name \"Microneedling Face + Neck\", status live, category skin); lib/families.ts lists \"microneedling_face_neck\" in the priced list of family \"aesthetics_1_microneedling\"; out/treatments/aesthetics_1_microneedling/index.html built"
+      "evidence": "service-page slug \"microneedling-face-neck\" with hyphens as underscores = data/services.json row \"microneedling_face_neck\" (source booking, name \"Microneedling Face + Neck\", status live, category skin); lib/families.ts lists \"microneedling_face_neck\" under family \"aesthetics_1_microneedling\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"skin\""
     },
     {
       "old": "/service-page/neck",
       "rule": 3,
-      "target": "/treatments/aesthetics_1_hifu/",
+      "target": "/hifu-kings-cross/",
       "stub_paths": [
         "/service-page/neck/"
       ],
       "row_slug": "neck",
-      "evidence": "service-page slug \"neck\" with hyphens as underscores = data/services.json row \"neck\" (source booking, name \"Neck\", status live, category hifu); lib/families.ts lists \"neck\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+      "evidence": "service-page slug \"neck\" with hyphens as underscores = data/services.json row \"neck\" (source booking, name \"Neck\", status live, category hifu); lib/families.ts lists \"neck\" under family \"aesthetics_1_hifu\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hifu\""
     },
     {
       "old": "/service-page/neck-lift",
@@ -1690,22 +1690,22 @@
     {
       "old": "/service-page/profhilo",
       "rule": 3,
-      "target": "/treatments/injections_profhilo_skin_booster/",
+      "target": "/skin-boosters-kings-cross/",
       "stub_paths": [
         "/service-page/profhilo/"
       ],
       "row_slug": "profhilo",
-      "evidence": "service-page slug \"profhilo\" with hyphens as underscores = data/services.json row \"profhilo\" (source booking, name \"Profhilo\", status live, category skinboosters); lib/families.ts lists \"profhilo\" in the priced list of family \"injections_profhilo_skin_booster\"; out/treatments/injections_profhilo_skin_booster/index.html built"
+      "evidence": "service-page slug \"profhilo\" with hyphens as underscores = data/services.json row \"profhilo\" (source booking, name \"Profhilo\", status live, category skinboosters); lib/families.ts lists \"profhilo\" under family \"injections_profhilo_skin_booster\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"skinboosters\""
     },
     {
       "old": "/service-page/profhilo-2-sessions",
       "rule": 3,
-      "target": "/treatments/injections_profhilo_skin_booster/",
+      "target": "/skin-boosters-kings-cross/",
       "stub_paths": [
         "/service-page/profhilo-2-sessions/"
       ],
       "row_slug": "profhilo_2_sessions",
-      "evidence": "service-page slug \"profhilo-2-sessions\" with hyphens as underscores = data/services.json row \"profhilo_2_sessions\" (source booking, name \"Profhilo 2 Sessions\", status live, category skinboosters); lib/families.ts lists \"profhilo_2_sessions\" in the priced list of family \"injections_profhilo_skin_booster\"; out/treatments/injections_profhilo_skin_booster/index.html built"
+      "evidence": "service-page slug \"profhilo-2-sessions\" with hyphens as underscores = data/services.json row \"profhilo_2_sessions\" (source booking, name \"Profhilo 2 Sessions\", status live, category skinboosters); lib/families.ts lists \"profhilo_2_sessions\" under family \"injections_profhilo_skin_booster\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"skinboosters\""
     },
     {
       "old": "/service-page/prp-natural-filler-face-lips",
@@ -1737,22 +1737,22 @@
     {
       "old": "/service-page/radio-frequency-indiba",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_indiba_deep_beauty/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/radio-frequency-indiba/"
       ],
       "row_slug": "radio_frequency_indiba",
-      "evidence": "service-page slug \"radio-frequency-indiba\" with hyphens as underscores = data/services.json row \"radio_frequency_indiba\" (source booking, name \"Radio Frequency INDIBA\", status live, category skin); lib/families.ts lists \"radio_frequency_indiba\" in the priced list of family \"aesthetics_body_indiba_deep_beauty\"; out/treatments/aesthetics_body_indiba_deep_beauty/index.html built"
+      "evidence": "service-page slug \"radio-frequency-indiba\" with hyphens as underscores = data/services.json row \"radio_frequency_indiba\" (source booking, name \"Radio Frequency INDIBA\", status live, category skin); lib/families.ts lists \"radio_frequency_indiba\" under family \"aesthetics_body_indiba_deep_beauty\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"skin\""
     },
     {
       "old": "/service-page/radio-frequency-indiba-full-back-leg",
       "rule": 3,
-      "target": "/treatments/aesthetics_body_indiba_deep_beauty/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/radio-frequency-indiba-full-back-leg/"
       ],
       "row_slug": "radio_frequency_indiba_full_back_leg",
-      "evidence": "service-page slug \"radio-frequency-indiba-full-back-leg\" with hyphens as underscores = data/services.json row \"radio_frequency_indiba_full_back_leg\" (source booking, name \"Radio Frequency INDIBA full back/ leg\", status live, category skin); lib/families.ts lists \"radio_frequency_indiba_full_back_leg\" in the priced list of family \"aesthetics_body_indiba_deep_beauty\"; out/treatments/aesthetics_body_indiba_deep_beauty/index.html built"
+      "evidence": "service-page slug \"radio-frequency-indiba-full-back-leg\" with hyphens as underscores = data/services.json row \"radio_frequency_indiba_full_back_leg\" (source booking, name \"Radio Frequency INDIBA full back/ leg\", status live, category skin); lib/families.ts lists \"radio_frequency_indiba_full_back_leg\" under family \"aesthetics_body_indiba_deep_beauty\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"skin\""
     },
     {
       "old": "/service-page/rejuvenation-full-face",

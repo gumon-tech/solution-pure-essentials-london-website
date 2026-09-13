@@ -2,6 +2,7 @@
 title: "Microneedling and Peels in King's Cross | Pure Essentials London"
 description: "Microneedling, radio frequency and peels at 155 King's Cross Road, London, from £75. Every treatment starts with a free consultation."
 h1: "Microneedling and peels in King's Cross"
+short: "Microneedling and peels"
 ---
 
 ## hero
@@ -14,6 +15,8 @@ Microneedling, radio frequency and peels at 155 King's Cross Road, 7 days a week
 - Button (secondary): See treatments and prices
 
 ## what-it-is
+
+[image: fam-microneedling]
 
 The Microneedling treatment uses the Skin Needling System, which pierces the skin vertically to make hundreds of tiny open channels. It is booked for the face, or for the face and neck.
 
@@ -57,6 +60,8 @@ If you have a skin or health condition, or you are unsure which treatment is rig
 | Skinox Wrinkles | 1 hr 30 min | GBP 135 | skinox_wrinkles |
 | Golden Micro Needling | ask | Ask for a quote | aesthetics_1_golden_micro_needling |
 | Skymedic Chemical Peels | ask | Ask for a quote | aesthetics_1_skymedic_chemical_peels |
+
+[image: fam-radiofrequency]
 
 The price shown is the price you pay.
 

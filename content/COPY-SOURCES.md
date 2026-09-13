@@ -382,3 +382,42 @@ Written 2026-09-13 by a PWEB executor for Q27, at website commit f4c37dc. Data r
 | FAQ "Who can have aesthetic treatments?" / "Aesthetic treatments are for adults aged 18 and over." | B18 (set 2 skin boosters FAQ pattern) |
 
 Left out of set 3 on purpose, for lack of a held fact: what the entrance or reception looks like; whether to arrive early; how long a consultation takes; whether the consultation and the treatment happen on the same visit; what to bring or wear; payment methods; how to find the door from the street; walking minutes, parking and access; what the rooms contain beyond "treatment rooms" (the skin analyser and the gold walls are visible in the photos, but no sentence names them).
+
+## Link labels and short titles (queue row Q36)
+
+Written 2026-09-13 by a PWEB executor for Q36 (owner decision 2026-09-13: story pages are separate from the price list). These are navigation labels. Each one names a page or a price list section by a title that already exists; none states a fact about a treatment.
+
+| Key | Source |
+|---|---|
+| NAV36 | Owner decision 2026-09-13 via the PWEB Lead brief for Q36: the label patterns "Read about <topic>", "See <topic> prices", "Read more", "<Group> prices" and, on home cards, "See prices" |
+| PEL34 | PEL brief section 34 (Q36 approval with conditions, 2026-09-13): the 4 patterns above approved; "Skin laser treatments" not approved (CryoPen is a cold treatment, not a laser), the data category title used instead; no CryoPen label contains "laser"; the 16 retired family descriptions move word for word onto their story, e.g. under "Treatments in this group" |
+
+| Label | Where it shows | Source |
+|---|---|---|
+| Front matter `short`: "HIFU", "Microneedling and peels", "Skin boosters", "Facials", "Body contouring", "Laser hair removal", "Massage", "Waxing" | header menus, home cards, and inside the labels below | each story's h1 with " in King's Cross" cut (skin boosters: "consultation" also cut); NAV36 |
+| "Read about <topic>", e.g. "Read about HIFU", "Read about microneedling and peels" | /treatments/, under each category that has a story (waxing: under both waxing categories) | NAV36; topic = `short`, first letter lower case unless the first word is in capitals |
+| "Read about CryoPen", "Read about Etherea MX", "Read about IPL (Intense Pulsed Light)", "Read about Pico Laser", "Read about Tattoo Removal" | /treatments/, under the skin laser category | NAV36; family title in content/treatment-descriptions.md |
+| "See <topic> prices", e.g. "See HIFU prices", "See waxing prices" | the 8 treatment stories, straight after the prices section | NAV36; topic as above |
+| "Read more" | "You may also like" cards on the 5 skin laser family pages | NAV36 |
+| "Face prices", "Body prices", "Laser prices", "Wellness prices" | header menus | NAV36; group labels in lib/groups.ts |
+| "Laser and IPL skin treatments" | Laser and hair removal header menu | PEL34; C:laser |
+| "See prices" | home category cards | NAV36; PEL38 |
+| "Treatments in this group", then 1 h3 per family (family title) with its description | the 6 stories that took in retired families | PEL34; PEL38; title and text from content/treatment-descriptions.md, unchanged (CryoPen title spelling per PEL38); a family image (lib/family-images.ts) beside the h3 when no story file already places that slot |
+
+The story hero button label "See treatments and prices" is unchanged; for the 8 treatment stories it now goes to that story's category on /treatments/ instead of the top of the page.
+
+Category blocks on /treatments/ use the anchor `#cat-<category>` (for example `#cat-body`), so no id repeats a group anchor (`#face`, `#body`, `#laser`, `#wellness`). Links to a category ("See <topic> prices", the story button above, "Laser and IPL skin treatments") use that anchor.
+
+### Entry points to the 3 set-3 story pages (approved by PEL, brief section 38)
+
+| Key | Source |
+|---|---|
+| PEL38 | PEL brief section 38 (2026-09-13): approves "About the clinic", "Our clinic", "Your visit", "Your first visit", "Read about our clinic", "Plan your visit", "Read the first visit guide", "Treatments in this group" and "See prices"; the family title "Cryopen" is spelt "CryoPen" |
+
+| Label | Where it shows | Source |
+|---|---|---|
+| "About the clinic" (footer column heading) | footer, every page | PEL38 |
+| "Our clinic", "Your visit", "Your first visit" | footer, "About the clinic" column | PEL38; each page's h1 with " in King's Cross" cut |
+| "Read about our clinic" | home, The clinic section | PEL38 |
+| "Plan your visit" | contact, Getting here section | PEL38 |
+| "Read the first visit guide" | home, How it works section | PEL38 |

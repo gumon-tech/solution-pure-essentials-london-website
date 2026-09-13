@@ -2,6 +2,7 @@
 title: "Body Contouring in King's Cross | Pure Essentials London"
 description: "Body contouring at 155 King's Cross Road, London: 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. From £99. Consultations are free."
 h1: "Body contouring in King's Cross"
+short: "Body contouring"
 ---
 
 ## hero
@@ -14,6 +15,8 @@ Body contouring at 155 King's Cross Road, 7 days a week. Every treatment starts 
 - Button (secondary): See treatments and prices
 
 ## what-it-is
+
+[image: fam-fat-reduction]
 
 Body contouring here covers 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. Cryoelectrolipolysis is priced for 1, 2 or 3 areas, and HIFU for small and medium areas. Sessions take from 30 minutes to 2 hours.
 
@@ -49,6 +52,8 @@ You can also book through Treatwell.
 | HIFU small area (knees, underarm or bust) | 45 min | GBP 140 | hifu_small_area_knees_armpit_bust_lift |
 | HIFU medium area (upper arms or waist) | 1 hr 30 min | GBP 280 | hifu_med_area_flappy_arms_lovehandle |
 | Large Area (Outer thighs/full stomach) | 1 hr 30 min | GBP 420 | large_area_outer_thighs_full_stomach |
+
+[image: fam-muscle-toning]
 
 Aesthetic treatments are for adults aged 18 and over. The price shown is the price you pay.
 

@@ -1,0 +1,21 @@
+{
+  "_about": "In-site redirect map (queue row Q36, owner decision 2026-09-13: stories are separate from the price list). The 16 family pages whose category has a story in lib/story-map.ts are no longer built (lib/family-pages.ts skips them); each old path gets a redirect stub to that story. scripts/build-redirect-stubs.mjs writes out/<old>/index.html for every entry after next build, alongside scripts/redirects.json, and refuses to overwrite a real page; scripts/check-redirect-stubs.mjs verifies both maps. The 5 skin-laser family pages (no story) stay real pages and are not listed.",
+  "entries": [
+    { "old": "/treatments/aesthetics_1_hifu", "target": "/hifu-kings-cross/", "reason": "category hifu has a story" },
+    { "old": "/treatments/aesthetics_1_golden_micro_needling", "target": "/microneedling-peels-kings-cross/", "reason": "category skin has a story" },
+    { "old": "/treatments/aesthetics_1_microneedling", "target": "/microneedling-peels-kings-cross/", "reason": "category skin has a story" },
+    { "old": "/treatments/aesthetics_1_skymedic_chemical_peels", "target": "/microneedling-peels-kings-cross/", "reason": "category skin has a story" },
+    { "old": "/treatments/aesthetics_body_indiba_deep_beauty", "target": "/microneedling-peels-kings-cross/", "reason": "category skin has a story" },
+    { "old": "/treatments/aesthetics_body_profhilo_body", "target": "/skin-boosters-kings-cross/", "reason": "category skinboosters has a story" },
+    { "old": "/treatments/injections_profhilo_skin_booster", "target": "/skin-boosters-kings-cross/", "reason": "category skinboosters has a story" },
+    { "old": "/treatments/injections_restylane_skin_boosters", "target": "/skin-boosters-kings-cross/", "reason": "category skinboosters has a story" },
+    { "old": "/treatments/aesthetics_body_3d_lipo", "target": "/body-contouring-kings-cross/", "reason": "category body has a story" },
+    { "old": "/treatments/aesthetics_body_emsculpt", "target": "/body-contouring-kings-cross/", "reason": "category body has a story" },
+    { "old": "/treatments/aesthetics_body_hifu_body", "target": "/body-contouring-kings-cross/", "reason": "category body has a story" },
+    { "old": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl", "target": "/laser-hair-removal-kings-cross/", "reason": "category hair has a story" },
+    { "old": "/treatments/aesthetics_1_hydro_facial", "target": "/facials-kings-cross/", "reason": "category facials has a story" },
+    { "old": "/treatments/facials_1_age_defence_sensitive_skin_treatment", "target": "/facials-kings-cross/", "reason": "category facials has a story" },
+    { "old": "/treatments/facials_1_diamondtome_microdermabrasion", "target": "/facials-kings-cross/", "reason": "category facials has a story" },
+    { "old": "/treatments/facials_1_eberlin_facial", "target": "/facials-kings-cross/", "reason": "category facials has a story" }
+  ]
+}

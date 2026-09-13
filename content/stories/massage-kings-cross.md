@@ -2,6 +2,7 @@
 title: "Massage in King's Cross | Pure Essentials London"
 description: "Massage at 155 King's Cross Road, London, including Deep Tissue, Swedish and Thai Massage, from £40. Every treatment starts with a free consultation."
 h1: "Massage in King's Cross"
+short: "Massage"
 ---
 
 ## hero

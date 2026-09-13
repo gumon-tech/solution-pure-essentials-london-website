@@ -31,7 +31,7 @@ export interface Family {
 export const FAMILIES: Family[] = [
   {
     slug: "aesthetics_1_cryopen",
-    title: "Cryopen",
+    title: "CryoPen",
     category: "laser",
     priced: [],
   },

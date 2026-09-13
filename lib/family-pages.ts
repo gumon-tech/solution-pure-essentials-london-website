@@ -17,6 +17,7 @@ import path from "node:path";
 import { FAMILIES, type Family } from "./families";
 import { liveServices, waLink } from "./services";
 import { GROUPS, groupOf, type GroupId } from "./groups";
+import { storyForCategory } from "./story-map";
 
 export interface FamilyPriceRow {
   slug: string;
@@ -107,13 +108,13 @@ function parseDescriptions(raw: string): Map<string, DescriptionSection> {
   return sections;
 }
 
-let cachedPages: FamilyPage[] | null = null;
+let cachedDescribed: FamilyPage[] | null = null;
 
-/** Builds every family page's view model. Cached for the life of the build process:
- * fs + JSON parsing runs once no matter how many callers (generateStaticParams,
- * every page's generateMetadata, every page's render) ask for it. */
-export function getFamilyPages(): FamilyPage[] {
-  if (cachedPages) return cachedPages;
+/** Builds the view model of every described, live family. Cached for the life of the
+ * build process: fs + JSON parsing runs once no matter how many callers
+ * (generateStaticParams, every page's generateMetadata, every page's render) ask for it. */
+function getDescribedFamilies(): FamilyPage[] {
+  if (cachedDescribed) return cachedDescribed;
 
   const raw = fs.readFileSync(MD_PATH, "utf8");
   const sections = parseDescriptions(raw);
@@ -153,8 +154,22 @@ export function getFamilyPages(): FamilyPage[] {
     });
   }
 
-  cachedPages = pages;
+  cachedDescribed = pages;
   return pages;
+}
+
+/** The built family pages. Queue row Q36 (owner decision 2026-09-13): a family whose
+ * category has a story in lib/story-map.ts is no longer a page; its old path is a redirect
+ * stub to that story (scripts/internal-redirects.json, written after next build). */
+export function getFamilyPages(): FamilyPage[] {
+  return getDescribedFamilies().filter((page) => !storyForCategory(page.category));
+}
+
+/** The described families retired into story `storySlug`, in lib/families.ts order. Their
+ * approved description renders word for word on that story, each with a Service JSON-LD
+ * node (PEL brief section 34, conditions 1 and 2). */
+export function getStoryFamilies(storySlug: string): FamilyPage[] {
+  return getDescribedFamilies().filter((page) => storyForCategory(page.category) === storySlug);
 }
 
 export function getFamilyPage(slug: string): FamilyPage | undefined {

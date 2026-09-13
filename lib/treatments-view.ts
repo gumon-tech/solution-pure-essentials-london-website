@@ -30,6 +30,8 @@ import { GROUPS, type CategoryId, type GroupId } from "./groups";
 import { IMAGES } from "./images";
 import { FAMILIES } from "./families";
 import { getFamilyPages } from "./family-pages";
+import { getStoryPage, storyShortTitle } from "./stories";
+import { storyForCategory, storyHref, topicInSentence } from "./story-map";
 
 import servicesFile from "@/data/services.json";
 
@@ -41,16 +43,12 @@ export interface TreatmentRow {
   duration: string | null;
   waHref: string;
   waAriaLabel: string;
-  /** /treatments/<family slug>/ when this row's booking slug is priced under a
-   * built family page (queue row Q12 part 2), otherwise null (row stays plain text). */
-  familyHref: string | null;
 }
 
-/** A built family page with no priced rows of its own (e.g. Cryopen) -- surfaced
- * under its category so the page stays reachable from /treatments/ (Q12 part 2). */
-export interface CategoryFamilyLink {
-  slug: string;
-  title: string;
+/** A "Read about <topic>" button under a category heading (queue row Q36). */
+export interface CategoryReadMore {
+  href: string;
+  label: string;
 }
 
 export interface CategoryBlock {
@@ -58,7 +56,9 @@ export interface CategoryBlock {
   title: string;
   image: keyof typeof IMAGES;
   rows: TreatmentRow[];
-  familyLinks: CategoryFamilyLink[];
+  /** 1 link to the category's story when lib/story-map.ts maps one; otherwise 1 link per
+   * built family page in the category (skin laser); otherwise none (carboxy). */
+  readMore: CategoryReadMore[];
 }
 
 export interface GroupSection {
@@ -107,8 +107,13 @@ function isFullyUpperCase(name: string): boolean {
   return /[A-Z]/.test(name) && name === name.toUpperCase();
 }
 
+// Brand spellings kept when an all-caps data name is title-cased (PEL brief section 38:
+// "CryoPen", not "Cryopen"). Keyed by the upper-case word as it is in data/services.json.
+const KEPT_SPELLINGS: Record<string, string> = { CRYOPEN: "CryoPen" };
+
 function titleCaseWord(word: string): string {
   if (KEPT_ACRONYMS.has(word)) return word;
+  if (KEPT_SPELLINGS[word]) return KEPT_SPELLINGS[word];
   return word.slice(0, 1) + word.slice(1).toLowerCase();
 }
 
@@ -143,7 +148,7 @@ const FAMILY_PRICED_SLUGS = new Set(
   FAMILIES.filter((f) => f.priced.length > 0).map((f) => f.slug),
 );
 
-function toRow(s: Service, familyHrefByBookingSlug: Map<string, string>): TreatmentRow {
+function toRow(s: Service): TreatmentRow {
   // Sorting (buildTreatmentsView, below) uses displayNameOf(s) directly, unaffected
   // by the title-casing here, so an all-caps name's position in the list never
   // moves just because its rendered text changed case.
@@ -156,7 +161,6 @@ function toRow(s: Service, familyHrefByBookingSlug: Map<string, string>): Treatm
     duration: s.duration,
     waHref: waLink(name, s.slug),
     waAriaLabel: `Ask about ${name} on WhatsApp`,
-    familyHref: familyHrefByBookingSlug.get(s.slug) ?? null,
   };
 }
 
@@ -167,23 +171,23 @@ export function buildTreatmentsView(): GroupSection[] {
   const live = liveServices();
   const familyPages = getFamilyPages();
 
-  // Booking slug -> /treatments/<family slug>/, for every priced row of every built
-  // family page (Q12 part 2: the price-list row name becomes a link there).
-  const familyHrefByBookingSlug = new Map<string, string>();
-  for (const page of familyPages) {
-    for (const row of page.priced) {
-      familyHrefByBookingSlug.set(row.slug, `/treatments/${page.slug}/`);
+  // Queue row Q36: the category's story when it has one; otherwise its built family
+  // pages (only skin laser has any), in lib/families.ts's declared order.
+  function readMoreFor(categoryId: CategoryId): CategoryReadMore[] {
+    const storySlug = storyForCategory(categoryId);
+    if (storySlug) {
+      const story = getStoryPage(storySlug);
+      if (!story) throw new Error(`lib/treatments-view.ts: story "${storySlug}" is not built`);
+      return [
+        {
+          href: storyHref(storySlug),
+          label: `Read about ${topicInSentence(storyShortTitle(story.frontMatter))}`,
+        },
+      ];
     }
-  }
-
-  // Built family pages with 0 priced rows (e.g. Cryopen), grouped by category, in
-  // lib/families.ts's declared order -- otherwise unreachable from /treatments/.
-  const zeroPricedFamiliesByCategory = new Map<CategoryId, CategoryFamilyLink[]>();
-  for (const page of familyPages) {
-    if (page.priced.length > 0) continue;
-    const list = zeroPricedFamiliesByCategory.get(page.category) ?? [];
-    list.push({ slug: page.slug, title: page.title });
-    zeroPricedFamiliesByCategory.set(page.category, list);
+    return familyPages
+      .filter((page) => page.category === categoryId)
+      .map((page) => ({ href: `/treatments/${page.slug}/`, label: `Read about ${page.title}` }));
   }
 
   const byCategory = new Map<string, Service[]>();
@@ -221,8 +225,8 @@ export function buildTreatmentsView(): GroupSection[] {
         id: categoryId,
         title: CATEGORY_TITLES[categoryId] ?? categoryId,
         image: CATEGORY_IMAGE[categoryId],
-        rows: [...priced, ...quote].map((r) => toRow(r, familyHrefByBookingSlug)),
-        familyLinks: zeroPricedFamiliesByCategory.get(categoryId) ?? [],
+        rows: [...priced, ...quote].map((r) => toRow(r)),
+        readMore: readMoreFor(categoryId),
       };
     }),
   }));

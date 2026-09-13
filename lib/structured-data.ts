@@ -7,6 +7,7 @@
 import { SITE } from "@/lib/site";
 import { IMAGES } from "@/lib/images";
 import { liveServices } from "@/lib/services";
+import type { FamilyPage } from "@/lib/family-pages";
 
 const ALL_DAYS = [
   "Monday",
@@ -114,6 +115,34 @@ function priceRange(): string {
   const max = Math.max(...prices);
   const format = (n: number) => `£${n.toLocaleString("en-GB")}`;
   return `${format(min)} to ${format(max)}`;
+}
+
+/** A Service node for a family whose page was retired into its story (queue row Q36, PEL
+ * brief section 34 condition 2), rendered on that story by components/StoryPage.tsx.
+ * provider points at the clinic node's @id; Offers only for the family's live rows that
+ * have a price. No rating and no review. */
+export function familyServiceJsonLd(family: FamilyPage) {
+  const json: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: family.title,
+    provider: {
+      "@type": "HealthAndBeautyBusiness",
+      "@id": `${SITE.url}/#clinic`,
+      name: SITE.name,
+    },
+    areaServed: "King's Cross, London",
+  };
+  const offers = family.priced
+    .filter((row) => row.priceGbp !== null)
+    .map((row) => ({
+      "@type": "Offer",
+      name: row.name,
+      price: row.priceGbp,
+      priceCurrency: "GBP",
+    }));
+  if (offers.length > 0) json.offers = offers;
+  return json;
 }
 
 /** Site-level JSON-LD for the clinic itself, rendered once each on the home and

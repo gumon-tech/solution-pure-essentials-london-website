@@ -2,6 +2,7 @@
 title: "Laser Hair Removal in King's Cross | Pure Essentials London"
 description: "Laser and IPL hair removal at 155 King's Cross Road, London, priced by area size. IPL from £25, laser from £35. Consultations are free."
 h1: "Laser hair removal in King's Cross"
+short: "Laser hair removal"
 ---
 
 ## hero
@@ -51,6 +52,8 @@ If you have a health condition, or you are unsure whether laser or IPL is right 
 You can also book through Treatwell.
 
 ## prices
+
+[image: fam-laser-hair]
 
 Laser hair removal
 

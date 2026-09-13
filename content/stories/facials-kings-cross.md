@@ -2,6 +2,7 @@
 title: "Facials in King's Cross | Pure Essentials London"
 description: "Facials at 155 King's Cross Road, London, including a Hydrofacial and a Hydrating facial from £70. Every treatment starts with a free consultation."
 h1: "Facials in King's Cross"
+short: "Facials"
 ---
 
 ## hero
@@ -14,6 +15,8 @@ Facials at 155 King's Cross Road, 7 days a week. Every treatment starts with a f
 - Button (secondary): See treatments and prices
 
 ## what-it-is
+
+[image: fam-hydrating-facial]
 
 The facial menu includes a Hydrofacial and a Hydrating facial. An Age Defence Sensitive Skin Treatment, Diamondtome Microdermabrasion and an Eberlin Facial are also on the menu.
 
@@ -46,6 +49,8 @@ You can also book through Treatwell.
 | Age Defence Sensitive Skin Treatment | ask | Ask for a quote | facials_1_age_defence_sensitive_skin_treatment |
 | Diamondtome Microdermabrasion | ask | Ask for a quote | facials_1_diamondtome_microdermabrasion |
 | Eberlin Facial | ask | Ask for a quote | facials_1_eberlin_facial |
+
+[image: fam-sensitive-skin-facial]
 
 The price shown is the price you pay.
 

@@ -2,6 +2,7 @@
 title: "Skin Boosters Consultation in King's Cross | Pure Essentials London"
 description: "Skin boosters and dermal fillers at 155 King's Cross Road, London. Every treatment starts with a free consultation, and we recommend what suits you."
 h1: "Skin boosters consultation in King's Cross"
+short: "Skin boosters"
 ---
 
 ## hero
@@ -14,6 +15,8 @@ Every skin booster and dermal filler treatment starts with a free consultation, 
 - Button (secondary): See treatments and prices
 
 ## what-it-is
+
+[image: fam-skin-booster-face]
 
 Skin boosters and dermal fillers are consultation-led treatments. At the consultation we look at your skin or your goal and recommend what suits you.
 
@@ -45,6 +48,8 @@ If you have a health condition, or you are unsure whether a treatment is right f
 | Lip (0.55ml) | 1 hr | GBP 350 | lip_0_55ml |
 | Facial Fillers | 1 hr 30 min | from GBP 350 | facial_fillers |
 | Profhilo Body | ask | Ask for a quote | aesthetics_body_profhilo_body |
+
+[image: fam-skin-booster-hydration]
 
 Where a price says "from", the figure is the lowest option for that treatment and the consultation confirms yours. The price shown is the price you pay.
 

@@ -4,12 +4,17 @@
 // path gets out/<path>/index.html with a 0-second meta refresh, an absolute canonical,
 // noindex and a plain visible link.
 //
+// Queue row Q36: also writes a stub for every entry in scripts/internal-redirects.json
+// (the family pages retired into their category story). Those entries are {old, target,
+// reason}; the stub path is old + "/".
+//
 // Runs AFTER `next build`, straight into out/, so the stubs never enter Next's route
 // tree or app/sitemap.ts. Dependency-free (Node 22, no npm packages).
 //
 // Refuses to overwrite: if a stub directory already holds an index.html that is not a
 // stub from this script, or holds Next's index.txt, or out/<path>.html exists, it
-// fails loudly and writes nothing. Re-running over its own stubs is allowed.
+// fails loudly and writes nothing. Re-running over its own stubs is allowed. Also refuses
+// a target that is itself a stub path in either map (no double hop).
 //
 // Usage: node scripts/build-redirect-stubs.mjs [out-dir]   (default "out")
 
@@ -25,6 +30,19 @@ export function siteOrigin() {
   const m = src.match(/url:\s*"(https:\/\/[^"]+)"/);
   if (!m) throw new Error("lib/site.ts: SITE.url not found");
   return m[1].replace(/\/+$/, "");
+}
+
+/** Both maps as one entry list: the old Wix URL map as is, then the internal map with
+ * rule "internal" and stub_paths [old + "/"]. */
+export function loadRedirectEntries() {
+  const map = JSON.parse(readFileSync("scripts/redirects.json", "utf8"));
+  const internal = JSON.parse(readFileSync("scripts/internal-redirects.json", "utf8"));
+  const internalEntries = internal.entries.map((e) => ({
+    ...e,
+    rule: "internal",
+    stub_paths: [`${e.old.replace(/\/+$/, "")}/`],
+  }));
+  return [...map.entries, ...internalEntries];
 }
 
 function escapeAttr(s) {
@@ -52,9 +70,11 @@ ${STUB_MARKER}
 `;
 }
 
+const relDir = (p) => p.replace(/^\/+|\/+$/g, "");
+
 function main() {
   const outDir = process.argv[2] ?? "out";
-  const map = JSON.parse(readFileSync("scripts/redirects.json", "utf8"));
+  const entries = loadRedirectEntries();
   const origin = siteOrigin();
   const problems = [];
   const writes = [];
@@ -63,10 +83,16 @@ function main() {
     problems.push(`${outDir}/index.html missing: run next build first`);
   }
 
-  for (const e of map.entries) {
+  const stubDirs = new Set(entries.filter((e) => e.target).flatMap((e) => (e.stub_paths ?? []).map(relDir)));
+
+  for (const e of entries) {
     if (!e.target) continue;
     if (!/^\/([^\s"<>]*\/)?$/.test(e.target)) {
       problems.push(`${e.old}: target "${e.target}" is not a site-relative path with a trailing slash`);
+      continue;
+    }
+    if (stubDirs.has(relDir(e.target))) {
+      problems.push(`${e.old}: target ${e.target} is itself a stub path (double hop)`);
       continue;
     }
     const targetFile = path.join(outDir, e.target, "index.html");
@@ -79,7 +105,7 @@ function main() {
       continue;
     }
     for (const sp of e.stub_paths) {
-      const rel = sp.replace(/^\/+|\/+$/g, "");
+      const rel = relDir(sp);
       if (rel === "" || rel.split("/").some((seg) => seg === "" || seg === "." || seg === "..")) {
         problems.push(`${e.old}: unsafe stub path "${sp}"`);
         continue;
@@ -117,7 +143,7 @@ function main() {
     writeFileSync(w.file, w.html);
   }
   const byRule = {};
-  for (const e of map.entries) if (e.target) byRule[e.rule] = (byRule[e.rule] ?? 0) + 1;
+  for (const e of entries) if (e.target) byRule[e.rule] = (byRule[e.rule] ?? 0) + 1;
   console.log(`origin: ${origin}`);
   console.log(`entries with a target: ${Object.values(byRule).reduce((a, b) => a + b, 0)} (by rule: ${JSON.stringify(byRule)})`);
   console.log(`stub files written: ${writes.length}`);

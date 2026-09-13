@@ -3,6 +3,10 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
 import { SITE, waSite } from "@/lib/site";
+import ReadMoreLink from "./ReadMoreLink";
+import { getStoryPage, storyShortTitle } from "@/lib/stories";
+
+const ABOUT_SLUGS = ["our-clinic-kings-cross", "your-visit", "first-visit-guide"];
 
 const LINK_CLASS =
   "text-cocoa underline-offset-4 hover:text-espresso hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-sand rounded-sm";
@@ -11,7 +15,7 @@ export default function Footer() {
   return (
     <footer className="bg-sand text-cocoa">
       <div className="mx-auto max-w-[1280px] px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <h2 className="font-display text-lg text-espresso">Visit</h2>
             <p className="mt-3 text-sm">{SITE.address}</p>
@@ -36,6 +40,25 @@ export default function Footer() {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          <div>
+            <h2 className="font-display text-lg text-espresso">About the clinic</h2>
+            {/* Queue row Q36: entry points to the 3 set-3 story pages, named by their h1
+                without " in King's Cross". */}
+            <ul className="mt-3 flex flex-col items-start gap-2 text-sm">
+              {ABOUT_SLUGS.map((slug) => {
+                const page = getStoryPage(slug);
+                if (!page) throw new Error(`components/Footer.tsx: story "${slug}" is not built`);
+                return (
+                  <li key={slug}>
+                    <ReadMoreLink href={`/${slug}/`} className="focus-visible:ring-offset-sand">
+                      {storyShortTitle(page.frontMatter)}
+                    </ReadMoreLink>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
 
           <div>

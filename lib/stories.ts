@@ -14,11 +14,14 @@ import path from "node:path";
 import { IMAGES, type ImageSlot } from "@/lib/images";
 import { waLink, liveServices, type Service } from "@/lib/services";
 import { SITE, waSite } from "@/lib/site";
+import { categoryAnchor, priceCategoryForStory, topicInSentence } from "@/lib/story-map";
 
 export interface StoryFrontMatter {
   title: string;
   description: string;
   h1: string;
+  /** Optional short title for menus and link labels (queue row Q36), e.g. "HIFU". */
+  short?: string;
 }
 
 export interface StoryPriceRow {
@@ -65,6 +68,9 @@ export interface StoryPage {
   slug: string;
   frontMatter: StoryFrontMatter;
   sections: StorySection[];
+  /** "See <topic> prices" link to /treatments/#<category>, shown after the prices section;
+   * null for a story with no category in lib/story-map.ts (queue row Q36). */
+  pricesLink: { href: string; label: string } | null;
 }
 
 const SECTION_ORDER = [
@@ -79,6 +85,13 @@ const SECTION_ORDER = [
 ] as const;
 
 const TREATMENTS_HREF = "/treatments/";
+
+/** Where a story's in-site "See treatments and prices" button goes: its own category on
+ * /treatments/ when lib/story-map.ts maps one (queue row Q36), otherwise /treatments/. */
+function treatmentsHrefFor(slug: string): string {
+  const category = priceCategoryForStory(slug);
+  return category ? `${TREATMENTS_HREF}#${categoryAnchor(category)}` : TREATMENTS_HREF;
+}
 
 function storyRef(slug: string): string {
   return `STORY-${slug.toUpperCase().replace(/-/g, "_")}`;
@@ -131,8 +144,18 @@ function parseFrontMatter(raw: string, slug: string): { frontMatter: StoryFrontM
       throw new Error(`${slug}: front matter missing "${key}"`);
     }
   }
+  for (const key of Object.keys(fields)) {
+    if (!["title", "description", "h1", "short"].includes(key)) {
+      throw new Error(`${slug}: front matter key "${key}" not recognised`);
+    }
+  }
   return {
-    frontMatter: { title: fields.title, description: fields.description, h1: fields.h1 },
+    frontMatter: {
+      title: fields.title,
+      description: fields.description,
+      h1: fields.h1,
+      ...(fields.short ? { short: fields.short } : {}),
+    },
     rest: lines.slice(i).join("\n"),
   };
 }
@@ -375,7 +398,7 @@ function parseBlocks(
           primary: { label: primaryMatch[2], href: waSite(storyRef(slug)), external: true },
           secondary: {
             label: secondaryLabel,
-            href: secondaryIsTreatwell ? SITE.treatwell : TREATMENTS_HREF,
+            href: secondaryIsTreatwell ? SITE.treatwell : treatmentsHrefFor(slug),
             external: secondaryIsTreatwell,
           },
         });
@@ -418,7 +441,22 @@ function parseStoryFile(filePath: string, slug: string, servicesBySlug: Map<stri
     blocks: parseBlocks(sectionLines.get(id) ?? [], id, slug, servicesBySlug),
   }));
 
-  return { slug, frontMatter, sections };
+  return { slug, frontMatter, sections, pricesLink: pricesLinkFor(slug, frontMatter) };
+}
+
+/** The short title used in menus and link labels: front matter `short`, otherwise the h1
+ * without its " in King's Cross" ending. */
+export function storyShortTitle(frontMatter: StoryFrontMatter): string {
+  return frontMatter.short ?? frontMatter.h1.replace(/ in King's Cross$/, "");
+}
+
+function pricesLinkFor(slug: string, frontMatter: StoryFrontMatter): StoryPage["pricesLink"] {
+  const category = priceCategoryForStory(slug);
+  if (!category) return null;
+  return {
+    href: `${TREATMENTS_HREF}#${categoryAnchor(category)}`,
+    label: `See ${topicInSentence(storyShortTitle(frontMatter))} prices`,
+  };
 }
 
 /** Real room photos (see docs/design/imagery-guideline.md §1, §4): never people, so
@@ -450,7 +488,7 @@ function parseStoryFileFlexible(filePath: string, slug: string, servicesBySlug: 
     throw new Error(`${slug}: hero section must start with a people image, found room slot ${JSON.stringify(heroFirst.slot)}`);
   }
 
-  return { slug, frontMatter, sections };
+  return { slug, frontMatter, sections, pricesLink: pricesLinkFor(slug, frontMatter) };
 }
 
 // The 8 storytelling pages built by queue rows Q25/Q26, in their strict 8-section
