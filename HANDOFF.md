@@ -134,35 +134,35 @@ ls "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essen
 
 ## กระดานเป้าหมาย
 
-Measured 2026-09-13T06:2xZ by PWEB (main at c9568da). Standing order A8: re-measure every time.
+Measured 2026-09-13 after main 1d91392 (Q15 done). Standing order A8: re-measure every time.
 
-**Last reached:** pel.gumon.io live with HTTPS; /treatments/ deployed with 110 rows and placeholder images;
-image set (14 people images, 4 real rooms) approved by PEL with the footer line "Some images on this site
-are illustrative."; copy set 1 approved by PEL with 8 rulings applied; image pipeline merged (18 slots).
+**Last reached:** pel.gumon.io serves home, treatments (97 rows, 11 people category images), contact, 21
+treatment family pages; privacy and terms pages pushed and deploying. Data file = PEL 0c07854 (111 live).
+All copy, images and legal text approved by PEL (lead repo brief sections 9 to 16).
 
 | # | Goal | State | Holder / waiting on |
 |---|---|---|---|
 | 1 | Research, direction, owner decisions, Lead and Executor setup | DONE | - |
-| 2 | Scaffold Q1 Q2 Q3 Q4 Q6 | DONE, Lead re-run each | - |
-| 3 | Imagery guideline Q23 | DONE, SHOP and WS answers in section 9 | - |
-| 4 | People image set Q24 | DONE, 14 of 14 approved by PEL | - |
-| 5 | Room photos and pipeline Q5 | RUNNING: 18 slots merged 97dfa14, 6 category slots being added | executor |
-| 6 | Treatments page Q8 | DONE and live, placeholders until 6 category images land | - |
-| 7 | Domain and HTTPS Q10 | DONE | - |
-| 8 | Home Q7 and contact Q9 | RUNNING | executor |
-| 9 | External gate run Q11 | PART: 2 of 3 pages read | PWEB after 8 |
-| 10 | Copy set 1 (home, contact, 4 stories) | DONE, approved by PEL | - |
-| 11 | Treatment descriptions (21 of 24) | REVIEW | PEL, 5 questions |
-| 12 | Category images (6) | REVIEW | PEL |
-| 13 | Storytelling pages build Q25 to Q27 | OPEN | PWEB after 11 |
-| 14 | Legal pages, consent, tag, SEO Q14 to Q21 | OPEN | PWEB |
-| 15 | Clinic domain switch Q22 | OPEN, owner's order only | owner |
+| 2 | Scaffold Q1 Q2 Q3 Q4 Q6, imagery guideline Q23 | DONE | - |
+| 3 | Images: people set Q24, rooms and pipeline Q5 (24 slots) | DONE, PEL approved | - |
+| 4 | Home Q7, treatments Q8 (both parts), contact Q9 | DONE and live | - |
+| 5 | Domain and HTTPS Q10 | DONE | - |
+| 6 | Family pages Q12 (21) | DONE and live; links from /treatments/ and sitemap running (Q12 part 2) | executor |
+| 7 | Privacy and terms Q15 | DONE, deploy check running | - |
+| 8 | External gate run Q11 | PART: all live pages read 200; full Definition of Done run after Q12 part 2 | PWEB |
+| 9 | Story copy set 1 and 2 (8 pages) | DONE, PEL approved | - |
+| 10 | Story pages build Q25 Q26 | OPEN, copy ready | PWEB next |
+| 11 | Story set 3 Q27 (clinic story, visit, first visit) | OPEN | PWEB |
+| 12 | About Q14, consent Q16, tag Q17, SEO Q18, photo brief Q19, editing guide Q20, Lighthouse Q21 | OPEN | PWEB, PEL |
+| 13 | PEL outside check of the live pages | WAITING | PEL |
+| 14 | Clinic domain switch Q22 | OPEN, owner's order only | owner |
 
-**Done: 8 of 15.**
+**Done: 9 of 14.**
 
-Process lessons recorded this session: 2 commit messages quoted a check before it was read (59048ef, a49c6db,
-corrected in b5e8404 and 6c8ba9e; memory file read-exit-before-claiming). An executor fetched 13 client
-pages in parallel against the one-at-a-time rule; reported to PEL.
+Process lessons this session, all in docs/plans/INCIDENTS.md: 2 commit messages quoted checks before reading them;
+an executor fetched 13 client pages in parallel (now enforced by scripts/fetch-client-page.mjs); a render check
+shared the renderer's blind spot. Resumed executors run in the Lead's current directory, not their own worktree:
+the Q15 executor wrote into the Q12 worktree after being resumed from there.
 
 ## Verify additions after the first resume
 
