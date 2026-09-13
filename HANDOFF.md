@@ -151,10 +151,10 @@ structure first).
 | 6 | Phase 0 scaffold (Q1 to Q6) | OPEN | PWEB after the owner decides |
 | 7 | Monday preview, 3 pages live at pel.gumon.io (Q7 to Q11) | OPEN, progress showing by the owner's word | PWEB |
 | 8 | Phase 2 pages, legal, consent, tag, SEO (Q12 to Q21) | OPEN | PWEB, PEL for content |
-| 9 | 5 content facts from PEL (duplicate names, company details, Treatwell figure, Valmont photo, free consultation) | OPEN, asked 2026-09-13 | PEL |
+| 9 | 5 content facts from PEL (duplicate names, company details, Treatwell figure, Valmont photo, free consultation) | DONE 2026-09-13, recorded in docs/research/00-direction.md 5.1 | - |
 | 10 | Clinic domain switch (Q22) | OPEN, owner's order only | owner |
 
-**Done: 5 of 10.** 6 to 8 wait on decision 1; 9 waits on PEL; 10 on the owner.
+**Done: 6 of 10.** 6 to 8 wait on decision 1; 10 on the owner.
 
 ## Verify additions after the first resume
 

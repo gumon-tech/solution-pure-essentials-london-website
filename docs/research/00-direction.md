@@ -198,6 +198,27 @@ different files run in parallel; the shell (Q3) and tokens (Q2) come before ever
 4. Confirmation whether the Valmont room photo is the clinic's.
 5. Whether "free consultation" is still offered (it is on the old site).
 
+### 5.1 Answers from PEL, 2026-09-13 (full text in the lead repo brief, section 7)
+
+1. Duplicate names: 3D Lipo, Collagen and Emsculpt are not duplicates; one row is the cms page
+   (no price) and the other the bookable row. Merge them: copy from cms, price and duration from
+   booking. Full Face GBP 450 (1 hr 45 min) and GBP 300 (1 hr 30 min) are HIFU on 2 platforms
+   (7D and 3D) but which is which is unconfirmed: show "HIFU full face" with the duration and
+   flag. Lymphatic drainage GBP 45 (30 min) and GBP 80 (1 hr) differ by duration only. Men's
+   full leg GBP 35 and GBP 40 cannot be resolved from our sources: show the duration and flag.
+2. Footer: Companies House read 2026-09-13: PURE ESSENTIALS (LONDON) LTD, number 09500632,
+   private limited, active, incorporated 2015-03-20, registered office 129 Station Road,
+   London NW4 4NJ. Usable on the preview; confirm with the clinic before the domain switch.
+   VAT unknown: omit until the clinic gives a number.
+3. Treatwell 4.8 from 1,212: 403 from PEL's machine too, NOT MEASURED. PEL's ruling: no
+   score and no review count on Monday. Decision 5 in section 7 is closed by this.
+4. The Valmont room: F sent it in the venue set, so it is the clinic's room with a product
+   brand sign. Usable; do not make the sign the hero, crop or pick another angle.
+5. Free consultation: the live homepage still says it today. Usable.
+
+Hours as measured from /contact are confirmed. Photo brief (Q19): PEL drafts and sends through
+the owner after Monday; PWEB sends a shot list when ready.
+
 ## 6. What is deliberately not in the preview
 
 Family pages, /about/, legal pages, the consent banner and the Google tag, Chinese, the domain
@@ -211,5 +232,5 @@ switch, any team or credential claim, any review quote, any offer.
 | 2 | Typography | Cormorant Garamond display with Jost body | Jost with Manrope, all sans |
 | 3 | Hero image on Monday | the warm wood room, graded | a text-only hero on cream with the arch as a shape until the photo shoot |
 | 4 | Rows without a price (24 cms rows) on /treatments/ | show as "Ask for a quote" rows with the WhatsApp link, so nothing live is hidden | hide until the family pages exist |
-| 5 | Treatwell rating on Monday | omit until re-measured and dated | show with the 2026-08-28 date |
+| 5 | Treatwell rating on Monday | CLOSED by PEL 2026-09-13: omitted, the figure could not be re-measured | - |
 | 6 | Editing tool for the clinic | JSON in the GitHub editor with the CI guard and a prompt guide (as promised); revisit CSV or Pages CMS after the first edit session | Pages CMS from day 1 |
