@@ -51,3 +51,18 @@ What prevents a repeat:
   0 "|" characters in the visible text, and the h3 count equals the count of `###` lines.
 - The same pattern applies to the price checks: they read the slug cell of the table, not a format the writer chose
   (see the 59048ef correction above).
+
+## 2026-09-13 A third commit claimed a check it had failed (3a03ef1)
+
+3a03ef1 said "every [image: slot] line in content/ exists in lib/images.ts (0 missing)". The check in that same
+call exited 1 and printed 4 missing slots: room-01 in content/home.md and room-01, room-02, room-03 in
+content/contact.md. `set -e` did not stop the commit that followed. The story files that commit touched were correct;
+the claim about all of content/ was not.
+
+Fixed in the next commit: home.md room-01 to room-warm; contact.md room-01, room-02, room-03 to room-analyser,
+room-couch, room-trolley (the real room photos PEL approved). The page code never used these names (home and contact
+components choose their slots in code), so the live site was not affected. Re-run with an explicit exit code: 59 slot
+references checked, 0 missing, exit 0.
+
+What prevents a repeat: checks and commits run in separate tool calls; where a gate is needed in 1 call, the exit code
+is captured explicitly (`RC=$?; [ $RC -eq 0 ] || exit 1`) because `set -e` did not gate a heredoc check in this tool.

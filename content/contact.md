@@ -12,7 +12,7 @@ h1: "Find us"
 
 ## hours
 
-[image: room-01]
+[image: room-analyser]
 
 | Day | Hours |
 |---|---|
@@ -26,7 +26,7 @@ h1: "Find us"
 - Email: info@pureessentialslondon.com
 - Link text: Book on Treatwell
 
-[image: room-02]
+[image: room-couch]
 
 ## getting-here
 
@@ -36,7 +36,7 @@ King's Cross St Pancras (Circle, Hammersmith and City, Metropolitan, Northern, P
 
 The map loads when you tap it.
 
-[image: room-03]
+[image: room-trolley]
 
 ## footer-legal
 
