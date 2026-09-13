@@ -121,7 +121,44 @@ the finger count are recorded on queue row Q24.
 8  The Lead looks at the full-size image before merge; an executor never passes its own image
 ```
 
-## 9. Answers from SHOP and WS
+## 9. Answers from SHOP and WS (2026-09-13)
 
-Pending, asked 2026-09-13. This section is filled when the replies arrive; anything they say that
-conflicts with sections 1 to 8 replaces it here with the date.
+### From SHOP (TTD shop site, read at their HEAD 58ccd2e)
+
+- There is no measured image-to-text ratio or images-per-viewport figure on the TTD site. What they
+  measure is lit cells (brightness probe, must not drop) and the count of img tags in `out/`, never
+  in the source (the source reports the TTD home page as 0 images while the build has 26). Our
+  section 2 minimums are therefore our own rule, measured on `out/` and on screenshots.
+- No page effectiveness was measured. Facts: 6 landing pages got people-doing-treatment images;
+  the owner objected only to the waxing image (wrong hand). Still "furniture shop" on TTD: their
+  home hero (a massage room with nobody in it) and the 6 empty-room service cards. Do not copy
+  their hero.
+- Prompt lessons: a dark brand colour asked for as the wall made images too dark (brightness 26
+  to 34); keep dark colours as accents and light surfaces as the ground (our palette is light, so
+  aim 55 or more). Fewer hands in frame; for 3-hand shots ask for fingers separated and resting
+  flat, expect up to 3 attempts.
+- Text over images measured 2.86 to 3.51 contrast and failed AA; text sits on its own solid
+  ground, never on a gradient over a photo.
+- People images: half-figure or hands-and-skin shots carry fewer hands to get wrong.
+- Scripts worth copying later (only versions after TTD commits fca793f and 58ccd2e, earlier
+  versions left Chrome running for 8 hours): brightness-probe.js, brightness-run.mjs,
+  contrast-probe.mjs (must print control values 7.17 and 7.78 before its results are trusted),
+  screenshot.mjs, visual-gate-report.mjs.
+
+### From WS
+
+- The only tool is `~/dev/gumon-workspace/bin/ask-gemini --image-out`, with `-i source.jpg` to edit
+  or extend an image. Default model `gemini-3.1-flash-image`; `gemini-3-pro-image` is available
+  with `-m` for higher quality. Output is often JPEG whatever the extension; check the file type.
+- Rooms and their executors may call it without a ticket. No daily cap is set; use it sensibly,
+  one image at a time with a look at each result. Never print the key.
+- No central ruling on SynthID or C2PA (C2PA paused under Q-ACAD-287; Gemini embeds SynthID).
+  Keep a register of prompt, model, date and source file (when `-i` is used). Here: the
+  `.prompt.txt` sidecars on OneDrive plus a register table in this file once images are chosen.
+- Client room photos may be edited with `-i`: light, colour, crop, removing clutter. If an edit
+  adds or changes objects in the room (equipment, people, signs), the result counts as an AI
+  illustration and follows the alt rules in section 4.
+- Originals stay on OneDrive (standing order A2); selected copies enter the repo. The repo is
+  public: no real faces without consent, no clinic customer data in any image.
+- **PEL decides which images go on the site.** PWEB proposes a set with the checklist results; PEL
+  approves before deploy.
