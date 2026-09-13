@@ -25,6 +25,20 @@ for (const m of famSrc.matchAll(/slug:\s*"([^"]+)"[^}]*?priced:\s*\[([^\]]*)\]/g
   }
 }
 
+// Category story pages for rule 3 rows without a family page (PEL ruling 2026-09-13).
+// laser and carboxy have no story page and stay on /treatments/.
+const CATEGORY_STORY = {
+  "waxing-ladies": "/waxing-kings-cross/",
+  "waxing-men": "/waxing-kings-cross/",
+  massage: "/massage-kings-cross/",
+  skin: "/microneedling-peels-kings-cross/",
+  skinboosters: "/skin-boosters-kings-cross/",
+  hifu: "/hifu-kings-cross/",
+  hair: "/laser-hair-removal-kings-cross/",
+  body: "/body-contouring-kings-cross/",
+  facials: "/facials-kings-cross/",
+};
+
 const SHOP = "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub";
 const CONSENT = "consent form, waiting for the clinic (gap report question 6); PEL ruling Q28 rule 4: no stub";
 // docs/research/04-old-site-gap.md section 7, ordinary paths (rule 2). [target, note, no_stub_kind]
@@ -126,6 +140,11 @@ for (const url of urls) {
       if (fam && built(`treatments/${fam}`)) {
         target = `/treatments/${fam}/`;
         evidence += `; lib/families.ts lists "${rowSlug}" in the priced list of family "${fam}"; out/treatments/${fam}/index.html built`;
+      } else if (CATEGORY_STORY[row.category] && built(CATEGORY_STORY[row.category].slice(1, -1))) {
+        // PEL ruling 2026-09-13, rule 5 amended: a live row with no family page goes to its
+        // category's story page, closer than /treatments/ for someone with a bookmark.
+        target = CATEGORY_STORY[row.category];
+        evidence += `; no family page lists this row, so the story page of category "${row.category}" per PEL ruling 2026-09-13 (rule 5 amended)`;
       } else {
         target = "/treatments/";
         evidence += fam ? `; family "${fam}" lists it but has no built page` : "; no family in lib/families.ts lists this row in its priced list";

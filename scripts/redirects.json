@@ -752,12 +752,12 @@
     {
       "old": "/service-page/collagen-production-full-face",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/collagen-production-full-face/"
       ],
       "row_slug": "collagen_production_full_face",
-      "evidence": "service-page slug \"collagen-production-full-face\" with hyphens as underscores = data/services.json row \"collagen_production_full_face\" (source booking, name \"Collagen Production (full Face)\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"collagen-production-full-face\" with hyphens as underscores = data/services.json row \"collagen_production_full_face\" (source booking, name \"Collagen Production (full Face)\", status live, category skin); no family page lists this row, so the story page of category \"skin\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/combination-1",
@@ -825,52 +825,52 @@
     {
       "old": "/service-page/cosmelan-depigmenting-including-home-kit",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/cosmelan-depigmenting-including-home-kit/"
       ],
       "row_slug": "cosmelan_depigmenting_including_home_kit",
-      "evidence": "service-page slug \"cosmelan-depigmenting-including-home-kit\" with hyphens as underscores = data/services.json row \"cosmelan_depigmenting_including_home_kit\" (source booking, name \"Cosmelan Depigmenting including home kit\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"cosmelan-depigmenting-including-home-kit\" with hyphens as underscores = data/services.json row \"cosmelan_depigmenting_including_home_kit\" (source booking, name \"Cosmelan Depigmenting including home kit\", status live, category skin); no family page lists this row, so the story page of category \"skin\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/cryoelectrolipolysis-one-area",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/body-contouring-kings-cross/",
       "stub_paths": [
         "/service-page/cryoelectrolipolysis-one-area/"
       ],
       "row_slug": "cryoelectrolipolysis_one_area",
-      "evidence": "service-page slug \"cryoelectrolipolysis-one-area\" with hyphens as underscores = data/services.json row \"cryoelectrolipolysis_one_area\" (source booking, name \"Cryoelectrolipolysis One Area\", status live, category body); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"cryoelectrolipolysis-one-area\" with hyphens as underscores = data/services.json row \"cryoelectrolipolysis_one_area\" (source booking, name \"Cryoelectrolipolysis One Area\", status live, category body); no family page lists this row, so the story page of category \"body\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/cryoelectrolipolysis-three-areas",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/body-contouring-kings-cross/",
       "stub_paths": [
         "/service-page/cryoelectrolipolysis-three-areas/"
       ],
       "row_slug": "cryoelectrolipolysis_three_areas",
-      "evidence": "service-page slug \"cryoelectrolipolysis-three-areas\" with hyphens as underscores = data/services.json row \"cryoelectrolipolysis_three_areas\" (source booking, name \"Cryoelectrolipolysis Three Areas\", status live, category body); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"cryoelectrolipolysis-three-areas\" with hyphens as underscores = data/services.json row \"cryoelectrolipolysis_three_areas\" (source booking, name \"Cryoelectrolipolysis Three Areas\", status live, category body); no family page lists this row, so the story page of category \"body\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/cryoelectrolipolysis-two-areas",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/body-contouring-kings-cross/",
       "stub_paths": [
         "/service-page/cryoelectrolipolysis-two-areas/"
       ],
       "row_slug": "cryoelectrolipolysis_two_areas",
-      "evidence": "service-page slug \"cryoelectrolipolysis-two-areas\" with hyphens as underscores = data/services.json row \"cryoelectrolipolysis_two_areas\" (source booking, name \"Cryoelectrolipolysis Two Areas\", status live, category body); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"cryoelectrolipolysis-two-areas\" with hyphens as underscores = data/services.json row \"cryoelectrolipolysis_two_areas\" (source booking, name \"Cryoelectrolipolysis Two Areas\", status live, category body); no family page lists this row, so the story page of category \"body\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/deep-tissue-massage",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/massage-kings-cross/",
       "stub_paths": [
         "/service-page/deep-tissue-massage/"
       ],
       "row_slug": "deep_tissue_massage",
-      "evidence": "service-page slug \"deep-tissue-massage\" with hyphens as underscores = data/services.json row \"deep_tissue_massage\" (source booking, name \"Deep Tissue Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"deep-tissue-massage\" with hyphens as underscores = data/services.json row \"deep_tissue_massage\" (source booking, name \"Deep Tissue Massage\", status live, category massage); no family page lists this row, so the story page of category \"massage\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/dermatitis",
@@ -939,12 +939,12 @@
     {
       "old": "/service-page/face-massage",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/massage-kings-cross/",
       "stub_paths": [
         "/service-page/face-massage/"
       ],
       "row_slug": "face_massage",
-      "evidence": "service-page slug \"face-massage\" with hyphens as underscores = data/services.json row \"face_massage\" (source booking, name \"Face Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"face-massage\" with hyphens as underscores = data/services.json row \"face_massage\" (source booking, name \"Face Massage\", status live, category massage); no family page lists this row, so the story page of category \"massage\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/facial-fillers",
@@ -968,12 +968,12 @@
     {
       "old": "/service-page/foot-leg-massage",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/massage-kings-cross/",
       "stub_paths": [
         "/service-page/foot-leg-massage/"
       ],
       "row_slug": "foot_leg_massage",
-      "evidence": "service-page slug \"foot-leg-massage\" with hyphens as underscores = data/services.json row \"foot_leg_massage\" (source booking, name \"Foot & Leg Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"foot-leg-massage\" with hyphens as underscores = data/services.json row \"foot_leg_massage\" (source booking, name \"Foot & Leg Massage\", status live, category massage); no family page lists this row, so the story page of category \"massage\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/full-face",
@@ -1018,12 +1018,12 @@
     {
       "old": "/service-page/gycolic-acid-peel",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/gycolic-acid-peel/"
       ],
       "row_slug": "gycolic_acid_peel",
-      "evidence": "service-page slug \"gycolic-acid-peel\" with hyphens as underscores = data/services.json row \"gycolic_acid_peel\" (source booking, name \"Gycolic Acid Peel\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"gycolic-acid-peel\" with hyphens as underscores = data/services.json row \"gycolic_acid_peel\" (source booking, name \"Gycolic Acid Peel\", status live, category skin); no family page lists this row, so the story page of category \"skin\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/hair-growth",
@@ -1047,12 +1047,12 @@
     {
       "old": "/service-page/half-face-with-led-and-mask",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/half-face-with-led-and-mask/"
       ],
       "row_slug": "half_face_with_led_and_mask",
-      "evidence": "service-page slug \"half-face-with-led-and-mask\" with hyphens as underscores = data/services.json row \"half_face_with_led_and_mask\" (source booking, name \"Half face With LED and Mask\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"half-face-with-led-and-mask\" with hyphens as underscores = data/services.json row \"half_face_with_led_and_mask\" (source booking, name \"Half face With LED and Mask\", status live, category skin); no family page lists this row, so the story page of category \"skin\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/hand-rejuvenation",
@@ -1086,12 +1086,12 @@
     {
       "old": "/service-page/hydrating",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/facials-kings-cross/",
       "stub_paths": [
         "/service-page/hydrating/"
       ],
       "row_slug": "hydrating",
-      "evidence": "service-page slug \"hydrating\" with hyphens as underscores = data/services.json row \"hydrating\" (source booking, name \"Hydrating\", status live, category facials); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"hydrating\" with hyphens as underscores = data/services.json row \"hydrating\" (source booking, name \"Hydrating\", status live, category facials); no family page lists this row, so the story page of category \"facials\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/hydrofacial",
@@ -1200,212 +1200,212 @@
     {
       "old": "/service-page/ladies-waxing-bikini",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-bikini/"
       ],
       "row_slug": "ladies_waxing_bikini",
-      "evidence": "service-page slug \"ladies-waxing-bikini\" with hyphens as underscores = data/services.json row \"ladies_waxing_bikini\" (source booking, name \"Ladies' Waxing - Bikini\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-bikini\" with hyphens as underscores = data/services.json row \"ladies_waxing_bikini\" (source booking, name \"Ladies' Waxing - Bikini\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-body-hot-wax-abdomen",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-body-hot-wax-abdomen/"
       ],
       "row_slug": "ladies_waxing_body_hot_wax_abdomen",
-      "evidence": "service-page slug \"ladies-waxing-body-hot-wax-abdomen\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_hot_wax_abdomen\" (source booking, name \"Ladies' Waxing - Body (Hot Wax) Abdomen\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-body-hot-wax-abdomen\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_hot_wax_abdomen\" (source booking, name \"Ladies' Waxing - Body (Hot Wax) Abdomen\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-body-hot-wax-bottom",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-body-hot-wax-bottom/"
       ],
       "row_slug": "ladies_waxing_body_hot_wax_bottom",
-      "evidence": "service-page slug \"ladies-waxing-body-hot-wax-bottom\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_hot_wax_bottom\" (source booking, name \"Ladies' Waxing - Body (Hot Wax) Bottom\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-body-hot-wax-bottom\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_hot_wax_bottom\" (source booking, name \"Ladies' Waxing - Body (Hot Wax) Bottom\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-body-hot-wax-crack",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-body-hot-wax-crack/"
       ],
       "row_slug": "ladies_waxing_body_hot_wax_crack",
-      "evidence": "service-page slug \"ladies-waxing-body-hot-wax-crack\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_hot_wax_crack\" (source booking, name \"Ladies' Waxing - Body (Hot Wax) Crack\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-body-hot-wax-crack\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_hot_wax_crack\" (source booking, name \"Ladies' Waxing - Body (Hot Wax) Crack\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-body-strip-wax-abdomen",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-body-strip-wax-abdomen/"
       ],
       "row_slug": "ladies_waxing_body_strip_wax_abdomen",
-      "evidence": "service-page slug \"ladies-waxing-body-strip-wax-abdomen\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_strip_wax_abdomen\" (source booking, name \"Ladies' Waxing Body (Strip Wax) Abdomen\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-body-strip-wax-abdomen\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_strip_wax_abdomen\" (source booking, name \"Ladies' Waxing Body (Strip Wax) Abdomen\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-body-strip-wax-bottom",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-body-strip-wax-bottom/"
       ],
       "row_slug": "ladies_waxing_body_strip_wax_bottom",
-      "evidence": "service-page slug \"ladies-waxing-body-strip-wax-bottom\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_strip_wax_bottom\" (source booking, name \"Ladies' Waxing - Body (Strip Wax) Bottom\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-body-strip-wax-bottom\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_strip_wax_bottom\" (source booking, name \"Ladies' Waxing - Body (Strip Wax) Bottom\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-brazilian",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-brazilian/"
       ],
       "row_slug": "ladies_waxing_brazilian",
-      "evidence": "service-page slug \"ladies-waxing-brazilian\" with hyphens as underscores = data/services.json row \"ladies_waxing_brazilian\" (source booking, name \"Ladies' Waxing - Brazilian\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-brazilian\" with hyphens as underscores = data/services.json row \"ladies_waxing_brazilian\" (source booking, name \"Ladies' Waxing - Brazilian\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-face-hot-wax-forehead",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-face-hot-wax-forehead/"
       ],
       "row_slug": "ladies_waxing_face_hot_wax_forehead",
-      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-forehead\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_forehead\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Forehead\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-forehead\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_forehead\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Forehead\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-face-hot-wax-full-chin",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-face-hot-wax-full-chin/"
       ],
       "row_slug": "ladies_waxing_face_hot_wax_full_chin",
-      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-full-chin\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_full_chin\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Full Chin\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-full-chin\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_full_chin\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Full Chin\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-face-hot-wax-full-face",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-face-hot-wax-full-face/"
       ],
       "row_slug": "ladies_waxing_face_hot_wax_full_face",
-      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-full-face\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_full_face\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Full Face\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-full-face\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_full_face\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Full Face\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-face-hot-wax-sideburns",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-face-hot-wax-sideburns/"
       ],
       "row_slug": "ladies_waxing_face_hot_wax_sideburns",
-      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-sideburns\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_sideburns\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Sideburns\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-sideburns\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_sideburns\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Sideburns\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-face-hot-wax-upper-lip",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-face-hot-wax-upper-lip/"
       ],
       "row_slug": "ladies_waxing_face_hot_wax_upper_lip",
-      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-upper-lip\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_upper_lip\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Upper Lip\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-upper-lip\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_upper_lip\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Upper Lip\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-full-arm-with-strip-wax",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-full-arm-with-strip-wax/"
       ],
       "row_slug": "ladies_waxing_full_arm_with_strip_wax",
-      "evidence": "service-page slug \"ladies-waxing-full-arm-with-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_full_arm_with_strip_wax\" (source booking, name \"Ladies' Waxing - Full Arm with strip wax\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-full-arm-with-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_full_arm_with_strip_wax\" (source booking, name \"Ladies' Waxing - Full Arm with strip wax\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-full-leg-strip-wax",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-full-leg-strip-wax/"
       ],
       "row_slug": "ladies_waxing_full_leg_strip_wax",
-      "evidence": "service-page slug \"ladies-waxing-full-leg-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_full_leg_strip_wax\" (source booking, name \"Ladies' Waxing - Full Leg (Strip Wax)\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-full-leg-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_full_leg_strip_wax\" (source booking, name \"Ladies' Waxing - Full Leg (Strip Wax)\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-g-string",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-g-string/"
       ],
       "row_slug": "ladies_waxing_g_string",
-      "evidence": "service-page slug \"ladies-waxing-g-string\" with hyphens as underscores = data/services.json row \"ladies_waxing_g_string\" (source booking, name \"Ladies' Waxing - G-String\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-g-string\" with hyphens as underscores = data/services.json row \"ladies_waxing_g_string\" (source booking, name \"Ladies' Waxing - G-String\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-half-arm-with-strip-wax",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-half-arm-with-strip-wax/"
       ],
       "row_slug": "ladies_waxing_half_arm_with_strip_wax",
-      "evidence": "service-page slug \"ladies-waxing-half-arm-with-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_half_arm_with_strip_wax\" (source booking, name \"Ladies' Waxing - Half Arm with strip wax\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-half-arm-with-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_half_arm_with_strip_wax\" (source booking, name \"Ladies' Waxing - Half Arm with strip wax\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-hollywood",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-hollywood/"
       ],
       "row_slug": "ladies_waxing_hollywood",
-      "evidence": "service-page slug \"ladies-waxing-hollywood\" with hyphens as underscores = data/services.json row \"ladies_waxing_hollywood\" (source booking, name \"Ladies' Waxing - Hollywood\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-hollywood\" with hyphens as underscores = data/services.json row \"ladies_waxing_hollywood\" (source booking, name \"Ladies' Waxing - Hollywood\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-lower-leg-strip-wax",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-lower-leg-strip-wax/"
       ],
       "row_slug": "ladies_waxing_lower_leg_strip_wax",
-      "evidence": "service-page slug \"ladies-waxing-lower-leg-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_lower_leg_strip_wax\" (source booking, name \"Ladies' Waxing - Lower Leg (Strip Wax)\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-lower-leg-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_lower_leg_strip_wax\" (source booking, name \"Ladies' Waxing - Lower Leg (Strip Wax)\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-underarm-hot-wax",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-underarm-hot-wax/"
       ],
       "row_slug": "ladies_waxing_underarm_hot_wax",
-      "evidence": "service-page slug \"ladies-waxing-underarm-hot-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_underarm_hot_wax\" (source booking, name \"Ladies' Waxing - Underarm (Hot Wax)\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-underarm-hot-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_underarm_hot_wax\" (source booking, name \"Ladies' Waxing - Underarm (Hot Wax)\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/ladies-waxing-upper-leg-strip-wax",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/ladies-waxing-upper-leg-strip-wax/"
       ],
       "row_slug": "ladies_waxing_upper_leg_strip_wax",
-      "evidence": "service-page slug \"ladies-waxing-upper-leg-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_upper_leg_strip_wax\" (source booking, name \"Ladies' Waxing - Upper Leg (Strip Wax)\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"ladies-waxing-upper-leg-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_upper_leg_strip_wax\" (source booking, name \"Ladies' Waxing - Upper Leg (Strip Wax)\", status live, category waxing-ladies); no family page lists this row, so the story page of category \"waxing-ladies\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/large-area-outer-thighs-full-stomach",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/body-contouring-kings-cross/",
       "stub_paths": [
         "/service-page/large-area-outer-thighs-full-stomach/"
       ],
       "row_slug": "large_area_outer_thighs_full_stomach",
-      "evidence": "service-page slug \"large-area-outer-thighs-full-stomach\" with hyphens as underscores = data/services.json row \"large_area_outer_thighs_full_stomach\" (source booking, name \"Large Area (Outer thighs/full stomach)\", status live, category body); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"large-area-outer-thighs-full-stomach\" with hyphens as underscores = data/services.json row \"large_area_outer_thighs_full_stomach\" (source booking, name \"Large Area (Outer thighs/full stomach)\", status live, category body); no family page lists this row, so the story page of category \"body\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/laser-hair-removal-extra-large-area",
@@ -1479,32 +1479,32 @@
     {
       "old": "/service-page/men-s-waxing-eyebrow",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/men-s-waxing-eyebrow/"
       ],
       "row_slug": "men_s_waxing_eyebrow",
-      "evidence": "service-page slug \"men-s-waxing-eyebrow\" with hyphens as underscores = data/services.json row \"men_s_waxing_eyebrow\" (source booking, name \"Men's Waxing Eyebrow\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"men-s-waxing-eyebrow\" with hyphens as underscores = data/services.json row \"men_s_waxing_eyebrow\" (source booking, name \"Men's Waxing Eyebrow\", status live, category waxing-men); no family page lists this row, so the story page of category \"waxing-men\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/men-s-waxing-full-arm",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/men-s-waxing-full-arm/"
       ],
       "row_slug": "men_s_waxing_full_arm",
-      "evidence": "service-page slug \"men-s-waxing-full-arm\" with hyphens as underscores = data/services.json row \"men_s_waxing_full_arm\" (source booking, name \"Men's Waxing Full Arm\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"men-s-waxing-full-arm\" with hyphens as underscores = data/services.json row \"men_s_waxing_full_arm\" (source booking, name \"Men's Waxing Full Arm\", status live, category waxing-men); no family page lists this row, so the story page of category \"waxing-men\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/men-s-waxing-full-leg",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/men-s-waxing-full-leg/"
       ],
       "row_slug": "men_s_waxing_full_leg",
-      "evidence": "service-page slug \"men-s-waxing-full-leg\" with hyphens as underscores = data/services.json row \"men_s_waxing_full_leg\" (source booking, name \"Men's Waxing Full Leg\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"men-s-waxing-full-leg\" with hyphens as underscores = data/services.json row \"men_s_waxing_full_leg\" (source booking, name \"Men's Waxing Full Leg\", status live, category waxing-men); no family page lists this row, so the story page of category \"waxing-men\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/men-s-waxing-full-leg-1",
@@ -1518,52 +1518,52 @@
     {
       "old": "/service-page/men-s-waxing-half-arm",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/men-s-waxing-half-arm/"
       ],
       "row_slug": "men_s_waxing_half_arm",
-      "evidence": "service-page slug \"men-s-waxing-half-arm\" with hyphens as underscores = data/services.json row \"men_s_waxing_half_arm\" (source booking, name \"Men's Waxing Half Arm\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"men-s-waxing-half-arm\" with hyphens as underscores = data/services.json row \"men_s_waxing_half_arm\" (source booking, name \"Men's Waxing Half Arm\", status live, category waxing-men); no family page lists this row, so the story page of category \"waxing-men\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/men-s-waxing-half-chest",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/men-s-waxing-half-chest/"
       ],
       "row_slug": "men_s_waxing_half_chest",
-      "evidence": "service-page slug \"men-s-waxing-half-chest\" with hyphens as underscores = data/services.json row \"men_s_waxing_half_chest\" (source booking, name \"Men's Waxing Half Chest\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"men-s-waxing-half-chest\" with hyphens as underscores = data/services.json row \"men_s_waxing_half_chest\" (source booking, name \"Men's Waxing Half Chest\", status live, category waxing-men); no family page lists this row, so the story page of category \"waxing-men\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/men-s-waxing-half-leg",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/men-s-waxing-half-leg/"
       ],
       "row_slug": "men_s_waxing_half_leg",
-      "evidence": "service-page slug \"men-s-waxing-half-leg\" with hyphens as underscores = data/services.json row \"men_s_waxing_half_leg\" (source booking, name \"Men's Waxing Half Leg\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"men-s-waxing-half-leg\" with hyphens as underscores = data/services.json row \"men_s_waxing_half_leg\" (source booking, name \"Men's Waxing Half Leg\", status live, category waxing-men); no family page lists this row, so the story page of category \"waxing-men\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/men-s-waxing-shoulder",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/men-s-waxing-shoulder/"
       ],
       "row_slug": "men_s_waxing_shoulder",
-      "evidence": "service-page slug \"men-s-waxing-shoulder\" with hyphens as underscores = data/services.json row \"men_s_waxing_shoulder\" (source booking, name \"Men's Waxing Shoulder\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"men-s-waxing-shoulder\" with hyphens as underscores = data/services.json row \"men_s_waxing_shoulder\" (source booking, name \"Men's Waxing Shoulder\", status live, category waxing-men); no family page lists this row, so the story page of category \"waxing-men\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/men-s-waxing-stomach",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/waxing-kings-cross/",
       "stub_paths": [
         "/service-page/men-s-waxing-stomach/"
       ],
       "row_slug": "men_s_waxing_stomach",
-      "evidence": "service-page slug \"men-s-waxing-stomach\" with hyphens as underscores = data/services.json row \"men_s_waxing_stomach\" (source booking, name \"Men's Waxing Stomach\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"men-s-waxing-stomach\" with hyphens as underscores = data/services.json row \"men_s_waxing_stomach\" (source booking, name \"Men's Waxing Stomach\", status live, category waxing-men); no family page lists this row, so the story page of category \"waxing-men\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/mesotherapy-1",
@@ -1758,12 +1758,12 @@
     {
       "old": "/service-page/rejuvenation-full-face",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/rejuvenation-full-face/"
       ],
       "row_slug": "rejuvenation_full_face",
-      "evidence": "service-page slug \"rejuvenation-full-face\" with hyphens as underscores = data/services.json row \"rejuvenation_full_face\" (source booking, name \"Rejuvenation (Full Face)\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"rejuvenation-full-face\" with hyphens as underscores = data/services.json row \"rejuvenation_full_face\" (source booking, name \"Rejuvenation (Full Face)\", status live, category skin); no family page lists this row, so the story page of category \"skin\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/rejuvenation-ipl",
@@ -1806,32 +1806,32 @@
     {
       "old": "/service-page/skinox-pigmentation",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/skinox-pigmentation/"
       ],
       "row_slug": "skinox_pigmentation",
-      "evidence": "service-page slug \"skinox-pigmentation\" with hyphens as underscores = data/services.json row \"skinox_pigmentation\" (source booking, name \"Skinox Pigmentation\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"skinox-pigmentation\" with hyphens as underscores = data/services.json row \"skinox_pigmentation\" (source booking, name \"Skinox Pigmentation\", status live, category skin); no family page lists this row, so the story page of category \"skin\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/skinox-redness",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/skinox-redness/"
       ],
       "row_slug": "skinox_redness",
-      "evidence": "service-page slug \"skinox-redness\" with hyphens as underscores = data/services.json row \"skinox_redness\" (source booking, name \"Skinox Redness\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"skinox-redness\" with hyphens as underscores = data/services.json row \"skinox_redness\" (source booking, name \"Skinox Redness\", status live, category skin); no family page lists this row, so the story page of category \"skin\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/skinox-wrinkles",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/microneedling-peels-kings-cross/",
       "stub_paths": [
         "/service-page/skinox-wrinkles/"
       ],
       "row_slug": "skinox_wrinkles",
-      "evidence": "service-page slug \"skinox-wrinkles\" with hyphens as underscores = data/services.json row \"skinox_wrinkles\" (source booking, name \"Skinox Wrinkles\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"skinox-wrinkles\" with hyphens as underscores = data/services.json row \"skinox_wrinkles\" (source booking, name \"Skinox Wrinkles\", status live, category skin); no family page lists this row, so the story page of category \"skin\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/smile-line",
@@ -1863,12 +1863,12 @@
     {
       "old": "/service-page/swedish-massage",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/massage-kings-cross/",
       "stub_paths": [
         "/service-page/swedish-massage/"
       ],
       "row_slug": "swedish_massage",
-      "evidence": "service-page slug \"swedish-massage\" with hyphens as underscores = data/services.json row \"swedish_massage\" (source booking, name \"Swedish Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"swedish-massage\" with hyphens as underscores = data/services.json row \"swedish_massage\" (source booking, name \"Swedish Massage\", status live, category massage); no family page lists this row, so the story page of category \"massage\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/tattoo-large-area-8-15cm",
@@ -1893,42 +1893,42 @@
     {
       "old": "/service-page/tension-neck-sculp-massage-intense",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/massage-kings-cross/",
       "stub_paths": [
         "/service-page/tension-neck-sculp-massage-intense/"
       ],
       "row_slug": "tension_neck_sculp_massage_intense",
-      "evidence": "service-page slug \"tension-neck-sculp-massage-intense\" with hyphens as underscores = data/services.json row \"tension_neck_sculp_massage_intense\" (source booking, name \"Tension neck & sculp massage (intense)\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"tension-neck-sculp-massage-intense\" with hyphens as underscores = data/services.json row \"tension_neck_sculp_massage_intense\" (source booking, name \"Tension neck & sculp massage (intense)\", status live, category massage); no family page lists this row, so the story page of category \"massage\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/thai-massage",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/massage-kings-cross/",
       "stub_paths": [
         "/service-page/thai-massage/"
       ],
       "row_slug": "thai_massage",
-      "evidence": "service-page slug \"thai-massage\" with hyphens as underscores = data/services.json row \"thai_massage\" (source booking, name \"Thai Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"thai-massage\" with hyphens as underscores = data/services.json row \"thai_massage\" (source booking, name \"Thai Massage\", status live, category massage); no family page lists this row, so the story page of category \"massage\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/therapeutic-lymphatic-drainage-massage",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/massage-kings-cross/",
       "stub_paths": [
         "/service-page/therapeutic-lymphatic-drainage-massage/"
       ],
       "row_slug": "therapeutic_lymphatic_drainage_massage",
-      "evidence": "service-page slug \"therapeutic-lymphatic-drainage-massage\" with hyphens as underscores = data/services.json row \"therapeutic_lymphatic_drainage_massage\" (source booking, name \"Therapeutic Lymphatic Drainage Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"therapeutic-lymphatic-drainage-massage\" with hyphens as underscores = data/services.json row \"therapeutic_lymphatic_drainage_massage\" (source booking, name \"Therapeutic Lymphatic Drainage Massage\", status live, category massage); no family page lists this row, so the story page of category \"massage\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/therapeutic-lymphatic-drainage-massage-1",
       "rule": 3,
-      "target": "/treatments/",
+      "target": "/massage-kings-cross/",
       "stub_paths": [
         "/service-page/therapeutic-lymphatic-drainage-massage-1/"
       ],
       "row_slug": "therapeutic_lymphatic_drainage_massage_1",
-      "evidence": "service-page slug \"therapeutic-lymphatic-drainage-massage-1\" with hyphens as underscores = data/services.json row \"therapeutic_lymphatic_drainage_massage_1\" (source booking, name \"Therapeutic Lymphatic Drainage Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+      "evidence": "service-page slug \"therapeutic-lymphatic-drainage-massage-1\" with hyphens as underscores = data/services.json row \"therapeutic_lymphatic_drainage_massage_1\" (source booking, name \"Therapeutic Lymphatic Drainage Massage\", status live, category massage); no family page lists this row, so the story page of category \"massage\" per PEL ruling 2026-09-13 (rule 5 amended)"
     },
     {
       "old": "/service-page/thermal-peel-rejuvenations",
