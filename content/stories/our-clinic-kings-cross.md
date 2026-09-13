@@ -77,7 +77,7 @@ Message us on WhatsApp. You can also book through Treatwell.
 
 ## call-to-action
 
-[image: contact-welcome]
+[image: step-4-aftercare]
 
 Message us on WhatsApp and we will reply during opening hours.
 

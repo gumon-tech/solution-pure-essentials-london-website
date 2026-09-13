@@ -16,7 +16,7 @@ export interface ImageEntry {
   fallback: string;
 }
 
-export type ImageSlot = "home-hero" | "face-card" | "body-card" | "laser-card" | "wellness-card" | "step-1-message" | "step-2-consultation" | "step-3-treatment" | "step-4-aftercare" | "contact-welcome" | "story-hifu" | "story-facials" | "story-body-contouring" | "story-laser-hair" | "room-warm" | "room-trolley" | "room-analyser" | "room-couch" | "cat-laser-skin" | "cat-skin" | "cat-skinboosters" | "cat-carboxy" | "cat-waxing-ladies" | "cat-waxing-men";
+export type ImageSlot = "home-hero" | "face-card" | "body-card" | "laser-card" | "wellness-card" | "step-1-message" | "step-2-consultation" | "step-3-treatment" | "step-4-aftercare" | "contact-welcome" | "story-hifu" | "story-facials" | "story-body-contouring" | "story-laser-hair" | "room-warm" | "room-trolley" | "room-analyser" | "room-couch" | "cat-laser-skin" | "cat-skin" | "cat-skinboosters" | "cat-carboxy" | "cat-waxing-ladies" | "cat-waxing-men" | "fam-hifu-face" | "fam-cryotherapy" | "fam-light-platform" | "fam-ipl" | "fam-pico-laser" | "fam-tattoo-removal" | "fam-gold-microneedling" | "fam-microneedling" | "fam-chemical-peel" | "fam-radiofrequency" | "fam-skin-booster-body" | "fam-skin-booster-face" | "fam-skin-booster-hydration" | "fam-fat-reduction" | "fam-muscle-toning" | "fam-hifu-body" | "fam-laser-hair" | "fam-hydrating-facial" | "fam-sensitive-skin-facial" | "fam-microdermabrasion" | "fam-botanical-facial";
 
 export const IMAGES: Record<ImageSlot, ImageEntry> = {
   "home-hero": {
@@ -306,5 +306,257 @@ export const IMAGES: Record<ImageSlot, ImageEntry> = {
       jpg: "/img/gen/cat-waxing-men-480.jpg 480w, /img/gen/cat-waxing-men-800.jpg 800w, /img/gen/cat-waxing-men-922.jpg 922w",
     },
     fallback: "/img/gen/cat-waxing-men-800.jpg",
+  },
+  "fam-hifu-face": {
+    alt: "A client with eyes closed in a boucle chair as a gloved hand holds a smooth device to her jaw",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-hifu-face-480.avif 480w, /img/gen/fam-hifu-face-800.avif 800w, /img/gen/fam-hifu-face-922.avif 922w",
+      webp: "/img/gen/fam-hifu-face-480.webp 480w, /img/gen/fam-hifu-face-800.webp 800w, /img/gen/fam-hifu-face-922.webp 922w",
+      jpg: "/img/gen/fam-hifu-face-480.jpg 480w, /img/gen/fam-hifu-face-800.jpg 800w, /img/gen/fam-hifu-face-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-hifu-face-800.jpg",
+  },
+  "fam-cryotherapy": {
+    alt: "A gloved hand holds a slim pen-sized device above a client's hand resting on a towel",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-cryotherapy-480.avif 480w, /img/gen/fam-cryotherapy-800.avif 800w, /img/gen/fam-cryotherapy-922.avif 922w",
+      webp: "/img/gen/fam-cryotherapy-480.webp 480w, /img/gen/fam-cryotherapy-800.webp 800w, /img/gen/fam-cryotherapy-922.webp 922w",
+      jpg: "/img/gen/fam-cryotherapy-480.jpg 480w, /img/gen/fam-cryotherapy-800.jpg 800w, /img/gen/fam-cryotherapy-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-cryotherapy-800.jpg",
+  },
+  "fam-light-platform": {
+    alt: "A client in protective eyewear lies under a blanket as a therapist in eyewear holds a handpiece near her cheek",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-light-platform-480.avif 480w, /img/gen/fam-light-platform-800.avif 800w, /img/gen/fam-light-platform-922.avif 922w",
+      webp: "/img/gen/fam-light-platform-480.webp 480w, /img/gen/fam-light-platform-800.webp 800w, /img/gen/fam-light-platform-922.webp 922w",
+      jpg: "/img/gen/fam-light-platform-480.jpg 480w, /img/gen/fam-light-platform-800.jpg 800w, /img/gen/fam-light-platform-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-light-platform-800.jpg",
+  },
+  "fam-ipl": {
+    alt: "A client in protective eyewear lies back as a therapist in eyewear rests a flat device head on her cheek",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-ipl-480.avif 480w, /img/gen/fam-ipl-800.avif 800w, /img/gen/fam-ipl-922.avif 922w",
+      webp: "/img/gen/fam-ipl-480.webp 480w, /img/gen/fam-ipl-800.webp 800w, /img/gen/fam-ipl-922.webp 922w",
+      jpg: "/img/gen/fam-ipl-480.jpg 480w, /img/gen/fam-ipl-800.jpg 800w, /img/gen/fam-ipl-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-ipl-800.jpg",
+  },
+  "fam-pico-laser": {
+    alt: "Side view of a client in protective eyewear, a gloved hand holding a device head at her temple",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-pico-laser-480.avif 480w, /img/gen/fam-pico-laser-800.avif 800w, /img/gen/fam-pico-laser-922.avif 922w",
+      webp: "/img/gen/fam-pico-laser-480.webp 480w, /img/gen/fam-pico-laser-800.webp 800w, /img/gen/fam-pico-laser-922.webp 922w",
+      jpg: "/img/gen/fam-pico-laser-480.jpg 480w, /img/gen/fam-pico-laser-800.jpg 800w, /img/gen/fam-pico-laser-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-pico-laser-800.jpg",
+  },
+  "fam-tattoo-removal": {
+    alt: "Two women in protective eyewear at a table, a device head held above the client's forearm",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-tattoo-removal-480.avif 480w, /img/gen/fam-tattoo-removal-800.avif 800w, /img/gen/fam-tattoo-removal-922.avif 922w",
+      webp: "/img/gen/fam-tattoo-removal-480.webp 480w, /img/gen/fam-tattoo-removal-800.webp 800w, /img/gen/fam-tattoo-removal-922.webp 922w",
+      jpg: "/img/gen/fam-tattoo-removal-480.jpg 480w, /img/gen/fam-tattoo-removal-800.jpg 800w, /img/gen/fam-tattoo-removal-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-tattoo-removal-800.jpg",
+  },
+  "fam-gold-microneedling": {
+    alt: "A client lying back with eyes closed as a gloved hand rests a pen-shaped device at her cheek",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-gold-microneedling-480.avif 480w, /img/gen/fam-gold-microneedling-800.avif 800w, /img/gen/fam-gold-microneedling-922.avif 922w",
+      webp: "/img/gen/fam-gold-microneedling-480.webp 480w, /img/gen/fam-gold-microneedling-800.webp 800w, /img/gen/fam-gold-microneedling-922.webp 922w",
+      jpg: "/img/gen/fam-gold-microneedling-480.jpg 480w, /img/gen/fam-gold-microneedling-800.jpg 800w, /img/gen/fam-gold-microneedling-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-gold-microneedling-800.jpg",
+  },
+  "fam-microneedling": {
+    alt: "A client lying back with eyes closed, a gloved hand holding a pen-shaped device along her cheek",
+    ratio: "4:5",
+    width: 663,
+    height: 829,
+    srcset: {
+      avif: "/img/gen/fam-microneedling-480.avif 480w, /img/gen/fam-microneedling-663.avif 663w",
+      webp: "/img/gen/fam-microneedling-480.webp 480w, /img/gen/fam-microneedling-663.webp 663w",
+      jpg: "/img/gen/fam-microneedling-480.jpg 480w, /img/gen/fam-microneedling-663.jpg 663w",
+    },
+    fallback: "/img/gen/fam-microneedling-663.jpg",
+  },
+  "fam-chemical-peel": {
+    alt: "A gloved hand brushes a clear liquid across the cheek of a client with eyes closed",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-chemical-peel-480.avif 480w, /img/gen/fam-chemical-peel-800.avif 800w, /img/gen/fam-chemical-peel-922.avif 922w",
+      webp: "/img/gen/fam-chemical-peel-480.webp 480w, /img/gen/fam-chemical-peel-800.webp 800w, /img/gen/fam-chemical-peel-922.webp 922w",
+      jpg: "/img/gen/fam-chemical-peel-480.jpg 480w, /img/gen/fam-chemical-peel-800.jpg 800w, /img/gen/fam-chemical-peel-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-chemical-peel-800.jpg",
+  },
+  "fam-radiofrequency": {
+    alt: "A client lying face down as a gloved hand moves a round device head across her upper back",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-radiofrequency-480.avif 480w, /img/gen/fam-radiofrequency-800.avif 800w, /img/gen/fam-radiofrequency-922.avif 922w",
+      webp: "/img/gen/fam-radiofrequency-480.webp 480w, /img/gen/fam-radiofrequency-800.webp 800w, /img/gen/fam-radiofrequency-922.webp 922w",
+      jpg: "/img/gen/fam-radiofrequency-480.jpg 480w, /img/gen/fam-radiofrequency-800.jpg 800w, /img/gen/fam-radiofrequency-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-radiofrequency-800.jpg",
+  },
+  "fam-skin-booster-body": {
+    alt: "A client in a robe and a therapist holding a folder smile in conversation in a treatment room",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-skin-booster-body-480.avif 480w, /img/gen/fam-skin-booster-body-800.avif 800w, /img/gen/fam-skin-booster-body-922.avif 922w",
+      webp: "/img/gen/fam-skin-booster-body-480.webp 480w, /img/gen/fam-skin-booster-body-800.webp 800w, /img/gen/fam-skin-booster-body-922.webp 922w",
+      jpg: "/img/gen/fam-skin-booster-body-480.jpg 480w, /img/gen/fam-skin-booster-body-800.jpg 800w, /img/gen/fam-skin-booster-body-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-skin-booster-body-800.jpg",
+  },
+  "fam-skin-booster-face": {
+    alt: "Over-the-shoulder view of a consultation, a smiling client facing a woman holding a tablet",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-skin-booster-face-480.avif 480w, /img/gen/fam-skin-booster-face-800.avif 800w, /img/gen/fam-skin-booster-face-922.avif 922w",
+      webp: "/img/gen/fam-skin-booster-face-480.webp 480w, /img/gen/fam-skin-booster-face-800.webp 800w, /img/gen/fam-skin-booster-face-922.webp 922w",
+      jpg: "/img/gen/fam-skin-booster-face-480.jpg 480w, /img/gen/fam-skin-booster-face-800.jpg 800w, /img/gen/fam-skin-booster-face-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-skin-booster-face-800.jpg",
+  },
+  "fam-skin-booster-hydration": {
+    alt: "Two women laughing together on a curved sofa, one holding a glass of water, one a notebook",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-skin-booster-hydration-480.avif 480w, /img/gen/fam-skin-booster-hydration-800.avif 800w, /img/gen/fam-skin-booster-hydration-922.avif 922w",
+      webp: "/img/gen/fam-skin-booster-hydration-480.webp 480w, /img/gen/fam-skin-booster-hydration-800.webp 800w, /img/gen/fam-skin-booster-hydration-922.webp 922w",
+      jpg: "/img/gen/fam-skin-booster-hydration-480.jpg 480w, /img/gen/fam-skin-booster-hydration-800.jpg 800w, /img/gen/fam-skin-booster-hydration-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-skin-booster-hydration-800.jpg",
+  },
+  "fam-fat-reduction": {
+    alt: "A client lying under a towel as a gloved hand adjusts a strap holding a device pad on her thigh",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-fat-reduction-480.avif 480w, /img/gen/fam-fat-reduction-800.avif 800w, /img/gen/fam-fat-reduction-922.avif 922w",
+      webp: "/img/gen/fam-fat-reduction-480.webp 480w, /img/gen/fam-fat-reduction-800.webp 800w, /img/gen/fam-fat-reduction-922.webp 922w",
+      jpg: "/img/gen/fam-fat-reduction-480.jpg 480w, /img/gen/fam-fat-reduction-800.jpg 800w, /img/gen/fam-fat-reduction-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-fat-reduction-800.jpg",
+  },
+  "fam-muscle-toning": {
+    alt: "A relaxed client in cream clothing lying with a device pad strapped over her abdomen",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-muscle-toning-480.avif 480w, /img/gen/fam-muscle-toning-800.avif 800w, /img/gen/fam-muscle-toning-922.avif 922w",
+      webp: "/img/gen/fam-muscle-toning-480.webp 480w, /img/gen/fam-muscle-toning-800.webp 800w, /img/gen/fam-muscle-toning-922.webp 922w",
+      jpg: "/img/gen/fam-muscle-toning-480.jpg 480w, /img/gen/fam-muscle-toning-800.jpg 800w, /img/gen/fam-muscle-toning-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-muscle-toning-800.jpg",
+  },
+  "fam-hifu-body": {
+    alt: "A gloved hand presses a smooth device head against the upper arm of a reclining client",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-hifu-body-480.avif 480w, /img/gen/fam-hifu-body-800.avif 800w, /img/gen/fam-hifu-body-922.avif 922w",
+      webp: "/img/gen/fam-hifu-body-480.webp 480w, /img/gen/fam-hifu-body-800.webp 800w, /img/gen/fam-hifu-body-922.webp 922w",
+      jpg: "/img/gen/fam-hifu-body-480.jpg 480w, /img/gen/fam-hifu-body-800.jpg 800w, /img/gen/fam-hifu-body-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-hifu-body-800.jpg",
+  },
+  "fam-laser-hair": {
+    alt: "A smiling client in protective eyewear, arm raised, as gloved hands hold a device near her underarm",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-laser-hair-480.avif 480w, /img/gen/fam-laser-hair-800.avif 800w, /img/gen/fam-laser-hair-922.avif 922w",
+      webp: "/img/gen/fam-laser-hair-480.webp 480w, /img/gen/fam-laser-hair-800.webp 800w, /img/gen/fam-laser-hair-922.webp 922w",
+      jpg: "/img/gen/fam-laser-hair-480.jpg 480w, /img/gen/fam-laser-hair-800.jpg 800w, /img/gen/fam-laser-hair-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-laser-hair-800.jpg",
+  },
+  "fam-hydrating-facial": {
+    alt: "Hands smoothing a clear sheet mask onto the forehead of a client with eyes closed",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-hydrating-facial-480.avif 480w, /img/gen/fam-hydrating-facial-800.avif 800w, /img/gen/fam-hydrating-facial-922.avif 922w",
+      webp: "/img/gen/fam-hydrating-facial-480.webp 480w, /img/gen/fam-hydrating-facial-800.webp 800w, /img/gen/fam-hydrating-facial-922.webp 922w",
+      jpg: "/img/gen/fam-hydrating-facial-480.jpg 480w, /img/gen/fam-hydrating-facial-800.jpg 800w, /img/gen/fam-hydrating-facial-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-hydrating-facial-800.jpg",
+  },
+  "fam-sensitive-skin-facial": {
+    alt: "Close view of a relaxed client lying back with a pale cream mask on her face",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-sensitive-skin-facial-480.avif 480w, /img/gen/fam-sensitive-skin-facial-800.avif 800w, /img/gen/fam-sensitive-skin-facial-922.avif 922w",
+      webp: "/img/gen/fam-sensitive-skin-facial-480.webp 480w, /img/gen/fam-sensitive-skin-facial-800.webp 800w, /img/gen/fam-sensitive-skin-facial-922.webp 922w",
+      jpg: "/img/gen/fam-sensitive-skin-facial-480.jpg 480w, /img/gen/fam-sensitive-skin-facial-800.jpg 800w, /img/gen/fam-sensitive-skin-facial-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-sensitive-skin-facial-800.jpg",
+  },
+  "fam-microdermabrasion": {
+    alt: "Gloved hands laying a folded cream cloth across the forehead of a relaxed client",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-microdermabrasion-480.avif 480w, /img/gen/fam-microdermabrasion-800.avif 800w, /img/gen/fam-microdermabrasion-922.avif 922w",
+      webp: "/img/gen/fam-microdermabrasion-480.webp 480w, /img/gen/fam-microdermabrasion-800.webp 800w, /img/gen/fam-microdermabrasion-922.webp 922w",
+      jpg: "/img/gen/fam-microdermabrasion-480.jpg 480w, /img/gen/fam-microdermabrasion-800.jpg 800w, /img/gen/fam-microdermabrasion-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-microdermabrasion-800.jpg",
+  },
+  "fam-botanical-facial": {
+    alt: "A seated therapist resting her hands on a client's shoulders at the start of a facial",
+    ratio: "4:5",
+    width: 922,
+    height: 1152,
+    srcset: {
+      avif: "/img/gen/fam-botanical-facial-480.avif 480w, /img/gen/fam-botanical-facial-800.avif 800w, /img/gen/fam-botanical-facial-922.avif 922w",
+      webp: "/img/gen/fam-botanical-facial-480.webp 480w, /img/gen/fam-botanical-facial-800.webp 800w, /img/gen/fam-botanical-facial-922.webp 922w",
+      jpg: "/img/gen/fam-botanical-facial-480.jpg 480w, /img/gen/fam-botanical-facial-800.jpg 800w, /img/gen/fam-botanical-facial-922.jpg 922w",
+    },
+    fallback: "/img/gen/fam-botanical-facial-800.jpg",
   },
 };
