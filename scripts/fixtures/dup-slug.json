@@ -1,0 +1,31 @@
+{
+  "_about": "Fixture for scripts/validate-services.mjs: otherwise-valid file with 2 services sharing a slug.",
+  "currency": "GBP",
+  "categories": [
+    { "id": "facials", "title": "Facials" }
+  ],
+  "services": [
+    {
+      "slug": "hydrofacial",
+      "name": "Hydrofacial",
+      "category": "facials",
+      "status": "live",
+      "price_gbp": 100,
+      "price_from": false,
+      "duration": "1 hr",
+      "source": "booking",
+      "note": ""
+    },
+    {
+      "slug": "hydrofacial",
+      "name": "Hydrofacial Deluxe",
+      "category": "facials",
+      "status": "live",
+      "price_gbp": 150,
+      "price_from": false,
+      "duration": "1 hr 30 min",
+      "source": "booking",
+      "note": ""
+    }
+  ]
+}

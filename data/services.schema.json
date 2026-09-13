@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pel.gumon.io/schema/services.schema.json",
+  "title": "Pure Essentials London services file",
+  "type": "object",
+  "required": ["_about", "currency", "categories", "services"],
+  "additionalProperties": false,
+  "properties": {
+    "_about": { "type": "string" },
+    "currency": { "type": "string" },
+    "categories": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/category" }
+    },
+    "services": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/service" }
+    }
+  },
+  "$defs": {
+    "category": {
+      "type": "object",
+      "required": ["id", "title"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" }
+      }
+    },
+    "service": {
+      "type": "object",
+      "required": [
+        "slug",
+        "name",
+        "category",
+        "status",
+        "price_gbp",
+        "price_from",
+        "duration",
+        "source",
+        "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "slug": { "type": "string" },
+        "name": { "type": "string" },
+        "category": {
+          "type": "string",
+          "$comment": "The 11 real category ids from `categories`, plus \"held\" — the sentinel every held-status row uses instead of a real category id (verified against data/services.json 2026-09-13: all 59 held rows, no exception). The brief asked for an enum of just the 11 ids; that would fail validate-services.mjs against the real file, so \"held\" is included here. Flagged in the Q4 executor report.",
+          "enum": [
+            "hifu",
+            "laser",
+            "skin",
+            "skinboosters",
+            "carboxy",
+            "body",
+            "hair",
+            "facials",
+            "massage",
+            "waxing-ladies",
+            "waxing-men",
+            "held"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["live", "held", "review"]
+        },
+        "price_gbp": {
+          "type": ["number", "null"]
+        },
+        "price_from": { "type": "boolean" },
+        "duration": {
+          "type": ["string", "null"]
+        },
+        "source": { "type": "string" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

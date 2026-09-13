@@ -1,0 +1,8 @@
+{
+  "_about": "Fixture for scripts/validate-services.mjs: trailing comma makes this invalid JSON.",
+  "currency": "GBP",
+  "categories": [
+    { "id": "facials", "title": "Facials" },
+  ],
+  "services": []
+}
