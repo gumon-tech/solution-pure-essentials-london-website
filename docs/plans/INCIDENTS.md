@@ -33,3 +33,21 @@ and nothing else, and paste the log lines.
 
 What prevents a repeat: the Lead runs checks and writes commit messages in separate steps; a check that
 examined 0 items counts as failed. Lint ignores `.claude/**`.
+
+## 2026-09-13 A check that shared the renderer's blind spot passed a broken page
+
+What happened: the executor rendering /privacy/ wrote a markdown parser that handled only `#` and `##` headings, as the
+brief said. The approved privacy notice also has 5 `###` subheadings, so the page showed the text "### WhatsApp" and 4
+more like it as body copy. The executor's own verbatim check parsed the file the same way, found every "sentence"
+(including "### WhatsApp") on the page, and passed 92 of 92. The executor caught the defect by looking at the built
+output, not from the check, and stopped to report.
+
+Why it matters: a check built from the same assumptions as the thing it checks confirms the assumptions, not the result.
+The earlier brief error was mine: it listed the markdown constructs from memory instead of from a grep of the files.
+
+What prevents a repeat:
+- Briefs that parse a content file list its constructs from a grep of that file, pasted into the brief.
+- Render checks include at least 1 assertion that does not reuse the renderer's logic. For the legal pages: 0 "#" and
+  0 "|" characters in the visible text, and the h3 count equals the count of `###` lines.
+- The same pattern applies to the price checks: they read the slug cell of the table, not a format the writer chose
+  (see the 59048ef correction above).
