@@ -1,0 +1,9 @@
+{
+  "source": "Google Maps business listing link supplied by the owner 2026-09-13: https://maps.app.goo.gl/amb1bZkToCoa1VHR8",
+  "resolved_place": "Pure Essentials London",
+  "feature_id": "0x48761b474f96e5b9:0xced0dc1025199bbe",
+  "latitude": 51.5300551,
+  "longitude": -0.1166754,
+  "fetched": "2026-09-13",
+  "note": "Coordinates read from the !3d and !4d values of the redirect target; 1 request to the short link, no Google API used."
+}

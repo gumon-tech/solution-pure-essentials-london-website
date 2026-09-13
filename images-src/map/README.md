@@ -10,7 +10,8 @@ The image is made on a local machine only, never in CI.
 | File | What it is |
 |---|---|
 | `geocode.json` | The Nominatim search response for the clinic address, saved as returned |
-| `postcode.json` | The postcodes.io centre point for WC1X 9BN, which sets the pin |
+| `postcode.json` | The postcodes.io centre point for WC1X 9BN (the previous pin) |
+| `google-place.json` | The clinic's Google Maps business listing coordinates, which set the pin |
 | `tiles/<z>-<x>-<y>.png` | The 9 OpenStreetMap standard tiles used for the image |
 
 The output is `public/img/map/clinic-map.avif`, `.webp` and `.jpg`, 768 by 512 pixels.
@@ -25,7 +26,10 @@ The output is `public/img/map/clinic-map.avif`, `.webp` and `.jpg`, 768 by 512 p
   Nominatim has no house number 155 on this road; its first result (51.5299512, -0.1161387,
   postcode WC1X 9BJ) was a point on the carriageway about 47 metres east. The first build used
   it; the Lead moved the pin to the postcode point. Both points fall in the same 9 tiles, so no
-  tile was fetched again. Neither point is checked against the shopfront.
+  tile was fetched again.
+- Pin moved again the same day to the clinic's Google Maps business listing (latitude 51.5300551,
+  longitude -0.1166754), from the listing link the owner supplied (`google-place.json`). It is about
+  9 metres from the postcode point, and Google Street View shows the shopfront at 155 King's Cross Road.
 - Zoom: 17
 - Tiles: a 3 by 3 grid, 9 tiles, 256 pixels each, cropped to 768 by 512
 - User-Agent sent: `PWEB-static-map/1.0 (pel.gumon.io)`

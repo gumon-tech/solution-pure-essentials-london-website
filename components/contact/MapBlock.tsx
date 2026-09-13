@@ -2,7 +2,7 @@
 // image built once by scripts/build-static-map.mjs from OpenStreetMap tiles, shown straight
 // away; tapping it opens Google Maps in a new tab.
 const GOOGLE_MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=155+King%27s+Cross+Road,+London+WC1X+9BN";
+  "https://www.google.com/maps/place/Pure+Essentials+London/@51.5300551,-0.1166754,17z/data=!4m6!3m5!1s0x48761b474f96e5b9:0xced0dc1025199bbe!8m2!3d51.5300551!4d-0.1166754";
 
 const LINK_CLASS =
   "text-cocoa underline underline-offset-4 hover:text-espresso focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm";

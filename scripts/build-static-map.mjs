@@ -26,8 +26,11 @@ import sharp from "sharp";
 // Lead change 2026-09-13. Nominatim has no house number 155 and returned only a road segment
 // (51.5299512, -0.1161387, kept in geocode.json), about 47 m east of the postcode point, on the
 // carriageway. Both points fall in the same 3 by 3 tile grid, so no new tile fetch was needed.
-const LAT = 51.530049;
-const LON = -0.116807;
+// Pin moved again 2026-09-13 to the clinic's Google Maps business listing
+// (images-src/map/google-place.json, link supplied by the owner), about 9 m from the postcode
+// point above. Same 9 tiles, no new fetch.
+const LAT = 51.5300551;
+const LON = -0.1166754;
 const ZOOM = 17;
 const TILE = 256;
 const USER_AGENT = "PWEB-static-map/1.0 (pel.gumon.io)";
@@ -37,7 +40,7 @@ const GEOCODE_URL =
 const SRC_DIR = path.join("images-src", "map");
 const TILE_DIR = path.join(SRC_DIR, "tiles");
 const GEOCODE_FILE = path.join(SRC_DIR, "geocode.json");
-const POSTCODE_FILE = path.join(SRC_DIR, "postcode.json");
+const PLACE_FILE = path.join(SRC_DIR, "google-place.json");
 const OUT_DIR = path.join("public", "img", "map");
 const OAK = "#7C5E45";
 const CREAM = "#F7F2EA";
@@ -86,11 +89,11 @@ if (FETCH) {
 
 // Build from the saved files only.
 if (!existsSync(GEOCODE_FILE)) throw new Error(`${GEOCODE_FILE} missing; run with --fetch once`);
-if (!existsSync(POSTCODE_FILE)) throw new Error(`${POSTCODE_FILE} missing`);
-const pc = JSON.parse(readFileSync(POSTCODE_FILE, "utf8"));
-if (Number(pc.latitude) !== LAT || Number(pc.longitude) !== LON) {
+if (!existsSync(PLACE_FILE)) throw new Error(`${PLACE_FILE} missing`);
+const place = JSON.parse(readFileSync(PLACE_FILE, "utf8"));
+if (Number(place.latitude) !== LAT || Number(place.longitude) !== LON) {
   throw new Error(
-    `${POSTCODE_FILE} is ${pc.latitude},${pc.longitude}, script has ${LAT},${LON}; update the constants`,
+    `${PLACE_FILE} is ${place.latitude},${place.longitude}, script has ${LAT},${LON}; update the constants`,
   );
 }
 const tiles = grid.map((t) => {
