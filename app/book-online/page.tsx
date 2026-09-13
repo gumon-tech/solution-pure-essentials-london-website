@@ -25,7 +25,7 @@ export default function BookOnlinePage() {
         </p>
 
         <p className="mt-8 text-sm text-cocoa">
-          This booking calendar is provided by Treatwell, which sets its own cookies. See our{" "}
+          This booking calendar and its treatment menu are provided by Treatwell, which sets its own cookies. See our{" "}
           <Link href="/privacy/" className={LINK_CLASS}>
             privacy notice
           </Link>

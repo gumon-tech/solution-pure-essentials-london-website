@@ -84,7 +84,7 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | description "Book a treatment at Pure Essentials London, 155 King's Cross Road, online on Treatwell..." | Lead brief 2026-09-13; F1, F4 |
 | h1 "Book online" | Lead brief 2026-09-13; OD13 |
 | "Choose a treatment and a time, and book straight away on Treatwell." | Lead brief 2026-09-13; F4 |
-| "This booking calendar is provided by Treatwell, which sets its own cookies. See our privacy notice." | PELC, verbatim |
+| "This booking calendar and its treatment menu are provided by Treatwell, which sets its own cookies. See our privacy notice." | PELC, verbatim, with "and its treatment menu are" added by PEL ruling 2026-09-13 brief section 30 condition 3 |
 | "Widget not loading? Open Treatwell in a new tab" | Lead brief 2026-09-13 fallback link; F4 |
 | "Prefer to ask first? Message us on WhatsApp." | Lead brief 2026-09-13; F4 (Ref SITE-BOOK) |
 | Header and sticky bar button "Book online" | Lead brief 2026-09-13; OD13 |
