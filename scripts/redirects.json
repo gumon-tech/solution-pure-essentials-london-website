@@ -1,0 +1,2025 @@
+{
+  "_about": "Old Wix URL to new-site redirect map (queue row Q28, PEL ruling). 1 entry per URL in PEL origin/main:data/pel-old-site-urls-2026-09-13.txt (214). target null = no stub; no_stub and reason say why. scripts/build-redirect-stubs.mjs writes out/<stub_path>index.html for every entry with a target, after next build; scripts/check-redirect-stubs.mjs verifies. Generated 2026-09-13 once from the URL list, PEL's inventory tsv, data/services.json, lib/families.ts and the built out/; edit by hand from here.",
+  "percent_2F_note": "UNVERIFIED until the Lead measures live. For /aesthetics-body/laser-hair-removal-%2F-ipl the stub is written to 2 directories: the decoded path /aesthetics-body/laser-hair-removal-/-ipl/ (what a static server that percent-decodes the request path, as nginx does, looks up on disk) and the literal name /aesthetics-body/laser-hair-removal-%2F-ipl/ (in case GitHub Pages does not decode %2F). Keep whichever answers 200 live and drop the other.",
+  "entries": [
+    {
+      "old": "/",
+      "rule": 2,
+      "target": null,
+      "no_stub": "same-path",
+      "reason": "same path as the built home page out/index.html",
+      "evidence": "gap report sections 2 and 7"
+    },
+    {
+      "old": "/about",
+      "rule": 2,
+      "target": "/our-clinic-kings-cross/",
+      "stub_paths": [
+        "/about/"
+      ],
+      "evidence": "gap report section 7 draft row for /about"
+    },
+    {
+      "old": "/aesthetics",
+      "rule": 2,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/aesthetics/"
+      ],
+      "evidence": "gap report section 7 draft row for /aesthetics"
+    },
+    {
+      "old": "/aesthetics-1/cryopen",
+      "rule": 1,
+      "target": "/treatments/aesthetics_1_cryopen/",
+      "stub_paths": [
+        "/aesthetics-1/cryopen/"
+      ],
+      "row_slug": "aesthetics_1_cryopen",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_cryopen, name \"CRYOPEN\") = collection \"aesthetics-1\" + item slug \"cryopen\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category laser; out/treatments/aesthetics_1_cryopen/index.html built"
+    },
+    {
+      "old": "/aesthetics-1/emsculpt",
+      "rule": 1,
+      "target": "/body-contouring-kings-cross/",
+      "stub_paths": [
+        "/aesthetics-1/emsculpt/"
+      ],
+      "row_slug": "aesthetics_1_emsculpt",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_emsculpt, name \"EMSCULPT\") = collection \"aesthetics-1\" + item slug \"emsculpt\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category body; no family page built for aesthetics_1_emsculpt (listed under held-back in content/treatment-descriptions.md), so the section 7 draft target"
+    },
+    {
+      "old": "/aesthetics-1/etherea-mx",
+      "rule": 1,
+      "target": "/treatments/aesthetics_1_etherea_mx/",
+      "stub_paths": [
+        "/aesthetics-1/etherea-mx/"
+      ],
+      "row_slug": "aesthetics_1_etherea_mx",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_etherea_mx, name \"ETHEREA MX\") = collection \"aesthetics-1\" + item slug \"etherea-mx\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category laser; out/treatments/aesthetics_1_etherea_mx/index.html built"
+    },
+    {
+      "old": "/aesthetics-1/golden-micro-needling",
+      "rule": 1,
+      "target": "/treatments/aesthetics_1_golden_micro_needling/",
+      "stub_paths": [
+        "/aesthetics-1/golden-micro-needling/"
+      ],
+      "row_slug": "aesthetics_1_golden_micro_needling",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_golden_micro_needling, name \"GOLDEN MICRO NEEDLING\") = collection \"aesthetics-1\" + item slug \"golden-micro-needling\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; out/treatments/aesthetics_1_golden_micro_needling/index.html built"
+    },
+    {
+      "old": "/aesthetics-1/hifu",
+      "rule": 1,
+      "target": "/treatments/aesthetics_1_hifu/",
+      "stub_paths": [
+        "/aesthetics-1/hifu/"
+      ],
+      "row_slug": "aesthetics_1_hifu",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_hifu, name \"HIFU\") = collection \"aesthetics-1\" + item slug \"hifu\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category hifu; out/treatments/aesthetics_1_hifu/index.html built"
+    },
+    {
+      "old": "/aesthetics-1/hydro-facial",
+      "rule": 1,
+      "target": "/treatments/aesthetics_1_hydro_facial/",
+      "stub_paths": [
+        "/aesthetics-1/hydro-facial/"
+      ],
+      "row_slug": "aesthetics_1_hydro_facial",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_hydro_facial, name \"HYDRO FACIAL\") = collection \"aesthetics-1\" + item slug \"hydro-facial\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; out/treatments/aesthetics_1_hydro_facial/index.html built"
+    },
+    {
+      "old": "/aesthetics-1/ipl-(intense-pulsed-light)",
+      "rule": 1,
+      "target": "/treatments/aesthetics_1_ipl_intense_pulsed_light/",
+      "stub_paths": [
+        "/aesthetics-1/ipl-(intense-pulsed-light)/"
+      ],
+      "row_slug": "aesthetics_1_ipl_intense_pulsed_light",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_ipl_intense_pulsed_light, name \"IPL (INTENSE PULSED LIGHT)\") = collection \"aesthetics-1\" + item slug \"ipl-(intense-pulsed-light)\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category laser; out/treatments/aesthetics_1_ipl_intense_pulsed_light/index.html built"
+    },
+    {
+      "old": "/aesthetics-1/iv-therapy",
+      "rule": 4,
+      "target": null,
+      "row_slug": "aesthetics_1_iv_therapy",
+      "no_stub": "held",
+      "reason": "held treatment page (gap report section 7 held list; row status held): no stub",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_iv_therapy, name \"IV THERAPY\") = collection \"aesthetics-1\" + item slug \"iv-therapy\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status held, category held"
+    },
+    {
+      "old": "/aesthetics-1/mesotherapy-injection-gun",
+      "rule": 4,
+      "target": null,
+      "row_slug": "aesthetics_1_mesotherapy_injection_gun",
+      "no_stub": "held",
+      "reason": "held treatment page (gap report section 7 held list; row status held): no stub",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_mesotherapy_injection_gun, name \"MESOTHERAPY INJECTION GUN\") = collection \"aesthetics-1\" + item slug \"mesotherapy-injection-gun\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status held, category held"
+    },
+    {
+      "old": "/aesthetics-1/microneedling",
+      "rule": 1,
+      "target": "/treatments/aesthetics_1_microneedling/",
+      "stub_paths": [
+        "/aesthetics-1/microneedling/"
+      ],
+      "row_slug": "aesthetics_1_microneedling",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_microneedling, name \"MICRONEEDLING\") = collection \"aesthetics-1\" + item slug \"microneedling\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; out/treatments/aesthetics_1_microneedling/index.html built"
+    },
+    {
+      "old": "/aesthetics-1/pico-laser",
+      "rule": 1,
+      "target": "/treatments/aesthetics_1_pico_laser/",
+      "stub_paths": [
+        "/aesthetics-1/pico-laser/"
+      ],
+      "row_slug": "aesthetics_1_pico_laser",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_pico_laser, name \"PICO LASER\") = collection \"aesthetics-1\" + item slug \"pico-laser\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category laser; out/treatments/aesthetics_1_pico_laser/index.html built"
+    },
+    {
+      "old": "/aesthetics-1/skymedic-chemical-peels",
+      "rule": 1,
+      "target": "/treatments/aesthetics_1_skymedic_chemical_peels/",
+      "stub_paths": [
+        "/aesthetics-1/skymedic-chemical-peels/"
+      ],
+      "row_slug": "aesthetics_1_skymedic_chemical_peels",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_skymedic_chemical_peels, name \"SKYMEDIC CHEMICAL PEELS\") = collection \"aesthetics-1\" + item slug \"skymedic-chemical-peels\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; out/treatments/aesthetics_1_skymedic_chemical_peels/index.html built"
+    },
+    {
+      "old": "/aesthetics-body/3d-lipo",
+      "rule": 1,
+      "target": "/treatments/aesthetics_body_3d_lipo/",
+      "stub_paths": [
+        "/aesthetics-body/3d-lipo/"
+      ],
+      "row_slug": "aesthetics_body_3d_lipo",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_3d_lipo, name \"3D LIPO\") = collection \"aesthetics-body\" + item slug \"3d-lipo\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category body; out/treatments/aesthetics_body_3d_lipo/index.html built"
+    },
+    {
+      "old": "/aesthetics-body/carboxytherapy",
+      "rule": 1,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/aesthetics-body/carboxytherapy/"
+      ],
+      "row_slug": "aesthetics_body_carboxytherapy",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_carboxytherapy, name \"CARBOXYTHERAPY\") = collection \"aesthetics-body\" + item slug \"carboxytherapy\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category carboxy; no family page built for aesthetics_body_carboxytherapy (listed under held-back in content/treatment-descriptions.md), so the section 7 draft target"
+    },
+    {
+      "old": "/aesthetics-body/emsculpt",
+      "rule": 1,
+      "target": "/treatments/aesthetics_body_emsculpt/",
+      "stub_paths": [
+        "/aesthetics-body/emsculpt/"
+      ],
+      "row_slug": "aesthetics_body_emsculpt",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_emsculpt, name \"EMSCULPT\") = collection \"aesthetics-body\" + item slug \"emsculpt\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category body; out/treatments/aesthetics_body_emsculpt/index.html built"
+    },
+    {
+      "old": "/aesthetics-body/hifu-body",
+      "rule": 1,
+      "target": "/treatments/aesthetics_body_hifu_body/",
+      "stub_paths": [
+        "/aesthetics-body/hifu-body/"
+      ],
+      "row_slug": "aesthetics_body_hifu_body",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_hifu_body, name \"HIFU BODY\") = collection \"aesthetics-body\" + item slug \"hifu-body\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category body; out/treatments/aesthetics_body_hifu_body/index.html built"
+    },
+    {
+      "old": "/aesthetics-body/indiba-deep-beauty",
+      "rule": 1,
+      "target": "/treatments/aesthetics_body_indiba_deep_beauty/",
+      "stub_paths": [
+        "/aesthetics-body/indiba-deep-beauty/"
+      ],
+      "row_slug": "aesthetics_body_indiba_deep_beauty",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_indiba_deep_beauty, name \"INDIBA DEEP BEAUTY\") = collection \"aesthetics-body\" + item slug \"indiba-deep-beauty\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; out/treatments/aesthetics_body_indiba_deep_beauty/index.html built"
+    },
+    {
+      "old": "/aesthetics-body/laser-hair-removal-%2F-ipl",
+      "rule": 1,
+      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "stub_paths": [
+        "/aesthetics-body/laser-hair-removal-/-ipl/",
+        "/aesthetics-body/laser-hair-removal-%2F-ipl/"
+      ],
+      "row_slug": "aesthetics_body_laser_hair_removal_2F_ipl",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_laser_hair_removal_2F_ipl, name \"LASER HAIR REMOVAL / IPL\") = collection \"aesthetics-body\" + item slug \"laser-hair-removal-%2F-ipl\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category hair; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+    },
+    {
+      "old": "/aesthetics-body/profhilo-body",
+      "rule": 1,
+      "target": "/treatments/aesthetics_body_profhilo_body/",
+      "stub_paths": [
+        "/aesthetics-body/profhilo-body/"
+      ],
+      "row_slug": "aesthetics_body_profhilo_body",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_profhilo_body, name \"PROFHILO BODY\") = collection \"aesthetics-body\" + item slug \"profhilo-body\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skinboosters; out/treatments/aesthetics_body_profhilo_body/index.html built"
+    },
+    {
+      "old": "/aesthetics-body/tattoo-removal-",
+      "rule": 1,
+      "target": "/treatments/aesthetics_body_tattoo_removal/",
+      "stub_paths": [
+        "/aesthetics-body/tattoo-removal-/"
+      ],
+      "row_slug": "aesthetics_body_tattoo_removal",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-body, slug aesthetics_body_tattoo_removal, name \"TATTOO REMOVAL\") = collection \"aesthetics-body\" + item slug \"tattoo-removal-\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category laser; out/treatments/aesthetics_body_tattoo_removal/index.html built"
+    },
+    {
+      "old": "/aesthetics-consent-form",
+      "rule": 4,
+      "target": null,
+      "no_stub": "consent",
+      "reason": "consent form, waiting for the clinic (gap report question 6); PEL ruling Q28 rule 4: no stub",
+      "evidence": "gap report sections 2 and 7"
+    },
+    {
+      "old": "/beauty",
+      "rule": 2,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/beauty/"
+      ],
+      "evidence": "gap report section 7 draft row for /beauty"
+    },
+    {
+      "old": "/body",
+      "rule": 2,
+      "target": "/body-contouring-kings-cross/",
+      "stub_paths": [
+        "/body/"
+      ],
+      "evidence": "gap report section 7 draft row for /body"
+    },
+    {
+      "old": "/book-online",
+      "rule": 2,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/book-online/"
+      ],
+      "evidence": "gap report section 7 draft row for /book-online"
+    },
+    {
+      "old": "/cleansing",
+      "rule": 2,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/cleansing/"
+      ],
+      "evidence": "gap report section 7 draft row for /cleansing; draft offered /treatments/ or 404; PEL ruling Q28 chose /treatments/"
+    },
+    {
+      "old": "/consent-form",
+      "rule": 4,
+      "target": null,
+      "no_stub": "consent",
+      "reason": "consent form, waiting for the clinic (gap report question 6); PEL ruling Q28 rule 4: no stub",
+      "evidence": "gap report sections 2 and 7"
+    },
+    {
+      "old": "/consent-form-1",
+      "rule": 4,
+      "target": null,
+      "no_stub": "consent",
+      "reason": "consent form, waiting for the clinic (gap report question 6); PEL ruling Q28 rule 4: no stub",
+      "evidence": "gap report sections 2 and 7"
+    },
+    {
+      "old": "/contact",
+      "rule": 2,
+      "target": null,
+      "no_stub": "same-path",
+      "reason": "same path as the built page out/contact/index.html",
+      "evidence": "gap report sections 2 and 7"
+    },
+    {
+      "old": "/eyes-ears",
+      "rule": 2,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/eyes-ears/"
+      ],
+      "evidence": "gap report section 7 draft row for /eyes-ears; draft offered /treatments/ or 404; PEL ruling Q28 chose /treatments/"
+    },
+    {
+      "old": "/face",
+      "rule": 2,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/face/"
+      ],
+      "evidence": "gap report section 7 draft row for /face"
+    },
+    {
+      "old": "/facials",
+      "rule": 2,
+      "target": "/facials-kings-cross/",
+      "stub_paths": [
+        "/facials/"
+      ],
+      "evidence": "gap report section 7 draft row for /facials"
+    },
+    {
+      "old": "/facials-1/age-defence-sensitive-skin-treatment-",
+      "rule": 1,
+      "target": "/treatments/facials_1_age_defence_sensitive_skin_treatment/",
+      "stub_paths": [
+        "/facials-1/age-defence-sensitive-skin-treatment-/"
+      ],
+      "row_slug": "facials_1_age_defence_sensitive_skin_treatment",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_age_defence_sensitive_skin_treatment, name \"AGE DEFENCE SENSITIVE SKIN TREATMENT\") = collection \"facials-1\" + item slug \"age-defence-sensitive-skin-treatment-\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; out/treatments/facials_1_age_defence_sensitive_skin_treatment/index.html built"
+    },
+    {
+      "old": "/facials-1/diamondtome-microdermabrasion",
+      "rule": 1,
+      "target": "/treatments/facials_1_diamondtome_microdermabrasion/",
+      "stub_paths": [
+        "/facials-1/diamondtome-microdermabrasion/"
+      ],
+      "row_slug": "facials_1_diamondtome_microdermabrasion",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_diamondtome_microdermabrasion, name \"DIAMONDTOME MICRODERMABRASION\") = collection \"facials-1\" + item slug \"diamondtome-microdermabrasion\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; out/treatments/facials_1_diamondtome_microdermabrasion/index.html built"
+    },
+    {
+      "old": "/facials-1/eberlin-facial",
+      "rule": 1,
+      "target": "/treatments/facials_1_eberlin_facial/",
+      "stub_paths": [
+        "/facials-1/eberlin-facial/"
+      ],
+      "row_slug": "facials_1_eberlin_facial",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_eberlin_facial, name \"EBERLIN FACIAL\") = collection \"facials-1\" + item slug \"eberlin-facial\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; out/treatments/facials_1_eberlin_facial/index.html built"
+    },
+    {
+      "old": "/facials-1/mesotherapy-radio-frequency",
+      "rule": 4,
+      "target": null,
+      "row_slug": "facials_1_mesotherapy_radio_frequency",
+      "no_stub": "held",
+      "reason": "held treatment page (gap report section 7 held list; row status held): no stub",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_mesotherapy_radio_frequency, name \"MESOTHERAPY RADIO FREQUENCY\") = collection \"facials-1\" + item slug \"mesotherapy-radio-frequency\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status held, category held"
+    },
+    {
+      "old": "/facials-1/pro-lift-eye-treatment",
+      "rule": 4,
+      "target": null,
+      "row_slug": "facials_1_pro_lift_eye_treatment",
+      "no_stub": "review",
+      "reason": "held treatment page (gap report section 7 held list; row status review): no stub",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_pro_lift_eye_treatment, name \"PRO-LIFT EYE TREATMENT\") = collection \"facials-1\" + item slug \"pro-lift-eye-treatment\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status review, category facials"
+    },
+    {
+      "old": "/injectables",
+      "rule": 2,
+      "target": "/skin-boosters-kings-cross/",
+      "stub_paths": [
+        "/injectables/"
+      ],
+      "evidence": "gap report section 7 draft row for /injectables"
+    },
+    {
+      "old": "/injections/b12-injections",
+      "rule": 4,
+      "target": null,
+      "row_slug": "injections_b12_injections",
+      "no_stub": "held",
+      "reason": "held treatment page (gap report section 7 held list; row status held): no stub",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_b12_injections, name \"B12 INJECTIONS\") = collection \"injections\" + item slug \"b12-injections\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status held, category held"
+    },
+    {
+      "old": "/injections/collagen",
+      "rule": 4,
+      "target": null,
+      "row_slug": "injections_collagen",
+      "no_stub": "review",
+      "reason": "held treatment page (gap report section 7 held list; row status review): no stub",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_collagen, name \"COLLAGEN\") = collection \"injections\" + item slug \"collagen\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status review, category carboxy"
+    },
+    {
+      "old": "/injections/jalupro-skin-booster",
+      "rule": 4,
+      "target": null,
+      "row_slug": "injections_jalupro_skin_booster",
+      "no_stub": "held",
+      "reason": "held treatment page (gap report section 7 held list; row status held): no stub",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_jalupro_skin_booster, name \"JALUPRO SKIN BOOSTER\") = collection \"injections\" + item slug \"jalupro-skin-booster\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status held, category held"
+    },
+    {
+      "old": "/injections/lipo-lap--fat-dissolve",
+      "rule": 4,
+      "target": null,
+      "row_slug": "injections_lipo_lap_fat_dissolve",
+      "no_stub": "held",
+      "reason": "held treatment page (gap report section 7 held list; row status held): no stub",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_lipo_lap_fat_dissolve, name \"LIPO LAP FAT DISSOLVE\") = collection \"injections\" + item slug \"lipo-lap--fat-dissolve\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status held, category held"
+    },
+    {
+      "old": "/injections/mesotherapy",
+      "rule": 4,
+      "target": null,
+      "row_slug": "injections_mesotherapy",
+      "no_stub": "held",
+      "reason": "held treatment page (gap report section 7 held list; row status held): no stub",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_mesotherapy, name \"MESOTHERAPY\") = collection \"injections\" + item slug \"mesotherapy\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status held, category held"
+    },
+    {
+      "old": "/injections/profhilo-skin-booster-",
+      "rule": 1,
+      "target": "/treatments/injections_profhilo_skin_booster/",
+      "stub_paths": [
+        "/injections/profhilo-skin-booster-/"
+      ],
+      "row_slug": "injections_profhilo_skin_booster",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_profhilo_skin_booster, name \"PROFHILO SKIN BOOSTER\") = collection \"injections\" + item slug \"profhilo-skin-booster-\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skinboosters; out/treatments/injections_profhilo_skin_booster/index.html built"
+    },
+    {
+      "old": "/injections/restylane-skin-boosters",
+      "rule": 1,
+      "target": "/treatments/injections_restylane_skin_boosters/",
+      "stub_paths": [
+        "/injections/restylane-skin-boosters/"
+      ],
+      "row_slug": "injections_restylane_skin_boosters",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_restylane_skin_boosters, name \"RESTYLANE SKIN BOOSTERS\") = collection \"injections\" + item slug \"restylane-skin-boosters\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skinboosters; out/treatments/injections_restylane_skin_boosters/index.html built"
+    },
+    {
+      "old": "/injections/s-dna-skin-booster",
+      "rule": 4,
+      "target": null,
+      "row_slug": "injections_s_dna_skin_booster",
+      "no_stub": "review",
+      "reason": "held treatment page (gap report section 7 held list; row status review): no stub",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_s_dna_skin_booster, name \"S-DNA SKIN BOOSTER\") = collection \"injections\" + item slug \"s-dna-skin-booster\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status review, category skinboosters"
+    },
+    {
+      "old": "/injections/vitamin-c-injection",
+      "rule": 4,
+      "target": null,
+      "row_slug": "injections_vitamin_c_injection",
+      "no_stub": "held",
+      "reason": "held treatment page (gap report section 7 held list; row status held): no stub",
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/injections, slug injections_vitamin_c_injection, name \"VITAMIN C INJECTION\") = collection \"injections\" + item slug \"vitamin-c-injection\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status held, category held"
+    },
+    {
+      "old": "/ipl-laser-consent-form",
+      "rule": 4,
+      "target": null,
+      "no_stub": "consent",
+      "reason": "consent form, waiting for the clinic (gap report question 6); PEL ruling Q28 rule 4: no stub",
+      "evidence": "gap report sections 2 and 7"
+    },
+    {
+      "old": "/massage",
+      "rule": 2,
+      "target": "/massage-kings-cross/",
+      "stub_paths": [
+        "/massage/"
+      ],
+      "evidence": "gap report section 7 draft row for /massage"
+    },
+    {
+      "old": "/mens",
+      "rule": 2,
+      "target": "/waxing-kings-cross/",
+      "stub_paths": [
+        "/mens/"
+      ],
+      "evidence": "gap report section 7 draft row for /mens; draft offered /waxing-kings-cross/ or a future men's page; PEL ruling Q28 chose /waxing-kings-cross/"
+    },
+    {
+      "old": "/offers",
+      "rule": 2,
+      "target": "/our-clinic-kings-cross/",
+      "stub_paths": [
+        "/offers/"
+      ],
+      "evidence": "gap report section 7 draft row for /offers"
+    },
+    {
+      "old": "/pricing",
+      "rule": 2,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/pricing/"
+      ],
+      "evidence": "gap report section 7 draft row for /pricing"
+    },
+    {
+      "old": "/privacy-policy",
+      "rule": 2,
+      "target": "/privacy/",
+      "stub_paths": [
+        "/privacy-policy/"
+      ],
+      "evidence": "gap report section 7 draft row for /privacy-policy"
+    },
+    {
+      "old": "/product-page/50-fotoskinox",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/product-page/antioxidant-oil",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/product-page/bio-eyes-hyaluronic-contour-spf-6",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/product-page/calming-jeweler",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/product-page/dmae-eberline-lab",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/product-page/firmezza-kit",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/product-page/fotoskinox",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/product-page/hyalurox",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/product-page/skinox-blemish",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/product-page/skinox-dark-spots",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/product-page/skinox-wrinkles",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/product-page/skymedic",
+      "rule": 2,
+      "target": null,
+      "no_stub": "product",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "path shape /product-page/<slug> (Wix Stores product, gap report section 2)"
+    },
+    {
+      "old": "/service-page/3d-lipo",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_3d_lipo/",
+      "stub_paths": [
+        "/service-page/3d-lipo/"
+      ],
+      "row_slug": "3d_lipo",
+      "evidence": "service-page slug \"3d-lipo\" with hyphens as underscores = data/services.json row \"3d_lipo\" (source booking, name \"3D Lipo\", status live, category body); lib/families.ts lists \"3d_lipo\" in the priced list of family \"aesthetics_body_3d_lipo\"; out/treatments/aesthetics_body_3d_lipo/index.html built"
+    },
+    {
+      "old": "/service-page/acne",
+      "rule": 3,
+      "target": null,
+      "row_slug": "acne",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"acne\" with hyphens as underscores = data/services.json row \"acne\" (source booking, name \"Acne\", status held, category held)"
+    },
+    {
+      "old": "/service-page/acne-rosacea-ipl",
+      "rule": 3,
+      "target": null,
+      "row_slug": "acne_rosacea_ipl",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"acne-rosacea-ipl\" with hyphens as underscores = data/services.json row \"acne_rosacea_ipl\" (source booking, name \"Acne / Rosacea IPL\", status held, category held)"
+    },
+    {
+      "old": "/service-page/back-pain-spine-prp",
+      "rule": 3,
+      "target": null,
+      "row_slug": "back_pain_spine_prp",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"back-pain-spine-prp\" with hyphens as underscores = data/services.json row \"back_pain_spine_prp\" (source booking, name \"Back Pain (Spine PRP)\", status held, category held)"
+    },
+    {
+      "old": "/service-page/breast-enlargement",
+      "rule": 3,
+      "target": null,
+      "row_slug": "breast_enlargement",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"breast-enlargement\" with hyphens as underscores = data/services.json row \"breast_enlargement\" (source booking, name \"Breast Enlargement\", status held, category held)"
+    },
+    {
+      "old": "/service-page/breast-lift",
+      "rule": 3,
+      "target": null,
+      "row_slug": "breast_lift",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"breast-lift\" with hyphens as underscores = data/services.json row \"breast_lift\" (source booking, name \"Breast Lift\", status held, category held)"
+    },
+    {
+      "old": "/service-page/brow-lift",
+      "rule": 3,
+      "target": null,
+      "row_slug": "brow_lift",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"brow-lift\" with hyphens as underscores = data/services.json row \"brow_lift\" (source booking, name \"Brow Lift\", status held, category held)"
+    },
+    {
+      "old": "/service-page/brow-lift-1",
+      "rule": 3,
+      "target": null,
+      "row_slug": "brow_lift_1",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"brow-lift-1\" with hyphens as underscores = data/services.json row \"brow_lift_1\" (source booking, name \"Brow Lift\", status held, category held)"
+    },
+    {
+      "old": "/service-page/bum-filler",
+      "rule": 3,
+      "target": null,
+      "row_slug": "bum_filler",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"bum-filler\" with hyphens as underscores = data/services.json row \"bum_filler\" (source booking, name \"Bum Filler\", status held, category held)"
+    },
+    {
+      "old": "/service-page/bum-lift",
+      "rule": 3,
+      "target": null,
+      "row_slug": "bum_lift",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"bum-lift\" with hyphens as underscores = data/services.json row \"bum_lift\" (source booking, name \"Bum Lift\", status held, category held)"
+    },
+    {
+      "old": "/service-page/c-section-scars",
+      "rule": 3,
+      "target": null,
+      "row_slug": "c_section_scars",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"c-section-scars\" with hyphens as underscores = data/services.json row \"c_section_scars\" (source booking, name \"C-section scars\", status held, category held)"
+    },
+    {
+      "old": "/service-page/cellulitis-drainage-lymphatic-drainage",
+      "rule": 3,
+      "target": null,
+      "row_slug": "cellulitis_drainage_lymphatic_drainage",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"cellulitis-drainage-lymphatic-drainage\" with hyphens as underscores = data/services.json row \"cellulitis_drainage_lymphatic_drainage\" (source booking, name \"Cellulitis Drainage (Lymphatic Drainage)\", status held, category held)"
+    },
+    {
+      "old": "/service-page/cellulitis-drainage-orange-peel",
+      "rule": 3,
+      "target": null,
+      "row_slug": "cellulitis_drainage_orange_peel",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"cellulitis-drainage-orange-peel\" with hyphens as underscores = data/services.json row \"cellulitis_drainage_orange_peel\" (source booking, name \"Cellulitis Drainage + Orange Peel\", status held, category held)"
+    },
+    {
+      "old": "/service-page/cheeks-jaw-line-nasolabial-1ml",
+      "rule": 3,
+      "target": "/treatments/injections_restylane_skin_boosters/",
+      "stub_paths": [
+        "/service-page/cheeks-jaw-line-nasolabial-1ml/"
+      ],
+      "row_slug": "cheeks_jaw_line_nasolabial_1ml",
+      "evidence": "service-page slug \"cheeks-jaw-line-nasolabial-1ml\" with hyphens as underscores = data/services.json row \"cheeks_jaw_line_nasolabial_1ml\" (source booking, name \"Cheeks, jaw line, nasolabial (1ml)\", status live, category skinboosters); lib/families.ts lists \"cheeks_jaw_line_nasolabial_1ml\" in the priced list of family \"injections_restylane_skin_boosters\"; out/treatments/injections_restylane_skin_boosters/index.html built"
+    },
+    {
+      "old": "/service-page/collagen",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/collagen/"
+      ],
+      "row_slug": "collagen",
+      "evidence": "service-page slug \"collagen\" with hyphens as underscores = data/services.json row \"collagen\" (source booking, name \"Collagen\", status live, category carboxy); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/collagen-production-full-face",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/collagen-production-full-face/"
+      ],
+      "row_slug": "collagen_production_full_face",
+      "evidence": "service-page slug \"collagen-production-full-face\" with hyphens as underscores = data/services.json row \"collagen_production_full_face\" (source booking, name \"Collagen Production (full Face)\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/combination-1",
+      "rule": 3,
+      "target": null,
+      "row_slug": "combination_1",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"combination-1\" with hyphens as underscores = data/services.json row \"combination_1\" (source booking, name \"Combination 1\", status held, category held)"
+    },
+    {
+      "old": "/service-page/combination-2",
+      "rule": 3,
+      "target": null,
+      "row_slug": "combination_2",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"combination-2\" with hyphens as underscores = data/services.json row \"combination_2\" (source booking, name \"Combination 2\", status held, category held)"
+    },
+    {
+      "old": "/service-page/combination-3",
+      "rule": 3,
+      "target": null,
+      "row_slug": "combination_3",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"combination-3\" with hyphens as underscores = data/services.json row \"combination_3\" (source booking, name \"Combination 3\", status held, category held)"
+    },
+    {
+      "old": "/service-page/combination-4",
+      "rule": 3,
+      "target": null,
+      "row_slug": "combination_4",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"combination-4\" with hyphens as underscores = data/services.json row \"combination_4\" (source booking, name \"Combination 4\", status held, category held)"
+    },
+    {
+      "old": "/service-page/combination-5",
+      "rule": 3,
+      "target": null,
+      "row_slug": "combination_5",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"combination-5\" with hyphens as underscores = data/services.json row \"combination_5\" (source booking, name \"Combination 5\", status held, category held)"
+    },
+    {
+      "old": "/service-page/combination-6",
+      "rule": 3,
+      "target": null,
+      "row_slug": "combination_6",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"combination-6\" with hyphens as underscores = data/services.json row \"combination_6\" (source booking, name \"Combination 6\", status held, category held)"
+    },
+    {
+      "old": "/service-page/combination-7",
+      "rule": 3,
+      "target": null,
+      "row_slug": "combination_7",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"combination-7\" with hyphens as underscores = data/services.json row \"combination_7\" (source booking, name \"Combination 7\", status held, category held)"
+    },
+    {
+      "old": "/service-page/cosmelan-depigmenting-including-home-kit",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/cosmelan-depigmenting-including-home-kit/"
+      ],
+      "row_slug": "cosmelan_depigmenting_including_home_kit",
+      "evidence": "service-page slug \"cosmelan-depigmenting-including-home-kit\" with hyphens as underscores = data/services.json row \"cosmelan_depigmenting_including_home_kit\" (source booking, name \"Cosmelan Depigmenting including home kit\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/cryoelectrolipolysis-one-area",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/cryoelectrolipolysis-one-area/"
+      ],
+      "row_slug": "cryoelectrolipolysis_one_area",
+      "evidence": "service-page slug \"cryoelectrolipolysis-one-area\" with hyphens as underscores = data/services.json row \"cryoelectrolipolysis_one_area\" (source booking, name \"Cryoelectrolipolysis One Area\", status live, category body); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/cryoelectrolipolysis-three-areas",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/cryoelectrolipolysis-three-areas/"
+      ],
+      "row_slug": "cryoelectrolipolysis_three_areas",
+      "evidence": "service-page slug \"cryoelectrolipolysis-three-areas\" with hyphens as underscores = data/services.json row \"cryoelectrolipolysis_three_areas\" (source booking, name \"Cryoelectrolipolysis Three Areas\", status live, category body); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/cryoelectrolipolysis-two-areas",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/cryoelectrolipolysis-two-areas/"
+      ],
+      "row_slug": "cryoelectrolipolysis_two_areas",
+      "evidence": "service-page slug \"cryoelectrolipolysis-two-areas\" with hyphens as underscores = data/services.json row \"cryoelectrolipolysis_two_areas\" (source booking, name \"Cryoelectrolipolysis Two Areas\", status live, category body); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/deep-tissue-massage",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/deep-tissue-massage/"
+      ],
+      "row_slug": "deep_tissue_massage",
+      "evidence": "service-page slug \"deep-tissue-massage\" with hyphens as underscores = data/services.json row \"deep_tissue_massage\" (source booking, name \"Deep Tissue Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/dermatitis",
+      "rule": 3,
+      "target": null,
+      "row_slug": "dermatitis",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"dermatitis\" with hyphens as underscores = data/services.json row \"dermatitis\" (source booking, name \"Dermatitis\", status held, category held)"
+    },
+    {
+      "old": "/service-page/emsculpt",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_emsculpt/",
+      "stub_paths": [
+        "/service-page/emsculpt/"
+      ],
+      "row_slug": "emsculpt",
+      "evidence": "service-page slug \"emsculpt\" with hyphens as underscores = data/services.json row \"emsculpt\" (source booking, name \"Emsculpt\", status live, category body); lib/families.ts lists \"emsculpt\" in the priced list of family \"aesthetics_body_emsculpt\"; out/treatments/aesthetics_body_emsculpt/index.html built"
+    },
+    {
+      "old": "/service-page/eye-bags",
+      "rule": 3,
+      "target": null,
+      "row_slug": "eye_bags",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"eye-bags\" with hyphens as underscores = data/services.json row \"eye_bags\" (source booking, name \"Eye Bags\", status held, category held)"
+    },
+    {
+      "old": "/service-page/eye-lift",
+      "rule": 3,
+      "target": null,
+      "row_slug": "eye_lift",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"eye-lift\" with hyphens as underscores = data/services.json row \"eye_lift\" (source booking, name \"Eye Lift\", status held, category held)"
+    },
+    {
+      "old": "/service-page/eyebrow-growth",
+      "rule": 3,
+      "target": null,
+      "row_slug": "eyebrow_growth",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"eyebrow-growth\" with hyphens as underscores = data/services.json row \"eyebrow_growth\" (source booking, name \"Eyebrow Growth\", status held, category held)"
+    },
+    {
+      "old": "/service-page/eyes-bags-or-dark-circle",
+      "rule": 3,
+      "target": null,
+      "row_slug": "eyes_bags_or_dark_circle",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"eyes-bags-or-dark-circle\" with hyphens as underscores = data/services.json row \"eyes_bags_or_dark_circle\" (source booking, name \"Eyes bags or dark circle\", status held, category held)"
+    },
+    {
+      "old": "/service-page/eyes-forehead",
+      "rule": 3,
+      "target": null,
+      "row_slug": "eyes_forehead",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"eyes-forehead\" with hyphens as underscores = data/services.json row \"eyes_forehead\" (source booking, name \"Eyes + Forehead\", status held, category held)"
+    },
+    {
+      "old": "/service-page/face-massage",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/face-massage/"
+      ],
+      "row_slug": "face_massage",
+      "evidence": "service-page slug \"face-massage\" with hyphens as underscores = data/services.json row \"face_massage\" (source booking, name \"Face Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/facial-fillers",
+      "rule": 3,
+      "target": "/treatments/injections_restylane_skin_boosters/",
+      "stub_paths": [
+        "/service-page/facial-fillers/"
+      ],
+      "row_slug": "facial_fillers",
+      "evidence": "service-page slug \"facial-fillers\" with hyphens as underscores = data/services.json row \"facial_fillers\" (source booking, name \"Facial Fillers\", status live, category skinboosters); lib/families.ts lists \"facial_fillers\" in the priced list of family \"injections_restylane_skin_boosters\"; out/treatments/injections_restylane_skin_boosters/index.html built"
+    },
+    {
+      "old": "/service-page/fat-dissolve",
+      "rule": 3,
+      "target": null,
+      "row_slug": "fat_dissolve",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"fat-dissolve\" with hyphens as underscores = data/services.json row \"fat_dissolve\" (source booking, name \"Fat Dissolve\", status held, category held)"
+    },
+    {
+      "old": "/service-page/foot-leg-massage",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/foot-leg-massage/"
+      ],
+      "row_slug": "foot_leg_massage",
+      "evidence": "service-page slug \"foot-leg-massage\" with hyphens as underscores = data/services.json row \"foot_leg_massage\" (source booking, name \"Foot & Leg Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/full-face",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_hifu/",
+      "stub_paths": [
+        "/service-page/full-face/"
+      ],
+      "row_slug": "full_face",
+      "evidence": "service-page slug \"full-face\" with hyphens as underscores = data/services.json row \"full_face\" (source booking, name \"Full Face\", status live, category hifu); lib/families.ts lists \"full_face\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+    },
+    {
+      "old": "/service-page/full-face-1",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_hifu/",
+      "stub_paths": [
+        "/service-page/full-face-1/"
+      ],
+      "row_slug": "full_face_1",
+      "evidence": "service-page slug \"full-face-1\" with hyphens as underscores = data/services.json row \"full_face_1\" (source booking, name \"Full Face\", status live, category hifu); lib/families.ts lists \"full_face_1\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+    },
+    {
+      "old": "/service-page/full-face-chin-neck",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_hifu/",
+      "stub_paths": [
+        "/service-page/full-face-chin-neck/"
+      ],
+      "row_slug": "full_face_chin_neck",
+      "evidence": "service-page slug \"full-face-chin-neck\" with hyphens as underscores = data/services.json row \"full_face_chin_neck\" (source booking, name \"Full Face + Chin + Neck\", status live, category hifu); lib/families.ts lists \"full_face_chin_neck\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+    },
+    {
+      "old": "/service-page/full-face-neck",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_hifu/",
+      "stub_paths": [
+        "/service-page/full-face-neck/"
+      ],
+      "row_slug": "full_face_neck",
+      "evidence": "service-page slug \"full-face-neck\" with hyphens as underscores = data/services.json row \"full_face_neck\" (source booking, name \"Full Face + Neck\", status live, category hifu); lib/families.ts lists \"full_face_neck\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+    },
+    {
+      "old": "/service-page/gycolic-acid-peel",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/gycolic-acid-peel/"
+      ],
+      "row_slug": "gycolic_acid_peel",
+      "evidence": "service-page slug \"gycolic-acid-peel\" with hyphens as underscores = data/services.json row \"gycolic_acid_peel\" (source booking, name \"Gycolic Acid Peel\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/hair-growth",
+      "rule": 3,
+      "target": null,
+      "row_slug": "hair_growth",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"hair-growth\" with hyphens as underscores = data/services.json row \"hair_growth\" (source booking, name \"Hair Growth\", status held, category held)"
+    },
+    {
+      "old": "/service-page/half-face",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_hifu/",
+      "stub_paths": [
+        "/service-page/half-face/"
+      ],
+      "row_slug": "half_face",
+      "evidence": "service-page slug \"half-face\" with hyphens as underscores = data/services.json row \"half_face\" (source booking, name \"Half Face\", status live, category hifu); lib/families.ts lists \"half_face\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+    },
+    {
+      "old": "/service-page/half-face-with-led-and-mask",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/half-face-with-led-and-mask/"
+      ],
+      "row_slug": "half_face_with_led_and_mask",
+      "evidence": "service-page slug \"half-face-with-led-and-mask\" with hyphens as underscores = data/services.json row \"half_face_with_led_and_mask\" (source booking, name \"Half face With LED and Mask\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/hand-rejuvenation",
+      "rule": 3,
+      "target": null,
+      "row_slug": "hand_rejuvenation",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"hand-rejuvenation\" with hyphens as underscores = data/services.json row \"hand_rejuvenation\" (source booking, name \"Hand Rejuvenation\", status held, category held)"
+    },
+    {
+      "old": "/service-page/hifu-med-area-flappy-arms-lovehandle",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_hifu_body/",
+      "stub_paths": [
+        "/service-page/hifu-med-area-flappy-arms-lovehandle/"
+      ],
+      "row_slug": "hifu_med_area_flappy_arms_lovehandle",
+      "evidence": "service-page slug \"hifu-med-area-flappy-arms-lovehandle\" with hyphens as underscores = data/services.json row \"hifu_med_area_flappy_arms_lovehandle\" (source booking, name \"Hifu Med Area (Flappy arms/lovehandle)\", status live, category body); lib/families.ts lists \"hifu_med_area_flappy_arms_lovehandle\" in the priced list of family \"aesthetics_body_hifu_body\"; out/treatments/aesthetics_body_hifu_body/index.html built"
+    },
+    {
+      "old": "/service-page/hifu-small-area-knees-armpit-bust-lift",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_hifu_body/",
+      "stub_paths": [
+        "/service-page/hifu-small-area-knees-armpit-bust-lift/"
+      ],
+      "row_slug": "hifu_small_area_knees_armpit_bust_lift",
+      "evidence": "service-page slug \"hifu-small-area-knees-armpit-bust-lift\" with hyphens as underscores = data/services.json row \"hifu_small_area_knees_armpit_bust_lift\" (source booking, name \"Hifu Small Area (Knees/Armpit/Bust lift)\", status live, category body); lib/families.ts lists \"hifu_small_area_knees_armpit_bust_lift\" in the priced list of family \"aesthetics_body_hifu_body\"; out/treatments/aesthetics_body_hifu_body/index.html built"
+    },
+    {
+      "old": "/service-page/hydrating",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/hydrating/"
+      ],
+      "row_slug": "hydrating",
+      "evidence": "service-page slug \"hydrating\" with hyphens as underscores = data/services.json row \"hydrating\" (source booking, name \"Hydrating\", status live, category facials); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/hydrofacial",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_hydro_facial/",
+      "stub_paths": [
+        "/service-page/hydrofacial/"
+      ],
+      "row_slug": "hydrofacial",
+      "evidence": "service-page slug \"hydrofacial\" with hyphens as underscores = data/services.json row \"hydrofacial\" (source booking, name \"Hydrofacial\", status live, category facials); lib/families.ts lists \"hydrofacial\" in the priced list of family \"aesthetics_1_hydro_facial\"; out/treatments/aesthetics_1_hydro_facial/index.html built"
+    },
+    {
+      "old": "/service-page/hyperpigmentation",
+      "rule": 3,
+      "target": null,
+      "row_slug": "hyperpigmentation",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"hyperpigmentation\" with hyphens as underscores = data/services.json row \"hyperpigmentation\" (source booking, name \"Hyperpigmentation\", status held, category held)"
+    },
+    {
+      "old": "/service-page/ipl-extra-large-area",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "stub_paths": [
+        "/service-page/ipl-extra-large-area/"
+      ],
+      "row_slug": "ipl_extra_large_area",
+      "evidence": "service-page slug \"ipl-extra-large-area\" with hyphens as underscores = data/services.json row \"ipl_extra_large_area\" (source booking, name \"IPL Extra Large Area\", status live, category hair); lib/families.ts lists \"ipl_extra_large_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+    },
+    {
+      "old": "/service-page/ipl-large-area",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "stub_paths": [
+        "/service-page/ipl-large-area/"
+      ],
+      "row_slug": "ipl_large_area",
+      "evidence": "service-page slug \"ipl-large-area\" with hyphens as underscores = data/services.json row \"ipl_large_area\" (source booking, name \"IPL Large Area\", status live, category hair); lib/families.ts lists \"ipl_large_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+    },
+    {
+      "old": "/service-page/ipl-medium-area",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "stub_paths": [
+        "/service-page/ipl-medium-area/"
+      ],
+      "row_slug": "ipl_medium_area",
+      "evidence": "service-page slug \"ipl-medium-area\" with hyphens as underscores = data/services.json row \"ipl_medium_area\" (source booking, name \"IPL Medium Area\", status live, category hair); lib/families.ts lists \"ipl_medium_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+    },
+    {
+      "old": "/service-page/ipl-small-area",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "stub_paths": [
+        "/service-page/ipl-small-area/"
+      ],
+      "row_slug": "ipl_small_area",
+      "evidence": "service-page slug \"ipl-small-area\" with hyphens as underscores = data/services.json row \"ipl_small_area\" (source booking, name \"IPL Small Area\", status live, category hair); lib/families.ts lists \"ipl_small_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+    },
+    {
+      "old": "/service-page/iv-prp-therapy",
+      "rule": 3,
+      "target": null,
+      "row_slug": "iv_prp_therapy",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"iv-prp-therapy\" with hyphens as underscores = data/services.json row \"iv_prp_therapy\" (source booking, name \"IV PRP Therapy\", status held, category held)"
+    },
+    {
+      "old": "/service-page/iv-prp-therapy-1",
+      "rule": 3,
+      "target": null,
+      "row_slug": "iv_prp_therapy_1",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"iv-prp-therapy-1\" with hyphens as underscores = data/services.json row \"iv_prp_therapy_1\" (source booking, name \"IV PRP Therapy\", status held, category held)"
+    },
+    {
+      "old": "/service-page/jalupro",
+      "rule": 3,
+      "target": null,
+      "row_slug": "jalupro",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"jalupro\" with hyphens as underscores = data/services.json row \"jalupro\" (source booking, name \"Jalupro\", status held, category held)"
+    },
+    {
+      "old": "/service-page/jaw-slimming",
+      "rule": 3,
+      "target": null,
+      "row_slug": "jaw_slimming",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"jaw-slimming\" with hyphens as underscores = data/services.json row \"jaw_slimming\" (source booking, name \"Jaw Slimming\", status held, category held)"
+    },
+    {
+      "old": "/service-page/knee",
+      "rule": 3,
+      "target": null,
+      "row_slug": "knee",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"knee\" with hyphens as underscores = data/services.json row \"knee\" (source booking, name \"Knee\", status held, category held)"
+    },
+    {
+      "old": "/service-page/ladies-waxing-bikini",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-bikini/"
+      ],
+      "row_slug": "ladies_waxing_bikini",
+      "evidence": "service-page slug \"ladies-waxing-bikini\" with hyphens as underscores = data/services.json row \"ladies_waxing_bikini\" (source booking, name \"Ladies' Waxing - Bikini\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-body-hot-wax-abdomen",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-body-hot-wax-abdomen/"
+      ],
+      "row_slug": "ladies_waxing_body_hot_wax_abdomen",
+      "evidence": "service-page slug \"ladies-waxing-body-hot-wax-abdomen\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_hot_wax_abdomen\" (source booking, name \"Ladies' Waxing - Body (Hot Wax) Abdomen\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-body-hot-wax-bottom",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-body-hot-wax-bottom/"
+      ],
+      "row_slug": "ladies_waxing_body_hot_wax_bottom",
+      "evidence": "service-page slug \"ladies-waxing-body-hot-wax-bottom\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_hot_wax_bottom\" (source booking, name \"Ladies' Waxing - Body (Hot Wax) Bottom\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-body-hot-wax-crack",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-body-hot-wax-crack/"
+      ],
+      "row_slug": "ladies_waxing_body_hot_wax_crack",
+      "evidence": "service-page slug \"ladies-waxing-body-hot-wax-crack\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_hot_wax_crack\" (source booking, name \"Ladies' Waxing - Body (Hot Wax) Crack\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-body-strip-wax-abdomen",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-body-strip-wax-abdomen/"
+      ],
+      "row_slug": "ladies_waxing_body_strip_wax_abdomen",
+      "evidence": "service-page slug \"ladies-waxing-body-strip-wax-abdomen\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_strip_wax_abdomen\" (source booking, name \"Ladies' Waxing Body (Strip Wax) Abdomen\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-body-strip-wax-bottom",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-body-strip-wax-bottom/"
+      ],
+      "row_slug": "ladies_waxing_body_strip_wax_bottom",
+      "evidence": "service-page slug \"ladies-waxing-body-strip-wax-bottom\" with hyphens as underscores = data/services.json row \"ladies_waxing_body_strip_wax_bottom\" (source booking, name \"Ladies' Waxing - Body (Strip Wax) Bottom\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-brazilian",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-brazilian/"
+      ],
+      "row_slug": "ladies_waxing_brazilian",
+      "evidence": "service-page slug \"ladies-waxing-brazilian\" with hyphens as underscores = data/services.json row \"ladies_waxing_brazilian\" (source booking, name \"Ladies' Waxing - Brazilian\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-face-hot-wax-forehead",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-face-hot-wax-forehead/"
+      ],
+      "row_slug": "ladies_waxing_face_hot_wax_forehead",
+      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-forehead\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_forehead\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Forehead\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-face-hot-wax-full-chin",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-face-hot-wax-full-chin/"
+      ],
+      "row_slug": "ladies_waxing_face_hot_wax_full_chin",
+      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-full-chin\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_full_chin\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Full Chin\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-face-hot-wax-full-face",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-face-hot-wax-full-face/"
+      ],
+      "row_slug": "ladies_waxing_face_hot_wax_full_face",
+      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-full-face\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_full_face\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Full Face\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-face-hot-wax-sideburns",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-face-hot-wax-sideburns/"
+      ],
+      "row_slug": "ladies_waxing_face_hot_wax_sideburns",
+      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-sideburns\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_sideburns\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Sideburns\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-face-hot-wax-upper-lip",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-face-hot-wax-upper-lip/"
+      ],
+      "row_slug": "ladies_waxing_face_hot_wax_upper_lip",
+      "evidence": "service-page slug \"ladies-waxing-face-hot-wax-upper-lip\" with hyphens as underscores = data/services.json row \"ladies_waxing_face_hot_wax_upper_lip\" (source booking, name \"Ladies' Waxing Face (Hot Wax) Upper Lip\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-full-arm-with-strip-wax",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-full-arm-with-strip-wax/"
+      ],
+      "row_slug": "ladies_waxing_full_arm_with_strip_wax",
+      "evidence": "service-page slug \"ladies-waxing-full-arm-with-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_full_arm_with_strip_wax\" (source booking, name \"Ladies' Waxing - Full Arm with strip wax\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-full-leg-strip-wax",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-full-leg-strip-wax/"
+      ],
+      "row_slug": "ladies_waxing_full_leg_strip_wax",
+      "evidence": "service-page slug \"ladies-waxing-full-leg-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_full_leg_strip_wax\" (source booking, name \"Ladies' Waxing - Full Leg (Strip Wax)\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-g-string",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-g-string/"
+      ],
+      "row_slug": "ladies_waxing_g_string",
+      "evidence": "service-page slug \"ladies-waxing-g-string\" with hyphens as underscores = data/services.json row \"ladies_waxing_g_string\" (source booking, name \"Ladies' Waxing - G-String\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-half-arm-with-strip-wax",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-half-arm-with-strip-wax/"
+      ],
+      "row_slug": "ladies_waxing_half_arm_with_strip_wax",
+      "evidence": "service-page slug \"ladies-waxing-half-arm-with-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_half_arm_with_strip_wax\" (source booking, name \"Ladies' Waxing - Half Arm with strip wax\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-hollywood",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-hollywood/"
+      ],
+      "row_slug": "ladies_waxing_hollywood",
+      "evidence": "service-page slug \"ladies-waxing-hollywood\" with hyphens as underscores = data/services.json row \"ladies_waxing_hollywood\" (source booking, name \"Ladies' Waxing - Hollywood\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-lower-leg-strip-wax",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-lower-leg-strip-wax/"
+      ],
+      "row_slug": "ladies_waxing_lower_leg_strip_wax",
+      "evidence": "service-page slug \"ladies-waxing-lower-leg-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_lower_leg_strip_wax\" (source booking, name \"Ladies' Waxing - Lower Leg (Strip Wax)\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-underarm-hot-wax",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-underarm-hot-wax/"
+      ],
+      "row_slug": "ladies_waxing_underarm_hot_wax",
+      "evidence": "service-page slug \"ladies-waxing-underarm-hot-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_underarm_hot_wax\" (source booking, name \"Ladies' Waxing - Underarm (Hot Wax)\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/ladies-waxing-upper-leg-strip-wax",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/ladies-waxing-upper-leg-strip-wax/"
+      ],
+      "row_slug": "ladies_waxing_upper_leg_strip_wax",
+      "evidence": "service-page slug \"ladies-waxing-upper-leg-strip-wax\" with hyphens as underscores = data/services.json row \"ladies_waxing_upper_leg_strip_wax\" (source booking, name \"Ladies' Waxing - Upper Leg (Strip Wax)\", status live, category waxing-ladies); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/large-area-outer-thighs-full-stomach",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/large-area-outer-thighs-full-stomach/"
+      ],
+      "row_slug": "large_area_outer_thighs_full_stomach",
+      "evidence": "service-page slug \"large-area-outer-thighs-full-stomach\" with hyphens as underscores = data/services.json row \"large_area_outer_thighs_full_stomach\" (source booking, name \"Large Area (Outer thighs/full stomach)\", status live, category body); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/laser-hair-removal-extra-large-area",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "stub_paths": [
+        "/service-page/laser-hair-removal-extra-large-area/"
+      ],
+      "row_slug": "laser_hair_removal_extra_large_area",
+      "evidence": "service-page slug \"laser-hair-removal-extra-large-area\" with hyphens as underscores = data/services.json row \"laser_hair_removal_extra_large_area\" (source booking, name \"Laser Hair Removal Extra Large Area\", status live, category hair); lib/families.ts lists \"laser_hair_removal_extra_large_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+    },
+    {
+      "old": "/service-page/laser-hair-removal-large-area",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "stub_paths": [
+        "/service-page/laser-hair-removal-large-area/"
+      ],
+      "row_slug": "laser_hair_removal_large_area",
+      "evidence": "service-page slug \"laser-hair-removal-large-area\" with hyphens as underscores = data/services.json row \"laser_hair_removal_large_area\" (source booking, name \"Laser Hair Removal Large Area\", status live, category hair); lib/families.ts lists \"laser_hair_removal_large_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+    },
+    {
+      "old": "/service-page/laser-hair-removal-medium-area",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl/",
+      "stub_paths": [
+        "/service-page/laser-hair-removal-medium-area/"
+      ],
+      "row_slug": "laser_hair_removal_medium_area",
+      "evidence": "service-page slug \"laser-hair-removal-medium-area\" with hyphens as underscores = data/services.json row \"laser_hair_removal_medium_area\" (source booking, name \"Laser Hair Removal Medium Area\", status live, category hair); lib/families.ts lists \"laser_hair_removal_medium_area\" in the priced list of family \"aesthetics_body_laser_hair_removal_2F_ipl\"; out/treatments/aesthetics_body_laser_hair_removal_2F_ipl/index.html built"
+    },
+    {
+      "old": "/service-page/lip-0-55ml",
+      "rule": 3,
+      "target": "/treatments/injections_restylane_skin_boosters/",
+      "stub_paths": [
+        "/service-page/lip-0-55ml/"
+      ],
+      "row_slug": "lip_0_55ml",
+      "evidence": "service-page slug \"lip-0-55ml\" with hyphens as underscores = data/services.json row \"lip_0_55ml\" (source booking, name \"Lip (0.55ml)\", status live, category skinboosters); lib/families.ts lists \"lip_0_55ml\" in the priced list of family \"injections_restylane_skin_boosters\"; out/treatments/injections_restylane_skin_boosters/index.html built"
+    },
+    {
+      "old": "/service-page/localised-fat",
+      "rule": 3,
+      "target": null,
+      "row_slug": "localised_fat",
+      "no_stub": "review",
+      "reason": "row status review: no stub (rule 3)",
+      "evidence": "service-page slug \"localised-fat\" with hyphens as underscores = data/services.json row \"localised_fat\" (source booking, name \"Localised fat\", status review, category carboxy)"
+    },
+    {
+      "old": "/service-page/medium-area-tattoo-removal-3-8cm",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_tattoo_removal/",
+      "stub_paths": [
+        "/service-page/medium-area-tattoo-removal-3-8cm/"
+      ],
+      "row_slug": "medium_area_tattoo_removal_3_8cm",
+      "evidence": "service-page slug \"medium-area-tattoo-removal-3-8cm\" with hyphens as underscores = data/services.json row \"medium_area_tattoo_removal_3_8cm\" (source booking, name \"Medium Area Tattoo Removal (3-8cm)\", status live, category laser); lib/families.ts lists \"medium_area_tattoo_removal_3_8cm\" in the priced list of family \"aesthetics_body_tattoo_removal\"; out/treatments/aesthetics_body_tattoo_removal/index.html built"
+    },
+    {
+      "old": "/service-page/men-s-tattoo-large-area-8-15cm",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_tattoo_removal/",
+      "stub_paths": [
+        "/service-page/men-s-tattoo-large-area-8-15cm/"
+      ],
+      "row_slug": "men_s_tattoo_large_area_8_15cm",
+      "evidence": "service-page slug \"men-s-tattoo-large-area-8-15cm\" with hyphens as underscores = data/services.json row \"men_s_tattoo_large_area_8_15cm\" (source booking, name \"Men's Tattoo Large Area (8-15cm)\", status live, category laser); lib/families.ts lists \"men_s_tattoo_large_area_8_15cm\" in the priced list of family \"aesthetics_body_tattoo_removal\"; out/treatments/aesthetics_body_tattoo_removal/index.html built"
+    },
+    {
+      "old": "/service-page/men-s-waxing-eyebrow",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/men-s-waxing-eyebrow/"
+      ],
+      "row_slug": "men_s_waxing_eyebrow",
+      "evidence": "service-page slug \"men-s-waxing-eyebrow\" with hyphens as underscores = data/services.json row \"men_s_waxing_eyebrow\" (source booking, name \"Men's Waxing Eyebrow\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/men-s-waxing-full-arm",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/men-s-waxing-full-arm/"
+      ],
+      "row_slug": "men_s_waxing_full_arm",
+      "evidence": "service-page slug \"men-s-waxing-full-arm\" with hyphens as underscores = data/services.json row \"men_s_waxing_full_arm\" (source booking, name \"Men's Waxing Full Arm\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/men-s-waxing-full-leg",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/men-s-waxing-full-leg/"
+      ],
+      "row_slug": "men_s_waxing_full_leg",
+      "evidence": "service-page slug \"men-s-waxing-full-leg\" with hyphens as underscores = data/services.json row \"men_s_waxing_full_leg\" (source booking, name \"Men's Waxing Full Leg\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/men-s-waxing-full-leg-1",
+      "rule": 3,
+      "target": null,
+      "row_slug": "men_s_waxing_full_leg_1",
+      "no_stub": "review",
+      "reason": "row status review: no stub (rule 3)",
+      "evidence": "service-page slug \"men-s-waxing-full-leg-1\" with hyphens as underscores = data/services.json row \"men_s_waxing_full_leg_1\" (source booking, name \"Men's Waxing Full Leg\", status review, category waxing-men)"
+    },
+    {
+      "old": "/service-page/men-s-waxing-half-arm",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/men-s-waxing-half-arm/"
+      ],
+      "row_slug": "men_s_waxing_half_arm",
+      "evidence": "service-page slug \"men-s-waxing-half-arm\" with hyphens as underscores = data/services.json row \"men_s_waxing_half_arm\" (source booking, name \"Men's Waxing Half Arm\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/men-s-waxing-half-chest",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/men-s-waxing-half-chest/"
+      ],
+      "row_slug": "men_s_waxing_half_chest",
+      "evidence": "service-page slug \"men-s-waxing-half-chest\" with hyphens as underscores = data/services.json row \"men_s_waxing_half_chest\" (source booking, name \"Men's Waxing Half Chest\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/men-s-waxing-half-leg",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/men-s-waxing-half-leg/"
+      ],
+      "row_slug": "men_s_waxing_half_leg",
+      "evidence": "service-page slug \"men-s-waxing-half-leg\" with hyphens as underscores = data/services.json row \"men_s_waxing_half_leg\" (source booking, name \"Men's Waxing Half Leg\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/men-s-waxing-shoulder",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/men-s-waxing-shoulder/"
+      ],
+      "row_slug": "men_s_waxing_shoulder",
+      "evidence": "service-page slug \"men-s-waxing-shoulder\" with hyphens as underscores = data/services.json row \"men_s_waxing_shoulder\" (source booking, name \"Men's Waxing Shoulder\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/men-s-waxing-stomach",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/men-s-waxing-stomach/"
+      ],
+      "row_slug": "men_s_waxing_stomach",
+      "evidence": "service-page slug \"men-s-waxing-stomach\" with hyphens as underscores = data/services.json row \"men_s_waxing_stomach\" (source booking, name \"Men's Waxing Stomach\", status live, category waxing-men); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/mesotherapy-1",
+      "rule": 3,
+      "target": null,
+      "row_slug": "mesotherapy_1",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"mesotherapy-1\" with hyphens as underscores = data/services.json row \"mesotherapy_1\" (source booking, name \"Mesotherapy\", status held, category held)"
+    },
+    {
+      "old": "/service-page/mesotherapy-facial-luxury",
+      "rule": 3,
+      "target": null,
+      "row_slug": "mesotherapy_facial_luxury",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"mesotherapy-facial-luxury\" with hyphens as underscores = data/services.json row \"mesotherapy_facial_luxury\" (source booking, name \"Mesotherapy Facial Luxury\", status held, category held)"
+    },
+    {
+      "old": "/service-page/mesotherapy-radio-frequency",
+      "rule": 3,
+      "target": null,
+      "row_slug": "mesotherapy_radio_frequency",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"mesotherapy-radio-frequency\" with hyphens as underscores = data/services.json row \"mesotherapy_radio_frequency\" (source booking, name \"Mesotherapy Radio Frequency\", status held, category held)"
+    },
+    {
+      "old": "/service-page/microneedling-face",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_microneedling/",
+      "stub_paths": [
+        "/service-page/microneedling-face/"
+      ],
+      "row_slug": "microneedling_face",
+      "evidence": "service-page slug \"microneedling-face\" with hyphens as underscores = data/services.json row \"microneedling_face\" (source booking, name \"Microneedling Face\", status live, category skin); lib/families.ts lists \"microneedling_face\" in the priced list of family \"aesthetics_1_microneedling\"; out/treatments/aesthetics_1_microneedling/index.html built"
+    },
+    {
+      "old": "/service-page/microneedling-face-neck",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_microneedling/",
+      "stub_paths": [
+        "/service-page/microneedling-face-neck/"
+      ],
+      "row_slug": "microneedling_face_neck",
+      "evidence": "service-page slug \"microneedling-face-neck\" with hyphens as underscores = data/services.json row \"microneedling_face_neck\" (source booking, name \"Microneedling Face + Neck\", status live, category skin); lib/families.ts lists \"microneedling_face_neck\" in the priced list of family \"aesthetics_1_microneedling\"; out/treatments/aesthetics_1_microneedling/index.html built"
+    },
+    {
+      "old": "/service-page/neck",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_hifu/",
+      "stub_paths": [
+        "/service-page/neck/"
+      ],
+      "row_slug": "neck",
+      "evidence": "service-page slug \"neck\" with hyphens as underscores = data/services.json row \"neck\" (source booking, name \"Neck\", status live, category hifu); lib/families.ts lists \"neck\" in the priced list of family \"aesthetics_1_hifu\"; out/treatments/aesthetics_1_hifu/index.html built"
+    },
+    {
+      "old": "/service-page/neck-lift",
+      "rule": 3,
+      "target": null,
+      "row_slug": "neck_lift",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"neck-lift\" with hyphens as underscores = data/services.json row \"neck_lift\" (source booking, name \"Neck Lift\", status held, category held)"
+    },
+    {
+      "old": "/service-page/non-surgical-rhinoplasty-1",
+      "rule": 3,
+      "target": null,
+      "row_slug": "non_surgical_rhinoplasty_1",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"non-surgical-rhinoplasty-1\" with hyphens as underscores = data/services.json row \"non_surgical_rhinoplasty_1\" (source booking, name \"Non-surgical Rhinoplasty\", status held, category held)"
+    },
+    {
+      "old": "/service-page/one-area-frown-or-eyes-only",
+      "rule": 3,
+      "target": null,
+      "row_slug": "one_area_frown_or_eyes_only",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"one-area-frown-or-eyes-only\" with hyphens as underscores = data/services.json row \"one_area_frown_or_eyes_only\" (source booking, name \"One Area (Frown or Eyes Only)\", status held, category held)"
+    },
+    {
+      "old": "/service-page/penile-enlargement",
+      "rule": 3,
+      "target": null,
+      "row_slug": "penile_enlargement",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"penile-enlargement\" with hyphens as underscores = data/services.json row \"penile_enlargement\" (source booking, name \"Penile Enlargement\", status held, category held)"
+    },
+    {
+      "old": "/service-page/pigmentations-ipl",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_ipl_intense_pulsed_light/",
+      "stub_paths": [
+        "/service-page/pigmentations-ipl/"
+      ],
+      "row_slug": "pigmentations_ipl",
+      "evidence": "service-page slug \"pigmentations-ipl\" with hyphens as underscores = data/services.json row \"pigmentations_ipl\" (source booking, name \"Pigmentations IPL\", status live, category laser); lib/families.ts lists \"pigmentations_ipl\" in the priced list of family \"aesthetics_1_ipl_intense_pulsed_light\"; out/treatments/aesthetics_1_ipl_intense_pulsed_light/index.html built"
+    },
+    {
+      "old": "/service-page/pigmentations-picosure",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_pico_laser/",
+      "stub_paths": [
+        "/service-page/pigmentations-picosure/"
+      ],
+      "row_slug": "pigmentations_picosure",
+      "evidence": "service-page slug \"pigmentations-picosure\" with hyphens as underscores = data/services.json row \"pigmentations_picosure\" (source booking, name \"Pigmentations Picosure\", status live, category laser); lib/families.ts lists \"pigmentations_picosure\" in the priced list of family \"aesthetics_1_pico_laser\"; out/treatments/aesthetics_1_pico_laser/index.html built"
+    },
+    {
+      "old": "/service-page/pigmentations-qswitch",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/pigmentations-qswitch/"
+      ],
+      "row_slug": "pigmentations_qswitch",
+      "evidence": "service-page slug \"pigmentations-qswitch\" with hyphens as underscores = data/services.json row \"pigmentations_qswitch\" (source booking, name \"Pigmentations Qswitch\", status live, category laser); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/profhilo",
+      "rule": 3,
+      "target": "/treatments/injections_profhilo_skin_booster/",
+      "stub_paths": [
+        "/service-page/profhilo/"
+      ],
+      "row_slug": "profhilo",
+      "evidence": "service-page slug \"profhilo\" with hyphens as underscores = data/services.json row \"profhilo\" (source booking, name \"Profhilo\", status live, category skinboosters); lib/families.ts lists \"profhilo\" in the priced list of family \"injections_profhilo_skin_booster\"; out/treatments/injections_profhilo_skin_booster/index.html built"
+    },
+    {
+      "old": "/service-page/profhilo-2-sessions",
+      "rule": 3,
+      "target": "/treatments/injections_profhilo_skin_booster/",
+      "stub_paths": [
+        "/service-page/profhilo-2-sessions/"
+      ],
+      "row_slug": "profhilo_2_sessions",
+      "evidence": "service-page slug \"profhilo-2-sessions\" with hyphens as underscores = data/services.json row \"profhilo_2_sessions\" (source booking, name \"Profhilo 2 Sessions\", status live, category skinboosters); lib/families.ts lists \"profhilo_2_sessions\" in the priced list of family \"injections_profhilo_skin_booster\"; out/treatments/injections_profhilo_skin_booster/index.html built"
+    },
+    {
+      "old": "/service-page/prp-natural-filler-face-lips",
+      "rule": 3,
+      "target": null,
+      "row_slug": "prp_natural_filler_face_lips",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"prp-natural-filler-face-lips\" with hyphens as underscores = data/services.json row \"prp_natural_filler_face_lips\" (source booking, name \"PRP Natural Filler Face/Lips\", status held, category held)"
+    },
+    {
+      "old": "/service-page/prp-rhinoplasty",
+      "rule": 3,
+      "target": null,
+      "row_slug": "prp_rhinoplasty",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"prp-rhinoplasty\" with hyphens as underscores = data/services.json row \"prp_rhinoplasty\" (source booking, name \"PRP Rhinoplasty\", status held, category held)"
+    },
+    {
+      "old": "/service-page/psoriasis",
+      "rule": 3,
+      "target": null,
+      "row_slug": "psoriasis",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"psoriasis\" with hyphens as underscores = data/services.json row \"psoriasis\" (source booking, name \"Psoriasis\", status held, category held)"
+    },
+    {
+      "old": "/service-page/radio-frequency-indiba",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_indiba_deep_beauty/",
+      "stub_paths": [
+        "/service-page/radio-frequency-indiba/"
+      ],
+      "row_slug": "radio_frequency_indiba",
+      "evidence": "service-page slug \"radio-frequency-indiba\" with hyphens as underscores = data/services.json row \"radio_frequency_indiba\" (source booking, name \"Radio Frequency INDIBA\", status live, category skin); lib/families.ts lists \"radio_frequency_indiba\" in the priced list of family \"aesthetics_body_indiba_deep_beauty\"; out/treatments/aesthetics_body_indiba_deep_beauty/index.html built"
+    },
+    {
+      "old": "/service-page/radio-frequency-indiba-full-back-leg",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_indiba_deep_beauty/",
+      "stub_paths": [
+        "/service-page/radio-frequency-indiba-full-back-leg/"
+      ],
+      "row_slug": "radio_frequency_indiba_full_back_leg",
+      "evidence": "service-page slug \"radio-frequency-indiba-full-back-leg\" with hyphens as underscores = data/services.json row \"radio_frequency_indiba_full_back_leg\" (source booking, name \"Radio Frequency INDIBA full back/ leg\", status live, category skin); lib/families.ts lists \"radio_frequency_indiba_full_back_leg\" in the priced list of family \"aesthetics_body_indiba_deep_beauty\"; out/treatments/aesthetics_body_indiba_deep_beauty/index.html built"
+    },
+    {
+      "old": "/service-page/rejuvenation-full-face",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/rejuvenation-full-face/"
+      ],
+      "row_slug": "rejuvenation_full_face",
+      "evidence": "service-page slug \"rejuvenation-full-face\" with hyphens as underscores = data/services.json row \"rejuvenation_full_face\" (source booking, name \"Rejuvenation (Full Face)\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/rejuvenation-ipl",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_ipl_intense_pulsed_light/",
+      "stub_paths": [
+        "/service-page/rejuvenation-ipl/"
+      ],
+      "row_slug": "rejuvenation_ipl",
+      "evidence": "service-page slug \"rejuvenation-ipl\" with hyphens as underscores = data/services.json row \"rejuvenation_ipl\" (source booking, name \"Rejuvenation IPL\", status live, category laser); lib/families.ts lists \"rejuvenation_ipl\" in the priced list of family \"aesthetics_1_ipl_intense_pulsed_light\"; out/treatments/aesthetics_1_ipl_intense_pulsed_light/index.html built"
+    },
+    {
+      "old": "/service-page/rejuvenation-picosure",
+      "rule": 3,
+      "target": "/treatments/aesthetics_1_pico_laser/",
+      "stub_paths": [
+        "/service-page/rejuvenation-picosure/"
+      ],
+      "row_slug": "rejuvenation_picosure",
+      "evidence": "service-page slug \"rejuvenation-picosure\" with hyphens as underscores = data/services.json row \"rejuvenation_picosure\" (source booking, name \"Rejuvenation Picosure\", status live, category laser); lib/families.ts lists \"rejuvenation_picosure\" in the priced list of family \"aesthetics_1_pico_laser\"; out/treatments/aesthetics_1_pico_laser/index.html built"
+    },
+    {
+      "old": "/service-page/rosacea",
+      "rule": 3,
+      "target": null,
+      "row_slug": "rosacea",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"rosacea\" with hyphens as underscores = data/services.json row \"rosacea\" (source booking, name \"Rosacea\", status held, category held)"
+    },
+    {
+      "old": "/service-page/skinox-acne-blemish",
+      "rule": 3,
+      "target": null,
+      "row_slug": "skinox_acne_blemish",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"skinox-acne-blemish\" with hyphens as underscores = data/services.json row \"skinox_acne_blemish\" (source booking, name \"Skinox Acne & Blemish\", status held, category held)"
+    },
+    {
+      "old": "/service-page/skinox-pigmentation",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/skinox-pigmentation/"
+      ],
+      "row_slug": "skinox_pigmentation",
+      "evidence": "service-page slug \"skinox-pigmentation\" with hyphens as underscores = data/services.json row \"skinox_pigmentation\" (source booking, name \"Skinox Pigmentation\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/skinox-redness",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/skinox-redness/"
+      ],
+      "row_slug": "skinox_redness",
+      "evidence": "service-page slug \"skinox-redness\" with hyphens as underscores = data/services.json row \"skinox_redness\" (source booking, name \"Skinox Redness\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/skinox-wrinkles",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/skinox-wrinkles/"
+      ],
+      "row_slug": "skinox_wrinkles",
+      "evidence": "service-page slug \"skinox-wrinkles\" with hyphens as underscores = data/services.json row \"skinox_wrinkles\" (source booking, name \"Skinox Wrinkles\", status live, category skin); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/smile-line",
+      "rule": 3,
+      "target": null,
+      "row_slug": "smile_line",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"smile-line\" with hyphens as underscores = data/services.json row \"smile_line\" (source booking, name \"Smile Line\", status held, category held)"
+    },
+    {
+      "old": "/service-page/stretch-mark-scar-and-burns",
+      "rule": 3,
+      "target": null,
+      "row_slug": "stretch_mark_scar_and_burns",
+      "no_stub": "review",
+      "reason": "row status review: no stub (rule 3)",
+      "evidence": "service-page slug \"stretch-mark-scar-and-burns\" with hyphens as underscores = data/services.json row \"stretch_mark_scar_and_burns\" (source booking, name \"Stretch mark, Scar and burns\", status review, category carboxy)"
+    },
+    {
+      "old": "/service-page/stretch-marks",
+      "rule": 3,
+      "target": null,
+      "row_slug": "stretch_marks",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"stretch-marks\" with hyphens as underscores = data/services.json row \"stretch_marks\" (source booking, name \"Stretch marks\", status held, category held)"
+    },
+    {
+      "old": "/service-page/swedish-massage",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/swedish-massage/"
+      ],
+      "row_slug": "swedish_massage",
+      "evidence": "service-page slug \"swedish-massage\" with hyphens as underscores = data/services.json row \"swedish_massage\" (source booking, name \"Swedish Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/tattoo-large-area-8-15cm",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_tattoo_removal/",
+      "stub_paths": [
+        "/service-page/tattoo-large-area-8-15cm/"
+      ],
+      "row_slug": "tattoo_large_area_8_15cm",
+      "evidence": "service-page slug \"tattoo-large-area-8-15cm\" with hyphens as underscores = data/services.json row \"tattoo_large_area_8_15cm\" (source booking, name \"Tattoo Large Area (8-15cm)\", status live, category laser); lib/families.ts lists \"tattoo_large_area_8_15cm\" in the priced list of family \"aesthetics_body_tattoo_removal\"; out/treatments/aesthetics_body_tattoo_removal/index.html built"
+    },
+    {
+      "old": "/service-page/tattoo-removal-1-session",
+      "rule": 3,
+      "target": "/treatments/aesthetics_body_tattoo_removal/",
+      "stub_paths": [
+        "/service-page/tattoo-removal-1-session/"
+      ],
+      "row_slug": "tattoo_removal_1_session",
+      "evidence": "service-page slug \"tattoo-removal-1-session\" with hyphens as underscores = data/services.json row \"tattoo_removal_1_session\" (source booking, name \"Tattoo Removal (1 Session)\", status live, category laser); lib/families.ts lists \"tattoo_removal_1_session\" in the priced list of family \"aesthetics_body_tattoo_removal\"; out/treatments/aesthetics_body_tattoo_removal/index.html built"
+    },
+    {
+      "old": "/service-page/tension-neck-sculp-massage-intense",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/tension-neck-sculp-massage-intense/"
+      ],
+      "row_slug": "tension_neck_sculp_massage_intense",
+      "evidence": "service-page slug \"tension-neck-sculp-massage-intense\" with hyphens as underscores = data/services.json row \"tension_neck_sculp_massage_intense\" (source booking, name \"Tension neck & sculp massage (intense)\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/thai-massage",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/thai-massage/"
+      ],
+      "row_slug": "thai_massage",
+      "evidence": "service-page slug \"thai-massage\" with hyphens as underscores = data/services.json row \"thai_massage\" (source booking, name \"Thai Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/therapeutic-lymphatic-drainage-massage",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/therapeutic-lymphatic-drainage-massage/"
+      ],
+      "row_slug": "therapeutic_lymphatic_drainage_massage",
+      "evidence": "service-page slug \"therapeutic-lymphatic-drainage-massage\" with hyphens as underscores = data/services.json row \"therapeutic_lymphatic_drainage_massage\" (source booking, name \"Therapeutic Lymphatic Drainage Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/therapeutic-lymphatic-drainage-massage-1",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/therapeutic-lymphatic-drainage-massage-1/"
+      ],
+      "row_slug": "therapeutic_lymphatic_drainage_massage_1",
+      "evidence": "service-page slug \"therapeutic-lymphatic-drainage-massage-1\" with hyphens as underscores = data/services.json row \"therapeutic_lymphatic_drainage_massage_1\" (source booking, name \"Therapeutic Lymphatic Drainage Massage\", status live, category massage); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/thermal-peel-rejuvenations",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/thermal-peel-rejuvenations/"
+      ],
+      "row_slug": "thermal_peel_rejuvenations",
+      "evidence": "service-page slug \"thermal-peel-rejuvenations\" with hyphens as underscores = data/services.json row \"thermal_peel_rejuvenations\" (source booking, name \"Thermal peel/Rejuvenations\", status live, category laser); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/tmj",
+      "rule": 3,
+      "target": null,
+      "row_slug": "tmj",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"tmj\" with hyphens as underscores = data/services.json row \"tmj\" (source booking, name \"TMJ\", status held, category held)"
+    },
+    {
+      "old": "/service-page/vampire-facial",
+      "rule": 3,
+      "target": null,
+      "row_slug": "vampire_facial",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"vampire-facial\" with hyphens as underscores = data/services.json row \"vampire_facial\" (source booking, name \"Vampire Facial\", status held, category held)"
+    },
+    {
+      "old": "/service-page/vascular-removal-vein-broken-capillari-1",
+      "rule": 3,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/service-page/vascular-removal-vein-broken-capillari-1/"
+      ],
+      "row_slug": "vascular_removal_vein_broken_capillari_1",
+      "evidence": "service-page slug \"vascular-removal-vein-broken-capillari-1\" with hyphens as underscores = data/services.json row \"vascular_removal_vein_broken_capillari_1\" (source booking, name \"Vascular removal(vein /broken capillari)\", status live, category laser); no family in lib/families.ts lists this row in its priced list"
+    },
+    {
+      "old": "/service-page/vitamin-c-shot-d3-b12",
+      "rule": 3,
+      "target": null,
+      "row_slug": "vitamin_c_shot_d3_b12",
+      "no_stub": "held",
+      "reason": "row status held: no stub (rule 3)",
+      "evidence": "service-page slug \"vitamin-c-shot-d3-b12\" with hyphens as underscores = data/services.json row \"vitamin_c_shot_d3_b12\" (source booking, name \"Vitamin (C Shot D3 B12)\", status held, category held)"
+    },
+    {
+      "old": "/services",
+      "rule": 2,
+      "target": "/treatments/",
+      "stub_paths": [
+        "/services/"
+      ],
+      "evidence": "gap report section 7 draft row for /services"
+    },
+    {
+      "old": "/shop",
+      "rule": 2,
+      "target": null,
+      "no_stub": "shop",
+      "reason": "owner decision pending on the shop (gap report S3, question 5); PEL ruling Q28: no stub",
+      "evidence": "gap report sections 2 and 7"
+    },
+    {
+      "old": "/slimming",
+      "rule": 2,
+      "target": "/body-contouring-kings-cross/",
+      "stub_paths": [
+        "/slimming/"
+      ],
+      "evidence": "gap report section 7 draft row for /slimming"
+    },
+    {
+      "old": "/terms-of-use",
+      "rule": 2,
+      "target": "/terms/",
+      "stub_paths": [
+        "/terms-of-use/"
+      ],
+      "evidence": "gap report section 7 draft row for /terms-of-use"
+    },
+    {
+      "old": "/waxing",
+      "rule": 2,
+      "target": "/waxing-kings-cross/",
+      "stub_paths": [
+        "/waxing/"
+      ],
+      "evidence": "gap report section 7 draft row for /waxing"
+    }
+  ]
+}
