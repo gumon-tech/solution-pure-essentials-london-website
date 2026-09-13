@@ -49,10 +49,15 @@ export type StoryBlock =
   | { kind: "bullet-list"; items: string[] }
   | { kind: "buttons"; primary: StoryButton; secondary: StoryButton }
   | { kind: "table"; rows: StoryPriceRow[] }
+  | { kind: "info-table"; rows: string[][] }
   | { kind: "faq-item"; question: string; answer: string };
 
 export interface StorySection {
-  id: (typeof SECTION_ORDER)[number];
+  /** "hero", "faq", "call-to-action" (specially recognised), or any other section
+   * name. For the 8 STORY_SLUGS pages this is always a member of SECTION_ORDER, in
+   * that exact order; for the set-3 STORY_SET3_SLUGS pages it is file order, with the
+   * one constraint that section 0 is "hero" (see parseStoryFileFlexible). */
+  id: string;
   blocks: StoryBlock[];
 }
 
@@ -134,17 +139,25 @@ function parseFrontMatter(raw: string, slug: string): { frontMatter: StoryFrontM
 
 // --- section splitting -------------------------------------------------------------
 
-function splitSections(body: string, slug: string): Map<string, string[]> {
+/** Splits a story file's body into ordered (id, lines) sections, in file order.
+ * Shared by both the 8-section strict grammar (STORY_SLUGS) and the flexible one
+ * (STORY_SET3_SLUGS) -- section-order validation is layered on top by the caller. */
+function splitSectionsRaw(body: string, slug: string): { id: string; lines: string[] }[] {
   const lines = body.split("\n");
-  const sections = new Map<string, string[]>();
+  const sections: { id: string; lines: string[] }[] = [];
+  const seen = new Set<string>();
   let current: string | null = null;
   let buf: string[] = [];
 
   for (const line of lines) {
     const heading = /^## (.+)$/.exec(line);
     if (heading) {
-      if (current) sections.set(current, buf);
+      if (current) sections.push({ id: current, lines: buf });
       current = heading[1].trim();
+      if (seen.has(current)) {
+        throw new Error(`${slug}: duplicate section heading ${JSON.stringify(current)}`);
+      }
+      seen.add(current);
       buf = [];
       continue;
     }
@@ -154,9 +167,13 @@ function splitSections(body: string, slug: string): Map<string, string[]> {
       throw new Error(`${slug}: content before the first "## " section header: ${JSON.stringify(line)}`);
     }
   }
-  if (current) sections.set(current, buf);
+  if (current) sections.push({ id: current, lines: buf });
+  return sections;
+}
 
-  const ids = [...sections.keys()];
+function splitSections(body: string, slug: string): Map<string, string[]> {
+  const raw = splitSectionsRaw(body, slug);
+  const ids = raw.map((s) => s.id);
   const expected = [...SECTION_ORDER];
   const matches = ids.length === expected.length && expected.every((id, idx) => ids[idx] === id);
   if (!matches) {
@@ -164,7 +181,18 @@ function splitSections(body: string, slug: string): Map<string, string[]> {
       `${slug}: sections must be exactly ${expected.join(", ")} in that order; found ${ids.join(", ")}`,
     );
   }
-  return sections;
+  return new Map(raw.map((s) => [s.id, s.lines]));
+}
+
+/** Set-3 section-order rule (executor brief, queue row Q27): the first section must
+ * be "hero"; faq and call-to-action are optional; any other section ids are allowed,
+ * in file order. Unlike the strict grammar there is no fixed id list to check against. */
+function splitSectionsFlexible(body: string, slug: string): { id: string; lines: string[] }[] {
+  const raw = splitSectionsRaw(body, slug);
+  if (raw.length === 0 || raw[0].id !== "hero") {
+    throw new Error(`${slug}: first section must be "hero", found ${raw[0] ? JSON.stringify(raw[0].id) : "no sections"}`);
+  }
+  return raw;
 }
 
 // --- table parsing -----------------------------------------------------------------
@@ -214,6 +242,36 @@ function parseTable(tableLines: string[], slug: string, servicesBySlug: Map<stri
       waHref: waLink(waName, rowSlug),
     };
   });
+}
+
+/** A table whose header's last column is not "Source slug" is a plain info table (set
+ * 3, e.g. "Day | Hours"): every cell renders verbatim, no price/£ formatting, no
+ * WhatsApp link. See isPriceTableHeader() at the call site for the branch decision. */
+function parseInfoTableRows(tableLines: string[], slug: string): string[][] {
+  if (tableLines.length < 2) {
+    throw new Error(`${slug}: table has no header/separator row: ${JSON.stringify(tableLines)}`);
+  }
+  const header = splitTableRow(tableLines[0]);
+  const sep = splitTableRow(tableLines[1]);
+  if (!isSeparatorRow(sep) || sep.length !== header.length) {
+    throw new Error(`${slug}: info table separator row malformed: ${JSON.stringify(tableLines[1])}`);
+  }
+  return tableLines.slice(2).map((line) => {
+    const cells = splitTableRow(line);
+    if (cells.length !== header.length) {
+      throw new Error(
+        `${slug}: info table row must have ${header.length} columns, got ${cells.length}: ${JSON.stringify(line)}`,
+      );
+    }
+    return cells;
+  });
+}
+
+/** A table is a price table iff its header's 4th column is literally "Source slug"
+ * (the same test parseTable() itself enforces) -- anything else is an info table. */
+function isPriceTableHeader(tableLines: string[]): boolean {
+  const header = splitTableRow(tableLines[0]);
+  return header.length === 4 && header[3] === "Source slug";
 }
 
 // --- block parsing -----------------------------------------------------------------
@@ -268,7 +326,11 @@ function parseBlocks(
         tableLines.push(lines[i]);
         i++;
       }
-      blocks.push({ kind: "table", rows: parseTable(tableLines, slug, servicesBySlug) });
+      if (isPriceTableHeader(tableLines)) {
+        blocks.push({ kind: "table", rows: parseTable(tableLines, slug, servicesBySlug) });
+      } else {
+        blocks.push({ kind: "info-table", rows: parseInfoTableRows(tableLines, slug) });
+      }
       continue;
     }
 
@@ -359,12 +421,40 @@ function parseStoryFile(filePath: string, slug: string, servicesBySlug: Map<stri
   return { slug, frontMatter, sections };
 }
 
-// The 8 storytelling pages this row builds (queue rows Q25/Q26). content/stories/ is
-// shared with other executors' in-progress drafts (e.g. "your-visit.md",
-// "first-visit-guide.md", "our-clinic-kings-cross.md" -- not part of this row and not
-// written to this 8-section grammar), so this list is explicit rather than a glob of
-// every "*.md" in the directory: a glob would break the build the moment one of those
-// drafts landed on main (as it did -- see HANDOFF/queue history for this row).
+/** Real room photos (see docs/design/imagery-guideline.md §1, §4): never people, so
+ * never a valid hero image on their own. Also the set the room-photo sentence check
+ * in scripts/check-story-pages.mjs enforces against, independently, off the .md. */
+const ROOM_IMAGE_SLOTS = new Set<ImageSlot>(["room-warm", "room-trolley", "room-analyser", "room-couch"]);
+
+/** Set-3 (queue row Q27): a flexible grammar for pages whose sections don't follow
+ * the 8-page SECTION_ORDER. Only "hero" is fixed (must be first, and its image must
+ * be a people image, not a room photo); every other section id is accepted, in file
+ * order, and faq / call-to-action are optional. Table shape (parseBlocks) and faq
+ * bold-Q/A parsing are identical to the strict grammar -- only section-order
+ * validation differs. */
+function parseStoryFileFlexible(filePath: string, slug: string, servicesBySlug: Map<string, Service>): StoryPage {
+  const raw = fs.readFileSync(filePath, "utf8");
+  const { frontMatter, rest } = parseFrontMatter(raw, slug);
+  const rawSections = splitSectionsFlexible(rest, slug);
+
+  const sections: StorySection[] = rawSections.map(({ id, lines }) => ({
+    id,
+    blocks: parseBlocks(lines, id, slug, servicesBySlug),
+  }));
+
+  const heroFirst = sections[0].blocks[0];
+  if (!heroFirst || heroFirst.kind !== "image") {
+    throw new Error(`${slug}: hero section must start with an [image: ...] block`);
+  }
+  if (ROOM_IMAGE_SLOTS.has(heroFirst.slot)) {
+    throw new Error(`${slug}: hero section must start with a people image, found room slot ${JSON.stringify(heroFirst.slot)}`);
+  }
+
+  return { slug, frontMatter, sections };
+}
+
+// The 8 storytelling pages built by queue rows Q25/Q26, in their strict 8-section
+// grammar (SECTION_ORDER).
 const STORY_SLUGS = [
   "hifu-kings-cross",
   "laser-hair-removal-kings-cross",
@@ -376,13 +466,24 @@ const STORY_SLUGS = [
   "skin-boosters-kings-cross",
 ] as const;
 
+// The 3 "set 3" storytelling pages built by queue row Q27, in the flexible grammar
+// (parseStoryFileFlexible / splitSectionsFlexible). content/stories/ held these 3
+// files as other executors' in-progress drafts before this row landed (see HANDOFF/
+// queue history) -- both lists stay explicit rather than a glob of every "*.md" in
+// the directory, so a future draft landing on main can't silently join either family.
+const STORY_SET3_SLUGS = ["our-clinic-kings-cross", "your-visit", "first-visit-guide"] as const;
+
 let cache: StoryPage[] | null = null;
 
 function loadAll(): StoryPage[] {
   if (cache) return cache;
   const dir = path.join(process.cwd(), "content/stories");
   const servicesBySlug = new Map(liveServices().map((s) => [s.slug, s]));
-  cache = STORY_SLUGS.map((slug) => parseStoryFile(path.join(dir, `${slug}.md`), slug, servicesBySlug));
+  const strict = STORY_SLUGS.map((slug) => parseStoryFile(path.join(dir, `${slug}.md`), slug, servicesBySlug));
+  const flexible = STORY_SET3_SLUGS.map((slug) =>
+    parseStoryFileFlexible(path.join(dir, `${slug}.md`), slug, servicesBySlug),
+  );
+  cache = [...strict, ...flexible];
   return cache;
 }
 

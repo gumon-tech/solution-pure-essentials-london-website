@@ -80,6 +80,32 @@ function Buttons({
   );
 }
 
+/** A plain 2+-column info table (set 3, e.g. "Day | Hours" -- see content/contact.md
+ * for the same shape): every cell verbatim, tabular-nums, border-beige hairlines. No
+ * WhatsApp links, no £ conversion -- unlike PriceTable this is not a price list.
+ * Mirrors the established hours-table pattern (components/contact/InfoPanel.tsx,
+ * components/home/Clinic.tsx): first column as a row header, no rendered header row. */
+function InfoTable({ rows }: { rows: string[][] }) {
+  return (
+    <table className="w-full text-cocoa">
+      <tbody className="divide-y divide-beige">
+        {rows.map((row, i) => (
+          <tr key={i}>
+            <th scope="row" className="py-3 pr-4 text-left font-normal text-espresso">
+              {row[0]}
+            </th>
+            {row.slice(1).map((cell, j) => (
+              <td key={j} className="tabular-nums py-3">
+                {cell}
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
 function PriceTable({ rows }: { rows: StoryPriceRow[] }) {
   return (
     <ul className="divide-y divide-beige">
@@ -134,6 +160,8 @@ function renderBlock(block: StoryBlock, key: number, opts: { hidePrimaryOnMobile
       );
     case "table":
       return <PriceTable key={key} rows={block.rows} />;
+    case "info-table":
+      return <InfoTable key={key} rows={block.rows} />;
     case "faq-item":
       return <FaqItem key={key} question={block.question} answer={block.answer} />;
     case "image":
@@ -165,11 +193,16 @@ function ImageWithText({
 type Group =
   | { type: "plain"; blocks: StoryBlock[] }
   | { type: "table"; rows: StoryPriceRow[] }
+  | { type: "info-table"; rows: string[][] }
   | { type: "image"; slot: ImageSlot; following: StoryBlock[] };
 
+function isBreakoutBlock(block: StoryBlock): boolean {
+  return block.kind === "image" || block.kind === "table" || block.kind === "info-table";
+}
+
 /** Groups a section's blocks so an image pairs with the text that follows it, up to
- * the next image or table -- a table always breaks out to its own full-width group,
- * even mid-run, since price rows need the whole page width. */
+ * the next image or table -- a table (price or info) always breaks out to its own
+ * full-width group, even mid-run, since both need the whole page width. */
 function groupBlocks(blocks: StoryBlock[]): Group[] {
   const groups: Group[] = [];
   let i = 0;
@@ -178,7 +211,7 @@ function groupBlocks(blocks: StoryBlock[]): Group[] {
     if (block.kind === "image") {
       i++;
       const following: StoryBlock[] = [];
-      while (i < blocks.length && blocks[i].kind !== "image" && blocks[i].kind !== "table") {
+      while (i < blocks.length && !isBreakoutBlock(blocks[i])) {
         following.push(blocks[i]);
         i++;
       }
@@ -186,9 +219,12 @@ function groupBlocks(blocks: StoryBlock[]): Group[] {
     } else if (block.kind === "table") {
       groups.push({ type: "table", rows: block.rows });
       i++;
+    } else if (block.kind === "info-table") {
+      groups.push({ type: "info-table", rows: block.rows });
+      i++;
     } else {
       const plain: StoryBlock[] = [];
-      while (i < blocks.length && blocks[i].kind !== "image" && blocks[i].kind !== "table") {
+      while (i < blocks.length && !isBreakoutBlock(blocks[i])) {
         plain.push(blocks[i]);
         i++;
       }
@@ -200,9 +236,12 @@ function groupBlocks(blocks: StoryBlock[]): Group[] {
 
 export default function StoryPage({ page }: { page: StoryPageData }) {
   const heroSection = page.sections.find((s) => s.id === "hero");
+  // faq is required for the 8 strict-grammar pages but optional for set 3 (executor
+  // brief, queue row Q27) -- all 3 set-3 files happen to include one today, but the
+  // grammar allows a future one not to.
   const faqSection = page.sections.find((s) => s.id === "faq");
-  if (!heroSection || !faqSection) {
-    throw new Error(`${page.slug}: missing hero or faq section`);
+  if (!heroSection) {
+    throw new Error(`${page.slug}: missing hero section`);
   }
   const otherSections = page.sections.filter((s) => s.id !== "hero" && s.id !== "faq");
 
@@ -236,6 +275,9 @@ export default function StoryPage({ page }: { page: StoryPageData }) {
               if (group.type === "table") {
                 return <PriceTable key={i} rows={group.rows} />;
               }
+              if (group.type === "info-table") {
+                return <InfoTable key={i} rows={group.rows} />;
+              }
               if (group.type === "plain") {
                 return (
                   <div key={i} className="max-w-3xl space-y-4">
@@ -255,14 +297,16 @@ export default function StoryPage({ page }: { page: StoryPageData }) {
         </section>
       ))}
 
-      <section className="mx-auto max-w-6xl px-4 py-12 md:px-6">
-        <h2 className="font-display text-2xl text-espresso">Frequently asked questions</h2>
-        <div className="mt-6 max-w-3xl space-y-6">
-          {faqSection.blocks.map((b, i) =>
-            b.kind === "faq-item" ? <FaqItem key={i} question={b.question} answer={b.answer} /> : null,
-          )}
-        </div>
-      </section>
+      {faqSection && (
+        <section className="mx-auto max-w-6xl px-4 py-12 md:px-6">
+          <h2 className="font-display text-2xl text-espresso">Frequently asked questions</h2>
+          <div className="mt-6 max-w-3xl space-y-6">
+            {faqSection.blocks.map((b, i) =>
+              b.kind === "faq-item" ? <FaqItem key={i} question={b.question} answer={b.answer} /> : null,
+            )}
+          </div>
+        </section>
+      )}
     </main>
   );
 }

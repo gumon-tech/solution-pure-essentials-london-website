@@ -1,11 +1,13 @@
 #!/usr/bin/env node
-// Post-build check for queue rows Q25/Q26 (8 storytelling landing pages rendered from
-// content/stories/*.md). Dependency-free (Node 22, no npm packages), in the style of
-// scripts/check-family-pages.mjs -- but deliberately independent of lib/stories.ts:
-// this is its own simple line-by-line reading of the markdown, so a bug shared by both
-// the build-time parser and this check would not cancel itself out.
+// Post-build check for queue rows Q25/Q26/Q27 (11 storytelling landing pages rendered
+// from content/stories/*.md: 8 in the strict 8-section grammar, 3 "set 3" pages in
+// the flexible grammar -- see lib/stories.ts). Dependency-free (Node 22, no npm
+// packages), in the style of scripts/check-family-pages.mjs -- but deliberately
+// independent of lib/stories.ts: this is its own simple line-by-line reading of the
+// markdown, so a bug shared by both the build-time parser and this check would not
+// cancel itself out.
 //
-// For each of the 8 story files, checks its built out/<slug>/index.html:
+// For each of the 11 story files, checks its built out/<slug>/index.html:
 //   - picture count vs `[image: ...]` line count (must match)
 //   - every prose sentence (paragraphs, numbered-list text, faq questions and answers
 //     -- never headings, table rows, image lines, button lines or front matter) is
@@ -13,11 +15,18 @@
 //   - every price-table row's slug has a wa.me link whose decoded text contains
 //     "Ref: <SLUG UPPERCASED>", and the row's price (as written, or its £ form) appears
 //     in the visible text
+//   - every info-table row's cells (a table whose header's last column is not "Source
+//     slug" -- e.g. set 3's "Day | Hours") appear verbatim in the visible text
 //   - hard checks on the visible text: no leaked "#", "|", "[image", "Button (", "**",
 //     "£ " + digit, "GBP ", "include VAT", or botox/botulinum/anti-wrinkle/lidocaine
 //   - every visible link whose text contains "Treatwell" has an href starting with
 //     https://www.treatwell.co.uk/ (fails if a page's md has a Treatwell button but 0
 //     such links are found)
+//   - the room-photo sentence ("The photographs in this section show treatment rooms
+//     at Pure Essentials London.") appears only in a section whose every [image: ...]
+//     is a real room slot (room-warm, room-trolley, room-analyser, room-couch)
+//   - "we will not recommend a treatment that is not right for you" appears at most
+//     once per page
 //
 // Exits 1 on any failure, and exits 1 if 0 pages were checked.
 //
@@ -28,11 +37,12 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const FORBIDDEN_WORDS_RE = /botox|botulinum|anti-?wrinkle|lidocaine/gi;
+const ROOM_PHOTO_SENTENCE = "The photographs in this section show treatment rooms at Pure Essentials London.";
+const ROOM_SLOTS = new Set(["room-warm", "room-trolley", "room-analyser", "room-couch"]);
+const RECOMMEND_SENTENCE_RE = /we will not recommend a treatment that is not right for you/g;
 
-// The 8 storytelling pages this row builds. content/stories/ is shared with other
-// executors' in-progress drafts (e.g. "your-visit.md", "first-visit-guide.md",
-// "our-clinic-kings-cross.md" -- not part of this row, not written to this grammar),
-// so this list is explicit rather than a glob of every "*.md" in the directory.
+// The 8 storytelling pages built by queue rows Q25/Q26, in the strict 8-section
+// grammar.
 const STORY_SLUGS = [
   "hifu-kings-cross",
   "laser-hair-removal-kings-cross",
@@ -43,6 +53,9 @@ const STORY_SLUGS = [
   "microneedling-peels-kings-cross",
   "skin-boosters-kings-cross",
 ];
+
+// The 3 "set 3" storytelling pages built by queue row Q27, in the flexible grammar.
+const STORY_SET3_SLUGS = ["our-clinic-kings-cross", "your-visit", "first-visit-guide"];
 
 function readText(p) {
   return readFileSync(p, "utf8");
@@ -85,14 +98,29 @@ function normalizeWhitespace(text) {
 /** Parses one story markdown file (body only, front matter already stripped) into:
  *  - imageLineCount: number of `[image: slot]` lines
  *  - proseSentences: every sentence that must appear verbatim in the rendered page
- *  - priceRows: every {name, duration, price, slug} table data row
- *  - hasTreatwellButton: whether any button line's text contains "Treatwell" */
+ *  - priceRows: every {name, duration, price, slug} price-table data row
+ *  - infoTableCells: every cell (verbatim) of every non-price table's data rows
+ *  - hasTreatwellButton: whether any button line's text contains "Treatwell"
+ *  - sections: every "## id" section in file order, with the image slots it holds and
+ *    whether the room-photo sentence appears in its prose (for the room-photo rule)
+ *  - recommendSentenceCount: occurrences of the "we will not recommend..." sentence */
 function parseStoryMarkdown(body) {
   const lines = body.split("\n");
   let imageLineCount = 0;
   let hasTreatwellButton = false;
   const proseSentences = [];
   const priceRows = [];
+  const infoTableCells = [];
+  const sections = [];
+  let currentSection = null;
+
+  function section() {
+    if (!currentSection) {
+      currentSection = { id: "(before first heading)", imageSlots: [], hasRoomSentence: false };
+      sections.push(currentSection);
+    }
+    return currentSection;
+  }
 
   let i = 0;
   while (i < lines.length) {
@@ -102,12 +130,17 @@ function parseStoryMarkdown(body) {
       i++;
       continue;
     }
-    if (/^## /.test(line)) {
+    const heading = /^## (.+)$/.exec(line);
+    if (heading) {
+      currentSection = { id: heading[1].trim(), imageSlots: [], hasRoomSentence: false };
+      sections.push(currentSection);
       i++;
       continue;
     }
-    if (/^\[image: [a-z0-9-]+\]$/.test(line)) {
+    const imgMatch = /^\[image: ([a-z0-9-]+)\]$/.exec(line);
+    if (imgMatch) {
       imageLineCount++;
+      section().imageSlots.push(imgMatch[1]);
       i++;
       continue;
     }
@@ -124,11 +157,23 @@ function parseStoryMarkdown(body) {
         i++;
       }
       // First row is the header, second the separator; skip both, keep data rows.
+      // A table is a price table iff its header's 4th column is literally "Source
+      // slug" (mirrors lib/stories.ts's isPriceTableHeader) -- anything else is a
+      // plain info table (set 3, e.g. "Day | Hours"): every cell must appear verbatim.
+      const header = splitTableRow(tableLines[0] ?? "");
+      const isPriceTable = header.length === 4 && header[3] === "Source slug";
       for (const row of tableLines.slice(2)) {
         const cells = splitTableRow(row);
-        if (cells.length !== 4 || isSeparatorRow(cells)) continue;
-        const [name, duration, price, slug] = cells;
-        priceRows.push({ name, duration, price, slug });
+        if (isSeparatorRow(cells)) continue;
+        if (isPriceTable) {
+          if (cells.length !== 4) continue;
+          const [name, duration, price, slug] = cells;
+          priceRows.push({ name, duration, price, slug });
+        } else {
+          for (const cell of cells) {
+            if (cell) infoTableCells.push(cell);
+          }
+        }
       }
       continue;
     }
@@ -141,11 +186,24 @@ function parseStoryMarkdown(body) {
       prose = line.slice(2);
     }
     prose = prose.replace(/\*\*/g, "").trim();
-    if (prose) proseSentences.push(...splitSentences(prose));
+    if (prose) {
+      if (prose.includes(ROOM_PHOTO_SENTENCE)) section().hasRoomSentence = true;
+      proseSentences.push(...splitSentences(prose));
+    }
     i++;
   }
 
-  return { imageLineCount, proseSentences, priceRows, hasTreatwellButton };
+  const recommendSentenceCount = (body.match(RECOMMEND_SENTENCE_RE) ?? []).length;
+
+  return {
+    imageLineCount,
+    proseSentences,
+    priceRows,
+    infoTableCells,
+    hasTreatwellButton,
+    sections,
+    recommendSentenceCount,
+  };
 }
 
 // --- price format (mirrors lib/stories.ts's formatPrice, independently) -----------
@@ -227,7 +285,7 @@ function main() {
   const storiesDir = "content/stories";
   const problems = [];
 
-  const files = STORY_SLUGS.map((slug) => `${slug}.md`);
+  const files = [...STORY_SLUGS, ...STORY_SET3_SLUGS].map((slug) => `${slug}.md`);
 
   console.log(`story files found: ${files.length}`);
   console.log("");
@@ -238,7 +296,15 @@ function main() {
     const slug = file.replace(/\.md$/, "");
     const raw = readText(path.join(storiesDir, file));
     const body = stripFrontMatter(raw);
-    const { imageLineCount, proseSentences, priceRows, hasTreatwellButton } = parseStoryMarkdown(body);
+    const {
+      imageLineCount,
+      proseSentences,
+      priceRows,
+      infoTableCells,
+      hasTreatwellButton,
+      sections,
+      recommendSentenceCount,
+    } = parseStoryMarkdown(body);
 
     const htmlPath = path.join(outDir, slug, "index.html");
     console.log(`--- ${slug} ---`);
@@ -294,6 +360,42 @@ function main() {
         );
       }
       problems.push(`${slug}: price row(s) failed (missing Ref link or price text)`);
+    }
+
+    const missingInfoCells = infoTableCells.filter((cell) => !text.includes(normalizeWhitespace(cell)));
+    console.log(
+      `  info table cells: ${infoTableCells.length - missingInfoCells.length}/${infoTableCells.length} found`,
+    );
+    if (missingInfoCells.length) {
+      console.log(`    missing:`);
+      for (const c of missingInfoCells) console.log(`      - ${c}`);
+      problems.push(`${slug}: info table cell(s) missing from built HTML`);
+    }
+
+    const roomSentenceViolations = sections.filter(
+      (s) => s.hasRoomSentence && !s.imageSlots.every((slot) => ROOM_SLOTS.has(slot)),
+    );
+    console.log(
+      `  room-photo sentence: appears in section(s) [${sections
+        .filter((s) => s.hasRoomSentence)
+        .map((s) => s.id)
+        .join(", ")}], ${roomSentenceViolations.length === 0 ? "OK" : "VIOLATED"}`,
+    );
+    if (roomSentenceViolations.length) {
+      for (const s of roomSentenceViolations) {
+        console.log(`    - section "${s.id}" has non-room image slot(s): ${s.imageSlots.join(", ")}`);
+      }
+      problems.push(`${slug}: room-photo sentence present in section(s) with a non-room image`);
+    }
+
+    console.log(
+      `  "we will not recommend..." sentence: ${recommendSentenceCount} occurrence(s)` +
+        (recommendSentenceCount <= 1 ? " (OK)" : " (VIOLATED, expected at most 1)"),
+    );
+    if (recommendSentenceCount > 1) {
+      problems.push(
+        `${slug}: "we will not recommend a treatment that is not right for you" appears ${recommendSentenceCount} times, expected at most 1`,
+      );
     }
 
     const hardChecks = [
