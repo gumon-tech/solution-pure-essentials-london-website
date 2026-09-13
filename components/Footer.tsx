@@ -87,6 +87,8 @@ export default function Footer() {
             <Link href="/privacy/" className="underline hover:text-cocoa">
               Privacy
             </Link>
+            <br />
+            Some images on this site are illustrative.
           </p>
           <Image
             src="/logo/pel-mark-oak.svg"
