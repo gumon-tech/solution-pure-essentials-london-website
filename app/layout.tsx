@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import StickyBar from "@/components/StickyBar";
 import { getNavMenus } from "@/lib/nav";
 import { SITE } from "@/lib/site";
+import ConsentScript from "@/components/ConsentScript";
+import ConsentBanner from "@/components/ConsentBanner";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -43,10 +45,12 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
     >
       <body>
+        <ConsentScript />
         <Header menus={getNavMenus()} />
         <main>{children}</main>
         <Footer />
         <StickyBar />
+        <ConsentBanner />
       </body>
     </html>
   );

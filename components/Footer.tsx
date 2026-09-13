@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
+import { CookieSettingsButton } from "./ConsentBanner";
 import { SITE, waSite } from "@/lib/site";
 import ReadMoreLink from "./ReadMoreLink";
 import { getStoryPage, storyShortTitle } from "@/lib/stories";
@@ -119,6 +120,8 @@ export default function Footer() {
               Privacy
             </Link>
             {" · "}<Link href="/terms/" className="underline hover:text-cocoa">Terms</Link>
+            {" · "}
+            <CookieSettingsButton className="underline hover:text-cocoa focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-sand rounded-sm" />
             <br />
             Some images on this site are illustrative.
           </p>
