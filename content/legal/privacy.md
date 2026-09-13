@@ -28,7 +28,8 @@ browser's storage, and have no analytics or advertising tags. The fonts are stor
 website itself, so your browser does not fetch them from anyone else.
 
 Two things on this website come from other companies, and they are described below: the
-online booking calendar from Treatwell, and the map. The WhatsApp, email and Instagram buttons
+online booking calendar from Treatwell on the Book online page, and the map from Google Maps on
+the contact page. The WhatsApp, email and Instagram buttons
 are ordinary links; nothing is sent to those companies until you click one.
 
 ## Hosting
@@ -52,9 +53,11 @@ Treatwell passes us the booking details we need to provide your appointment.
 
 ## The map
 
-The map on our contact page is a picture stored on this website. Nothing is sent to Google
-when the page loads. If you tap the map, Google Maps opens in a new tab, and from that point
-Google handles your information under its own privacy notice.
+The contact page shows a map from Google Maps. It loads as soon as you open that page, so Google
+receives your IP address and the page you are on, and handles that information under its own
+privacy notice. When we checked on 13 September 2026, the map did not set any cookies in your
+browser. If you use the map or open it in Google Maps, Google's own terms and cookies apply from
+that point.
 
 ## When you contact us
 
@@ -111,7 +114,7 @@ told us.
 - Treatwell, which provides the booking calendar on the "Book online" page and handles
   bookings made through it.
 - Meta, when you use WhatsApp or Instagram.
-- Google, which delivers our email, and which you reach if you tap the map.
+- Google, which delivers our email and provides the map on our contact page.
 
 GitHub, Treatwell, Meta and Google may process information outside the UK, including in the
 United States. Their own privacy notices explain how they protect it.
