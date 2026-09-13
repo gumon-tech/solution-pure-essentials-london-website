@@ -45,6 +45,10 @@
     {
       "id": "waxing-men",
       "title": "Waxing, men"
+    },
+    {
+      "id": "brows-lashes",
+      "title": "Brows, lashes and other"
     }
   ],
   "services": [
@@ -2159,6 +2163,150 @@
       "duration": null,
       "source": "cms/injections",
       "note": "held, group 2"
+    },
+    {
+      "slug": "shiatsu_massage_30",
+      "name": "Shiatsu Massage",
+      "display_name": null,
+      "category": "massage",
+      "status": "review",
+      "price_gbp": 38,
+      "price_from": false,
+      "duration": "30 min",
+      "source": "pricing",
+      "note": "old /pricing 2026-09-13; not in Wix Bookings; ask the clinic if still offered; same name as another row, verify on /pricing"
+    },
+    {
+      "slug": "shiatsu_massage_60",
+      "name": "Shiatsu Massage",
+      "display_name": null,
+      "category": "massage",
+      "status": "review",
+      "price_gbp": 70,
+      "price_from": false,
+      "duration": "1 hr",
+      "source": "pricing",
+      "note": "old /pricing 2026-09-13; not in Wix Bookings; ask the clinic if still offered; same name as another row, verify on /pricing"
+    },
+    {
+      "slug": "head_massage_30",
+      "name": "Head Massage",
+      "display_name": null,
+      "category": "massage",
+      "status": "review",
+      "price_gbp": 38,
+      "price_from": false,
+      "duration": "30 min",
+      "source": "pricing",
+      "note": "old /pricing 2026-09-13; not in Wix Bookings; ask the clinic if still offered"
+    },
+    {
+      "slug": "foot_massage_30",
+      "name": "Foot Massage",
+      "display_name": null,
+      "category": "massage",
+      "status": "review",
+      "price_gbp": 38,
+      "price_from": false,
+      "duration": "30 min",
+      "source": "pricing",
+      "note": "old /pricing 2026-09-13; Bookings has Foot & Leg Massage 30 min at 45; ask which"
+    },
+    {
+      "slug": "face_drainage_massage_gua_sha",
+      "name": "Face drainage massage (Gua Sha)",
+      "display_name": null,
+      "category": "massage",
+      "status": "review",
+      "price_gbp": 40,
+      "price_from": false,
+      "duration": null,
+      "source": "pricing",
+      "note": "old /pricing 2026-09-13; not in Wix Bookings; ask the clinic if still offered"
+    },
+    {
+      "slug": "eyebrow_shaping",
+      "name": "Eyebrow Shaping",
+      "display_name": null,
+      "category": "waxing-ladies",
+      "status": "review",
+      "price_gbp": 15,
+      "price_from": false,
+      "duration": null,
+      "source": "pricing",
+      "note": "old /pricing 2026-09-13; not in Wix Bookings; ask the clinic if still offered"
+    },
+    {
+      "slug": "eyebrow_cleaning",
+      "name": "Eyebrow Cleaning",
+      "display_name": null,
+      "category": "waxing-ladies",
+      "status": "review",
+      "price_gbp": 10,
+      "price_from": false,
+      "duration": null,
+      "source": "pricing",
+      "note": "old /pricing 2026-09-13; not in Wix Bookings; ask the clinic if still offered"
+    },
+    {
+      "slug": "lash_extensions",
+      "name": "Lash Extensions",
+      "display_name": null,
+      "category": "brows-lashes",
+      "status": "review",
+      "price_gbp": null,
+      "price_from": false,
+      "duration": null,
+      "source": "old-page",
+      "note": "old /eyes-ears page (PWEB gap report 2026-09-13); no price found; ask the clinic"
+    },
+    {
+      "slug": "brow_and_lash_tint",
+      "name": "Brow and Lash Tint",
+      "display_name": null,
+      "category": "brows-lashes",
+      "status": "review",
+      "price_gbp": null,
+      "price_from": false,
+      "duration": null,
+      "source": "old-page",
+      "note": "old /eyes-ears page; no price found; ask the clinic"
+    },
+    {
+      "slug": "ear_candle",
+      "name": "Ear Candle",
+      "display_name": null,
+      "category": "brows-lashes",
+      "status": "review",
+      "price_gbp": null,
+      "price_from": false,
+      "duration": null,
+      "source": "old-page",
+      "note": "old /eyes-ears page; no price found; ask the clinic"
+    },
+    {
+      "slug": "detox_body_wrap",
+      "name": "Detox Body Wrap",
+      "display_name": null,
+      "category": "body",
+      "status": "review",
+      "price_gbp": null,
+      "price_from": false,
+      "duration": null,
+      "source": "old-page",
+      "note": "old /cleansing page; no price found; ask the clinic"
+    },
+    {
+      "slug": "spa_peel",
+      "name": "Spa Peel",
+      "display_name": null,
+      "category": "facials",
+      "status": "review",
+      "price_gbp": null,
+      "price_from": false,
+      "duration": null,
+      "source": "old-page",
+      "note": "old /cleansing page; no price found; ask the clinic"
     }
   ]
 }
