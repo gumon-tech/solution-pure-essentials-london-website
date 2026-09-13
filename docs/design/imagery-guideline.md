@@ -188,3 +188,19 @@ follows section 4. Approval before deploy: PEL.
 | story-facials | story-facials-b.jpg | a: fine |
 | story-body-contouring | story-body-contouring-b.jpg | a: tablet shows an unreadable body diagram, b keeps the screen out of view |
 | story-laser-hair | story-laser-hair-c.jpg (plain device, 2 gloved hands counted 4 plus 1 each, client blurred behind) | a and b: REJECT, fabricated brand text; d: client face in profile; e: client in a black top off palette and the leg sits far from her body |
+
+### Real room photos, edited with Gemini (Lead check 2026-09-13)
+
+Sources on OneDrive `site-images/edited-client-2026-09-13/gemini/`, compare sheets in `_compare/`. First pass
+with PIL was rejected by eye (cold and washed out) although it met the numbers. Second pass numbers: brightness
+61 to 78, R minus B 40 to 79 (outside the 8 to 25 band the brief set); judged by eye instead, as the band came
+from the rejected pass.
+
+| Slot | Chosen | Edit class | alt rule | Rejected |
+|---|---|---|---|---|
+| room-warm | contact-room-a-a.jpg (wood-slat room) | AI-edited: the gold plaster walls became cream plaster; layout and furniture unchanged | section 4 generated-image rule: describe, do not say "our room" | a-b: ceiling downlights switched on |
+| room-trolley | contact-room-b-b.jpg (white trolley room) | AI-edited: grey towel shown taupe, brand lettering on bottles and lamp softened, a wood edge appears on the niche | generated-image rule | b-a: wood trim added more visibly, lamp lettering still visible |
+| room-analyser | contact-room-c-a.jpg (cabinet room with the skin analyser) | light and colour only | may say a treatment room at Pure Essentials London | c-b: fine, flatter |
+| room-couch | contact-room-d-a.jpg (small room with rolled towels) | light and colour only | may say a treatment room at Pure Essentials London | d-b: REJECT, trolley and cabinet turned to wood grain |
+
+Room photos stay secondary (contact page and the clinic story), never a page's main image (section 1).
