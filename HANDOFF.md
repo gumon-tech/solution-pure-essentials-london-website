@@ -161,6 +161,6 @@ structure first).
 ```bash
 /bin/ls docs/plans docs/research                        # LEAD EXECUTOR-BRIEF DEFINITION-OF-DONE QUEUE; 00 01 02 03
 git log --oneline | head -3
-grep -c '^| Q' docs/plans/QUEUE.md                      # 22
+grep -c '^| Q[0-9]' docs/plans/QUEUE.md                   # 22
 ```
 Note: `ls` is aliased to eza on this machine and prints nothing inside the agent's shell; use /bin/ls.
