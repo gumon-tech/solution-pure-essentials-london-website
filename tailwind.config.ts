@@ -12,7 +12,7 @@ export default {
         espresso: "#2B2420",
         cocoa: "#4A3F35",
         walnut: "#6B5A4A",
-        oak: "#8A6A4E",
+        oak: "#7C5E45",
         wood: "#A67B5B"
       },
       boxShadow: {
