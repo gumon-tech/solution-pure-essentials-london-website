@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { SITE } from "@/lib/site";
 import { getFamilyPages } from "@/lib/family-pages";
+import { getStorySlugs } from "@/lib/stories";
 
 // Static export (next.config.mjs: output "export"): every entry must be knowable at
 // build time, no request-time data.
@@ -26,6 +27,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const page of getFamilyPages()) {
     entries.push({ url: `${base}/treatments/${page.slug}/` });
+  }
+
+  for (const slug of getStorySlugs()) {
+    entries.push({ url: `${base}/${slug}/` });
   }
 
   if (hasPage("privacy")) {
