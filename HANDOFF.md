@@ -134,35 +134,37 @@ ls "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essen
 
 ## กระดานเป้าหมาย
 
-Measured 2026-09-13 after main 1d91392 (Q15 done). Standing order A8: re-measure every time.
+Measured 2026-09-13 after main 691aa66. Standing order A8: re-measure every time.
 
-**Last reached:** pel.gumon.io serves home, treatments (97 rows, 11 people category images), contact, 21
-treatment family pages; privacy and terms pages pushed and deploying. Data file = PEL 0c07854 (111 live).
-All copy, images and legal text approved by PEL (lead repo brief sections 9 to 16).
+**Last reached:** PEL's third outside measurement (lead repo brief section 21) rules the site fit for the owner to
+share as the Monday progress showing. Live at https://pel.gumon.io: home, /treatments/ (97 rows, 11 people category
+images, links to 21 family pages), 21 family pages, /contact/, /privacy/, /terms/, sitemap.xml (26 URLs, all 200
+from outside), robots.txt. Data file = PEL 0c07854 (111 live). Every image, sentence and legal text approved by PEL.
 
 | # | Goal | State | Holder / waiting on |
 |---|---|---|---|
 | 1 | Research, direction, owner decisions, Lead and Executor setup | DONE | - |
-| 2 | Scaffold Q1 Q2 Q3 Q4 Q6, imagery guideline Q23 | DONE | - |
-| 3 | Images: people set Q24, rooms and pipeline Q5 (24 slots) | DONE, PEL approved | - |
-| 4 | Home Q7, treatments Q8 (both parts), contact Q9 | DONE and live | - |
-| 5 | Domain and HTTPS Q10 | DONE | - |
-| 6 | Family pages Q12 (21) | DONE and live; links from /treatments/ and sitemap running (Q12 part 2) | executor |
-| 7 | Privacy and terms Q15 | DONE, deploy check running | - |
-| 8 | External gate run Q11 | PART: all live pages read 200; full Definition of Done run after Q12 part 2 | PWEB |
-| 9 | Story copy set 1 and 2 (8 pages) | DONE, PEL approved | - |
-| 10 | Story pages build Q25 Q26 | OPEN, copy ready | PWEB next |
-| 11 | Story set 3 Q27 (clinic story, visit, first visit) | OPEN | PWEB |
-| 12 | About Q14, consent Q16, tag Q17, SEO Q18, photo brief Q19, editing guide Q20, Lighthouse Q21 | OPEN | PWEB, PEL |
-| 13 | PEL outside check of the live pages | WAITING | PEL |
-| 14 | Clinic domain switch Q22 | OPEN, owner's order only | owner |
+| 2 | Scaffold, imagery guideline, image set, image pipeline (24 slots) | DONE | - |
+| 3 | Home Q7 (2 parts), treatments Q8 (2 parts), contact Q9, domain Q10 | DONE and live | - |
+| 4 | Family pages Q12 (21) with links, sitemap, robots | DONE and live | - |
+| 5 | Privacy and terms Q15 | DONE and live | - |
+| 6 | Clinic price editing guide Q20 | DONE, PEL approved; clinic needs a GitHub username | clinic via owner |
+| 7 | Story copy sets 1, 2, 3 (11 pages) | DONE, PEL approved | - |
+| 8 | Story pages build Q25 Q26 (8) | RUNNING | executor |
+| 9 | Story set 3 build Q27 (3) | QUEUED after 8 | PWEB |
+| 10 | Consent banner Q16 (no tag) | RUNNING | executor |
+| 11 | Lighthouse Q21: first pass done; fixes for oak contrast 4.43 and favicon 404 | RUNNING | executor |
+| 12 | Photo shot list Q19 | PWEB part DONE; brief | PEL |
+| 13 | LocalBusiness JSON-LD Q18 | RUNNING | executor |
+| 14 | About Q14, Google tag Q17 | OPEN; Q14 needs clinic facts, Q17 needs the tag id and Q16 | PEL, clinic |
+| 15 | Clinic domain switch Q22 | OPEN, owner's order only | owner |
 
-**Done: 9 of 14.**
+**Done: 7 of 15.**
 
-Process lessons this session, all in docs/plans/INCIDENTS.md: 2 commit messages quoted checks before reading them;
-an executor fetched 13 client pages in parallel (now enforced by scripts/fetch-client-page.mjs); a render check
-shared the renderer's blind spot. Resumed executors run in the Lead's current directory, not their own worktree:
-the Q15 executor wrote into the Q12 worktree after being resumed from there.
+Process lessons (docs/plans/INCIDENTS.md): 3 commit messages quoted a check before reading it (59048ef, a49c6db,
+3a03ef1; set -e does not gate a heredoc check here, capture RC explicitly); 13 parallel client fetches (now enforced by
+scripts/fetch-client-page.mjs); a render check shared the renderer's blind spot; a resumed executor writes into the
+Lead's current directory (memory resumed-executor-cwd).
 
 ## Verify additions after the first resume
 
