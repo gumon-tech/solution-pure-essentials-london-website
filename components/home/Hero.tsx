@@ -30,7 +30,7 @@ export default function Hero({ h1 }: { h1: string }) {
               href={waSite("SITE-HOME")}
               target="_blank"
               rel="noopener"
-              className="inline-flex items-center justify-center rounded-full bg-oak px-6 py-3 font-body text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+              className="hidden items-center justify-center rounded-full bg-oak px-6 py-3 font-body text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream md:inline-flex"
             >
               Message us on WhatsApp
             </a>
