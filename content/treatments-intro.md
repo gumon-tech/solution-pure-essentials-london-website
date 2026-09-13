@@ -1,6 +1,6 @@
 ---
 title: "Treatments in King's Cross | Pure Essentials London"
-description: "Facials, HIFU, laser, body contouring, massage and waxing at 155 King's Cross Road. Every price is the price you pay. Prices include VAT."
+description: "Facials, HIFU, laser, body contouring, massage and waxing at 155 King's Cross Road. The price shown is the price you pay."
 h1: "Treatments and prices"
 ---
 
@@ -8,7 +8,7 @@ h1: "Treatments and prices"
 
 [image: home-hero]
 
-Every price below is the price you pay. Prices include VAT. Where a price says "from", the figure is the lowest option for that treatment and the consultation confirms yours.
+The price shown is the price you pay. Where a price says "from", the figure is the lowest option for that treatment and the consultation confirms yours.
 
 ## face
 

@@ -50,7 +50,7 @@ You can also book through Treatwell.
 | Hifu Med Area (Flappy arms/lovehandle) | 1 hr 30 min | GBP 280 | hifu_med_area_flappy_arms_lovehandle |
 | Large Area (Outer thighs/full stomach) | 1 hr 30 min | GBP 420 | large_area_outer_thighs_full_stomach |
 
-Aesthetic treatments are for adults aged 18 and over. Prices include VAT.
+Aesthetic treatments are for adults aged 18 and over. The price shown is the price you pay.
 
 ## aftercare
 

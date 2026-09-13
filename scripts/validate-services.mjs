@@ -18,6 +18,7 @@ const REQUIRED_SERVICE_KEYS = [
   "status",
   "price_gbp",
   "price_from",
+  "display_name",
   "duration",
   "source",
   "note",
@@ -161,6 +162,9 @@ function main() {
     }
     if ("price_gbp" in svc && svc.price_gbp !== null && typeof svc.price_gbp !== "number") {
       problems.push(`${tag}: price_gbp must be a number or null`);
+    }
+    if ("display_name" in svc && svc.display_name !== null && typeof svc.display_name !== "string") {
+      problems.push(`${tag}: display_name must be a string or null`);
     }
     if ("price_from" in svc && typeof svc.price_from !== "boolean") {
       problems.push(`${tag}: price_from must be a boolean`);

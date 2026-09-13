@@ -59,7 +59,7 @@ HIFU for the body
 | Hifu Small Area (Knees/Armpit/Bust lift) | 45 min | GBP 140 | hifu_small_area_knees_armpit_bust_lift |
 | Hifu Med Area (Flappy arms/lovehandle) | 1 hr 30 min | GBP 280 | hifu_med_area_flappy_arms_lovehandle |
 
-Aesthetic treatments are for adults aged 18 and over. Prices include VAT.
+Aesthetic treatments are for adults aged 18 and over. The price shown is the price you pay.
 
 ## aftercare
 

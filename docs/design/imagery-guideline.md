@@ -187,4 +187,4 @@ follows section 4. Approval before deploy: PEL.
 | story-hifu | story-hifu-b.jpg | a: fine, b has fewer hands |
 | story-facials | story-facials-b.jpg | a: fine |
 | story-body-contouring | story-body-contouring-b.jpg | a: tablet shows an unreadable body diagram, b keeps the screen out of view |
-| story-laser-hair | pending attempts c to e | a and b: REJECT, fabricated brand text on the handpiece |
+| story-laser-hair | story-laser-hair-c.jpg (plain device, 2 gloved hands counted 4 plus 1 each, client blurred behind) | a and b: REJECT, fabricated brand text; d: client face in profile; e: client in a black top off palette and the leg sits far from her body |

@@ -15,7 +15,7 @@ Written 2026-09-13 by a PWEB executor for queue rows Q7, Q9 and Q25. Every sente
 | S:slug | `data/services.json` row with that slug, status live (name, category, duration, price_gbp) |
 | C:id | `data/services.json` category title |
 | PEL:section | `~/dev/solution-pure-essentials-london/docs/pel-site-copy-v1.md`, that section, used verbatim or cut |
-| B18 | Lead brief: "Aesthetic treatments are for adults aged 18 and over. Prices include VAT." (also 02-uk-compliance 2.1 and 3) |
+| B18 | Lead brief: "Aesthetic treatments are for adults aged 18 and over. The price shown is the price you pay." (also 02-uk-compliance 2.1 and 3) |
 | BH | Lead brief hedge rule ("results vary") |
 | D4 | 00-direction section 7 decision 4 and DECISIONS-2026-09-13: rows without a price show "Ask for a quote" |
 | D51 | 00-direction section 5.1 point 1: both HIFU Full Face rows shown as "HIFU full face" with the duration |
@@ -77,7 +77,7 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | description "Facials, HIFU, laser, body contouring, massage and waxing at 155..." | PEL:Home Hero sub-line, cut; PEL:Treatments intro |
 | h1 "Treatments and prices" | PEL:Home Hero button, cut |
 | "Every price below is the price you pay." | PEL:Treatments intro |
-| "Prices include VAT." | PEL:Treatments intro |
+| "The price shown is the price you pay." | PEL:Treatments intro |
 | "Where a price says "from", the figure is the lowest option..." | PEL:Treatments intro |
 | Group lines (Face, Body, Laser and hair removal, Wellness) | PEL:Home groups, same cuts as home.md |
 | "Ask for a quote" | PEL:Treatments row without a price; D4 |
@@ -99,8 +99,8 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | Step 3 "Booked at a time that suits you, 7 days a week." | all 4 | PEL:Home How it works 3; F2 |
 | "The duration of each (priced) option is listed below." | all 4 | S: rows in the page's price table |
 | "You can also book through Treatwell." | all 4 | F4 |
-| "Aesthetic treatments are for adults aged 18 and over. Prices include VAT." | HIFU, laser hair, body | B18; PEL:Treatments intro and note |
-| "Prices include VAT." | facials | PEL:Treatments intro |
+| "Aesthetic treatments are for adults aged 18 and over. The price shown is the price you pay." | HIFU, laser hair, body | B18; PEL:Treatments intro and note |
+| "The price shown is the price you pay." | facials | PEL:Treatments intro |
 | Aftercare "You leave with clear aftercare advice and can message us with any question." | all 4 | PEL:Home How it works 4 |
 | FAQ "Where is the clinic?" / "155 King's Cross Road, London WC1X 9BN." | all 4 | F1 |
 | FAQ "When are you open?" / "Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00." | all 4 | PEL:Home The clinic; F2 |

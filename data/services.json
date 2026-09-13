@@ -51,6 +51,7 @@
     {
       "slug": "3d_lipo",
       "name": "3D Lipo",
+      "display_name": null,
       "category": "body",
       "status": "live",
       "price_gbp": 125,
@@ -62,6 +63,7 @@
     {
       "slug": "acne",
       "name": "Acne",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 350,
@@ -73,6 +75,7 @@
     {
       "slug": "acne_rosacea_ipl",
       "name": "Acne / Rosacea IPL",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 99,
@@ -84,6 +87,7 @@
     {
       "slug": "back_pain_spine_prp",
       "name": "Back Pain (Spine PRP)",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 750,
@@ -95,6 +99,7 @@
     {
       "slug": "breast_enlargement",
       "name": "Breast Enlargement",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 800,
@@ -106,6 +111,7 @@
     {
       "slug": "breast_lift",
       "name": "Breast Lift",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 500,
@@ -117,6 +123,7 @@
     {
       "slug": "brow_lift",
       "name": "Brow Lift",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 100,
@@ -128,6 +135,7 @@
     {
       "slug": "brow_lift_1",
       "name": "Brow Lift",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 200,
@@ -139,6 +147,7 @@
     {
       "slug": "bum_filler",
       "name": "Bum Filler",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 1100,
@@ -150,6 +159,7 @@
     {
       "slug": "bum_lift",
       "name": "Bum Lift",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 1100,
@@ -161,6 +171,7 @@
     {
       "slug": "c_section_scars",
       "name": "C-section scars",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 450,
@@ -172,6 +183,7 @@
     {
       "slug": "cellulitis_drainage_lymphatic_drainage",
       "name": "Cellulitis Drainage (Lymphatic Drainage)",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 150,
@@ -183,6 +195,7 @@
     {
       "slug": "cellulitis_drainage_orange_peel",
       "name": "Cellulitis Drainage + Orange Peel",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 150,
@@ -194,6 +207,7 @@
     {
       "slug": "cheeks_jaw_line_nasolabial_1ml",
       "name": "Cheeks, jaw line, nasolabial (1ml)",
+      "display_name": null,
       "category": "skinboosters",
       "status": "live",
       "price_gbp": 350,
@@ -205,6 +219,7 @@
     {
       "slug": "collagen",
       "name": "Collagen",
+      "display_name": null,
       "category": "carboxy",
       "status": "live",
       "price_gbp": 90,
@@ -216,6 +231,7 @@
     {
       "slug": "collagen_production_full_face",
       "name": "Collagen Production (full Face)",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 130,
@@ -227,6 +243,7 @@
     {
       "slug": "combination_1",
       "name": "Combination 1",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 1050,
@@ -238,6 +255,7 @@
     {
       "slug": "combination_2",
       "name": "Combination 2",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 880,
@@ -249,6 +267,7 @@
     {
       "slug": "combination_3",
       "name": "Combination 3",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 720,
@@ -260,6 +279,7 @@
     {
       "slug": "combination_4",
       "name": "Combination 4",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 720,
@@ -271,6 +291,7 @@
     {
       "slug": "combination_5",
       "name": "Combination 5",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 1000,
@@ -282,6 +303,7 @@
     {
       "slug": "combination_6",
       "name": "Combination 6",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 1000,
@@ -293,6 +315,7 @@
     {
       "slug": "combination_7",
       "name": "Combination 7",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 1000,
@@ -304,6 +327,7 @@
     {
       "slug": "cosmelan_depigmenting_including_home_kit",
       "name": "Cosmelan Depigmenting including home kit",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 1300,
@@ -315,6 +339,7 @@
     {
       "slug": "cryoelectrolipolysis_one_area",
       "name": "Cryoelectrolipolysis One Area",
+      "display_name": null,
       "category": "body",
       "status": "live",
       "price_gbp": 99,
@@ -326,6 +351,7 @@
     {
       "slug": "cryoelectrolipolysis_three_areas",
       "name": "Cryoelectrolipolysis Three Areas",
+      "display_name": null,
       "category": "body",
       "status": "live",
       "price_gbp": 250,
@@ -337,6 +363,7 @@
     {
       "slug": "cryoelectrolipolysis_two_areas",
       "name": "Cryoelectrolipolysis Two Areas",
+      "display_name": null,
       "category": "body",
       "status": "live",
       "price_gbp": 150,
@@ -348,6 +375,7 @@
     {
       "slug": "deep_tissue_massage",
       "name": "Deep Tissue Massage",
+      "display_name": null,
       "category": "massage",
       "status": "live",
       "price_gbp": 70,
@@ -359,6 +387,7 @@
     {
       "slug": "dermatitis",
       "name": "Dermatitis",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": null,
@@ -370,6 +399,7 @@
     {
       "slug": "emsculpt",
       "name": "Emsculpt",
+      "display_name": null,
       "category": "body",
       "status": "live",
       "price_gbp": 99,
@@ -381,6 +411,7 @@
     {
       "slug": "eye_bags",
       "name": "Eye Bags",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 150,
@@ -392,6 +423,7 @@
     {
       "slug": "eye_lift",
       "name": "Eye Lift",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 400,
@@ -403,6 +435,7 @@
     {
       "slug": "eyebrow_growth",
       "name": "Eyebrow Growth",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 350,
@@ -414,6 +447,7 @@
     {
       "slug": "eyes_bags_or_dark_circle",
       "name": "Eyes bags or dark circle",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 100,
@@ -425,6 +459,7 @@
     {
       "slug": "eyes_forehead",
       "name": "Eyes + Forehead",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 250,
@@ -436,6 +471,7 @@
     {
       "slug": "face_massage",
       "name": "Face Massage",
+      "display_name": null,
       "category": "massage",
       "status": "live",
       "price_gbp": 40,
@@ -447,6 +483,7 @@
     {
       "slug": "facial_fillers",
       "name": "Facial Fillers",
+      "display_name": null,
       "category": "skinboosters",
       "status": "live",
       "price_gbp": 350,
@@ -458,6 +495,7 @@
     {
       "slug": "fat_dissolve",
       "name": "Fat Dissolve",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 50,
@@ -469,6 +507,7 @@
     {
       "slug": "foot_leg_massage",
       "name": "Foot & Leg Massage",
+      "display_name": null,
       "category": "massage",
       "status": "live",
       "price_gbp": 45,
@@ -480,6 +519,7 @@
     {
       "slug": "full_face",
       "name": "Full Face",
+      "display_name": null,
       "category": "hifu",
       "status": "live",
       "price_gbp": 450,
@@ -491,6 +531,7 @@
     {
       "slug": "full_face_1",
       "name": "Full Face",
+      "display_name": null,
       "category": "hifu",
       "status": "live",
       "price_gbp": 300,
@@ -502,6 +543,7 @@
     {
       "slug": "full_face_chin_neck",
       "name": "Full Face + Chin + Neck",
+      "display_name": null,
       "category": "hifu",
       "status": "live",
       "price_gbp": 560,
@@ -513,6 +555,7 @@
     {
       "slug": "full_face_neck",
       "name": "Full Face + Neck",
+      "display_name": null,
       "category": "hifu",
       "status": "live",
       "price_gbp": 350,
@@ -524,6 +567,7 @@
     {
       "slug": "gycolic_acid_peel",
       "name": "Gycolic Acid Peel",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 75,
@@ -535,6 +579,7 @@
     {
       "slug": "hair_growth",
       "name": "Hair Growth",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 350,
@@ -546,6 +591,7 @@
     {
       "slug": "half_face",
       "name": "Half Face",
+      "display_name": null,
       "category": "hifu",
       "status": "live",
       "price_gbp": 280,
@@ -557,6 +603,7 @@
     {
       "slug": "half_face_with_led_and_mask",
       "name": "Half face With LED and Mask",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 150,
@@ -568,6 +615,7 @@
     {
       "slug": "hand_rejuvenation",
       "name": "Hand Rejuvenation",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 450,
@@ -579,6 +627,7 @@
     {
       "slug": "hifu_med_area_flappy_arms_lovehandle",
       "name": "Hifu Med Area (Flappy arms/lovehandle)",
+      "display_name": "HIFU medium area (upper arms or waist)",
       "category": "body",
       "status": "live",
       "price_gbp": 280,
@@ -590,6 +639,7 @@
     {
       "slug": "hifu_small_area_knees_armpit_bust_lift",
       "name": "Hifu Small Area (Knees/Armpit/Bust lift)",
+      "display_name": "HIFU small area (knees, underarm or bust)",
       "category": "body",
       "status": "live",
       "price_gbp": 140,
@@ -601,6 +651,7 @@
     {
       "slug": "hydrating",
       "name": "Hydrating",
+      "display_name": null,
       "category": "facials",
       "status": "live",
       "price_gbp": 70,
@@ -612,6 +663,7 @@
     {
       "slug": "hydrofacial",
       "name": "Hydrofacial",
+      "display_name": null,
       "category": "facials",
       "status": "live",
       "price_gbp": 100,
@@ -623,6 +675,7 @@
     {
       "slug": "hyperpigmentation",
       "name": "Hyperpigmentation",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 350,
@@ -634,6 +687,7 @@
     {
       "slug": "ipl_extra_large_area",
       "name": "IPL Extra Large Area",
+      "display_name": null,
       "category": "hair",
       "status": "live",
       "price_gbp": 99,
@@ -645,6 +699,7 @@
     {
       "slug": "ipl_large_area",
       "name": "IPL Large Area",
+      "display_name": null,
       "category": "hair",
       "status": "live",
       "price_gbp": 70,
@@ -656,6 +711,7 @@
     {
       "slug": "ipl_medium_area",
       "name": "IPL Medium Area",
+      "display_name": null,
       "category": "hair",
       "status": "live",
       "price_gbp": 45,
@@ -667,6 +723,7 @@
     {
       "slug": "ipl_small_area",
       "name": "IPL Small Area",
+      "display_name": null,
       "category": "hair",
       "status": "live",
       "price_gbp": 25,
@@ -678,6 +735,7 @@
     {
       "slug": "iv_prp_therapy",
       "name": "IV PRP Therapy",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 850,
@@ -689,6 +747,7 @@
     {
       "slug": "iv_prp_therapy_1",
       "name": "IV PRP Therapy",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 850,
@@ -700,6 +759,7 @@
     {
       "slug": "jalupro",
       "name": "Jalupro",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 150,
@@ -711,6 +771,7 @@
     {
       "slug": "jaw_slimming",
       "name": "Jaw Slimming",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 350,
@@ -722,6 +783,7 @@
     {
       "slug": "knee",
       "name": "Knee",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 550,
@@ -733,6 +795,7 @@
     {
       "slug": "ladies_waxing_bikini",
       "name": "Ladies' Waxing - Bikini",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 25,
@@ -744,6 +807,7 @@
     {
       "slug": "ladies_waxing_body_hot_wax_abdomen",
       "name": "Ladies' Waxing - Body (Hot Wax) Abdomen",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 40,
@@ -755,6 +819,7 @@
     {
       "slug": "ladies_waxing_body_hot_wax_bottom",
       "name": "Ladies' Waxing - Body (Hot Wax) Bottom",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 23,
@@ -766,6 +831,7 @@
     {
       "slug": "ladies_waxing_body_hot_wax_crack",
       "name": "Ladies' Waxing - Body (Hot Wax) Crack",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 18,
@@ -777,6 +843,7 @@
     {
       "slug": "ladies_waxing_body_strip_wax_abdomen",
       "name": "Ladies' Waxing Body (Strip Wax) Abdomen",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 23,
@@ -788,6 +855,7 @@
     {
       "slug": "ladies_waxing_body_strip_wax_bottom",
       "name": "Ladies' Waxing - Body (Strip Wax) Bottom",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 20,
@@ -799,6 +867,7 @@
     {
       "slug": "ladies_waxing_brazilian",
       "name": "Ladies' Waxing - Brazilian",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 42,
@@ -810,6 +879,7 @@
     {
       "slug": "ladies_waxing_face_hot_wax_forehead",
       "name": "Ladies' Waxing Face (Hot Wax) Forehead",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 17,
@@ -821,6 +891,7 @@
     {
       "slug": "ladies_waxing_face_hot_wax_full_chin",
       "name": "Ladies' Waxing Face (Hot Wax) Full Chin",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 10,
@@ -832,6 +903,7 @@
     {
       "slug": "ladies_waxing_face_hot_wax_full_face",
       "name": "Ladies' Waxing Face (Hot Wax) Full Face",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 50,
@@ -843,6 +915,7 @@
     {
       "slug": "ladies_waxing_face_hot_wax_sideburns",
       "name": "Ladies' Waxing Face (Hot Wax) Sideburns",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 15,
@@ -854,6 +927,7 @@
     {
       "slug": "ladies_waxing_face_hot_wax_upper_lip",
       "name": "Ladies' Waxing Face (Hot Wax) Upper Lip",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 10,
@@ -865,6 +939,7 @@
     {
       "slug": "ladies_waxing_full_arm_with_strip_wax",
       "name": "Ladies' Waxing - Full Arm with strip wax",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 25,
@@ -876,6 +951,7 @@
     {
       "slug": "ladies_waxing_full_leg_strip_wax",
       "name": "Ladies' Waxing - Full Leg (Strip Wax)",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 35,
@@ -887,6 +963,7 @@
     {
       "slug": "ladies_waxing_g_string",
       "name": "Ladies' Waxing - G-String",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 32,
@@ -898,6 +975,7 @@
     {
       "slug": "ladies_waxing_half_arm_with_strip_wax",
       "name": "Ladies' Waxing - Half Arm with strip wax",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 18,
@@ -909,6 +987,7 @@
     {
       "slug": "ladies_waxing_hollywood",
       "name": "Ladies' Waxing - Hollywood",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 42,
@@ -920,6 +999,7 @@
     {
       "slug": "ladies_waxing_lower_leg_strip_wax",
       "name": "Ladies' Waxing - Lower Leg (Strip Wax)",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 23,
@@ -931,6 +1011,7 @@
     {
       "slug": "ladies_waxing_underarm_hot_wax",
       "name": "Ladies' Waxing - Underarm (Hot Wax)",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 18,
@@ -942,6 +1023,7 @@
     {
       "slug": "ladies_waxing_upper_leg_strip_wax",
       "name": "Ladies' Waxing - Upper Leg (Strip Wax)",
+      "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 20,
@@ -953,6 +1035,7 @@
     {
       "slug": "large_area_outer_thighs_full_stomach",
       "name": "Large Area (Outer thighs/full stomach)",
+      "display_name": null,
       "category": "body",
       "status": "live",
       "price_gbp": 420,
@@ -964,6 +1047,7 @@
     {
       "slug": "laser_hair_removal_extra_large_area",
       "name": "Laser Hair Removal Extra Large Area",
+      "display_name": null,
       "category": "hair",
       "status": "live",
       "price_gbp": 80,
@@ -975,6 +1059,7 @@
     {
       "slug": "laser_hair_removal_large_area",
       "name": "Laser Hair Removal Large Area",
+      "display_name": null,
       "category": "hair",
       "status": "live",
       "price_gbp": 60,
@@ -986,6 +1071,7 @@
     {
       "slug": "laser_hair_removal_medium_area",
       "name": "Laser Hair Removal Medium Area",
+      "display_name": null,
       "category": "hair",
       "status": "live",
       "price_gbp": 35,
@@ -997,6 +1083,7 @@
     {
       "slug": "lip_0_55ml",
       "name": "Lip (0.55ml)",
+      "display_name": null,
       "category": "skinboosters",
       "status": "live",
       "price_gbp": 350,
@@ -1008,6 +1095,7 @@
     {
       "slug": "localised_fat",
       "name": "Localised fat",
+      "display_name": null,
       "category": "carboxy",
       "status": "live",
       "price_gbp": 130,
@@ -1019,6 +1107,7 @@
     {
       "slug": "medium_area_tattoo_removal_3_8cm",
       "name": "Medium Area Tattoo Removal (3-8cm)",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": 100,
@@ -1030,6 +1119,7 @@
     {
       "slug": "men_s_tattoo_large_area_8_15cm",
       "name": "Men's Tattoo Large Area (8-15cm)",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": 199,
@@ -1041,6 +1131,7 @@
     {
       "slug": "men_s_waxing_eyebrow",
       "name": "Men's Waxing Eyebrow",
+      "display_name": null,
       "category": "waxing-men",
       "status": "live",
       "price_gbp": 15,
@@ -1052,6 +1143,7 @@
     {
       "slug": "men_s_waxing_full_arm",
       "name": "Men's Waxing Full Arm",
+      "display_name": null,
       "category": "waxing-men",
       "status": "live",
       "price_gbp": 28,
@@ -1063,6 +1155,7 @@
     {
       "slug": "men_s_waxing_full_leg",
       "name": "Men's Waxing Full Leg",
+      "display_name": null,
       "category": "waxing-men",
       "status": "live",
       "price_gbp": 35,
@@ -1074,6 +1167,7 @@
     {
       "slug": "men_s_waxing_full_leg_1",
       "name": "Men's Waxing Full Leg",
+      "display_name": null,
       "category": "waxing-men",
       "status": "live",
       "price_gbp": 40,
@@ -1085,6 +1179,7 @@
     {
       "slug": "men_s_waxing_half_arm",
       "name": "Men's Waxing Half Arm",
+      "display_name": null,
       "category": "waxing-men",
       "status": "live",
       "price_gbp": 18,
@@ -1096,6 +1191,7 @@
     {
       "slug": "men_s_waxing_half_chest",
       "name": "Men's Waxing Half Chest",
+      "display_name": null,
       "category": "waxing-men",
       "status": "live",
       "price_gbp": 22,
@@ -1107,6 +1203,7 @@
     {
       "slug": "men_s_waxing_half_leg",
       "name": "Men's Waxing Half Leg",
+      "display_name": null,
       "category": "waxing-men",
       "status": "live",
       "price_gbp": 20,
@@ -1118,6 +1215,7 @@
     {
       "slug": "men_s_waxing_shoulder",
       "name": "Men's Waxing Shoulder",
+      "display_name": null,
       "category": "waxing-men",
       "status": "live",
       "price_gbp": 22,
@@ -1129,6 +1227,7 @@
     {
       "slug": "men_s_waxing_stomach",
       "name": "Men's Waxing Stomach",
+      "display_name": null,
       "category": "waxing-men",
       "status": "live",
       "price_gbp": 25,
@@ -1140,6 +1239,7 @@
     {
       "slug": "mesotherapy_1",
       "name": "Mesotherapy",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 100,
@@ -1151,6 +1251,7 @@
     {
       "slug": "mesotherapy_facial_luxury",
       "name": "Mesotherapy Facial Luxury",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 150,
@@ -1162,6 +1263,7 @@
     {
       "slug": "mesotherapy_radio_frequency",
       "name": "Mesotherapy Radio Frequency",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 130,
@@ -1173,6 +1275,7 @@
     {
       "slug": "microneedling_face",
       "name": "Microneedling Face",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 100,
@@ -1184,6 +1287,7 @@
     {
       "slug": "microneedling_face_neck",
       "name": "Microneedling Face + Neck",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 150,
@@ -1195,6 +1299,7 @@
     {
       "slug": "neck",
       "name": "Neck",
+      "display_name": null,
       "category": "hifu",
       "status": "live",
       "price_gbp": 299,
@@ -1206,6 +1311,7 @@
     {
       "slug": "neck_lift",
       "name": "Neck Lift",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 350,
@@ -1217,6 +1323,7 @@
     {
       "slug": "non_surgical_rhinoplasty_1",
       "name": "Non-surgical Rhinoplasty",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 350,
@@ -1228,6 +1335,7 @@
     {
       "slug": "one_area_frown_or_eyes_only",
       "name": "One Area (Frown or Eyes Only)",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 150,
@@ -1239,6 +1347,7 @@
     {
       "slug": "penile_enlargement",
       "name": "Penile Enlargement",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 800,
@@ -1250,6 +1359,7 @@
     {
       "slug": "pigmentations_ipl",
       "name": "Pigmentations IPL",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": 99,
@@ -1261,6 +1371,7 @@
     {
       "slug": "pigmentations_picosure",
       "name": "Pigmentations Picosure",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": 150,
@@ -1272,6 +1383,7 @@
     {
       "slug": "pigmentations_qswitch",
       "name": "Pigmentations Qswitch",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": 100,
@@ -1283,6 +1395,7 @@
     {
       "slug": "profhilo",
       "name": "Profhilo",
+      "display_name": null,
       "category": "skinboosters",
       "status": "live",
       "price_gbp": 250,
@@ -1294,6 +1407,7 @@
     {
       "slug": "profhilo_2_sessions",
       "name": "Profhilo 2 Sessions",
+      "display_name": null,
       "category": "skinboosters",
       "status": "live",
       "price_gbp": 400,
@@ -1305,6 +1419,7 @@
     {
       "slug": "prp_natural_filler_face_lips",
       "name": "PRP Natural Filler Face/Lips",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 450,
@@ -1316,6 +1431,7 @@
     {
       "slug": "prp_rhinoplasty",
       "name": "PRP Rhinoplasty",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 700,
@@ -1327,6 +1443,7 @@
     {
       "slug": "psoriasis",
       "name": "Psoriasis",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 400,
@@ -1338,6 +1455,7 @@
     {
       "slug": "radio_frequency_indiba",
       "name": "Radio Frequency INDIBA",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 75,
@@ -1349,6 +1467,7 @@
     {
       "slug": "radio_frequency_indiba_full_back_leg",
       "name": "Radio Frequency INDIBA full back/ leg",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 100,
@@ -1360,6 +1479,7 @@
     {
       "slug": "rejuvenation_full_face",
       "name": "Rejuvenation (Full Face)",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 130,
@@ -1371,6 +1491,7 @@
     {
       "slug": "rejuvenation_ipl",
       "name": "Rejuvenation IPL",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": 99,
@@ -1382,6 +1503,7 @@
     {
       "slug": "rejuvenation_picosure",
       "name": "Rejuvenation Picosure",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": 150,
@@ -1393,6 +1515,7 @@
     {
       "slug": "rosacea",
       "name": "Rosacea",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 400,
@@ -1404,6 +1527,7 @@
     {
       "slug": "skinox_acne_blemish",
       "name": "Skinox Acne & Blemish",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 135,
@@ -1415,6 +1539,7 @@
     {
       "slug": "skinox_pigmentation",
       "name": "Skinox Pigmentation",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 135,
@@ -1426,6 +1551,7 @@
     {
       "slug": "skinox_redness",
       "name": "Skinox Redness",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 135,
@@ -1437,6 +1563,7 @@
     {
       "slug": "skinox_wrinkles",
       "name": "Skinox Wrinkles",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": 135,
@@ -1448,6 +1575,7 @@
     {
       "slug": "smile_line",
       "name": "Smile Line",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 100,
@@ -1459,6 +1587,7 @@
     {
       "slug": "stretch_mark_scar_and_burns",
       "name": "Stretch mark, Scar and burns",
+      "display_name": null,
       "category": "carboxy",
       "status": "live",
       "price_gbp": 99,
@@ -1470,6 +1599,7 @@
     {
       "slug": "stretch_marks",
       "name": "Stretch marks",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 400,
@@ -1481,6 +1611,7 @@
     {
       "slug": "swedish_massage",
       "name": "Swedish Massage",
+      "display_name": null,
       "category": "massage",
       "status": "live",
       "price_gbp": 45,
@@ -1492,6 +1623,7 @@
     {
       "slug": "tattoo_large_area_8_15cm",
       "name": "Tattoo Large Area (8-15cm)",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": 199,
@@ -1503,6 +1635,7 @@
     {
       "slug": "tattoo_removal_1_session",
       "name": "Tattoo Removal (1 Session)",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": 69,
@@ -1514,6 +1647,7 @@
     {
       "slug": "tension_neck_sculp_massage_intense",
       "name": "Tension neck & sculp massage (intense)",
+      "display_name": null,
       "category": "massage",
       "status": "live",
       "price_gbp": 45,
@@ -1525,6 +1659,7 @@
     {
       "slug": "thai_massage",
       "name": "Thai Massage",
+      "display_name": null,
       "category": "massage",
       "status": "live",
       "price_gbp": 70,
@@ -1536,6 +1671,7 @@
     {
       "slug": "therapeutic_lymphatic_drainage_massage",
       "name": "Therapeutic Lymphatic Drainage Massage",
+      "display_name": null,
       "category": "massage",
       "status": "live",
       "price_gbp": 45,
@@ -1547,6 +1683,7 @@
     {
       "slug": "therapeutic_lymphatic_drainage_massage_1",
       "name": "Therapeutic Lymphatic Drainage Massage",
+      "display_name": null,
       "category": "massage",
       "status": "live",
       "price_gbp": 80,
@@ -1558,6 +1695,7 @@
     {
       "slug": "thermal_peel_rejuvenations",
       "name": "Thermal peel/Rejuvenations",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": 150,
@@ -1569,6 +1707,7 @@
     {
       "slug": "tmj",
       "name": "TMJ",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 750,
@@ -1580,6 +1719,7 @@
     {
       "slug": "vampire_facial",
       "name": "Vampire Facial",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 450,
@@ -1591,6 +1731,7 @@
     {
       "slug": "vascular_removal_vein_broken_capillari_1",
       "name": "Vascular removal(vein /broken capillari)",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": 69,
@@ -1602,6 +1743,7 @@
     {
       "slug": "vitamin_c_shot_d3_b12",
       "name": "Vitamin (C Shot D3 B12)",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": 35,
@@ -1613,6 +1755,7 @@
     {
       "slug": "aesthetics_1_cryopen",
       "name": "CRYOPEN",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": null,
@@ -1624,6 +1767,7 @@
     {
       "slug": "aesthetics_1_emsculpt",
       "name": "EMSCULPT",
+      "display_name": null,
       "category": "body",
       "status": "live",
       "price_gbp": null,
@@ -1635,6 +1779,7 @@
     {
       "slug": "aesthetics_1_etherea_mx",
       "name": "ETHEREA MX",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": null,
@@ -1646,6 +1791,7 @@
     {
       "slug": "aesthetics_1_golden_micro_needling",
       "name": "GOLDEN MICRO NEEDLING",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": null,
@@ -1657,6 +1803,7 @@
     {
       "slug": "aesthetics_1_hifu",
       "name": "HIFU",
+      "display_name": null,
       "category": "hifu",
       "status": "live",
       "price_gbp": null,
@@ -1668,6 +1815,7 @@
     {
       "slug": "aesthetics_1_hydro_facial",
       "name": "HYDRO FACIAL",
+      "display_name": null,
       "category": "facials",
       "status": "live",
       "price_gbp": null,
@@ -1679,6 +1827,7 @@
     {
       "slug": "aesthetics_1_ipl_intense_pulsed_light",
       "name": "IPL (INTENSE PULSED LIGHT)",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": null,
@@ -1690,6 +1839,7 @@
     {
       "slug": "aesthetics_1_iv_therapy",
       "name": "IV THERAPY",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": null,
@@ -1701,6 +1851,7 @@
     {
       "slug": "aesthetics_1_mesotherapy_injection_gun",
       "name": "MESOTHERAPY INJECTION GUN",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": null,
@@ -1712,6 +1863,7 @@
     {
       "slug": "aesthetics_1_microneedling",
       "name": "MICRONEEDLING",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": null,
@@ -1723,6 +1875,7 @@
     {
       "slug": "aesthetics_1_pico_laser",
       "name": "PICO LASER",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": null,
@@ -1734,6 +1887,7 @@
     {
       "slug": "aesthetics_1_skymedic_chemical_peels",
       "name": "SKYMEDIC CHEMICAL PEELS",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": null,
@@ -1745,6 +1899,7 @@
     {
       "slug": "aesthetics_body_3d_lipo",
       "name": "3D LIPO",
+      "display_name": null,
       "category": "body",
       "status": "live",
       "price_gbp": null,
@@ -1756,6 +1911,7 @@
     {
       "slug": "aesthetics_body_carboxytherapy",
       "name": "CARBOXYTHERAPY",
+      "display_name": null,
       "category": "carboxy",
       "status": "live",
       "price_gbp": null,
@@ -1767,6 +1923,7 @@
     {
       "slug": "aesthetics_body_emsculpt",
       "name": "EMSCULPT",
+      "display_name": null,
       "category": "body",
       "status": "live",
       "price_gbp": null,
@@ -1778,6 +1935,7 @@
     {
       "slug": "aesthetics_body_hifu_body",
       "name": "HIFU BODY",
+      "display_name": null,
       "category": "body",
       "status": "live",
       "price_gbp": null,
@@ -1789,6 +1947,7 @@
     {
       "slug": "aesthetics_body_indiba_deep_beauty",
       "name": "INDIBA DEEP BEAUTY",
+      "display_name": null,
       "category": "skin",
       "status": "live",
       "price_gbp": null,
@@ -1800,6 +1959,7 @@
     {
       "slug": "aesthetics_body_laser_hair_removal_2F_ipl",
       "name": "LASER HAIR REMOVAL / IPL",
+      "display_name": null,
       "category": "hair",
       "status": "live",
       "price_gbp": null,
@@ -1811,6 +1971,7 @@
     {
       "slug": "aesthetics_body_profhilo_body",
       "name": "PROFHILO BODY",
+      "display_name": null,
       "category": "skinboosters",
       "status": "live",
       "price_gbp": null,
@@ -1822,6 +1983,7 @@
     {
       "slug": "aesthetics_body_tattoo_removal",
       "name": "TATTOO REMOVAL",
+      "display_name": null,
       "category": "laser",
       "status": "live",
       "price_gbp": null,
@@ -1833,6 +1995,7 @@
     {
       "slug": "facials_1_age_defence_sensitive_skin_treatment",
       "name": "AGE DEFENCE SENSITIVE SKIN TREATMENT",
+      "display_name": null,
       "category": "facials",
       "status": "live",
       "price_gbp": null,
@@ -1844,6 +2007,7 @@
     {
       "slug": "facials_1_diamondtome_microdermabrasion",
       "name": "DIAMONDTOME MICRODERMABRASION",
+      "display_name": null,
       "category": "facials",
       "status": "live",
       "price_gbp": null,
@@ -1855,6 +2019,7 @@
     {
       "slug": "facials_1_eberlin_facial",
       "name": "EBERLIN FACIAL",
+      "display_name": null,
       "category": "facials",
       "status": "live",
       "price_gbp": null,
@@ -1866,6 +2031,7 @@
     {
       "slug": "facials_1_mesotherapy_radio_frequency",
       "name": "MESOTHERAPY RADIO FREQUENCY",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": null,
@@ -1877,6 +2043,7 @@
     {
       "slug": "facials_1_pro_lift_eye_treatment",
       "name": "PRO-LIFT EYE TREATMENT",
+      "display_name": null,
       "category": "facials",
       "status": "review",
       "price_gbp": null,
@@ -1888,6 +2055,7 @@
     {
       "slug": "injections_b12_injections",
       "name": "B12 INJECTIONS",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": null,
@@ -1899,6 +2067,7 @@
     {
       "slug": "injections_collagen",
       "name": "COLLAGEN",
+      "display_name": null,
       "category": "carboxy",
       "status": "live",
       "price_gbp": null,
@@ -1910,6 +2079,7 @@
     {
       "slug": "injections_jalupro_skin_booster",
       "name": "JALUPRO SKIN BOOSTER",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": null,
@@ -1921,6 +2091,7 @@
     {
       "slug": "injections_lipo_lap_fat_dissolve",
       "name": "LIPO LAP FAT DISSOLVE",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": null,
@@ -1932,6 +2103,7 @@
     {
       "slug": "injections_mesotherapy",
       "name": "MESOTHERAPY",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": null,
@@ -1943,6 +2115,7 @@
     {
       "slug": "injections_profhilo_skin_booster",
       "name": "PROFHILO SKIN BOOSTER",
+      "display_name": null,
       "category": "skinboosters",
       "status": "live",
       "price_gbp": null,
@@ -1954,6 +2127,7 @@
     {
       "slug": "injections_restylane_skin_boosters",
       "name": "RESTYLANE SKIN BOOSTERS",
+      "display_name": null,
       "category": "skinboosters",
       "status": "live",
       "price_gbp": null,
@@ -1965,6 +2139,7 @@
     {
       "slug": "injections_s_dna_skin_booster",
       "name": "S-DNA SKIN BOOSTER",
+      "display_name": null,
       "category": "skinboosters",
       "status": "review",
       "price_gbp": null,
@@ -1976,6 +2151,7 @@
     {
       "slug": "injections_vitamin_c_injection",
       "name": "VITAMIN C INJECTION",
+      "display_name": null,
       "category": "held",
       "status": "held",
       "price_gbp": null,

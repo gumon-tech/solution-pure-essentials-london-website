@@ -47,7 +47,7 @@ You can also book through Treatwell.
 | Diamondtome Microdermabrasion | ask | Ask for a quote | facials_1_diamondtome_microdermabrasion |
 | Eberlin Facial | ask | Ask for a quote | facials_1_eberlin_facial |
 
-Prices include VAT.
+The price shown is the price you pay.
 
 ## aftercare
 

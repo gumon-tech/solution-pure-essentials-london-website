@@ -37,6 +37,8 @@ export interface Service {
   status: ServiceStatus;
   price_gbp: number | null;
   price_from: boolean;
+  /** Public name set by PEL; render this instead of `name` when present. */
+  display_name?: string | null;
   duration: string | null;
   source: string;
   note: string;

@@ -70,6 +70,7 @@
           "type": ["number", "null"]
         },
         "price_from": { "type": "boolean" },
+        "display_name": { "type": ["string", "null"], "$comment": "Optional public name set by PEL; the site shows it instead of name when present (PEL ruling 6, 2026-09-13)." },
         "duration": {
           "type": ["string", "null"]
         },

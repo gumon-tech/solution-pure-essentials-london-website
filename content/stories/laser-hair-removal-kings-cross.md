@@ -56,7 +56,7 @@ IPL hair removal
 | IPL Large Area | 45 min | GBP 70 | ipl_large_area |
 | IPL Extra Large Area | 1 hr 30 min | GBP 99 | ipl_extra_large_area |
 
-Aesthetic treatments are for adults aged 18 and over. Prices include VAT.
+Aesthetic treatments are for adults aged 18 and over. The price shown is the price you pay.
 
 ## aftercare
 
