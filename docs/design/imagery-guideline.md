@@ -204,3 +204,17 @@ from the rejected pass.
 | room-couch | contact-room-d-a.jpg (small room with rolled towels) | light and colour only | may say a treatment room at Pure Essentials London | d-b: REJECT, trolley and cabinet turned to wood grain |
 
 PEL rule 2026-09-13 (lead repo brief section 11): a photo of the clinic must remain the clinic. Only light, white balance, brightness and crop may change; never surface colour, material, objects or lettering. There is no "AI-edited room" class. Room photos stay secondary (contact page and the clinic story), never a page's main image (section 1).
+
+### Category header images (Lead check 2026-09-13)
+
+Sources in `generated-2026-09-13/`, all AI images (section 4 alt rule). Hands checked at full-size crops: 4 fingers
+and 1 thumb per visible hand. Brightness 60.0 to 71.1. Approval before deploy: PEL.
+
+| Slot | Chosen | Crop | Rejected alternative and why |
+|---|---|---|---|
+| cat-laser-skin | cat-laser-skin-a.jpg | none | b: dark navy goggles against the palette |
+| cat-skin | cat-skin-a.jpg | trim the right 12 percent (therapist's chin) | b: therapist's chin, mirror of a |
+| cat-skinboosters | cat-skinboosters-b.jpg | none | a: client in black trousers |
+| cat-carboxy | cat-carboxy-a.jpg | keep the top 72 percent (removes the practitioner's black trousers), 4:5 by side trim | b: black trousers in the upper frame too |
+| cat-waxing-ladies | cat-waxing-ladies-b.jpg | none | a: fine, b hands clearer |
+| cat-waxing-men | cat-waxing-men-a.jpg | none | b: therapist's mouth and chin enter the frame |
