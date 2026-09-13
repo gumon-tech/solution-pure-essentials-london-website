@@ -171,3 +171,113 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | Price table (8 rows) | S: slug in each row |
 | FAQ "Prices start at GBP 99 for Emsculpt or for 1 area of cryoelectrolipolysis." | S:emsculpt, S:cryoelectrolipolysis_one_area |
 | FAQ "From 30 minutes for Emsculpt to 2 hours for 3 areas of cryoelectrolipolysis." | S:emsculpt, S:cryoelectrolipolysis_three_areas |
+
+## Story pages set 2 (queue row Q26)
+
+Written 2026-09-13 by a PWEB executor for Q26. Data read from `data/services.json` after rebase onto 7a2808c (data commit f305afa, 112 live rows). Rows moved to review by PEL (stretch_mark_scar_and_burns, localised_fat, injections_collagen) are not on any set 2 page.
+
+### Source keys added for set 2
+
+| Key | Source |
+|---|---|
+| DESC:family | `content/treatment-descriptions.md`, that family, desc (PEL approved 96eb850), used verbatim or cut |
+| AC | "Your therapist gives aftercare advice at the appointment." PEL ruling 8 (brief section 9); fixed sentence in the Q26 row brief |
+| R5 | "The price shown is the price you pay." PEL ruling 5 (brief section 9) |
+| CL | "consultation-led" for skin boosters: Q26 row brief; DESC:injections_profhilo_skin_booster and DESC:injections_restylane_skin_boosters |
+| FAM:slug | `lib/families.ts` family title, used as the name of a cms row without a price (same practice as the 3 facials_1_ rows in set 1) |
+
+Change to the shared aftercare line: set 1's "You leave with clear aftercare advice and can message us with any question." is replaced on set 2 pages by AC, plus "You can message us with any question." (PEL:Home How it works 4, cut) on the massage and waxing pages.
+
+### Sentences shared by the set 2 pages
+
+| Sentence start | Files | Source |
+|---|---|---|
+| "...at 155 King's Cross Road, 7 days a week." (hero) | all 4 | PEL:Home Hero sub-line, cut; F1, F2; category from C:massage, C:waxing-ladies, C:waxing-men, C:skin, C:skinboosters |
+| "Every treatment starts with a free consultation." | massage, waxing, microneedling | PEL:Home Hero sub-line; F5 |
+| Buttons "Message us on WhatsApp" / "See treatments and prices" / "Book on Treatwell" | all 4 (skin boosters: no Treatwell button) | PEL:Home Hero buttons, PEL:Contact; F4 |
+| "At the consultation we look at your skin or your goal and recommend what suits you." | microneedling, skin boosters (massage: "your goal" only) | PEL:Home How it works 2 (massage: cut) |
+| "Results vary from person to person." | microneedling only | BH |
+| "If you have a (skin or) health condition, or you are unsure..., ask (at the consultation) before you book." | all 4 | F5; 02-uk-compliance section 4, as set 1 |
+| Step 1 "Tell us what you would like to ask about, on WhatsApp or by email." | all 4 | PEL:Home How it works 1, cut; F3, F4 |
+| Step 2 "We look at your skin or your goal and recommend what suits you." | all 4 (massage: "your goal" only) | PEL:Home How it works 2 |
+| Step 3 "Booked at a time that suits you, 7 days a week." | all 4 | PEL:Home How it works 3; F2 |
+| "The duration of each option is listed below." | massage, waxing | S: rows in the page's price table |
+| "You can also book through Treatwell." (body and FAQ) | massage, waxing, microneedling | F4 |
+| "Aesthetic treatments are for adults aged 18 and over." | microneedling, skin boosters (skin boosters: body and FAQ) | B18; Q26 row brief |
+| "The price shown is the price you pay." | all 4 | R5; PEL:Treatments intro |
+| Aftercare "Your therapist gives aftercare advice at the appointment." | all 4 | AC |
+| FAQ "Where is the clinic?" / "155 King's Cross Road, London WC1X 9BN." | all 4 | F1 |
+| FAQ "When are you open?" / "Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00." | all 4 | PEL:Home The clinic; F2 |
+| FAQ "Is the consultation free?" / "Yes. Consultations are free." | all 4 | PEL:Home The clinic; F5 |
+| FAQ "How do I book?" / "Message us on WhatsApp. You can also book through Treatwell." | massage, waxing, microneedling | F4 |
+| CTA "Message us on WhatsApp and we will reply during opening hours." | all 4 | PEL:Home Final call line |
+
+### content/stories/massage-kings-cross.md
+
+| Sentence start | Source |
+|---|---|
+| title, h1 "Massage in King's Cross" | C:massage; F1 |
+| description "Massage at 155..., including Deep Tissue, Swedish and Thai Massage, from GBP 40..." | S:deep_tissue_massage, S:swedish_massage, S:thai_massage, S:face_massage (GBP 40); F1; F5 |
+| "The massage menu includes Deep Tissue Massage, Swedish Massage, Thai Massage and Therapeutic Lymphatic Drainage Massage." | S:deep_tissue_massage, S:swedish_massage, S:thai_massage, S:therapeutic_lymphatic_drainage_massage |
+| "A Face Massage, a Foot & Leg Massage and a Tension neck & sculp massage (intense) are also on the menu." | S:face_massage, S:foot_leg_massage, S:tension_neck_sculp_massage_intense (name verbatim, ruling 6) |
+| "Sessions take from 20 minutes to 1 hour." | S:tension_neck_sculp_massage_intense (20 min); S:deep_tissue_massage, S:thai_massage (1 hr) |
+| "Therapeutic Lymphatic Drainage Massage is booked as 30 minutes or 1 hour." | S:therapeutic_lymphatic_drainage_massage (30 min), S:therapeutic_lymphatic_drainage_massage_1 (1 hr) |
+| "Not sure which massage to choose?" | question, leads into PEL:Home How it works 2 (set 1 facials pattern) |
+| Price table (8 rows) | S: slug in each row; the 2 same-name rows told apart by duration (D51 practice) |
+| FAQ "Prices run from GBP 40 for a Face Massage to GBP 80 for a 1 hour Therapeutic Lymphatic Drainage Massage." | S:face_massage, S:therapeutic_lymphatic_drainage_massage_1 |
+| FAQ "Every option is listed on this page." | the page's price table |
+| FAQ "From 20 minutes for the Tension neck & sculp massage (intense) to 1 hour for a Deep Tissue, Thai or Therapeutic Lymphatic Drainage Massage." | S:tension_neck_sculp_massage_intense, S:deep_tissue_massage, S:thai_massage, S:therapeutic_lymphatic_drainage_massage_1 |
+
+### content/stories/waxing-kings-cross.md
+
+| Sentence start | Source |
+|---|---|
+| title, h1 "Waxing in King's Cross" | C:waxing-ladies, C:waxing-men; F1 |
+| description "Waxing for ladies and men at 155..., from GBP 10..." | S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip (GBP 10); F1; F5 |
+| hero "Waxing for ladies and men at 155 King's Cross Road, 7 days a week." | C:waxing-ladies, C:waxing-men; F1; F2 |
+| "Ladies' waxing covers the face, underarm, arms, legs and body, and the bikini, Brazilian, G-String and Hollywood." | S: the 20 waxing-ladies rows (area words in their names) |
+| "The face and underarm are waxed with hot wax, and the arms and legs with strip wax." | S:ladies_waxing_face_hot_wax_ (5 rows), S:ladies_waxing_underarm_hot_wax; S:ladies_waxing_half_arm_with_strip_wax, _full_arm_with_strip_wax, _lower_leg_strip_wax, _upper_leg_strip_wax, _full_leg_strip_wax |
+| "Men's waxing covers the eyebrow, arms, legs, half chest, shoulder and stomach." | S: the 9 waxing-men rows |
+| "Sessions take from 10 minutes to 1 hour." | S:ladies_waxing_face_hot_wax_sideburns (10 min), S:men_s_waxing_full_leg (1 hr) |
+| "Not sure which area to book? Ask on WhatsApp, or at the free consultation." | question; F4; F5 |
+| "If you have a skin or health condition, or you are unsure about waxing, ask before you book." | set 1 facials sentence, "a facial" changed to "waxing"; F5 |
+| Price tables "Waxing, ladies" (20 rows), "Waxing, men" (9 rows) | C:waxing-ladies, C:waxing-men; S: slug in each row; the 2 "Men's Waxing Full Leg" rows told apart by duration (D51 practice) |
+| FAQ "Ladies' waxing starts at GBP 10 for the full chin or the upper lip, and men's waxing at GBP 15 for the eyebrow." | S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip, S:men_s_waxing_eyebrow |
+| FAQ "From 10 minutes for ladies' sideburns to 1 hour for a men's full leg." | S:ladies_waxing_face_hot_wax_sideburns, S:men_s_waxing_full_leg |
+
+### content/stories/microneedling-peels-kings-cross.md
+
+| Sentence start | Source |
+|---|---|
+| title, h1 "Microneedling and peels in King's Cross" | C:skin, cut; F1 |
+| description and hero "Microneedling, radio frequency and peels at 155..." (hero: 7 days a week; description: from GBP 75) | C:skin; F1; F2; S:gycolic_acid_peel, S:radio_frequency_indiba (GBP 75); F5 |
+| "The Microneedling treatment uses the Skin Needling System, which pierces the skin vertically to make hundreds of tiny open channels." | DESC:aesthetics_1_microneedling, verbatim |
+| "It is booked for the face, or for the face and neck." | DESC:aesthetics_1_microneedling, cut; S:microneedling_face, S:microneedling_face_neck |
+| "INDIBA Deep Beauty is a radiofrequency device that works at 448 kHz through the Proionic System." | DESC:aesthetics_body_indiba_deep_beauty, cut (areas clause dropped) |
+| "Skymedic Chemical Peels are chemical peels, in which a chemical solution is applied to the skin." | DESC:aesthetics_1_skymedic_chemical_peels, cut |
+| "Golden Micro Needling is radiofrequency microneedling." | DESC:aesthetics_1_golden_micro_needling, cut |
+| "Sessions take from 30 minutes to 1 hour 30 minutes." | S:radio_frequency_indiba (30 min); S:skinox_pigmentation, S:skinox_redness, S:skinox_wrinkles (1 hr 30 min) |
+| Price table (14 rows) | S: slug in each row; FAM:aesthetics_1_golden_micro_needling, FAM:aesthetics_1_skymedic_chemical_peels for the 2 rows without a price; D4 |
+| FAQ "Microneedling Face is GBP 100 and Microneedling Face + Neck is GBP 150." | S:microneedling_face, S:microneedling_face_neck |
+| FAQ "Every option is listed on this page." | the page's price table |
+| FAQ "From 30 minutes for Radio Frequency INDIBA to 1 hour 30 minutes for a Skinox treatment." | S:radio_frequency_indiba, S:skinox_pigmentation, S:skinox_redness, S:skinox_wrinkles |
+
+Left out of the table on purpose: aesthetics_1_microneedling and aesthetics_body_indiba_deep_beauty (live cms rows whose family in `lib/families.ts` maps to the priced booking rows already in the table).
+
+### content/stories/skin-boosters-kings-cross.md
+
+| Sentence start | Source |
+|---|---|
+| title, h1 "Skin boosters consultation in King's Cross" | C:skinboosters, cut; F5; F1 |
+| description "Skin boosters and dermal fillers at 155... Every treatment starts with a free consultation, and we recommend what suits you." | C:skinboosters; F1; PEL:Home Hero sub-line; PEL:Home How it works 2, cut |
+| hero "Every skin booster and dermal filler treatment starts with a free consultation, at 155 King's Cross Road, 7 days a week." | PEL:Home Hero sub-line, narrowed to C:skinboosters; F5; F1; F2 |
+| "Skin boosters and dermal fillers are consultation-led treatments." | CL; C:skinboosters |
+| "Every treatment starts with a consultation; we will not recommend a treatment that is not right for you." | PEL:Treatments note, verbatim |
+| Step 3 addition "Sessions take from 45 minutes to 1 hour 30 minutes." | S:profhilo, S:profhilo_2_sessions (45 min); S:facial_fillers (1 hr 30 min) |
+| Price table (6 rows) | S: slug in each row; FAM:aesthetics_body_profhilo_body for the row without a price; D4 |
+| "Where a price says "from", the figure is the lowest option for that treatment and the consultation confirms yours." | PEL:Treatments intro, verbatim; S:facial_fillers price_from true |
+| FAQ "Do I need a consultation first?" / "Yes. Every treatment starts with a free consultation." | PEL:Home Hero sub-line; F5 |
+| FAQ "Who can have these treatments?" / "Aesthetic treatments are for adults aged 18 and over." | B18 |
+| FAQ "How do I book a consultation?" / "Message us on WhatsApp." | F4 |
+
+Left out of this page on purpose: any product ingredient, any method sentence, any brand name outside the price table, "Results vary", and a Treatwell booking line (consultation-led). injections_profhilo_skin_booster and injections_restylane_skin_boosters (live cms rows) are not in the table, because their families map to the priced booking rows already in it.
