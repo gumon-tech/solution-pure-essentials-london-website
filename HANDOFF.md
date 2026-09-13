@@ -134,37 +134,40 @@ ls "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essen
 
 ## กระดานเป้าหมาย
 
-Measured 2026-09-13 after main 691aa66. Standing order A8: re-measure every time.
+Measured 2026-09-13 after main e0fa617. Standing order A8: re-measure every time.
 
-**Last reached:** PEL's third outside measurement (lead repo brief section 21) rules the site fit for the owner to
-share as the Monday progress showing. Live at https://pel.gumon.io: home, /treatments/ (97 rows, 11 people category
-images, links to 21 family pages), 21 family pages, /contact/, /privacy/, /terms/, sitemap.xml (26 URLs, all 200
-from outside), robots.txt. Data file = PEL 0c07854 (111 live). Every image, sentence and legal text approved by PEL.
+**Last reached:** PEL ruled the site fit for the owner's Monday progress showing (lead repo brief section 21).
+Live at https://pel.gumon.io and read from outside: home, /treatments/ (97 rows, 11 people category images,
+links to 21 family pages), 21 family pages, 8 story pages, /contact/, /privacy/, /terms/, sitemap.xml 34 URLs all
+200, robots.txt, favicon, JSON-LD on home and contact. Lighthouse first pass: performance 96 to 100, SEO 100, CLS 0;
+the only accessibility and best-practice failures (oak text 4.43:1, favicon 404) are fixed and live.
+Data file = PEL 0c07854 (111 live), identical to lead repo origin/main. Every image, sentence and legal text approved by PEL.
 
 | # | Goal | State | Holder / waiting on |
 |---|---|---|---|
 | 1 | Research, direction, owner decisions, Lead and Executor setup | DONE | - |
 | 2 | Scaffold, imagery guideline, image set, image pipeline (24 slots) | DONE | - |
-| 3 | Home Q7 (2 parts), treatments Q8 (2 parts), contact Q9, domain Q10 | DONE and live | - |
-| 4 | Family pages Q12 (21) with links, sitemap, robots | DONE and live | - |
-| 5 | Privacy and terms Q15 | DONE and live | - |
-| 6 | Clinic price editing guide Q20 | DONE, PEL approved; clinic needs a GitHub username | clinic via owner |
-| 7 | Story copy sets 1, 2, 3 (11 pages) | DONE, PEL approved | - |
-| 8 | Story pages build Q25 Q26 (8) | RUNNING | executor |
-| 9 | Story set 3 build Q27 (3) | QUEUED after 8 | PWEB |
-| 10 | Consent banner Q16 (no tag) | RUNNING | executor |
-| 11 | Lighthouse Q21: first pass done; fixes for oak contrast 4.43 and favicon 404 | RUNNING | executor |
-| 12 | Photo shot list Q19 | PWEB part DONE; brief | PEL |
-| 13 | LocalBusiness JSON-LD Q18 | RUNNING | executor |
-| 14 | About Q14, Google tag Q17 | OPEN; Q14 needs clinic facts, Q17 needs the tag id and Q16 | PEL, clinic |
-| 15 | Clinic domain switch Q22 | OPEN, owner's order only | owner |
+| 3 | Home, treatments, contact, domain (Q7 Q8 Q9 Q10) with PEL fixes | DONE and live | - |
+| 4 | Family pages, links, sitemap, robots (Q12) | DONE and live | - |
+| 5 | Privacy and terms (Q15) | DONE and live | - |
+| 6 | Story pages set 1 and 2 (Q25 Q26, 8 pages) | DONE and live | PEL outside check |
+| 7 | Story pages set 3 (Q27, 3 pages) | RUNNING (build with regression guard) | executor |
+| 8 | Clinic editing guide (Q20) | DONE; clinic needs a GitHub username | clinic via owner |
+| 9 | Structured data (Q18 part 1) | DONE and live; Search Console after domain switch | - |
+| 10 | Lighthouse (Q21) | DONE and live | - |
+| 11 | Consent banner (Q16) | HOLD on branch q16-consent-banner, wording approved | merge with Q17 |
+| 12 | Google Ads tag (Q17) | HOLD, spec from PEL (3 click conversions) | PEL reads the tag ID after the showing |
+| 13 | Photo brief and clinic questions (Q19) | PEL wrote both | owner sends after the clinic sees the preview |
+| 14 | About page (Q14) | OPEN | clinic answers |
+| 15 | Clinic domain switch (Q22) | OPEN | owner's order only |
 
-**Done: 7 of 15.**
+**Done: 10 of 15.**
 
-Process lessons (docs/plans/INCIDENTS.md): 3 commit messages quoted a check before reading it (59048ef, a49c6db,
-3a03ef1; set -e does not gate a heredoc check here, capture RC explicitly); 13 parallel client fetches (now enforced by
-scripts/fetch-client-page.mjs); a render check shared the renderer's blind spot; a resumed executor writes into the
-Lead's current directory (memory resumed-executor-cwd).
+Lessons recorded this session (docs/plans/INCIDENTS.md and memory): quote a check only after reading its exit code,
+and capture the exit code explicitly because shell errexit did not gate a heredoc check here; one polite fetch script
+for the clinic's site; render checks need an assertion independent of the renderer; resumed executors write into the
+Lead's current directory; never pull or copy from the PEL lead repo's working tree, read origin/main; stop local
+servers by the PID captured at launch, never by matching a name pattern.
 
 ## Verify additions after the first resume
 
