@@ -80,7 +80,7 @@ Message us on WhatsApp. You can also book through Treatwell.
 
 ## call-to-action
 
-[image: room-05]
+[image: contact-welcome]
 
 Message us on WhatsApp and we will reply during opening hours.
 
