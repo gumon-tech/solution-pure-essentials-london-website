@@ -87,6 +87,7 @@ export default function Footer() {
             <Link href="/privacy/" className="underline hover:text-cocoa">
               Privacy
             </Link>
+            {" · "}<Link href="/terms/" className="underline hover:text-cocoa">Terms</Link>
             <br />
             Some images on this site are illustrative.
           </p>
