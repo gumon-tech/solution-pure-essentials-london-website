@@ -75,7 +75,6 @@ Waxing, men
 | Men's Waxing Full Arm | 45 min | GBP 28 | men_s_waxing_full_arm |
 | Men's Waxing Half Leg | 30 min | GBP 20 | men_s_waxing_half_leg |
 | Men's Waxing Full Leg | 1 hr | GBP 35 | men_s_waxing_full_leg |
-| Men's Waxing Full Leg | 45 min | GBP 40 | men_s_waxing_full_leg_1 |
 | Men's Waxing Half Chest | 30 min | GBP 22 | men_s_waxing_half_chest |
 | Men's Waxing Shoulder | 20 min | GBP 22 | men_s_waxing_shoulder |
 | Men's Waxing Stomach | 45 min | GBP 25 | men_s_waxing_stomach |

@@ -567,7 +567,7 @@
     {
       "slug": "gycolic_acid_peel",
       "name": "Gycolic Acid Peel",
-      "display_name": null,
+      "display_name": "Glycolic Acid Peel",
       "category": "skin",
       "status": "live",
       "price_gbp": 75,
@@ -1169,12 +1169,12 @@
       "name": "Men's Waxing Full Leg",
       "display_name": null,
       "category": "waxing-men",
-      "status": "live",
+      "status": "review",
       "price_gbp": 40,
       "price_from": false,
       "duration": "45 min",
       "source": "booking",
-      "note": "same name as another row, verify on /pricing"
+      "note": "GBP 40 at 45 min is not on /pricing, which lists men's full leg at GBP 35 only; ask the clinic; same name as another row, verify on /pricing"
     },
     {
       "slug": "men_s_waxing_half_arm",
@@ -1647,7 +1647,7 @@
     {
       "slug": "tension_neck_sculp_massage_intense",
       "name": "Tension neck & sculp massage (intense)",
-      "display_name": null,
+      "display_name": "Tension neck and scalp massage (intense)",
       "category": "massage",
       "status": "live",
       "price_gbp": 45,

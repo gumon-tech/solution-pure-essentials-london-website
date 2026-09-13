@@ -15,7 +15,7 @@ Massage at 155 King's Cross Road, 7 days a week. Every treatment starts with a f
 
 ## what-it-is
 
-The massage menu includes Deep Tissue Massage, Swedish Massage, Thai Massage and Therapeutic Lymphatic Drainage Massage. A Face Massage, a Foot & Leg Massage and a Tension neck & sculp massage (intense) are also on the menu.
+The massage menu includes Deep Tissue Massage, Swedish Massage, Thai Massage and Therapeutic Lymphatic Drainage Massage. A Face Massage, a Foot & Leg Massage and a Tension neck and scalp massage (intense) are also on the menu.
 
 [image: body-card]
 
@@ -45,7 +45,7 @@ You can also book through Treatwell.
 | Face Massage | 30 min | GBP 40 | face_massage |
 | Foot & Leg Massage | 30 min | GBP 45 | foot_leg_massage |
 | Swedish Massage | 30 min | GBP 45 | swedish_massage |
-| Tension neck & sculp massage (intense) | 20 min | GBP 45 | tension_neck_sculp_massage_intense |
+| Tension neck and scalp massage (intense) | 20 min | GBP 45 | tension_neck_sculp_massage_intense |
 | Thai Massage | 1 hr | GBP 70 | thai_massage |
 | Therapeutic Lymphatic Drainage Massage | 30 min | GBP 45 | therapeutic_lymphatic_drainage_massage |
 | Therapeutic Lymphatic Drainage Massage | 1 hr | GBP 80 | therapeutic_lymphatic_drainage_massage_1 |
@@ -70,7 +70,7 @@ Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 Prices run from GBP 40 for a Face Massage to GBP 80 for a 1 hour Therapeutic Lymphatic Drainage Massage. Every option is listed on this page.
 
 **How long does a massage take?**
-From 20 minutes for the Tension neck & sculp massage (intense) to 1 hour for a Deep Tissue, Thai or Therapeutic Lymphatic Drainage Massage.
+From 20 minutes for the Tension neck and scalp massage (intense) to 1 hour for a Deep Tissue, Thai or Therapeutic Lymphatic Drainage Massage.
 
 **Is the consultation free?**
 Yes. Consultations are free.

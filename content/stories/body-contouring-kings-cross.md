@@ -46,8 +46,8 @@ You can also book through Treatwell.
 | Cryoelectrolipolysis Two Areas | 1 hr 30 min | GBP 150 | cryoelectrolipolysis_two_areas |
 | Cryoelectrolipolysis Three Areas | 2 hr | GBP 250 | cryoelectrolipolysis_three_areas |
 | Emsculpt | 30 min | GBP 99 | emsculpt |
-| Hifu Small Area (Knees/Armpit/Bust lift) | 45 min | GBP 140 | hifu_small_area_knees_armpit_bust_lift |
-| Hifu Med Area (Flappy arms/lovehandle) | 1 hr 30 min | GBP 280 | hifu_med_area_flappy_arms_lovehandle |
+| HIFU small area (knees, underarm or bust) | 45 min | GBP 140 | hifu_small_area_knees_armpit_bust_lift |
+| HIFU medium area (upper arms or waist) | 1 hr 30 min | GBP 280 | hifu_med_area_flappy_arms_lovehandle |
 | Large Area (Outer thighs/full stomach) | 1 hr 30 min | GBP 420 | large_area_outer_thighs_full_stomach |
 
 Aesthetic treatments are for adults aged 18 and over. The price shown is the price you pay.

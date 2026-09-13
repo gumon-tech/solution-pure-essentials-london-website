@@ -49,7 +49,7 @@ If you have a skin or health condition, or you are unsure which treatment is rig
 | Radio Frequency INDIBA full back/ leg | 1 hr | GBP 100 | radio_frequency_indiba_full_back_leg |
 | Collagen Production (full Face) | 1 hr | GBP 130 | collagen_production_full_face |
 | Cosmelan Depigmenting including home kit | 1 hr | GBP 1300 | cosmelan_depigmenting_including_home_kit |
-| Gycolic Acid Peel | 1 hr | GBP 75 | gycolic_acid_peel |
+| Glycolic Acid Peel | 1 hr | GBP 75 | gycolic_acid_peel |
 | Half face With LED and Mask | 45 min | GBP 150 | half_face_with_led_and_mask |
 | Rejuvenation (Full Face) | 45 min | GBP 130 | rejuvenation_full_face |
 | Skinox Pigmentation | 1 hr 30 min | GBP 135 | skinox_pigmentation |
