@@ -281,3 +281,81 @@ Left out of the table on purpose: aesthetics_1_microneedling and aesthetics_body
 | FAQ "How do I book a consultation?" / "Message us on WhatsApp." | F4 |
 
 Left out of this page on purpose: any product ingredient, any method sentence, any brand name outside the price table, "Results vary", and a Treatwell booking line (consultation-led). injections_profhilo_skin_booster and injections_restylane_skin_boosters (live cms rows) are not in the table, because their families map to the priced booking rows already in it.
+
+## Story pages set 3 (queue row Q27)
+
+Written 2026-09-13 by a PWEB executor for Q27, at website commit f4c37dc. Data read from `data/services.json` at that commit (111 live rows). The 4 group "from" figures reused from content/home.md were re-checked against the live rows and the group map in `lib/groups.ts`: Face GBP 70 (S:hydrating), Body GBP 99 (S:emsculpt, S:cryoelectrolipolysis_one_area), Laser and hair removal GBP 25 (S:ipl_small_area), Wellness GBP 10 (S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip).
+
+### Source keys added for set 3
+
+| Key | Source |
+|---|---|
+| RP | Room photo rule: `docs/design/imagery-guideline.md` section 4 and section 10 (room-warm, room-trolley, room-analyser, room-couch "may say a treatment room at Pure Essentials London"); lead brief section 11 |
+| SIGN | Page signpost: names the sections of the page it sits on and states no fact about the business |
+
+### Sentences shared by the set 3 pages
+
+| Sentence start | Files | Source |
+|---|---|---|
+| "Every treatment starts with a free consultation." | all 3 (hero; our-clinic also description) | PEL:Home Hero sub-line; F5 |
+| Buttons "Message us on WhatsApp" / "See treatments and prices" / "Book on Treatwell" | all 3 | PEL:Home Hero buttons, PEL:Contact; F4 |
+| "Pure Essentials London is a salon and clinic at 155 King's Cross Road, WC1X 9BN." | all 3 (our-clinic: hero and description) | PEL:Home The clinic, verbatim; F1 |
+| "King's Cross St Pancras (Circle, Hammersmith and City, Metropolitan, Northern, Piccadilly, Victoria lines) is the nearest station." | all 3 | PEL:Contact Getting here, verbatim from contact.md; TFL; rulings 1 and 4 (brief section 9) |
+| "Open Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00." | our-clinic, your-visit | PEL:Home The clinic; F2 |
+| "Tell us what you would like to change or ask about, on WhatsApp or by email." | all 3 | PEL:Home How it works 1, verbatim; F3, F4 |
+| "You can also book through Treatwell." | all 3 (body and FAQ; first-visit-guide FAQ only) | F4 |
+| "At the consultation we look at your skin or your goal and recommend what suits you." | all 3 | PEL:Home How it works 2 (set 1 story wording) |
+| "Every treatment starts with a consultation; we will not recommend a treatment that is not right for you." | all 3 | PEL:Treatments note, verbatim (as skin boosters, set 2) |
+| "Consultations are free." | all 3 (body and FAQ) | PEL:Home The clinic; F5 |
+| "Aesthetic treatments are for adults aged 18 and over." | your-visit; first-visit-guide (body and FAQ) | B18; fixed sentence in the Q27 row brief |
+| "If you have a skin or health condition, or you are unsure about a treatment, ask (at the consultation) before you book." | your-visit ("at the consultation"), first-visit-guide | set 1 facials sentence, "a facial" changed to "a treatment"; F5; 02-uk-compliance section 4 |
+| "Results vary from person to person." | your-visit, first-visit-guide | BH |
+| "Your therapist gives aftercare advice at the appointment." | your-visit, first-visit-guide | AC |
+| "You can message us with any question." | your-visit, first-visit-guide | PEL:Home How it works 4, cut (as set 2 massage and waxing) |
+| "The price shown is the price you pay." | your-visit, first-visit-guide | R5; PEL:Treatments intro |
+| "Message us on WhatsApp and we will reply during opening hours." (CTA, and body on your-visit and first-visit-guide) | all 3 | PEL:Home Final call line |
+| FAQ "Where is the clinic?" / "155 King's Cross Road, London WC1X 9BN." | all 3 | F1 |
+| FAQ "When are you open?" / "Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00." | all 3 | PEL:Home The clinic; F2 |
+| FAQ "Is the consultation free?" / "Yes. Consultations are free." | all 3 | PEL:Home The clinic; F5 |
+| FAQ "How do I book?" / "Message us on WhatsApp. You can also book through Treatwell." | all 3 | F4 |
+
+### content/stories/our-clinic-kings-cross.md
+
+| Sentence start | Source |
+|---|---|
+| title, h1 "Our clinic in King's Cross" | PEL:Home The clinic ("a salon and clinic"), cut; F1 |
+| description "Open 7 days a week." | PEL:Home How it works 3 ("7 days a week"), cut; F2 |
+| "Find us at 155 King's Cross Road, London WC1X 9BN." | PEL:Contact description, cut; F1 |
+| "For the face: HIFU, skin boosters, microneedling, peels and facials, from GBP 70." | PEL:Home groups, Face line and figure; `lib/groups.ts`; S:hydrating |
+| "For the body: 3D lipo, HIFU body and Emsculpt, from GBP 99." | PEL:Home groups, Body line and figure; S:emsculpt, S:cryoelectrolipolysis_one_area |
+| "Laser and hair removal: pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal, from GBP 25." | PEL:Home groups, Laser line and figure; S:ipl_small_area |
+| "Wellness: massage and waxing, from GBP 10." | PEL:Home groups, Wellness line and figure; S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip |
+| "The photographs in this section show treatment rooms at Pure Essentials London." | RP |
+
+### content/stories/your-visit.md
+
+| Sentence start | Source |
+|---|---|
+| title "Your Visit, King's Cross", h1 "Your visit" | SIGN; F1 |
+| description "Your visit to Pure Essentials London at 155 King's Cross Road, from your first message to the free consultation, your treatment and aftercare advice." | PEL:Home How it works 1 to 4, cut; F1; F5; AC |
+| "This page walks through a visit, from your first message to aftercare." | SIGN |
+| "The photographs in this section show treatment rooms at Pure Essentials London." | RP |
+| "Booked at a time that suits you, 7 days a week." | PEL:Home How it works 3, verbatim; F2 |
+| "To book again, message us on WhatsApp." | F4 |
+
+### content/stories/first-visit-guide.md
+
+| Sentence start | Source |
+|---|---|
+| title "First Visit Guide, King's Cross", h1 "Your first visit" | SIGN; F1 |
+| description "Planning your first visit to 155 King's Cross Road?" | SIGN; F1 |
+| description "What to message us, the free consultation, opening hours, how prices are shown and aftercare." | SIGN; F5 |
+| "This guide covers what to message us, what to expect, opening hours and how prices are shown." | SIGN |
+| "Not sure which treatment to choose?" | question, leads into PEL:Home How it works 2 (set 1 facials pattern) |
+| "Your treatment is booked at a time that suits you, 7 days a week." | PEL:Home How it works 3, "Your treatment is" added; F2 |
+| Hours table (3 rows) | PEL:Contact hours table, verbatim from contact.md; F2 |
+| "Where a price says "from", the figure is the lowest option for that treatment and the consultation confirms yours." | PEL:Treatments intro, verbatim (as skin boosters, set 2) |
+| "Where a treatment shows "Ask for a quote", ask on WhatsApp." | D4; F4; set 1 facials FAQ ("ask for a quote on WhatsApp") |
+| FAQ "Who can have aesthetic treatments?" / "Aesthetic treatments are for adults aged 18 and over." | B18 (set 2 skin boosters FAQ pattern) |
+
+Left out of set 3 on purpose, for lack of a held fact: what the entrance or reception looks like; whether to arrive early; how long a consultation takes; whether the consultation and the treatment happen on the same visit; what to bring or wear; payment methods; how to find the door from the street; walking minutes, parking and access; what the rooms contain beyond "treatment rooms" (the skin analyser and the gold walls are visible in the photos, but no sentence names them).
