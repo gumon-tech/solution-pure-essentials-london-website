@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/` },
     { url: `${base}/treatments/` },
     { url: `${base}/contact/` },
+    { url: `${base}/book-online/` },
   ];
 
   for (const page of getFamilyPages()) {

@@ -20,7 +20,9 @@ Written 2026-09-13 by a PWEB executor for queue rows Q7, Q9 and Q25. Every sente
 | D4 | 00-direction section 7 decision 4 and DECISIONS-2026-09-13: rows without a price show "Ask for a quote" |
 | D51 | 00-direction section 5.1 point 1: both HIFU Full Face rows shown as "HIFU full face" with the duration |
 | TFL | https://tfl.gov.uk/hub/stop/HUBKGX/king-s-cross-st-pancras read 2026-09-13: Circle, Hammersmith & City and Metropolitan; Northern; Piccadilly; Victoria |
-| UI | Lead brief format line: map note text |
+| UI | Lead brief format line: map note text (note removed 2026-09-13, the map now loads with the page) |
+| OD13 | Owner decision 2026-09-13 via the PWEB Lead brief: Treatwell is a clearly visible second booking route; the Treatwell widget and the map load straight away with no tap step |
+| PELC | PEL cookie-law ruling 2026-09-13 via the PWEB Lead: widget only on /book-online/ with a cookie line above it; static map image, no Google iframe; OpenStreetMap attribution required by the tile licence |
 
 Edits made to PEL sentences (cuts and number format only, no additions): "seven" written as "7" (Arabic numerals rule for public content); "HIFU lifting" cut to "HIFU" (device outcome wording); "cryolipolysis" cut from the Body line (the data name is Cryoelectrolipolysis, see report); "two minutes from King's Cross St Pancras" cut (walking minutes are forbidden, not measured); "and national rail" and the bus sentence cut from Getting here (not shown on the TfL page).
 
@@ -50,10 +52,11 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | "Open Monday to Saturday 10:00 to 20:00..." | PEL:Home The clinic; F2 |
 | "Consultations are free." | PEL:Home The clinic; F5 |
 | "Ready when you are" | PEL:Home Final call heading |
-| "Message us on WhatsApp and we will reply during opening hours." | PEL:Home Final call line |
+| "Message us on WhatsApp, or book online any time on Treatwell." | Lead brief 2026-09-13 (replaces PEL:Home Final call line); F4, OD13 |
+| Button "Book online on Treatwell" | Lead brief 2026-09-13; F4, OD13 |
 | Footer "Pure Essentials (London) Ltd · Company number..." | PEL:Footer; F6, F1, F3 |
 
-## content/contact.md (PEL sentences only, plus the UI map note)
+## content/contact.md (PEL sentences only, plus the book-online section)
 
 | Sentence start | Source |
 |---|---|
@@ -66,8 +69,25 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | "Email: info@pureessentialslondon.com" | PEL:Contact; F3 |
 | "Book on Treatwell" | PEL:Contact; F4 |
 | "King's Cross St Pancras (Circle, Hammersmith and City, Metropolitan, Northern, Piccadilly, Victoria lines) is the nearest station." | PEL:Contact Getting here, cut; line names checked against TFL |
-| "The map loads when you tap it." | UI (not in PEL's file; see report) |
+| "Book online" (link to /book-online/) | Lead brief 2026-09-13; F4, OD13, PELC |
+| h2 "Find us on the map" | UI heading already in components/contact/MapSection.tsx (the tap note was removed per OD13) |
+| Map image alt "Map showing Pure Essentials London at 155 King's Cross Road, London WC1X 9BN" | PELC; F1 |
+| "Open in Google Maps" | PELC (tapping the map opens Google Maps) |
+| "Map data © OpenStreetMap contributors" | PELC; OpenStreetMap tile licence |
 | Footer | PEL:Footer; F6, F1, F3 |
+
+## app/book-online/page.tsx (no content file; sentences written in the page)
+
+| Sentence start | Source |
+|---|---|
+| title "Book Online" | Lead brief 2026-09-13; old Wix path /book-online |
+| description "Book a treatment at Pure Essentials London, 155 King's Cross Road, online on Treatwell..." | Lead brief 2026-09-13; F1, F4 |
+| h1 "Book online" | Lead brief 2026-09-13; OD13 |
+| "Choose a treatment and a time, and book straight away on Treatwell." | Lead brief 2026-09-13; F4 |
+| "This booking calendar is provided by Treatwell, which sets its own cookies. See our privacy notice." | PELC, verbatim |
+| "Widget not loading? Open Treatwell in a new tab" | Lead brief 2026-09-13 fallback link; F4 |
+| "Prefer to ask first? Message us on WhatsApp." | Lead brief 2026-09-13; F4 (Ref SITE-BOOK) |
+| Header and sticky bar button "Book online" | Lead brief 2026-09-13; OD13 |
 
 ## content/treatments-intro.md (PEL sentences only)
 

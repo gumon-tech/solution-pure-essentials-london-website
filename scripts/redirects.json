@@ -256,11 +256,10 @@
     {
       "old": "/book-online",
       "rule": 2,
-      "target": "/treatments/",
-      "stub_paths": [
-        "/book-online/"
-      ],
-      "evidence": "gap report section 7 draft row for /book-online"
+      "target": null,
+      "no_stub": "same-path",
+      "reason": "same path as the built page out/book-online/index.html (owner decision 2026-09-13: Treatwell widget page)",
+      "evidence": "gap report sections 2 and 7"
     },
     {
       "old": "/cleansing",

@@ -15,8 +15,10 @@ const NAV_LINKS = [
   { label: "Contact", href: "/contact/" },
 ];
 
+// Desktop nav at lg (1024 px) is tight with 2 header buttons: no wrapping, and a little less
+// letter spacing and size until xl.
 const NAV_LINK_CLASS =
-  "font-body uppercase tracking-[0.12em] text-sm text-cocoa transition-colors hover:text-espresso focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm";
+  "whitespace-nowrap font-body uppercase tracking-[0.12em] text-sm lg:tracking-[0.06em] lg:text-[13px] xl:tracking-[0.12em] xl:text-sm text-cocoa transition-colors hover:text-espresso focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,10 +39,10 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 h-[72px] border-b border-beige bg-cream/90 backdrop-blur">
-      <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between gap-4 px-4 sm:px-6 lg:gap-3 lg:px-6 xl:gap-4 xl:px-8">
         <Logo />
 
-        <nav aria-label="Primary" className="hidden items-center gap-6 lg:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-3 lg:flex xl:gap-6">
           {NAV_LINKS.map((link) => (
             <Link key={link.href} href={link.href} className={NAV_LINK_CLASS}>
               {link.label}
@@ -49,11 +51,17 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <Link
+            href="/book-online/"
+            className="hidden items-center whitespace-nowrap rounded-full border border-oak px-4 py-2 text-sm font-body text-espresso transition-colors hover:bg-oak hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream sm:inline-flex"
+          >
+            Book online
+          </Link>
           <a
             href={waSite("SITE-HEADER")}
             target="_blank"
             rel="noopener"
-            className="hidden items-center gap-2 rounded-full bg-oak px-4 py-2 text-sm font-body text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream sm:inline-flex"
+            className="hidden items-center gap-2 whitespace-nowrap rounded-full border border-oak bg-oak px-4 py-2 text-sm font-body text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream sm:inline-flex"
           >
             <WhatsAppIcon className="h-4 w-4" />
             WhatsApp
@@ -96,11 +104,18 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/book-online/"
+              onClick={() => setIsOpen(false)}
+              className="inline-flex items-center justify-center rounded-full border border-oak px-4 py-2 text-sm font-body text-espresso focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+            >
+              Book online
+            </Link>
             <a
               href={waSite("SITE-HEADER")}
               target="_blank"
               rel="noopener"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-oak px-4 py-2 text-sm font-body text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-oak bg-oak px-4 py-2 text-sm font-body text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
             >
               <WhatsAppIcon className="h-4 w-4" />
               WhatsApp

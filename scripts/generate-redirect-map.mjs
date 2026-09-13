@@ -48,7 +48,7 @@ const STATIC = {
   "/about": ["/our-clinic-kings-cross/"],
   "/pricing": ["/treatments/"],
   "/services": ["/treatments/"],
-  "/book-online": ["/treatments/"],
+  "/book-online": [null, "same path as the built page out/book-online/index.html (owner decision 2026-09-13: Treatwell widget page)", "same-path"],
   "/offers": ["/our-clinic-kings-cross/"],
   "/aesthetics": ["/treatments/"],
   "/face": ["/treatments/"],

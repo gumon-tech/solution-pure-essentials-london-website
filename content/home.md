@@ -85,10 +85,11 @@ Pure Essentials London is a salon and clinic at 155 King's Cross Road, WC1X 9BN.
 
 ### Ready when you are
 
-Message us on WhatsApp and we will reply during opening hours.
+Message us on WhatsApp, or book online any time on Treatwell.
 
 - Button (primary): Message us on WhatsApp
-- Button (secondary): See treatments and prices
+- Button (primary, outline): Book online on Treatwell (links to /book-online/)
+- Link (secondary): See treatments and prices
 
 ## footer-legal
 

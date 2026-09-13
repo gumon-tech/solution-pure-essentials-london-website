@@ -3,7 +3,7 @@ import Picture from "@/components/Picture";
 import { waSite } from "@/lib/site";
 
 // Verbatim from content/home.md's "## call-to-action" section.
-const SENTENCE = "Message us on WhatsApp and we will reply during opening hours.";
+const SENTENCE = "Message us on WhatsApp, or book online any time on Treatwell.";
 
 export default function CallToAction() {
   return (
@@ -30,8 +30,14 @@ export default function CallToAction() {
                 Message us on WhatsApp
               </a>
               <Link
+                href="/book-online/"
+                className="inline-flex items-center justify-center rounded-full border border-oak bg-cream px-6 py-3 font-body text-espresso transition-colors hover:bg-oak hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+              >
+                Book online on Treatwell
+              </Link>
+              <Link
                 href="/treatments/"
-                className="inline-flex items-center justify-center rounded-full border border-espresso px-6 py-3 font-body text-espresso transition-colors hover:bg-espresso hover:text-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+                className="inline-flex items-center justify-center rounded-full px-6 py-3 font-body text-espresso underline underline-offset-4 transition-colors hover:text-oak focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
               >
                 See treatments and prices
               </Link>

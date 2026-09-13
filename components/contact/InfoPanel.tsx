@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Phone } from "lucide-react";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { SITE, waSite } from "@/lib/site";
@@ -59,6 +60,11 @@ export default function InfoPanel() {
               <a href={SITE.treatwell} target="_blank" rel="noopener" className={LINK_CLASS}>
                 Book on Treatwell
               </a>
+            </li>
+            <li>
+              <Link href="/book-online/" className={LINK_CLASS}>
+                Book online
+              </Link>
             </li>
           </ul>
         </div>

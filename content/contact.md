@@ -25,6 +25,7 @@ h1: "Find us"
 - WhatsApp: Message us (button)
 - Email: info@pureessentialslondon.com
 - Link text: Book on Treatwell
+- Link text: Book online (links to /book-online/)
 
 [image: room-couch]
 
@@ -34,7 +35,13 @@ King's Cross St Pancras (Circle, Hammersmith and City, Metropolitan, Northern, P
 
 ## map
 
-The map loads when you tap it.
+### Find us on the map
+
+[image: static map from OpenStreetMap tiles, links to Google Maps in a new tab]
+
+Open in Google Maps (link)
+
+Map data © OpenStreetMap contributors (link to https://www.openstreetmap.org/copyright)
 
 [image: room-trolley]
 
