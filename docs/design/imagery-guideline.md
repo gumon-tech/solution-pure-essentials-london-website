@@ -218,3 +218,5 @@ and 1 thumb per visible hand. Brightness 60.0 to 71.1. Approval before deploy: P
 | cat-carboxy | cat-carboxy-a.jpg | keep the top 72 percent (removes the practitioner's black trousers), 4:5 by side trim | b: black trousers in the upper frame too |
 | cat-waxing-ladies | cat-waxing-ladies-b.jpg | none | a: fine, b hands clearer |
 | cat-waxing-men | cat-waxing-men-a.jpg | none | b: therapist's mouth and chin enter the frame |
+
+PEL approved all 6 category images 2026-09-13 after viewing each at full size (lead repo brief section 14, commit 431b710), under the existing illustrative-images footer line.

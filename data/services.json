@@ -1097,12 +1097,12 @@
       "name": "Localised fat",
       "display_name": null,
       "category": "carboxy",
-      "status": "live",
+      "status": "review",
       "price_gbp": 130,
       "price_from": false,
       "duration": "1 hr",
       "source": "booking",
-      "note": ""
+      "note": "outcome-named carboxy row next to group 2; ask the clinic what is delivered and how"
     },
     {
       "slug": "medium_area_tattoo_removal_3_8cm",
@@ -1589,12 +1589,12 @@
       "name": "Stretch mark, Scar and burns",
       "display_name": null,
       "category": "carboxy",
-      "status": "live",
+      "status": "review",
       "price_gbp": 99,
       "price_from": false,
       "duration": "45 min",
       "source": "booking",
-      "note": ""
+      "note": "group 5 pattern: named after conditions; ask the clinic like stretch_marks"
     },
     {
       "slug": "stretch_marks",
@@ -2069,12 +2069,12 @@
       "name": "COLLAGEN",
       "display_name": null,
       "category": "carboxy",
-      "status": "live",
+      "status": "review",
       "price_gbp": null,
       "price_from": false,
       "duration": null,
       "source": "cms/injections",
-      "note": "same name as another row, verify on /pricing"
+      "note": "old page carries a whole-body whitening claim (group 3 concern); page not described; same name as another row, verify on /pricing"
     },
     {
       "slug": "injections_jalupro_skin_booster",

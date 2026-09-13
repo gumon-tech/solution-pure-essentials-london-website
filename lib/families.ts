@@ -109,7 +109,7 @@ export const FAMILIES: Family[] = [
     slug: "aesthetics_body_carboxytherapy",
     title: "Carboxytherapy",
     category: "carboxy",
-    priced: ["localised_fat", "stretch_mark_scar_and_burns"],
+    priced: [], // both rows moved to review by PEL 2026-09-13 (lead repo bf55134)
   },
   {
     slug: "aesthetics_body_emsculpt",
@@ -180,12 +180,6 @@ export const FAMILIES: Family[] = [
     title: "Eberlin Facial",
     category: "facials",
     priced: [],
-  },
-  {
-    slug: "injections_collagen",
-    title: "Collagen",
-    category: "carboxy",
-    priced: ["collagen"],
   },
   {
     slug: "injections_profhilo_skin_booster",
