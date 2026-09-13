@@ -23,18 +23,38 @@ To contact us about your information, email info@pureessentialslondon.com.
 
 This website does not ask you for any information. It has no forms and no account.
 
-This website does not use cookies. It does not save information in your browser's storage. It has no analytics
-and no advertising tags. It loads no scripts from other companies. The fonts are stored on the
+The pages of this website do not use cookies of their own, do not save information in your
+browser's storage, and have no analytics or advertising tags. The fonts are stored on the
 website itself, so your browser does not fetch them from anyone else.
 
-The WhatsApp, email, Instagram and Treatwell buttons are ordinary links. Nothing is sent to those
-companies until you click a link.
+Two things on this website come from other companies, and they are described below: the
+online booking calendar from Treatwell, and the map. The WhatsApp, email and Instagram buttons
+are ordinary links; nothing is sent to those companies until you click one.
 
 ## Hosting
 
 The website is hosted by GitHub Pages, a service of GitHub. When you visit, your browser connects
 to GitHub's servers, and GitHub receives your IP address. GitHub logs IP addresses for security
 purposes. GitHub keeps those logs; we have no access to them.
+
+## The online booking calendar (Treatwell)
+
+The page "Book online" shows a booking calendar provided by Treatwell. It is loaded from
+Treatwell's own servers as soon as you open that page, so Treatwell receives your IP address
+and sets its own cookies in your browser. When we checked on 13 September 2026, Treatwell set 2
+cookies, named fe20-flipper-id and growthbook_id, which last up to 2 years and which Treatwell
+uses to run its own features and tests. Treatwell explains its cookies in its own cookie and
+privacy notices. The calendar is not shown on any other page of this website. The "Book
+online" buttons on other pages take you to that page, or straight to our page on Treatwell.
+
+When you book through the calendar, you give your details to Treatwell under its own terms, and
+Treatwell passes us the booking details we need to provide your appointment.
+
+## The map
+
+The map on our contact page is a picture stored on this website. Nothing is sent to Google
+when the page loads. If you tap the map, Google Maps opens in a new tab, and from that point
+Google handles your information under its own privacy notice.
 
 ## When you contact us
 
@@ -88,12 +108,13 @@ told us.
 ## Who else receives your information
 
 - GitHub, which hosts this website.
+- Treatwell, which provides the booking calendar on the "Book online" page and handles
+  bookings made through it.
 - Meta, when you use WhatsApp or Instagram.
-- Google, which delivers our email.
-- Treatwell, when you book through Treatwell.
+- Google, which delivers our email, and which you reach if you tap the map.
 
-GitHub, Meta and Google may process information outside the UK, including in the United States.
-Their own privacy notices explain how they protect it.
+GitHub, Treatwell, Meta and Google may process information outside the UK, including in the
+United States. Their own privacy notices explain how they protect it.
 
 ## How long we keep your information
 
@@ -130,9 +151,8 @@ We plan to add measurement to this website later. Before that happens:
 - you will be able to change your choice at any time from a link at the bottom of every page;
 - this notice will be updated to list each cookie, who sets it, why, and how long it lasts.
 
-We also plan a contact page with a Google map. The map will not load until you choose to show it.
-When you do, Google will receive your IP address and may set its own cookies. This notice will
-describe that when the contact page goes live.
+The Treatwell cookies on the "Book online" page are described above and are not part of this
+plan.
 
 ## Changes to this notice
 
