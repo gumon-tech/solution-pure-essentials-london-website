@@ -40,16 +40,16 @@ export default function TreatmentsPage() {
       <section className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
         <div className="grid items-center gap-8 md:grid-cols-[1.2fr_1fr]">
           <div>
-            <h1 className="font-display text-4xl text-espresso md:text-5xl">
+            <h1 className="rise-in font-display text-4xl text-espresso md:text-5xl">
               Treatments and prices
             </h1>
-            <p className="mt-4 text-cocoa">
+            <p className="rise-in rise-delay-1 mt-4 text-cocoa">
               The price shown is the price you pay. Where a price says &ldquo;from&rdquo;, the
               figure is the lowest option for that treatment and the consultation confirms
               yours.
             </p>
           </div>
-          <ArchImage slot="step-2-consultation" priority className="w-full" />
+          <ArchImage slot="step-2-consultation" priority className="settle-in w-full" />
         </div>
       </section>
 
@@ -61,11 +61,11 @@ export default function TreatmentsPage() {
           id={group.id}
           // Same offset as the category anchors below: the site header nav (Face,
           // Body, Laser and hair removal, Wellness) links to these ids too.
-          className="mx-auto max-w-6xl scroll-mt-[140px] px-4 py-12 md:px-6"
+          className="mx-auto max-w-6xl scroll-mt-[64px] px-4 py-12 md:px-6"
         >
-          <h2 className="font-display text-4xl text-espresso md:text-5xl">{group.label}</h2>
+          <h2 className="reveal font-display text-4xl text-espresso md:text-5xl">{group.label}</h2>
           {GROUP_LINE[group.id] ? (
-            <p className="mt-2 text-cocoa">{GROUP_LINE[group.id]}</p>
+            <p className="reveal mt-2 text-cocoa">{GROUP_LINE[group.id]}</p>
           ) : null}
 
           <div className="mt-8 space-y-16">
@@ -73,12 +73,12 @@ export default function TreatmentsPage() {
               <div
                 key={category.id}
                 id={category.id}
-                // Clears the sticky header (72px) plus the sticky chips nav (measured
-                // ~63px) so a chip's anchor jump doesn't land the heading underneath
-                // them.
-                className="scroll-mt-[140px]"
+                // Clears the sticky chips nav (measured ~63px); the sticky header (72px)
+                // plus 16px of air is already cleared by html's scroll-padding-top in
+                // app/globals.css, so a chip's anchor jump lands the heading below both.
+                className="scroll-mt-[64px]"
               >
-                <h3 className="font-display text-2xl text-espresso">{category.title}</h3>
+                <h3 className="reveal font-display text-2xl text-espresso">{category.title}</h3>
 
                 {category.familyLinks.length > 0 ? (
                   <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
@@ -101,7 +101,7 @@ export default function TreatmentsPage() {
                     // Capped on mobile (< 768px wide) so the first price row is
                     // visible without scrolling past the image; desktop (md:)
                     // unchanged (Lead message 2026-09-13, PEL's outside review).
-                    className="order-first max-h-[40vh] w-full object-cover md:order-none md:max-h-none"
+                    className="reveal order-first max-h-[40vh] w-full object-cover md:order-none md:max-h-none"
                   />
                   <PriceList rows={category.rows} />
                 </div>

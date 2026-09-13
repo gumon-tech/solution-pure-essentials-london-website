@@ -184,13 +184,13 @@ export default function FamilyPage({ page }: { page: FamilyPageData }) {
             className="order-first w-full lg:order-none"
           />
           <div>
-            <h1 className="font-display text-4xl text-espresso md:text-5xl">{page.title}</h1>
+            <h1 className="rise-in font-display text-4xl text-espresso md:text-5xl">{page.title}</h1>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-4 md:px-6">
-        <div className="max-w-3xl space-y-4 text-cocoa">
+        <div className="reveal max-w-3xl space-y-4 text-cocoa">
           {page.paragraphs.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
@@ -199,7 +199,7 @@ export default function FamilyPage({ page }: { page: FamilyPageData }) {
 
       <section className="mx-auto max-w-6xl px-4 py-8 md:px-6">
         {page.priced.length > 0 ? (
-          <ul className="divide-y divide-beige">
+          <ul className="reveal divide-y divide-beige">
             {page.priced.map((row) => (
               <li
                 key={row.slug}
@@ -220,7 +220,7 @@ export default function FamilyPage({ page }: { page: FamilyPageData }) {
                     target="_blank"
                     rel="noopener"
                     aria-label={row.waAriaLabel}
-                    className="inline-block whitespace-nowrap rounded-full border border-oak px-4 py-2 text-sm text-oak"
+                    className="pill inline-block whitespace-nowrap rounded-full border border-oak px-4 py-2 text-sm text-oak hover:bg-oak hover:text-white"
                   >
                     Ask on WhatsApp
                   </a>
@@ -233,7 +233,7 @@ export default function FamilyPage({ page }: { page: FamilyPageData }) {
             href={waLink(page.title, page.slug)}
             target="_blank"
             rel="noopener"
-            className="inline-block rounded-full bg-oak px-6 py-3 text-white"
+            className="pill inline-block rounded-full bg-oak px-6 py-3 text-white hover:opacity-90"
           >
             Ask for a quote on WhatsApp
           </a>
@@ -242,7 +242,7 @@ export default function FamilyPage({ page }: { page: FamilyPageData }) {
 
       {hasConsultationLine ? (
         <section className="mx-auto max-w-6xl px-4 py-8 md:px-6">
-          <div className="grid items-center gap-8 lg:grid-cols-[1fr_1.2fr]">
+          <div className="reveal grid items-center gap-8 lg:grid-cols-[1fr_1.2fr]">
             <ArchImage
               slot="step-2-consultation"
               sizes="(min-width: 1024px) 45vw, 100vw"
@@ -267,7 +267,7 @@ export default function FamilyPage({ page }: { page: FamilyPageData }) {
       {related.length > 0 ? (
         <section className="mx-auto max-w-6xl px-4 py-12 md:px-6">
           <h2 className="font-display text-2xl text-espresso">You may also like</h2>
-          <div className="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3">
+          <div className="reveal mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3">
             {related.map((relatedPage) => (
               <RelatedCard key={relatedPage.slug} page={relatedPage} />
             ))}

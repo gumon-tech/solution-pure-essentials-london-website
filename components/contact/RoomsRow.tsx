@@ -12,7 +12,7 @@ export default function RoomsRow() {
             key={slot}
             slot={slot}
             sizes="(min-width: 640px) 33vw, 100vw"
-            className="rounded-arch w-full object-cover"
+            className="reveal rounded-arch w-full object-cover"
           />
         ))}
       </div>

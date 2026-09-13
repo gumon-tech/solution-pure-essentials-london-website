@@ -46,12 +46,12 @@ export default function Groups() {
             <Link
               key={card.id}
               href={`/treatments/#${card.id}`}
-              className="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-arch"
+              className="reveal group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-arch"
             >
               <Picture
                 slot={card.slot}
                 sizes="(min-width: 1280px) 25vw, (min-width: 768px) 50vw, 100vw"
-                className="rounded-arch w-full object-cover transition-transform group-hover:scale-[1.02]"
+                className="rounded-arch w-full object-cover"
               />
               <h2 className="mt-5 font-display text-2xl text-espresso">{card.title}</h2>
               <p className="mt-2 text-cocoa">{card.line}</p>

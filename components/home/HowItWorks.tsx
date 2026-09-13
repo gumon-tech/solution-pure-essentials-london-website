@@ -37,13 +37,13 @@ export default function HowItWorks() {
   return (
     <section className="bg-linen">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-16 lg:px-8">
-        <h2 className="font-display text-4xl text-espresso">How it works</h2>
+        <h2 className="reveal font-display text-4xl text-espresso">How it works</h2>
 
         <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {STEPS.map((step, index) => {
             const entry = IMAGES[step.slot];
             return (
-              <div key={step.slot}>
+              <div key={step.slot} className="reveal">
                 <picture>
                   <source type="image/avif" srcSet={entry.srcset.avif} sizes={STEP_SIZES} />
                   <source type="image/webp" srcSet={entry.srcset.webp} sizes={STEP_SIZES} />

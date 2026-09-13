@@ -19,8 +19,8 @@ export default function BookOnlinePage() {
   return (
     <main className="bg-cream">
       <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-16 lg:px-8">
-        <h1 className="font-display text-5xl text-espresso lg:text-6xl">Book online</h1>
-        <p className="mt-4 max-w-prose text-lg text-cocoa">
+        <h1 className="rise-in font-display text-5xl text-espresso lg:text-6xl">Book online</h1>
+        <p className="rise-in rise-delay-1 mt-4 max-w-prose text-lg text-cocoa">
           Choose a treatment and a time, and book straight away on Treatwell.
         </p>
 

@@ -11,3 +11,203 @@
 body {
   @apply bg-cream text-espresso font-body;
 }
+
+/* ------------------------------------------------------------------------------------
+ * Motion (queue row Q34). Calm and short: ease-out, 200 to 600 ms, 8 to 16 px.
+ *
+ * Rule for every block below: the base (unanimated) state of every element is its final,
+ * fully visible state. Every keyframe that starts from opacity 0 lives inside
+ * `prefers-reduced-motion: no-preference`, and the scroll reveals additionally inside
+ * `@supports (animation-timeline: view())`, so a browser without support, a visitor who
+ * asked for reduced motion, and a visitor without JavaScript all see the content as is.
+ * ---------------------------------------------------------------------------------- */
+
+:root {
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  /* Sticky site header (components/Header.tsx, h-[72px]) plus 16 px of air. */
+  --header-offset: 88px;
+}
+
+html {
+  /* Anchor jumps land below the sticky header. /treatments/ adds its chip bar height on
+   * top of this with scroll-margin-top on its targets. */
+  scroll-padding-top: var(--header-offset);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* 1. Page hero: heading and intro text rise once on load, gently staggered. */
+  @keyframes rise-in {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .rise-in {
+    animation: rise-in 600ms var(--ease-soft) var(--rise-delay, 0ms) both;
+  }
+
+  /* 2. Hero image: opacity stays 1 (it is the LCP element); a very slight scale settle. */
+  @keyframes settle-in {
+    from {
+      transform: scale(1.02);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  .settle-in {
+    animation: settle-in 600ms var(--ease-soft) both;
+  }
+
+  /* 3. Sticky mobile bar slides up once. It is position: fixed, so no layout shift. */
+  @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  .slide-up-once {
+    animation: slide-up 500ms var(--ease-soft) 300ms both;
+  }
+
+  /* 4. Soft route change (app/template.tsx): opacity only, never on the first load. */
+  @keyframes route-fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .route-fade {
+    animation: route-fade 250ms ease-out backwards;
+  }
+
+  /* 5. Mobile menu panel (components/Header.tsx): fade plus a slight slide. */
+  @keyframes menu-in {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes menu-out {
+    from {
+      opacity: 1;
+      transform: none;
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+  }
+
+  .menu-in {
+    animation: menu-in 240ms var(--ease-soft) both;
+  }
+
+  .menu-out {
+    animation: menu-out 200ms ease-in both;
+  }
+
+  /* 6. Scroll reveals, progressive enhancement: only where scroll-driven animation is
+   * supported. The range ends once the element has fully entered, or once 30vh of it
+   * has (tall price lists), so the end state is always reachable, even above the footer. */
+  @supports (animation-timeline: view()) {
+    @keyframes reveal {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .reveal {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry min(100%, 30vh);
+    }
+  }
+}
+
+.rise-delay-1 {
+  --rise-delay: 120ms;
+}
+
+.rise-delay-2 {
+  --rise-delay: 240ms;
+}
+
+@layer components {
+  /* Buttons and pill links: smooth colour, border and shadow on hover; gentle press. */
+  .pill {
+    transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+    transition-duration: 300ms;
+    transition-timing-function: var(--ease-soft);
+  }
+
+  .pill:hover {
+    box-shadow: 0 6px 18px -10px rgba(43, 36, 32, 0.35);
+  }
+
+  .pill:active {
+    transform: scale(0.98);
+    transition-duration: 120ms;
+  }
+
+  /* Image cards that are links (home category cards, "You may also like" cards): a slow
+   * zoom inside the arch mask. The <picture> becomes the clipping arch; only the <img>
+   * scales. `isolation` keeps Safari clipping the transformed child to the radius. */
+  a.group > picture {
+    display: block;
+    overflow: hidden;
+    border-radius: 999px 999px 8px 8px;
+    isolation: isolate;
+  }
+
+  a.group > picture > img {
+    display: block;
+    transition: transform 700ms var(--ease-soft);
+  }
+
+  a.group:hover > picture > img,
+  a.group:focus-visible > picture > img {
+    transform: scale(1.04);
+  }
+}
+
+/* Everyone who asked for less motion: no animations, no transitions, no smooth scroll.
+ * Content is already in its final state because no base style hides anything. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -13,10 +13,10 @@ export default function CallToAction() {
           <Picture
             slot="contact-welcome"
             sizes="(min-width: 1024px) 50vw, 100vw"
-            className="rounded-arch w-full object-cover"
+            className="reveal rounded-arch w-full object-cover"
           />
 
-          <div>
+          <div className="reveal">
             <h2 className="font-display text-4xl text-espresso">Ready when you are</h2>
             <p className="mt-4 max-w-prose text-cocoa">{SENTENCE}</p>
 
@@ -25,19 +25,19 @@ export default function CallToAction() {
                 href={waSite("SITE-HOME-CTA")}
                 target="_blank"
                 rel="noopener"
-                className="inline-flex items-center justify-center rounded-full bg-oak px-6 py-3 font-body text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+                className="pill inline-flex items-center justify-center rounded-full bg-oak px-6 py-3 font-body text-white hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
               >
                 Message us on WhatsApp
               </a>
               <Link
                 href="/book-online/"
-                className="inline-flex items-center justify-center rounded-full border border-oak bg-cream px-6 py-3 font-body text-espresso transition-colors hover:bg-oak hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+                className="pill inline-flex items-center justify-center rounded-full border border-oak bg-cream px-6 py-3 font-body text-espresso hover:bg-oak hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
               >
                 Book online on Treatwell
               </Link>
               <Link
                 href="/treatments/"
-                className="inline-flex items-center justify-center rounded-full px-6 py-3 font-body text-espresso underline underline-offset-4 transition-colors hover:text-oak focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+                className="pill inline-flex items-center justify-center rounded-full px-6 py-3 font-body text-espresso underline underline-offset-4 hover:text-oak focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
               >
                 See treatments and prices
               </Link>

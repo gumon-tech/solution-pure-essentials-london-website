@@ -7,7 +7,7 @@ import type { TreatmentRow } from "@/lib/treatments-view";
  * text. */
 export default function PriceList({ rows }: { rows: TreatmentRow[] }) {
   return (
-    <ul className="divide-y divide-beige">
+    <ul className="reveal divide-y divide-beige">
       {rows.map((row) => (
         <li
           key={row.slug}
@@ -39,7 +39,7 @@ export default function PriceList({ rows }: { rows: TreatmentRow[] }) {
               target="_blank"
               rel="noopener"
               aria-label={row.waAriaLabel}
-              className="inline-block whitespace-nowrap rounded-full border border-oak px-4 py-2 text-sm text-oak"
+              className="pill inline-block whitespace-nowrap rounded-full border border-oak px-4 py-2 text-sm text-oak hover:bg-oak hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
             >
               Ask on WhatsApp
             </a>

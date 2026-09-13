@@ -33,7 +33,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-GB" className={`${display.variable} ${body.variable}`}>
+    <html
+      lang="en-GB"
+      className={`${display.variable} ${body.variable}`}
+      // Lets Next.js switch smooth scrolling off during route changes (app/globals.css
+      // turns it on), so a new page starts at its top instantly.
+      data-scroll-behavior="smooth"
+    >
       <body>
         <Header />
         <main>{children}</main>

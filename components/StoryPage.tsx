@@ -38,7 +38,7 @@ function BulletList({ items }: { items: string[] }) {
 }
 
 const buttonBase =
-  "inline-flex items-center justify-center rounded-full px-6 py-3 font-body transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream";
+  "pill inline-flex items-center justify-center rounded-full px-6 py-3 font-body focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream";
 
 function Buttons({
   primary,
@@ -87,7 +87,7 @@ function Buttons({
  * components/home/Clinic.tsx): first column as a row header, no rendered header row. */
 function InfoTable({ rows }: { rows: string[][] }) {
   return (
-    <table className="w-full text-cocoa">
+    <table className="reveal w-full text-cocoa">
       <tbody className="divide-y divide-beige">
         {rows.map((row, i) => (
           <tr key={i}>
@@ -108,7 +108,7 @@ function InfoTable({ rows }: { rows: string[][] }) {
 
 function PriceTable({ rows }: { rows: StoryPriceRow[] }) {
   return (
-    <ul className="divide-y divide-beige">
+    <ul className="reveal divide-y divide-beige">
       {rows.map((row) => (
         <li key={row.slug} className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 py-4">
           <div className="min-w-0">
@@ -121,7 +121,7 @@ function PriceTable({ rows }: { rows: StoryPriceRow[] }) {
               href={row.waHref}
               target="_blank"
               rel="noopener"
-              className="inline-block whitespace-nowrap rounded-full border border-oak px-4 py-2 text-sm text-oak"
+              className="pill inline-block whitespace-nowrap rounded-full border border-oak px-4 py-2 text-sm text-oak hover:bg-oak hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
             >
               Ask on WhatsApp
             </a>
@@ -134,7 +134,7 @@ function PriceTable({ rows }: { rows: StoryPriceRow[] }) {
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
   return (
-    <div>
+    <div className="reveal">
       <h3 className="font-display text-xl text-espresso">{question}</h3>
       <p className="mt-2 text-cocoa">{answer}</p>
     </div>
@@ -179,7 +179,7 @@ function ImageWithText({
   children: React.ReactNode;
 }) {
   return (
-    <div className="grid items-center gap-8 lg:grid-cols-2">
+    <div className="reveal grid items-center gap-8 lg:grid-cols-2">
       <ArchImage
         slot={slot}
         sizes="(min-width: 1024px) 45vw, 100vw"
@@ -261,11 +261,11 @@ export default function StoryPage({ page }: { page: StoryPageData }) {
             slot={heroImageBlock.slot}
             priority
             sizes="(min-width: 1024px) 55vw, 100vw"
-            className="order-first max-h-[45vh] w-full lg:order-none lg:max-h-none"
+            className="settle-in order-first max-h-[45vh] w-full lg:order-none lg:max-h-none"
           />
-          <h1 className="font-display text-4xl text-espresso md:text-5xl">{page.frontMatter.h1}</h1>
+          <h1 className="rise-in font-display text-4xl text-espresso md:text-5xl">{page.frontMatter.h1}</h1>
         </div>
-        <div className="mt-8 max-w-3xl space-y-6">{heroRest.map((b, i) => renderBlock(b, i, { hidePrimaryOnMobile: true }))}</div>
+        <div className="rise-in rise-delay-1 mt-8 max-w-3xl space-y-6">{heroRest.map((b, i) => renderBlock(b, i, { hidePrimaryOnMobile: true }))}</div>
       </section>
 
       {otherSections.map((section) => (
@@ -280,7 +280,7 @@ export default function StoryPage({ page }: { page: StoryPageData }) {
               }
               if (group.type === "plain") {
                 return (
-                  <div key={i} className="max-w-3xl space-y-4">
+                  <div key={i} className="reveal max-w-3xl space-y-4">
                     {group.blocks.map((b, j) => renderBlock(b, j))}
                   </div>
                 );
@@ -299,7 +299,7 @@ export default function StoryPage({ page }: { page: StoryPageData }) {
 
       {faqSection && (
         <section className="mx-auto max-w-6xl px-4 py-12 md:px-6">
-          <h2 className="font-display text-2xl text-espresso">Frequently asked questions</h2>
+          <h2 className="reveal font-display text-2xl text-espresso">Frequently asked questions</h2>
           <div className="mt-6 max-w-3xl space-y-6">
             {faqSection.blocks.map((b, i) =>
               b.kind === "faq-item" ? <FaqItem key={i} question={b.question} answer={b.answer} /> : null,

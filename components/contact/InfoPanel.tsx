@@ -9,7 +9,7 @@ const LINK_CLASS =
 export default function InfoPanel() {
   return (
     <section className="mx-auto max-w-6xl px-4 pb-10 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 gap-10 rounded-2xl bg-sand p-6 sm:p-10 md:grid-cols-3">
+      <div className="reveal grid grid-cols-1 gap-10 rounded-2xl bg-sand p-6 sm:p-10 md:grid-cols-3">
         <div>
           <h2 className="font-body text-xs uppercase tracking-[0.12em] text-walnut">Address</h2>
           <p className="mt-3 text-cocoa">{SITE.address}</p>
@@ -39,7 +39,7 @@ export default function InfoPanel() {
                 href={waSite("SITE-CONTACT")}
                 target="_blank"
                 rel="noopener"
-                className="inline-flex items-center gap-2 rounded-full bg-oak px-5 py-2.5 font-body text-white transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-sand"
+                className="pill inline-flex items-center gap-2 rounded-full bg-oak px-5 py-2.5 font-body text-white hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-sand"
               >
                 <WhatsAppIcon className="h-4 w-4" />
                 Message us

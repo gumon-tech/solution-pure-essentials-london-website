@@ -12,10 +12,10 @@ export default function Clinic() {
         <Picture
           slot="room-trolley"
           sizes="(min-width: 1024px) 50vw, 100vw"
-          className="rounded-arch w-full object-cover"
+          className="reveal rounded-arch w-full object-cover"
         />
 
-        <div>
+        <div className="reveal">
           <h2 className="font-display text-4xl text-espresso">The clinic</h2>
           <p className="mt-4 max-w-prose text-cocoa">{SENTENCE}</p>
 
