@@ -1,6 +1,6 @@
 ---
 title: "Facials in King's Cross | Pure Essentials London"
-description: "Facials at 155 King's Cross Road, London, including a Hydrofacial and a Hydrating facial from GBP 70. Every treatment starts with a free consultation."
+description: "Facials at 155 King's Cross Road, London, including a Hydrofacial and a Hydrating facial from £70. Every treatment starts with a free consultation."
 h1: "Facials in King's Cross"
 ---
 
@@ -64,7 +64,7 @@ You leave with clear aftercare advice and can message us with any question.
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 **How much is a facial?**
-The Hydrating facial is GBP 70 and the Hydrofacial is GBP 100. For the other facials, ask for a quote on WhatsApp.
+The Hydrating facial is £70 and the Hydrofacial is £100. For the other facials, ask for a quote on WhatsApp.
 
 **How long does a facial take?**
 The Hydrofacial takes 1 hour and the Hydrating facial takes 1 hour 45 minutes.

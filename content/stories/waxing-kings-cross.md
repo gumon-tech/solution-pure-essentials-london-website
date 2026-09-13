@@ -1,6 +1,6 @@
 ---
 title: "Waxing in King's Cross | Pure Essentials London"
-description: "Waxing for ladies and men at 155 King's Cross Road, London, from GBP 10. Every treatment starts with a free consultation."
+description: "Waxing for ladies and men at 155 King's Cross Road, London, from £10. Every treatment starts with a free consultation."
 h1: "Waxing in King's Cross"
 ---
 
@@ -94,7 +94,7 @@ Your therapist gives aftercare advice at the appointment. You can message us wit
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 **How much does waxing cost?**
-Ladies' waxing starts at GBP 10 for the full chin or the upper lip, and men's waxing at GBP 15 for the eyebrow. Every option is listed on this page.
+Ladies' waxing starts at £10 for the full chin or the upper lip, and men's waxing at £15 for the eyebrow. Every option is listed on this page.
 
 **How long does waxing take?**
 From 10 minutes for ladies' sideburns to 1 hour for a men's full leg.

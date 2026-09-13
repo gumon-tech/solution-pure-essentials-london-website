@@ -1,6 +1,6 @@
 ---
 title: "HIFU in King's Cross | Pure Essentials London"
-description: "HIFU for the face and neck at 155 King's Cross Road, London. Face and neck options from GBP 280. Every treatment starts with a free consultation."
+description: "HIFU for the face and neck at 155 King's Cross Road, London. Face and neck options from £280. Every treatment starts with a free consultation."
 h1: "HIFU in King's Cross"
 ---
 
@@ -76,7 +76,7 @@ You leave with clear aftercare advice and can message us with any question.
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 **How much does HIFU cost?**
-Face and neck options run from GBP 280 for a half face to GBP 560 for full face, chin and neck. Every option is listed on this page.
+Face and neck options run from £280 for a half face to £560 for full face, chin and neck. Every option is listed on this page.
 
 **How long does a session take?**
 From 45 minutes for the neck to 2 hours for full face, chin and neck.

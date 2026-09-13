@@ -1,6 +1,6 @@
 ---
 title: "Microneedling and Peels in King's Cross | Pure Essentials London"
-description: "Microneedling, radio frequency and peels at 155 King's Cross Road, London, from GBP 75. Every treatment starts with a free consultation."
+description: "Microneedling, radio frequency and peels at 155 King's Cross Road, London, from £75. Every treatment starts with a free consultation."
 h1: "Microneedling and peels in King's Cross"
 ---
 
@@ -73,7 +73,7 @@ Your therapist gives aftercare advice at the appointment.
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 **How much is microneedling?**
-Microneedling Face is GBP 100 and Microneedling Face + Neck is GBP 150. Every option is listed on this page.
+Microneedling Face is £100 and Microneedling Face + Neck is £150. Every option is listed on this page.
 
 **How long does a session take?**
 From 30 minutes for Radio Frequency INDIBA to 1 hour 30 minutes for a Skinox treatment.

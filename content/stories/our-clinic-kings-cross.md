@@ -25,19 +25,19 @@ Open Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 [image: face-card]
 
-For the face: HIFU, skin boosters, microneedling, peels and facials, from GBP 70.
+For the face: HIFU, skin boosters, microneedling, peels and facials, from £70.
 
 [image: body-card]
 
-For the body: 3D lipo, HIFU body and Emsculpt, from GBP 99.
+For the body: 3D lipo, HIFU body and Emsculpt, from £99.
 
 [image: laser-card]
 
-Laser and hair removal: pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal, from GBP 25.
+Laser and hair removal: pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal, from £25.
 
 [image: wellness-card]
 
-Wellness: massage and waxing, from GBP 10.
+Wellness: massage and waxing, from £10.
 
 ## how-it-works
 

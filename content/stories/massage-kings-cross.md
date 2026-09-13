@@ -1,6 +1,6 @@
 ---
 title: "Massage in King's Cross | Pure Essentials London"
-description: "Massage at 155 King's Cross Road, London, including Deep Tissue, Swedish and Thai Massage, from GBP 40. Every treatment starts with a free consultation."
+description: "Massage at 155 King's Cross Road, London, including Deep Tissue, Swedish and Thai Massage, from £40. Every treatment starts with a free consultation."
 h1: "Massage in King's Cross"
 ---
 
@@ -67,7 +67,7 @@ Your therapist gives aftercare advice at the appointment. You can message us wit
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 **How much is a massage?**
-Prices run from GBP 40 for a Face Massage to GBP 80 for a 1 hour Therapeutic Lymphatic Drainage Massage. Every option is listed on this page.
+Prices run from £40 for a Face Massage to £80 for a 1 hour Therapeutic Lymphatic Drainage Massage. Every option is listed on this page.
 
 **How long does a massage take?**
 From 20 minutes for the Tension neck and scalp massage (intense) to 1 hour for a Deep Tissue, Thai or Therapeutic Lymphatic Drainage Massage.

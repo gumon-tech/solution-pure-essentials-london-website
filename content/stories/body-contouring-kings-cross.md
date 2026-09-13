@@ -1,6 +1,6 @@
 ---
 title: "Body Contouring in King's Cross | Pure Essentials London"
-description: "Body contouring at 155 King's Cross Road, London: 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. From GBP 99. Consultations are free."
+description: "Body contouring at 155 King's Cross Road, London: 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. From £99. Consultations are free."
 h1: "Body contouring in King's Cross"
 ---
 
@@ -67,7 +67,7 @@ You leave with clear aftercare advice and can message us with any question.
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 **How much does body contouring cost?**
-Prices start at GBP 99 for Emsculpt or for 1 area of cryoelectrolipolysis. Every option is listed on this page.
+Prices start at £99 for Emsculpt or for 1 area of cryoelectrolipolysis. Every option is listed on this page.
 
 **How long does a session take?**
 From 30 minutes for Emsculpt to 2 hours for 3 areas of cryoelectrolipolysis.
