@@ -134,27 +134,28 @@ ls "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essen
 
 ## กระดานเป้าหมาย
 
-Measured 2026-09-13T05:3xZ by PWEB at the first resume (repo head edb6a97 before this write).
-Standing order A8: re-measure every time this file is written.
+Measured 2026-09-13T05:3xZ by PWEB (main at 1009f7d). Standing order A8: re-measure every time.
 
-**Last session reached:** first resume 2026-09-13. Research done, structure proposed, Lead and
-Executor scaffold committed. No site code yet, by the owner's order of 2026-09-13 (research and
-structure first).
+**Last reached:** owner approved all decisions (docs/plans/DECISIONS-2026-09-13.md, daf5599) with 3 new
+rules: image-led and people-led, Gemini allowed and client photos editable, many storytelling pages.
+Queue is live (27 rows). Pages enabled with build_type workflow; first deploys running.
 
 | # | Goal | State | Holder / waiting on |
 |---|---|---|---|
-| 1 | Room resumed, named, PEL told | DONE 2026-09-13 | - |
-| 2 | Lead and Executor applied to this repo (LEAD, EXECUTOR-BRIEF, DEFINITION-OF-DONE, QUEUE) | DONE, commit edb6a97 and the next | - |
-| 3 | Deep research: design patterns, UK compliance, SEO and stack | DONE, docs/research/01 02 03 (3 executors, 217 tool uses in total) | - |
-| 4 | Direction and structure proposal with decisions for the owner | DONE, docs/research/00-direction.md section 7 (6 decisions) | owner decides |
-| 5 | Queue rows Q1 to Q22 written | DONE as planning; enter queued after decision 1 | owner |
-| 6 | Phase 0 scaffold (Q1 to Q6) | OPEN | PWEB after the owner decides |
-| 7 | Monday preview, 3 pages live at pel.gumon.io (Q7 to Q11) | OPEN, progress showing by the owner's word | PWEB |
-| 8 | Phase 2 pages, legal, consent, tag, SEO (Q12 to Q21) | OPEN | PWEB, PEL for content |
-| 9 | 5 content facts from PEL (duplicate names, company details, Treatwell figure, Valmont photo, free consultation) | DONE 2026-09-13, recorded in docs/research/00-direction.md 5.1 | - |
-| 10 | Clinic domain switch (Q22) | OPEN, owner's order only | owner |
+| 1 | Resume, research, direction, owner decisions | DONE | - |
+| 2 | Lead and Executor applied (LEAD, EXECUTOR-BRIEF, DEFINITION-OF-DONE, QUEUE) | DONE | - |
+| 3 | Phase 0 scaffold Q1 Q2 Q4 Q6 | DONE, Lead re-run on each (79ca98b, 7f44e82, 4fc2fe3, 1009f7d) | - |
+| 4 | Q3 layout shell | RUNNING | executor |
+| 5 | Q23 imagery guideline | REVIEW, written b87c4d7, section 9 waits | SHOP and WS answers |
+| 6 | Q24 generated image set (13 shots x 2) | RUNNING; home hero passed Lead check | executor, then Lead by eye |
+| 7 | Q5 client photos edited warm | RUNNING (part 1) | executor |
+| 8 | Copy for home, contact, 4 story pages | RUNNING | executor (opus) |
+| 9 | Monday preview Q7 to Q11 at pel.gumon.io | OPEN; Pages on, custom domain after first green deploy | PWEB |
+| 10 | Storytelling pages Q25 to Q27 | OPEN (set 1 copy running) | PWEB and PEL |
+| 11 | Phase 2 pages, legal, consent, tag, SEO | OPEN | PWEB |
+| 12 | Clinic domain switch Q22 | OPEN, owner's order only | owner |
 
-**Done: 6 of 10.** 6 to 8 wait on decision 1; 10 on the owner.
+**Done: 3 of 12.**
 
 ## Verify additions after the first resume
 
