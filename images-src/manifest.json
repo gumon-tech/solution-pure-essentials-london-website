@@ -125,5 +125,49 @@
     "ratio": "4:5",
     "alt": "A treatment room at Pure Essentials London with rolled towels on the couch",
     "ai": false
+  },
+  {
+    "slot": "cat-laser-skin",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/cat-laser-skin-a.jpg",
+    "ratio": "4:5",
+    "alt": "Woman lying back in eyewear as gloved hands hold a device near her cheek",
+    "ai": true
+  },
+  {
+    "slot": "cat-skin",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/cat-skin-a.jpg",
+    "crop": { "rightPct": 12, "ratio": "4:5" },
+    "ratio": "4:5",
+    "alt": "Woman lying back, eyes closed, a gloved hand holding a device to her cheek",
+    "ai": true
+  },
+  {
+    "slot": "cat-skinboosters",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/cat-skinboosters-b.jpg",
+    "ratio": "4:5",
+    "alt": "Two women seated, one holding a hand mirror, the other writing in a notebook",
+    "ai": true
+  },
+  {
+    "slot": "cat-carboxy",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/cat-carboxy-a.jpg",
+    "crop": { "topKeepPct": 72, "ratio": "4:5" },
+    "ratio": "4:5",
+    "alt": "Two smiling women looking together at pages in an open book",
+    "ai": true
+  },
+  {
+    "slot": "cat-waxing-ladies",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/cat-waxing-ladies-b.jpg",
+    "ratio": "4:5",
+    "alt": "Gloved hands pressing a wax strip against a client's lower leg",
+    "ai": true
+  },
+  {
+    "slot": "cat-waxing-men",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/cat-waxing-men-a.jpg",
+    "ratio": "4:5",
+    "alt": "Gloved hands applying a wax strip along a man's bare back",
+    "ai": true
   }
 ]

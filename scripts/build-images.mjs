@@ -56,7 +56,12 @@ function expandHome(p) {
 function budgetFor(width) {
   if (WIDE_WIDTHS.has(width)) return WIDE_BUDGET_BYTES;
   if (NARROW_WIDTHS.has(width)) return NARROW_BUDGET_BYTES;
-  return null;
+  // A non-standard width only occurs for the extra "native/full crop width" output added
+  // below when a cropped source falls between two standard steps. Bucket it into the wide
+  // (200 kB) budget above 800 px, since it is then the slot's largest/highest-resolution
+  // tier; at or below 800 px it stays in the narrow (90 kB) budget.
+  if (width > 800) return WIDE_BUDGET_BYTES;
+  return NARROW_BUDGET_BYTES;
 }
 
 async function encodeToBudget(baseImage, format, width) {
@@ -98,6 +103,8 @@ async function main() {
     let srcHeight = meta.height;
 
     if (crop && typeof crop.topPct === "number") {
+      // Remove crop.topPct% off the top, then restore the target ratio by trimming the
+      // sides equally (both edges lose the same amount).
       const topCut = Math.round(srcHeight * (crop.topPct / 100));
       const remainingHeight = srcHeight - topCut;
       const [rw, rh] = (crop.ratio ?? ratio).split(":").map(Number);
@@ -112,6 +119,38 @@ async function main() {
       });
       srcWidth = cropWidth;
       srcHeight = remainingHeight;
+    } else if (crop && typeof crop.rightPct === "number") {
+      // Remove crop.rightPct% off the right (crop stays left-anchored), then restore the
+      // target ratio by trimming the bottom only (crop stays top-anchored).
+      const rightCut = Math.round(srcWidth * (crop.rightPct / 100));
+      const remainingWidth = srcWidth - rightCut;
+      const [rw, rh] = (crop.ratio ?? ratio).split(":").map(Number);
+      const targetHeightForWidth = Math.round((remainingWidth * rh) / rw);
+      const cropHeight = Math.min(targetHeightForWidth, srcHeight);
+      pipeline = pipeline.extract({
+        left: 0,
+        top: 0,
+        width: remainingWidth,
+        height: cropHeight,
+      });
+      srcWidth = remainingWidth;
+      srcHeight = cropHeight;
+    } else if (crop && typeof crop.topKeepPct === "number") {
+      // Keep only the top crop.topKeepPct% of the height (crop stays top-anchored, drops the
+      // bottom), then restore the target ratio by trimming both sides equally.
+      const keepHeight = Math.round(srcHeight * (crop.topKeepPct / 100));
+      const [rw, rh] = (crop.ratio ?? ratio).split(":").map(Number);
+      const targetWidthForHeight = Math.round((keepHeight * rw) / rh);
+      const cropWidth = Math.min(targetWidthForHeight, srcWidth);
+      const cropLeft = Math.round((srcWidth - cropWidth) / 2);
+      pipeline = pipeline.extract({
+        left: cropLeft,
+        top: 0,
+        width: cropWidth,
+        height: keepHeight,
+      });
+      srcWidth = cropWidth;
+      srcHeight = keepHeight;
     } else {
       // No explicit crop: ensure the source matches the declared ratio by centre-cropping
       // the shorter dimension out (only trims, never invents pixels).
@@ -146,7 +185,17 @@ async function main() {
     const fullWidth = croppedMeta.width;
     const fullHeight = croppedMeta.height;
 
-    const widthsToEmit = WIDTHS.filter((w) => w <= fullWidth);
+    const standardWidthsToEmit = WIDTHS.filter((w) => w <= fullWidth);
+    const isStandardWidth = WIDTHS.includes(fullWidth);
+    const hasHigherStandard = WIDTHS.some((w) => w > fullWidth);
+    // When the (possibly cropped) source's own width sits strictly between two standard
+    // steps, the standard steps alone leave resolution on the table between the largest one
+    // emitted and the next step up. Add one more output at the source's own exact width so
+    // that gap is not wasted, still capped by the same budget rules as any other output.
+    const widthsToEmit =
+      !isStandardWidth && hasHigherStandard && fullWidth > 0
+        ? [...standardWidthsToEmit, fullWidth]
+        : standardWidthsToEmit;
 
     let largestWidth = 0;
     let largestHeight = 0;
@@ -201,6 +250,16 @@ async function main() {
       }
     }
 
+    // The JPEG fallback should point at an actually-emitted width close to 800 px: normally
+    // that is 800 itself, but a slot whose full (cropped) width is under 800 px (e.g.
+    // cat-carboxy at 663) never gets an -800 file, so fall back to the largest emitted width
+    // that does not exceed 800, or the smallest emitted width if even that does not exist.
+    const atOrBelow800 = widthsToEmit.filter((w) => w <= 800);
+    const fallbackWidth =
+      atOrBelow800.length > 0
+        ? Math.max(...atOrBelow800)
+        : Math.min(...widthsToEmit);
+
     imagesEntries[slot] = {
       alt,
       ratio,
@@ -211,7 +270,7 @@ async function main() {
         webp: srcset.webp.join(", "),
         jpg: srcset.jpg.join(", "),
       },
-      fallback: `/img/gen/${slot}-800.jpg`,
+      fallback: `/img/gen/${slot}-${fallbackWidth}.jpg`,
     };
   }
 
