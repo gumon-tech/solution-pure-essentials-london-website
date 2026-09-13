@@ -36,3 +36,19 @@ Rules that still bind images (unchanged): no needle in any image, no before-and-
 certificate wall with readable names, no real client faces without written permission, no
 medicine names in alt text or file names. Generated images must not be presented as a real
 client's result.
+
+## Later the same day: Treatwell as the backup booking channel, widget and map load straight away
+
+Owner message (verbatim, the staff member's name replaced by the initial F):
+
+> ผมเช็คแล้วครับ ใช้ได้เลยนะ เดี๋ยวผมส่งให้ทางคลินิกตรวจสอบ
+> ลูกค้าเน้นย้ำเรื่องช่องทางสำรองในการจอง Treatwell ครับ ประเด็นคือคนตอบ Whatsapp ของร้านได้มีคนเดียวคือคุณ F
+> ทีนี้ ถ้าตอบช้า อาจเสียลูกค้า เลยอยากให้มีอะไรชัดเจนนิดนึง ซึ่งจะต่างกับของ Taitam-D ครับ เราตั้งใจซ่อนไว้เพราะเรามีทีมตอบน่ะ
+> จริงๆ เราน่าจะเอา Widget ใส่เข้าไปในเว็บได้นะครับ
+> แผนที่กับ Widget ไม่จำเป็นต้องให้กดโชว์อีกทีนะครับ เปิดได้เลย
+
+Result:
+
+- The owner approved the live preview and will send it to the clinic.
+- **D. Treatwell is a visible second booking route**, not hidden: a "Book online" button in the header, the mobile sticky bar and the home call to action, and a /book-online/ page with the Treatwell booking widget (venue 256278). Site copy never says how many people answer WhatsApp or how fast.
+- **E. The map and the widget load straight away.** No "tap to show" step. This replaces the earlier plan in the privacy notice ("The map will not load until you choose to show it"), so the notice must be rewritten before deploy (queue row Q32). Measured 2026-09-13: the widget sets 2 Treatwell cookies (fe20-flipper-id, growthbook_id, 2-year expiry).
