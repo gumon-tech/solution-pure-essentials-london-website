@@ -14,7 +14,7 @@ machine       komphet-mac
 reports to    PEL (this file's author), never straight to WS
 lead repo     ~/dev/solution-pure-essentials-london   (rulings, data, brief; read-only for you)
 queue clone   ~/dev/.gumon-queue/PWEB   (bin/queue-clone PWEB if it does not exist)
-model         Sonnet 5, effort medium (ruling Q-TMP-20260913T0327). Ask PEL before switching.
+model         Fable 5.1 (the owner opened the room on it 2026-09-13; PEL accepted, supersedes the Sonnet 5 line)
 lore          off. Do not run lore capture in this repo.
 ```
 
@@ -131,3 +131,36 @@ dig +short CNAME pel.gumon.io                              # gumon-tech.github.i
 python3 -B -c "import json;d=json.load(open('$HOME/dev/solution-pure-essentials-london/data/pel-new-site-services.json'));print(len(d['services']),sum(s['status']=='live' for s in d['services']))"   # 176 115
 ls "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-11-client-photos/venue-real-9" | wc -l   # 9
 ```
+
+## กระดานเป้าหมาย
+
+Measured 2026-09-13T05:3xZ by PWEB at the first resume (repo head edb6a97 before this write).
+Standing order A8: re-measure every time this file is written.
+
+**Last session reached:** first resume 2026-09-13. Research done, structure proposed, Lead and
+Executor scaffold committed. No site code yet, by the owner's order of 2026-09-13 (research and
+structure first).
+
+| # | Goal | State | Holder / waiting on |
+|---|---|---|---|
+| 1 | Room resumed, named, PEL told | DONE 2026-09-13 | - |
+| 2 | Lead and Executor applied to this repo (LEAD, EXECUTOR-BRIEF, DEFINITION-OF-DONE, QUEUE) | DONE, commit edb6a97 and the next | - |
+| 3 | Deep research: design patterns, UK compliance, SEO and stack | DONE, docs/research/01 02 03 (3 executors, 217 tool uses in total) | - |
+| 4 | Direction and structure proposal with decisions for the owner | DONE, docs/research/00-direction.md section 7 (6 decisions) | owner decides |
+| 5 | Queue rows Q1 to Q22 written | DONE as planning; enter queued after decision 1 | owner |
+| 6 | Phase 0 scaffold (Q1 to Q6) | OPEN | PWEB after the owner decides |
+| 7 | Monday preview, 3 pages live at pel.gumon.io (Q7 to Q11) | OPEN, progress showing by the owner's word | PWEB |
+| 8 | Phase 2 pages, legal, consent, tag, SEO (Q12 to Q21) | OPEN | PWEB, PEL for content |
+| 9 | 5 content facts from PEL (duplicate names, company details, Treatwell figure, Valmont photo, free consultation) | OPEN, asked 2026-09-13 | PEL |
+| 10 | Clinic domain switch (Q22) | OPEN, owner's order only | owner |
+
+**Done: 5 of 10.** 6 to 8 wait on decision 1; 9 waits on PEL; 10 on the owner.
+
+## Verify additions after the first resume
+
+```bash
+/bin/ls docs/plans docs/research                        # LEAD EXECUTOR-BRIEF DEFINITION-OF-DONE QUEUE; 00 01 02 03
+git log --oneline | head -3
+grep -c '^| Q' docs/plans/QUEUE.md                      # 22
+```
+Note: `ls` is aliased to eza on this machine and prints nothing inside the agent's shell; use /bin/ls.
