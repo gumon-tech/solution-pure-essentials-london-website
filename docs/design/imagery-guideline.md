@@ -221,3 +221,42 @@ and 1 thumb per visible hand. Brightness 60.0 to 71.1. Approval before deploy: P
 | cat-waxing-men | cat-waxing-men-a.jpg | none | b: therapist's mouth and chin enter the frame |
 
 PEL approved all 6 category images 2026-09-13 after viewing each at full size (lead repo brief section 14, commit 431b710), under the existing illustrative-images footer line.
+
+### Family page images (executor check 2026-09-13, awaiting Lead and PEL review)
+
+Why: the owner saw the same picture 2 to 4 times on one family page, because the hero and every "You may also like"
+card used the category slot. Each of the 21 family pages now has its own slot, used as its hero and as its card on other
+family pages (`FAMILY_IMAGE_SLOT` in `components/FamilyPage.tsx`; a family with no entry falls back to its category slot).
+Shots follow PEL's rules in the lead repo brief section 32. Sources and `fam-<name>.prompt.txt` sidecars (every attempt's
+full prompt) are on OneDrive `site-images/generated-2026-09-13/`. Model: gemini-3.1-flash-image via bin/ask-gemini, 2026-09-13,
+Vertical 4:5, 928 x 1152. All are AI images: alt text follows section 4. Hands were checked on full-size crops at 2x;
+"occluded" means a finger or thumb is hidden behind an object or the other hand, with no extra finger visible. Brightness is
+the 24x24 average luminance on 0 to 100. Approval before deploy: PEL, at full size.
+
+| Slot | Family | Chosen | Brightness | Hands counted | Rejected alternative and why |
+|---|---|---|---|---|---|
+| fam-hifu-face | HIFU (face) | fam-hifu-face-a.jpg | 59.4 | 1 gloved hand: thumb and fingers wrap the device, rest occluded | b: fine, near mirror of a |
+| fam-cryotherapy | pen-sized cold device | fam-cryotherapy-a.jpg | 62.9 | 1 gloved hand thumb and 2 fingers, 2 occluded; client hand 4 fingers, thumb under palm | b: therapist's chin and lips at the top edge |
+| fam-light-platform | light platform | fam-light-platform-b.jpg | 69.0 | 2 therapist hands, 4 fingers and 1 thumb each | a: black console screen facing the camera, off palette |
+| fam-ipl | IPL | fam-ipl-a.jpg | 61.2 | 2 gloved hands: 4 fingers each, thumbs visible or occluded | b: REJECT, 1 therapist with 3 gloved hands |
+| fam-pico-laser | pico laser | fam-pico-laser-b.jpg | 69.6 | 1 gloved hand, thumb on top and 4 fingers | a: 2 hands fine, but the large head sits over the brow and repeats the IPL look |
+| fam-tattoo-removal | tattoo removal | fam-tattoo-removal-a.jpg | 63.3 | therapist 2 gloved hands; client 2 hands, 4 fingers each, thumbs occluded | b: therapist's lower gloved hand is a shapeless fist, fingers not countable |
+| fam-gold-microneedling | gold microneedling | fam-gold-microneedling-a.jpg | 59.8 | 1 gloved hand around the pen, no tip visible | b: a second, ungloved arm behind the pillow |
+| fam-microneedling | microneedling | fam-microneedling-c.jpg, crop topKeepPct 72 (removes a small capped cylinder that reads as a vial) | 65.9 on the crop | 1 gloved hand: thumb and 4 fingers; lower hand cropped out | a: metal tip touching the nose, bare hands; b: metal tip at the temple, bare hands; c uncropped: vial-like object by the lower hand; d: pen end at the upper lip and the therapist's face in frame |
+| fam-chemical-peel | chemical peel | fam-chemical-peel-a.jpg | 70.0 | 1 gloved hand, thumb and 4 fingers | b: glistening liquid patch on the cheek, second arm behind the pillow |
+| fam-radiofrequency | radiofrequency (back) | fam-radiofrequency-b.jpg | 61.4 | 1 gloved hand, 4 fingers and 1 thumb | a: therapist's chin at the top edge, client in a crop top |
+| fam-skin-booster-body | skin booster, body (consultation) | fam-skin-booster-body-a.jpg | 70.3 | client 2 hands stacked; therapist 2 hands, 4 fingers and 1 thumb each | b: fine, a green plant off palette |
+| fam-skin-booster-face | skin booster, face (consultation) | fam-skin-booster-face-b.jpg | 57.3 | therapist 2 hands on the tablet (thumbs visible); client 1 hand, 4 fingers | a: therapist in black trousers |
+| fam-skin-booster-hydration | skin booster (consultation) | fam-skin-booster-hydration-b.jpg | 64.4 | client glass hand 4 fingers and 1 thumb; therapist 2 hands stacked; client lap hand soft | a: client in black trousers |
+| fam-fat-reduction | body device pad (thigh) | fam-fat-reduction-b.jpg | 63.3 | 1 gloved hand, thumb and 4 fingers; client hand 4 fingers, thumb occluded | a: therapist's chin and mouth at the top edge |
+| fam-muscle-toning | body device pad (abdomen) | fam-muscle-toning-a.jpg | 66.1 | client 1 hand, 4 fingers, thumb occluded | b: fine, reclined chair |
+| fam-hifu-body | HIFU body | fam-hifu-body-a.jpg | 65.6 | 1 gloved hand, thumb and 3 fingers, 1 occluded | b: client's pose unclear, arm and head position ambiguous |
+| fam-laser-hair | laser hair removal | fam-laser-hair-b.jpg | 62.6 | 2 gloved hands, 4 fingers each; raised client hand behind the head | a: therapist's full face in profile without eyewear |
+| fam-hydrating-facial | hydro facial | fam-hydrating-facial-a.jpg | 64.6 | 2 bare hands, 4 fingers and 1 thumb each | b: therapist's face in profile, wet sheen on the skin |
+| fam-sensitive-skin-facial | sensitive skin facial | fam-sensitive-skin-facial-b.jpg | 61.1 | no hands in frame | a: fine, wider and the face smaller |
+| fam-microdermabrasion | microdermabrasion (warm cloth) | fam-microdermabrasion-b.jpg | 66.5 | 2 gloved hands, 4 fingers each, thumbs occluded | a: therapist's chin at the top edge |
+| fam-botanical-facial | facial | fam-botanical-facial-b.jpg | 67.8 | 2 therapist hands on the shoulders, 4 fingers each | a: dark amber jars on the shelf, off palette |
+
+Generated: 44 images (2 per family, plus microneedling c and d). Not generated, as PEL ruled: aesthetics_1_emsculpt and
+carboxytherapy have no family page and keep their fallback. Our clinic page: the call-to-action image changed from
+contact-welcome to step-4-aftercare, so contact-welcome appears once.
