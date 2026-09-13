@@ -19,7 +19,7 @@ Hair removal here is available with laser or with IPL, and each is priced by the
 
 Laser hair removal area sizes:
 
-- Medium area: underarms, buttocks, bikini line, crack, neck, shoulders, tummy line, face, full front bikini
+- Medium area: underarms, buttocks, bikini line, neck, shoulders, tummy line, face, full front bikini
 - Large area: arms, half legs, tummy, lower back, upper back, chest
 - Extra large area: full legs, Hollywood
 
