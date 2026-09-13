@@ -27,6 +27,8 @@
 // without inventing a tiebreak.
 import { liveServices, waLink, type Service } from "./services";
 import { GROUPS, type CategoryId, type GroupId } from "./groups";
+import { IMAGES } from "./images";
+import { FAMILIES } from "./families";
 
 import servicesFile from "@/data/services.json";
 
@@ -43,7 +45,7 @@ export interface TreatmentRow {
 export interface CategoryBlock {
   id: CategoryId;
   title: string;
-  image: { src: string; alt: string };
+  image: keyof typeof IMAGES;
   rows: TreatmentRow[];
 }
 
@@ -53,20 +55,20 @@ export interface GroupSection {
   categories: CategoryBlock[];
 }
 
-/** 1 neutral placeholder per group (see public/img/placeholder/). Swap in 1 place
- * once real category photos exist. */
-export const CATEGORY_IMAGE: Record<CategoryId, { src: string; alt: string }> = {
-  hifu: { src: "/img/placeholder/face.jpg", alt: "" },
-  skin: { src: "/img/placeholder/face.jpg", alt: "" },
-  skinboosters: { src: "/img/placeholder/face.jpg", alt: "" },
-  facials: { src: "/img/placeholder/face.jpg", alt: "" },
-  carboxy: { src: "/img/placeholder/face.jpg", alt: "" },
-  body: { src: "/img/placeholder/body.jpg", alt: "" },
-  laser: { src: "/img/placeholder/laser.jpg", alt: "" },
-  hair: { src: "/img/placeholder/laser.jpg", alt: "" },
-  massage: { src: "/img/placeholder/wellness.jpg", alt: "" },
-  "waxing-ladies": { src: "/img/placeholder/wellness.jpg", alt: "" },
-  "waxing-men": { src: "/img/placeholder/wellness.jpg", alt: "" },
+/** 1 people image per category (docs/design/imagery-guideline.md section 10). Typed
+ * against IMAGES so a missing slot fails the build. */
+export const CATEGORY_IMAGE: Record<CategoryId, keyof typeof IMAGES> = {
+  hifu: "story-hifu",
+  laser: "cat-laser-skin",
+  skin: "cat-skin",
+  skinboosters: "cat-skinboosters",
+  carboxy: "cat-carboxy",
+  body: "body-card",
+  hair: "story-laser-hair",
+  facials: "face-card",
+  massage: "wellness-card",
+  "waxing-ladies": "cat-waxing-ladies",
+  "waxing-men": "cat-waxing-men",
 };
 
 const CATEGORY_TITLES: Record<string, string> = Object.fromEntries(
@@ -95,6 +97,14 @@ function isCmsSource(source: string): boolean {
 function isBookingSource(source: string): boolean {
   return source === "booking";
 }
+
+/** cms slugs (lib/families.ts) whose family already has at least 1 priced booking
+ * row — that family's page carries the price, so the cms row itself drops to avoid
+ * showing "Ask for a quote" next to a price for the same treatment (Q8 pt 2
+ * addition, Lead message 2026-09-13). */
+const FAMILY_PRICED_SLUGS = new Set(
+  FAMILIES.filter((f) => f.priced.length > 0).map((f) => f.slug),
+);
 
 function toRow(s: Service): TreatmentRow {
   const name = displayNameOf(s);
@@ -132,7 +142,11 @@ export function buildTreatmentsView(): GroupSection[] {
         rows.filter((r) => isBookingSource(r.source)).map((r) => normalizeName(r.name)),
       );
       const kept = rows.filter(
-        (r) => !(isCmsSource(r.source) && bookingNames.has(normalizeName(r.name))),
+        (r) =>
+          !(
+            isCmsSource(r.source) &&
+            (bookingNames.has(normalizeName(r.name)) || FAMILY_PRICED_SLUGS.has(r.slug))
+          ),
       );
 
       const priced = kept

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ArchImage from "@/components/ArchImage";
 import CategoryChips from "@/components/CategoryChips";
 import PriceList from "@/components/PriceList";
-import { buildTreatmentsView, CATEGORY_IMAGE } from "@/lib/treatments-view";
+import { buildTreatmentsView } from "@/lib/treatments-view";
 
 // Description sourced from content/treatments-intro.md (PEL's copy, cut; see
 // content/COPY-SOURCES.md) per the Q8 spec's "description from PEL's copy if
@@ -48,15 +48,7 @@ export default function TreatmentsPage() {
               yours.
             </p>
           </div>
-          <ArchImage
-            src={CATEGORY_IMAGE.hifu.src}
-            alt=""
-            aria-hidden
-            width={800}
-            height={1000}
-            priority
-            className="w-full"
-          />
+          <ArchImage slot="step-2-consultation" priority className="w-full" />
         </div>
       </section>
 
@@ -89,11 +81,7 @@ export default function TreatmentsPage() {
 
                 <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1.6fr]">
                   <ArchImage
-                    src={category.image.src}
-                    alt={category.image.alt}
-                    aria-hidden
-                    width={800}
-                    height={1000}
+                    slot={category.image}
                     className="order-first w-full md:order-none"
                   />
                   <PriceList rows={category.rows} />
