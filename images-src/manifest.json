@@ -1,0 +1,129 @@
+[
+  {
+    "slot": "home-hero",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/home-hero-a.jpg",
+    "crop": { "topPct": 8, "ratio": "3:2" },
+    "ratio": "3:2",
+    "alt": "Woman lying back, eyes closed, as a therapist's hands apply cream to her cheek",
+    "ai": true
+  },
+  {
+    "slot": "face-card",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/face-card-b.jpg",
+    "ratio": "4:5",
+    "alt": "Close view of a relaxed face as fingertips move along the cheekbone",
+    "ai": true
+  },
+  {
+    "slot": "body-card",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/body-card-a.jpg",
+    "ratio": "4:5",
+    "alt": "Hands pressing along a client's lower back while lying face down under a towel",
+    "ai": true
+  },
+  {
+    "slot": "laser-card",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/laser-card-a.jpg",
+    "ratio": "4:5",
+    "alt": "Seated woman in eyewear and a robe, therapist holding a device to her arm",
+    "ai": true
+  },
+  {
+    "slot": "wellness-card",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/wellness-card-b.jpg",
+    "ratio": "4:5",
+    "alt": "Hands pressing across a client's shoulders while lying face down, warm light",
+    "ai": true
+  },
+  {
+    "slot": "step-1-message",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/step-1-message-b.jpg",
+    "ratio": "4:5",
+    "alt": "Hands holding a phone with an unreadable screen, resting on a soft cushion",
+    "ai": true
+  },
+  {
+    "slot": "step-2-consultation",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/step-2-consultation-a.jpg",
+    "ratio": "4:5",
+    "alt": "Two women smiling in conversation, one holding a notebook and pen",
+    "ai": true
+  },
+  {
+    "slot": "step-3-treatment",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/step-3-treatment-b.jpg",
+    "ratio": "4:5",
+    "alt": "Therapist placing a warm stone along a client's back, face out of frame",
+    "ai": true
+  },
+  {
+    "slot": "step-4-aftercare",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/step-4-aftercare-b.jpg",
+    "ratio": "4:5",
+    "alt": "Woman in a robe smiling while holding a cup of tea",
+    "ai": true
+  },
+  {
+    "slot": "contact-welcome",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/contact-welcome-a.jpg",
+    "ratio": "3:2",
+    "alt": "Two women smiling across a curved wooden reception desk",
+    "ai": true
+  },
+  {
+    "slot": "story-hifu",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/story-hifu-b.jpg",
+    "ratio": "3:2",
+    "alt": "Woman lying back, eyes closed, as a handheld device is held to her jaw",
+    "ai": true
+  },
+  {
+    "slot": "story-facials",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/story-facials-b.jpg",
+    "ratio": "3:2",
+    "alt": "Therapist brushing a cream mask onto a relaxed, smiling woman's cheek",
+    "ai": true
+  },
+  {
+    "slot": "story-body-contouring",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/story-body-contouring-b.jpg",
+    "ratio": "3:2",
+    "alt": "Two women looking at a tablet together, its screen not readable",
+    "ai": true
+  },
+  {
+    "slot": "story-laser-hair",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/story-laser-hair-c.jpg",
+    "ratio": "3:2",
+    "alt": "A therapist in gloves moves a handheld device along a client's lower leg",
+    "ai": true
+  },
+  {
+    "slot": "room-warm",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/edited-client-2026-09-13/room-07.jpg",
+    "ratio": "4:5",
+    "alt": "A treatment room at Pure Essentials London with a wood-slat wall and couch",
+    "ai": false
+  },
+  {
+    "slot": "room-trolley",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/edited-client-2026-09-13/room-02.jpg",
+    "ratio": "4:5",
+    "alt": "A treatment room at Pure Essentials London with a trolley of products",
+    "ai": false
+  },
+  {
+    "slot": "room-analyser",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/edited-client-2026-09-13/gemini/contact-room-c-a.jpg",
+    "ratio": "4:5",
+    "alt": "A treatment room at Pure Essentials London with white cabinetry and a couch",
+    "ai": false
+  },
+  {
+    "slot": "room-couch",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/edited-client-2026-09-13/gemini/contact-room-d-a.jpg",
+    "ratio": "4:5",
+    "alt": "A treatment room at Pure Essentials London with rolled towels on the couch",
+    "ai": false
+  }
+]
