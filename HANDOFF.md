@@ -157,7 +157,7 @@ Data file = PEL 0c07854 (111 live), identical to lead repo origin/main. Every im
 | 10 | Lighthouse (Q21) | DONE and live | - |
 | 11 | Consent banner (Q16) | HOLD on branch q16-consent-banner, wording approved | merge with Q17 |
 | 12 | Google Ads tag (Q17) | HOLD, spec from PEL (3 click conversions) | PEL reads the tag ID after the showing |
-| 13 | Photo brief and clinic questions (Q19) | PEL wrote both | owner sends after the clinic sees the preview |
+| 13 | Photo brief and clinic questions (Q19) | photo brief CANCELLED 2026-09-13: owner ruled the 20 AI people images are production images (PEL commit a9e5a76); clinic questions still PEL's | owner sends the questions |
 | 14 | About page (Q14) | OPEN | clinic answers |
 | 15 | Clinic domain switch (Q22) | OPEN | owner's order only |
 

@@ -45,7 +45,8 @@ Headings stay at the type scale; no giant text used as decoration in place of a 
      bin is fine; inventing furniture, windows or equipment the room does not have is not.
 2. **Generated with Gemini** through `~/dev/gumon-workspace/bin/ask-gemini --image-out`
    (default image model `gemini-3.1-flash-image`, key check passed 2026-09-13). People and faces
-   allowed. Used for every people image until the clinic's own photo shoot exists.
+   allowed. Used for every people image. Owner decision 2026-09-13 (PEL commit a9e5a76): these AI
+   images are the production images, not placeholders; no clinic photo shoot is planned.
 3. Stock photography is not used.
 
 ## 4. What alt text and captions may say

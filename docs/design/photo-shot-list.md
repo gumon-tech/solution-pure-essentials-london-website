@@ -1,5 +1,10 @@
 # Photo shot list for a real photo session at the clinic
 
+> **Cancelled 2026-09-13.** Owner decision (PEL commit a9e5a76 in the lead repo): the 20 AI people
+> images are the production images, not placeholders, and no photos will be requested from the
+> clinic. This list is kept as a record only. The footer line "Some images on this site are
+> illustrative." stays.
+
 Queue row Q19 (PWEB part). Written 2026-09-13. Sources: `docs/design/imagery-guideline.md`
 (sections 1, 2, 4, 5, 7 and 10), `lib/images.ts`, the 2 pages and 11 story files in `content/`,
 and `docs/pel-website-move-brief.md` (sections 10, 11 and 14) in the clinic repo. This list goes
