@@ -4,6 +4,8 @@ import Groups from "@/components/home/Groups";
 import HowItWorks from "@/components/home/HowItWorks";
 import Clinic from "@/components/home/Clinic";
 import CallToAction from "@/components/home/CallToAction";
+import JsonLd from "@/components/JsonLd";
+import { clinicJsonLd } from "@/lib/structured-data";
 
 // Title, description and h1 from content/home.md's front matter.
 export const metadata: Metadata = {
@@ -23,6 +25,7 @@ const H1 = "Beauty and skin treatments in King's Cross";
 export default function Home() {
   return (
     <main className="bg-cream">
+      <JsonLd data={clinicJsonLd()} />
       <Hero h1={H1} />
       <Groups />
       <HowItWorks />

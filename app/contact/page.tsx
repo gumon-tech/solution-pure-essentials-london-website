@@ -4,6 +4,8 @@ import InfoPanel from "@/components/contact/InfoPanel";
 import GettingHere from "@/components/contact/GettingHere";
 import MapSection from "@/components/contact/MapSection";
 import RoomsRow from "@/components/contact/RoomsRow";
+import JsonLd from "@/components/JsonLd";
+import { clinicJsonLd } from "@/lib/structured-data";
 
 // Title and description from content/contact.md's front matter.
 export const metadata: Metadata = {
@@ -20,6 +22,7 @@ const H1 = "Find us";
 export default function ContactPage() {
   return (
     <main className="bg-cream">
+      <JsonLd data={clinicJsonLd()} />
       <Welcome h1={H1} />
       <InfoPanel />
       <GettingHere />
