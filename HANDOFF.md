@@ -134,11 +134,11 @@ ls "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essen
 
 ## กระดานเป้าหมาย
 
-Measured 2026-09-13 after main e0fa617. Standing order A8: re-measure every time.
+Measured 2026-09-13 after main 97aa58d. Standing order A8: re-measure every time.
 
 **Last reached:** PEL ruled the site fit for the owner's Monday progress showing (lead repo brief section 21).
 Live at https://pel.gumon.io and read from outside: home, /treatments/ (97 rows, 11 people category images,
-links to 21 family pages), 21 family pages, 8 story pages, /contact/, /privacy/, /terms/, sitemap.xml 34 URLs all
+links to 21 family pages), 21 family pages, 11 story pages, /contact/, /privacy/, /terms/, sitemap.xml 37 URLs all
 200, robots.txt, favicon, JSON-LD on home and contact. Lighthouse first pass: performance 96 to 100, SEO 100, CLS 0;
 the only accessibility and best-practice failures (oak text 4.43:1, favicon 404) are fixed and live.
 Data file = PEL 0c07854 (111 live), identical to lead repo origin/main. Every image, sentence and legal text approved by PEL.
@@ -150,8 +150,8 @@ Data file = PEL 0c07854 (111 live), identical to lead repo origin/main. Every im
 | 3 | Home, treatments, contact, domain (Q7 Q8 Q9 Q10) with PEL fixes | DONE and live | - |
 | 4 | Family pages, links, sitemap, robots (Q12) | DONE and live | - |
 | 5 | Privacy and terms (Q15) | DONE and live | - |
-| 6 | Story pages set 1 and 2 (Q25 Q26, 8 pages) | DONE and live | PEL outside check |
-| 7 | Story pages set 3 (Q27, 3 pages) | RUNNING (build with regression guard) | executor |
+| 6 | Story pages set 1 and 2 (Q25 Q26, 8 pages) | DONE and live; PEL outside check passed (brief section 24) | - |
+| 7 | Story pages set 3 (Q27, 3 pages) | DONE and live; 8 existing story pages unchanged | PEL final outside check |
 | 8 | Clinic editing guide (Q20) | DONE; clinic needs a GitHub username | clinic via owner |
 | 9 | Structured data (Q18 part 1) | DONE and live; Search Console after domain switch | - |
 | 10 | Lighthouse (Q21) | DONE and live | - |
@@ -161,7 +161,7 @@ Data file = PEL 0c07854 (111 live), identical to lead repo origin/main. Every im
 | 14 | About page (Q14) | OPEN | clinic answers |
 | 15 | Clinic domain switch (Q22) | OPEN | owner's order only |
 
-**Done: 10 of 15.**
+**Done: 11 of 15.** Every open row now waits on PEL, the clinic or the owner; no PWEB-only work is unblocked.
 
 Lessons recorded this session (docs/plans/INCIDENTS.md and memory): quote a check only after reading its exit code,
 and capture the exit code explicitly because shell errexit did not gate a heredoc check here; one polite fetch script
