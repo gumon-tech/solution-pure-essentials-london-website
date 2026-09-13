@@ -416,6 +416,73 @@ function main() {
       problems.push(`${slug}: room-photo sentence present in section(s) with a non-room image`);
     }
 
+    // Queue row Q41, PEL brief section 41, condition 1: a section carrying the room-photo
+    // sentence renders as its own <section data-section="id"> and shows only the room
+    // slots its markdown lists, exactly once each, with no filler image.
+    for (const s of sections.filter((sec) => sec.hasRoomSentence)) {
+      const m = new RegExp(`<section[^>]*data-section="${s.id}"[^>]*>([\\s\\S]*?)</section>`).exec(rawHtml);
+      if (!m) {
+        problems.push(`${slug}: room-photo section "${s.id}" not found as <section data-section="${s.id}">`);
+        continue;
+      }
+      const chunk = m[1];
+      const renderedSlots = [...chunk.matchAll(/<img\b[^>]*\bsrc="\/img\/gen\/([a-z0-9-]+?)-\d+\.(?:avif|webp|jpg)"/g)].map((x) => x[1]);
+      const nonRoom = renderedSlots.filter((slot) => !ROOM_SLOTS.has(slot));
+      const sameSet =
+        renderedSlots.length === s.imageSlots.length && [...s.imageSlots].sort().join() === [...renderedSlots].sort().join();
+      console.log(
+        `  room band "${s.id}": rendered [${renderedSlots.join(", ")}], md [${s.imageSlots.join(", ")}], ${
+          nonRoom.length === 0 && sameSet ? "OK" : "VIOLATED"
+        }`,
+      );
+      if (nonRoom.length) problems.push(`${slug}: room band "${s.id}" shows non-room image(s): ${nonRoom.join(", ")}`);
+      if (!sameSet) problems.push(`${slug}: room band "${s.id}" images differ from the slots its markdown lists`);
+    }
+
+    // Condition 2: every image file the page references is an existing file under public/
+    // (no new sizes), and fam-microneedling only uses its 480 and 663 files.
+    const imageRefs = new Set([...rawHtml.matchAll(/\/img\/gen\/[A-Za-z0-9_.-]+\.(?:avif|webp|jpg)/g)].map((x) => x[0]));
+    const missingFiles = [...imageRefs].filter((ref) => !existsSync(path.join("public", ref)));
+    const badMicroneedling = [...imageRefs].filter(
+      (ref) => ref.startsWith("/img/gen/fam-microneedling-") && !/^\/img\/gen\/fam-microneedling-(480|663)\./.test(ref),
+    );
+    console.log(
+      `  image files: ${imageRefs.size - missingFiles.length}/${imageRefs.size} exist in public/, fam-microneedling other sizes: ${badMicroneedling.length}`,
+    );
+    if (missingFiles.length) problems.push(`${slug}: image file(s) not in public/: ${missingFiles.join(", ")}`);
+    if (badMicroneedling.length) problems.push(`${slug}: fam-microneedling size(s) other than 480 and 663: ${badMicroneedling.join(", ")}`);
+
+    // Condition 3: where a price table renders, the price explanations in the markdown stay
+    // on the page, each row asks on WhatsApp with the live row's display_name (or name), and
+    // no held or review row is named.
+    if (priceRows.length > 0) {
+      const explanations = proseSentences.filter(
+        (sentence) => sentence.includes("The price shown is the price you pay.") || /"from"/.test(sentence),
+      );
+      const missingExplanations = explanations.filter((sentence) => !text.includes(normalizeWhitespace(sentence)));
+      const services = JSON.parse(readText("data/services.json")).services;
+      const bySlug = new Map(services.map((row) => [row.slug, row]));
+      const nameProblems = [];
+      for (const row of priceRows) {
+        const service = bySlug.get(row.slug);
+        if (!service || service.status !== "live") {
+          nameProblems.push(`${row.slug} is not a live row`);
+          continue;
+        }
+        const waName = service.display_name ?? service.name;
+        const expected = `I'd like to ask about ${waName}.\n\nRef: ${row.slug.toUpperCase()}`;
+        if (!waLinkTexts.some((t) => decodeEntities(t).includes(expected))) nameProblems.push(`${row.slug} has no wa.me link with "${waName}"`);
+      }
+      console.log(
+        `  price explanations: ${explanations.length - missingExplanations.length}/${explanations.length} on the page, WhatsApp names: ${
+          priceRows.length - nameProblems.length
+        }/${priceRows.length} live display_name or name`,
+      );
+      if (explanations.length === 0) problems.push(`${slug}: price table but no price explanation sentence in the markdown`);
+      if (missingExplanations.length) problems.push(`${slug}: price explanation(s) missing: ${missingExplanations.join(" / ")}`);
+      if (nameProblems.length) problems.push(`${slug}: price row name problem(s): ${nameProblems.join("; ")}`);
+    }
+
     console.log(
       `  "we will not recommend..." sentence: ${recommendSentenceCount} occurrence(s)` +
         (recommendSentenceCount <= 1 ? " (OK)" : " (VIOLATED, expected at most 1)"),

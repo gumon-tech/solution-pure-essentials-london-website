@@ -421,3 +421,33 @@ Category blocks on /treatments/ use the anchor `#cat-<category>` (for example `#
 | "Read about our clinic" | home, The clinic section | PEL38 |
 | "Plan your visit" | contact, Getting here section | PEL38 |
 | "Read the first visit guide" | home, How it works section | PEL38 |
+
+### Section eyebrow labels on the story pages (queue row Q41, approved by PEL, brief section 41)
+
+| Key | Source |
+|---|---|
+| PEL41 | PEL brief section 41 (2026-09-13): approves the section eyebrow labels below, and a hero eyebrow on each story that uses the story's short title (front matter `short`, see NAV36) |
+
+| Label | Where it shows | Source |
+|---|---|---|
+| Hero eyebrow: the story's short title, e.g. "Body contouring" | above the h1 on each of the 11 stories | PEL41; front matter `short`, otherwise the h1 without " in King's Cross" |
+| "What it is" | section what-it-is | PEL41 |
+| "Who it may suit" | section who-it-may-suit | PEL41 |
+| "Your visit" | section your-visit | PEL41 |
+| "Prices" | section prices | PEL41 |
+| "Aftercare" | section aftercare | PEL41 |
+| "Questions" | above "Frequently asked questions" | PEL41 |
+| "How it works" | section how-it-works | PEL41 |
+| "The rooms" | section the-rooms | PEL41 |
+| "Where it is" | section where-it-is | PEL41 |
+| "Treatments" | section treatments | PEL41 |
+| "Message us" | section message-us | PEL41 |
+| "Finding the clinic" | section finding-the-clinic | PEL41 |
+| "Arriving" | section arriving | PEL41 |
+| "The consultation" | section the-consultation | PEL41 |
+| "Your treatment" | section your-treatment | PEL41 |
+| "What to message" | section what-to-message | PEL41 |
+| "What to expect" | section what-to-expect | PEL41 |
+| "Hours" | section hours | PEL41 |
+
+Sections call-to-action and booking-again show no label.
