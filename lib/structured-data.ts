@@ -128,6 +128,7 @@ export function clinicJsonLd() {
     legalName: SITE.company.legalName,
     url: `${SITE.url}/`,
     email: SITE.email,
+    telephone: SITE.phoneSchema,
     image: `${SITE.url}${homeHero.fallback}`,
     address: parseAddress(SITE.address),
     openingHoursSpecification: openingHoursSpecification(),

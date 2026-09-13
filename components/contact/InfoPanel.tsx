@@ -1,3 +1,4 @@
+import { Phone } from "lucide-react";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { SITE, waSite } from "@/lib/site";
 
@@ -41,6 +42,12 @@ export default function InfoPanel() {
               >
                 <WhatsAppIcon className="h-4 w-4" />
                 Message us
+              </a>
+            </li>
+            <li>
+              <a href={SITE.phoneHref} className={`inline-flex items-center gap-2 ${LINK_CLASS}`}>
+                <Phone className="h-4 w-4" aria-hidden="true" />
+                {SITE.phoneDisplay}
               </a>
             </li>
             <li>

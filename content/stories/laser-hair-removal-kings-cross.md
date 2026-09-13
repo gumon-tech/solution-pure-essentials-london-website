@@ -17,7 +17,20 @@ Laser and IPL hair removal at 155 King's Cross Road, 7 days a week. Every treatm
 
 Hair removal here is available with laser or with IPL, and each is priced by the size of the area. Sessions take from 15 minutes for a small IPL area to 1 hour 30 minutes for an extra large area.
 
-To find out which size your area counts as, ask on WhatsApp.
+Laser hair removal area sizes:
+
+- Medium area: underarms, buttocks, bikini line, crack, neck, shoulders, tummy line, face, full front bikini
+- Large area: arms, half legs, tummy, lower back, upper back, chest
+- Extra large area: full legs, Hollywood
+
+IPL hair removal area sizes:
+
+- Small area: upper lip, chin, sideburns
+- Medium area: underarms, bikini line
+- Large area: Hollywood, half leg, half arm
+- Extra large area: full leg, full back, full arms
+
+If your area is not listed, ask on WhatsApp which size it counts as.
 
 ## who-it-may-suit
 

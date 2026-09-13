@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Phone } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
 import { SITE, waSite } from "@/lib/site";
 
@@ -49,6 +50,12 @@ export default function Footer() {
                 >
                   <WhatsAppIcon className="h-4 w-4" />
                   WhatsApp
+                </a>
+              </li>
+              <li>
+                <a href={SITE.phoneHref} className={`inline-flex items-center gap-2 ${LINK_CLASS}`}>
+                  <Phone className="h-4 w-4" aria-hidden="true" />
+                  {SITE.phoneDisplay}
                 </a>
               </li>
               <li>

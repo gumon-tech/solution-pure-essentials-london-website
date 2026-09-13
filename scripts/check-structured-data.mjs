@@ -9,10 +9,12 @@
 //
 // For each of out/index.html and out/contact/index.html: parses every
 // application/ld+json block, prints @type, name, address fields, opening hours
-// entries, priceRange and identifier, and fails on a JSON parse error or on any key
-// named telephone/geo/aggregateRating/review anywhere in the block. Across both
-// pages, fails if 0 blocks were found, or if address parts / hours / email / price
-// range min and max do not match the site's own source files. Also counts
+// entries, telephone, priceRange and identifier, and fails on a JSON parse error or on
+// any key named geo/aggregateRating/review anywhere in the block. Across both pages,
+// fails if 0 blocks were found, or if address parts / hours / email / telephone /
+// price range min and max do not match the site's own source files. telephone was
+// forbidden until queue row Q29 (PEL ruling 2026-09-13 added the clinic landline); it
+// must now equal SITE.phoneSchema in lib/site.ts on the clinic block of both pages. Also counts
 // application/ld+json blocks in out/treatments/aesthetics_1_hifu/index.html and
 // expects exactly 2 (unchanged family-page markup: BreadcrumbList + Service).
 //
@@ -22,7 +24,7 @@ import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
-const FORBIDDEN_KEYS = new Set(["telephone", "geo", "aggregaterating", "review"]);
+const FORBIDDEN_KEYS = new Set(["geo", "aggregaterating", "review"]);
 
 function readText(p) {
   return readFileSync(p, "utf8");
@@ -42,6 +44,7 @@ function loadSite() {
 
   const address = stringField(src, "address");
   const email = stringField(src, "email");
+  const phoneSchema = stringField(src, "phoneSchema");
 
   const hoursBlockMatch = /hours:\s*\[([\s\S]*?)\n\s*\],/.exec(src);
   if (!hoursBlockMatch) throw new Error("lib/site.ts: hours array not found");
@@ -55,7 +58,7 @@ function loadSite() {
   const legalName = stringField(companyBlock, "legalName");
   const number = stringField(companyBlock, "number");
 
-  return { address, email, hours, company: { legalName, number } };
+  return { address, email, phoneSchema, hours, company: { legalName, number } };
 }
 
 const ALL_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
@@ -102,6 +105,7 @@ function expectedFromSite(site) {
     postalCode,
     addressCountry: "GB",
     email: site.email,
+    telephone: site.phoneSchema,
     openingHours,
     legalName: site.company.legalName,
     identifierValue: site.company.number,
@@ -169,6 +173,7 @@ function main() {
   console.log("== expected (from lib/site.ts and data/services.json) ==");
   console.log(`  address: streetAddress="${expected.streetAddress}", addressLocality="${expected.addressLocality}", postalCode="${expected.postalCode}", addressCountry="${expected.addressCountry}"`);
   console.log(`  email: ${expected.email}`);
+  console.log(`  telephone: ${expected.telephone}`);
   console.log(`  opening hours: ${JSON.stringify(expected.openingHours)}`);
   console.log(`  priceRange: ${priceExpected.priceRange} (min slug: ${priceExpected.min.slug} £${priceExpected.min.price_gbp}, max slug: ${priceExpected.max.slug} £${priceExpected.max.price_gbp})`);
   console.log(`  legalName: ${expected.legalName}`);
@@ -214,6 +219,7 @@ function main() {
       console.log(`    name: ${JSON.stringify(parsed.name)}`);
       console.log(`    address: ${JSON.stringify(parsed.address)}`);
       console.log(`    openingHoursSpecification: ${JSON.stringify(parsed.openingHoursSpecification)}`);
+      console.log(`    telephone: ${JSON.stringify(parsed.telephone)}`);
       console.log(`    priceRange: ${JSON.stringify(parsed.priceRange)}`);
       console.log(`    identifier: ${JSON.stringify(parsed.identifier)}`);
 
@@ -243,6 +249,9 @@ function main() {
       }
       if (parsed.email !== expected.email) {
         problems.push(`${page.name} block ${i}: email mismatch (expected "${expected.email}", got "${JSON.stringify(parsed.email)}")`);
+      }
+      if (parsed.telephone !== expected.telephone) {
+        problems.push(`${page.name} block ${i}: telephone mismatch (expected "${expected.telephone}", got ${JSON.stringify(parsed.telephone)})`);
       }
       if (!deepEqual(parsed.openingHoursSpecification, expected.openingHours)) {
         problems.push(

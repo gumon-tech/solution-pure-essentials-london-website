@@ -3,6 +3,12 @@ export const SITE = {
   url: "https://pel.gumon.io",
   address: "155 King's Cross Road, London WC1X 9BN",
   email: "info@pureessentialslondon.com",
+  // Clinic landline (PEL ruling 2026-09-13, queue row Q29): 0207 278 5812 written in
+  // standard UK grouping for display, E.164 for the tel: link, international form for
+  // JSON-LD. The old mobile number is not used anywhere.
+  phoneDisplay: "020 7278 5812",
+  phoneHref: "tel:+442072785812",
+  phoneSchema: "+44 20 7278 5812",
   instagram: "https://www.instagram.com/pureessentialslondon/",
   treatwell: "https://www.treatwell.co.uk/place/pure-essentials/",
   whatsappNumber: "447767496803",

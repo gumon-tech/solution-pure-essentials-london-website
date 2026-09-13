@@ -17,7 +17,7 @@ Waxing for ladies and men at 155 King's Cross Road, 7 days a week. Every treatme
 
 Ladies' waxing covers the face, underarm, arms, legs and body, and the bikini, Brazilian, G-String and Hollywood. The face and underarm are waxed with hot wax, and the arms and legs with strip wax.
 
-Men's waxing covers the eyebrow, arms, legs, half chest, shoulder and stomach. Sessions take from 10 minutes to 1 hour.
+Men's waxing covers the eyebrow, arms, legs, half chest, shoulder and stomach. Men's waxing does not include intimate areas. Sessions take from 10 minutes to 1 hour.
 
 ## who-it-may-suit
 
