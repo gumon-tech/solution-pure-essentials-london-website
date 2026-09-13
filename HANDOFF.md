@@ -134,28 +134,35 @@ ls "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essen
 
 ## กระดานเป้าหมาย
 
-Measured 2026-09-13T05:3xZ by PWEB (main at 1009f7d). Standing order A8: re-measure every time.
+Measured 2026-09-13T06:2xZ by PWEB (main at c9568da). Standing order A8: re-measure every time.
 
-**Last reached:** owner approved all decisions (docs/plans/DECISIONS-2026-09-13.md, daf5599) with 3 new
-rules: image-led and people-led, Gemini allowed and client photos editable, many storytelling pages.
-Queue is live (27 rows). Pages enabled with build_type workflow; first deploys running.
+**Last reached:** pel.gumon.io live with HTTPS; /treatments/ deployed with 110 rows and placeholder images;
+image set (14 people images, 4 real rooms) approved by PEL with the footer line "Some images on this site
+are illustrative."; copy set 1 approved by PEL with 8 rulings applied; image pipeline merged (18 slots).
 
 | # | Goal | State | Holder / waiting on |
 |---|---|---|---|
-| 1 | Resume, research, direction, owner decisions | DONE | - |
-| 2 | Lead and Executor applied (LEAD, EXECUTOR-BRIEF, DEFINITION-OF-DONE, QUEUE) | DONE | - |
-| 3 | Phase 0 scaffold Q1 Q2 Q4 Q6 | DONE, Lead re-run on each (79ca98b, 7f44e82, 4fc2fe3, 1009f7d) | - |
-| 4 | Q3 layout shell | RUNNING | executor |
-| 5 | Q23 imagery guideline | REVIEW, written b87c4d7, section 9 waits | SHOP and WS answers |
-| 6 | Q24 generated image set (13 shots x 2) | RUNNING; home hero passed Lead check | executor, then Lead by eye |
-| 7 | Q5 client photos edited warm | RUNNING (part 1) | executor |
-| 8 | Copy for home, contact, 4 story pages | RUNNING | executor (opus) |
-| 9 | Monday preview Q7 to Q11 at pel.gumon.io | OPEN; Pages on, custom domain after first green deploy | PWEB |
-| 10 | Storytelling pages Q25 to Q27 | OPEN (set 1 copy running) | PWEB and PEL |
-| 11 | Phase 2 pages, legal, consent, tag, SEO | OPEN | PWEB |
-| 12 | Clinic domain switch Q22 | OPEN, owner's order only | owner |
+| 1 | Research, direction, owner decisions, Lead and Executor setup | DONE | - |
+| 2 | Scaffold Q1 Q2 Q3 Q4 Q6 | DONE, Lead re-run each | - |
+| 3 | Imagery guideline Q23 | DONE, SHOP and WS answers in section 9 | - |
+| 4 | People image set Q24 | DONE, 14 of 14 approved by PEL | - |
+| 5 | Room photos and pipeline Q5 | RUNNING: 18 slots merged 97dfa14, 6 category slots being added | executor |
+| 6 | Treatments page Q8 | DONE and live, placeholders until 6 category images land | - |
+| 7 | Domain and HTTPS Q10 | DONE | - |
+| 8 | Home Q7 and contact Q9 | RUNNING | executor |
+| 9 | External gate run Q11 | PART: 2 of 3 pages read | PWEB after 8 |
+| 10 | Copy set 1 (home, contact, 4 stories) | DONE, approved by PEL | - |
+| 11 | Treatment descriptions (21 of 24) | REVIEW | PEL, 5 questions |
+| 12 | Category images (6) | REVIEW | PEL |
+| 13 | Storytelling pages build Q25 to Q27 | OPEN | PWEB after 11 |
+| 14 | Legal pages, consent, tag, SEO Q14 to Q21 | OPEN | PWEB |
+| 15 | Clinic domain switch Q22 | OPEN, owner's order only | owner |
 
-**Done: 3 of 12.**
+**Done: 8 of 15.**
+
+Process lessons recorded this session: 2 commit messages quoted a check before it was read (59048ef, a49c6db,
+corrected in b5e8404 and 6c8ba9e; memory file read-exit-before-claiming). An executor fetched 13 client
+pages in parallel against the one-at-a-time rule; reported to PEL.
 
 ## Verify additions after the first resume
 
