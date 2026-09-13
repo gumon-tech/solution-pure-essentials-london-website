@@ -423,12 +423,15 @@ export default function StoryPage({ page }: { page: StoryPageData }) {
                       />
                     </div>
                   ) : null}
-                  <div className={`p-6 md:p-8 ${wide && showImage ? "lg:w-1/2 lg:self-center" : ""}`}>
-                    <h3 className="font-display text-2xl text-espresso">{family.title}</h3>
-                    {/* A wide card with no image flows its text into 2 columns on lg, so the
-                        card is not half empty; the wording is unchanged. */}
+                  {/* A wide card with no image puts the title in a left column and the text in
+                      a right column on lg, so the card is not half empty and no sentence is split
+                      across columns (PEL brief section 41 note); the wording is unchanged. */}
+                  <div
+                    className={`p-6 md:p-8 ${wide && showImage ? "lg:w-1/2 lg:self-center" : ""} ${wide && !showImage ? "lg:grid lg:grid-cols-12 lg:gap-12" : ""}`}
+                  >
+                    <h3 className={`font-display text-2xl text-espresso ${wide && !showImage ? "lg:col-span-4" : ""}`}>{family.title}</h3>
                     <div
-                      className={`mt-3 text-cocoa ${wide && !showImage ? "max-w-none lg:columns-2 lg:gap-12 [&>p]:mb-3" : "max-w-[65ch] space-y-3"}`}
+                      className={`mt-3 max-w-[65ch] space-y-3 text-cocoa ${wide && !showImage ? "lg:col-span-8 lg:mt-0" : ""}`}
                     >
                       {family.paragraphs.map((paragraph, i) => (
                         <p key={i}>{paragraph}</p>
