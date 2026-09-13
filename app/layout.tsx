@@ -3,6 +3,8 @@ import { Cormorant_Garamond, Jost } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyBar from "@/components/StickyBar";
+import ConsentScript from "@/components/ConsentScript";
+import ConsentBanner from "@/components/ConsentBanner";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -35,10 +37,12 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${display.variable} ${body.variable}`}>
       <body>
+        <ConsentScript />
         <Header />
         <main>{children}</main>
         <Footer />
         <StickyBar />
+        <ConsentBanner />
       </body>
     </html>
   );
