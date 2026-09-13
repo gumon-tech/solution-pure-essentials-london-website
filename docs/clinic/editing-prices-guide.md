@@ -35,10 +35,11 @@ A mistake cannot break the live website; it only stops your change from appearin
 
 ## 2. Before you start
 
-- You need a GitHub account that has access to the website repository. The agency adds you
+- You need a GitHub account that has access to the website repository. The agency (Gumon Technology) adds you
   and sends you the link to the repository page. Keep that link as a bookmark.
 - Never share your GitHub password with anyone, including the agency.
 - Never paste passwords, phone numbers or client details into ChatGPT or Gemini.
+- Use a computer, not a phone. The editor is hard to use on a phone screen.
 - Change 1 thing at a time. It makes any problem easy to find.
 
 ## 3. Change a price, step by step
@@ -79,8 +80,9 @@ for example `"duration": "1 hr 15 min",`.
 ## 4. How to check it worked
 
 1. Go back to the repository page and click the "Actions" tab at the top.
-2. The top line in the list is your change, with the message you wrote. Wait until it
-   shows a green tick. This usually takes a few minutes.
+2. The top line in the list is the latest change. If someone else changed the file at the same
+   time, look for the line with the message you wrote. Wait until that line shows a green
+   tick. This usually takes a few minutes.
 3. Open https://pel.gumon.io/treatments/ and find the treatment. If you still see the old
    price, refresh the page (Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac) after 1 or 2 minutes.
 
