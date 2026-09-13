@@ -22,7 +22,8 @@ Written 2026-09-13 by a PWEB executor for queue rows Q7, Q9 and Q25. Every sente
 | TFL | https://tfl.gov.uk/hub/stop/HUBKGX/king-s-cross-st-pancras read 2026-09-13: Circle, Hammersmith & City and Metropolitan; Northern; Piccadilly; Victoria |
 | UI | Lead brief format line: map note text (note removed 2026-09-13, the map now loads with the page) |
 | OD13 | Owner decision 2026-09-13 via the PWEB Lead brief: Treatwell is a clearly visible second booking route; the Treatwell widget and the map load straight away with no tap step |
-| PELC | PEL cookie-law ruling 2026-09-13 via the PWEB Lead: widget only on /book-online/ with a cookie line above it; static map image, no Google iframe; OpenStreetMap attribution required by the tile licence |
+| PELC | PEL cookie-law ruling 2026-09-13 via the PWEB Lead: widget only on /book-online/ with a cookie line above it; static map image, no Google iframe; OpenStreetMap attribution required by the tile licence (map part replaced by OD13B) |
+| OD13B | Owner decision 2026-09-13 (queue row Q37), with a screenshot of the Taitam-D contact page: embed a live Google map instead of the static image |
 
 Edits made to PEL sentences (cuts and number format only, no additions): "seven" written as "7" (Arabic numerals rule for public content); "HIFU lifting" cut to "HIFU" (device outcome wording); "cryolipolysis" cut from the Body line (the data name is Cryoelectrolipolysis, see report); "two minutes from King's Cross St Pancras" cut (walking minutes are forbidden, not measured); "and national rail" and the bus sentence cut from Getting here (not shown on the TfL page).
 
@@ -71,9 +72,8 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | "King's Cross St Pancras (Circle, Hammersmith and City, Metropolitan, Northern, Piccadilly, Victoria lines) is the nearest station." | PEL:Contact Getting here, cut; line names checked against TFL |
 | "Book online" (link to /book-online/) | Lead brief 2026-09-13; F4, OD13, PELC |
 | h2 "Find us on the map" | UI heading already in components/contact/MapSection.tsx (the tap note was removed per OD13) |
-| Map image alt "Map showing Pure Essentials London at 155 King's Cross Road, London WC1X 9BN" | PELC; F1 |
-| "Open in Google Maps" | PELC (tapping the map opens Google Maps) |
-| "Map data © OpenStreetMap contributors" | PELC; OpenStreetMap tile licence |
+| Map iframe title "Map showing Pure Essentials London at 155 King's Cross Road, London WC1X 9BN" | OD13B; F1 |
+| "Open in Google Maps" | PELC; kept under the embedded map by OD13B |
 | Footer | PEL:Footer; F6, F1, F3 |
 
 ## app/book-online/page.tsx (no content file; sentences written in the page)
