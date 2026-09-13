@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ArchImage from "@/components/ArchImage";
 import CategoryChips from "@/components/CategoryChips";
 import PriceList from "@/components/PriceList";
@@ -79,10 +80,28 @@ export default function TreatmentsPage() {
               >
                 <h3 className="font-display text-2xl text-espresso">{category.title}</h3>
 
+                {category.familyLinks.length > 0 ? (
+                  <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+                    {category.familyLinks.map((family) => (
+                      <li key={family.slug}>
+                        <Link
+                          href={`/treatments/${family.slug}/`}
+                          className="text-sm text-oak underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-arch"
+                        >
+                          {`About ${family.title}`}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+
                 <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1.6fr]">
                   <ArchImage
                     slot={category.image}
-                    className="order-first w-full md:order-none"
+                    // Capped on mobile (< 768px wide) so the first price row is
+                    // visible without scrolling past the image; desktop (md:)
+                    // unchanged (Lead message 2026-09-13, PEL's outside review).
+                    className="order-first max-h-[40vh] w-full object-cover md:order-none md:max-h-none"
                   />
                   <PriceList rows={category.rows} />
                 </div>

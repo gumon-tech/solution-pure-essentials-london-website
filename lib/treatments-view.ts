@@ -29,6 +29,7 @@ import { liveServices, waLink, type Service } from "./services";
 import { GROUPS, type CategoryId, type GroupId } from "./groups";
 import { IMAGES } from "./images";
 import { FAMILIES } from "./families";
+import { getFamilyPages } from "./family-pages";
 
 import servicesFile from "@/data/services.json";
 
@@ -40,6 +41,16 @@ export interface TreatmentRow {
   duration: string | null;
   waHref: string;
   waAriaLabel: string;
+  /** /treatments/<family slug>/ when this row's booking slug is priced under a
+   * built family page (queue row Q12 part 2), otherwise null (row stays plain text). */
+  familyHref: string | null;
+}
+
+/** A built family page with no priced rows of its own (e.g. Cryopen) -- surfaced
+ * under its category so the page stays reachable from /treatments/ (Q12 part 2). */
+export interface CategoryFamilyLink {
+  slug: string;
+  title: string;
 }
 
 export interface CategoryBlock {
@@ -47,6 +58,7 @@ export interface CategoryBlock {
   title: string;
   image: keyof typeof IMAGES;
   rows: TreatmentRow[];
+  familyLinks: CategoryFamilyLink[];
 }
 
 export interface GroupSection {
@@ -86,6 +98,31 @@ function displayNameOf(s: Service): string {
   return s.display_name ?? s.name;
 }
 
+// Acronyms kept upper case when an all-caps row name is title-cased for display
+// (Q12 part 2 addition, Lead message 2026-09-13: PEL's review). The data file's
+// name/display_name fields are never edited -- this only affects what renders.
+const KEPT_ACRONYMS = new Set(["HIFU", "IPL", "MX", "RF", "LED"]);
+
+function isFullyUpperCase(name: string): boolean {
+  return /[A-Z]/.test(name) && name === name.toUpperCase();
+}
+
+function titleCaseWord(word: string): string {
+  if (KEPT_ACRONYMS.has(word)) return word;
+  return word.slice(0, 1) + word.slice(1).toLowerCase();
+}
+
+/** Title-cases a row name that is entirely upper case (e.g. "AGE DEFENCE
+ * SENSITIVE SKIN TREATMENT" -> "Age Defence Sensitive Skin Treatment"), keeping
+ * KEPT_ACRONYMS upper case (e.g. "ETHEREA MX" -> "Etherea MX", "HIFU" -> "HIFU").
+ * A name that already mixes case is returned unchanged. Used for the on-page
+ * text, the WhatsApp prefilled message and the aria-label alike, so all three
+ * show the same name. */
+function toDisplayName(name: string): string {
+  if (!isFullyUpperCase(name)) return name;
+  return name.replace(/[A-Za-z]+/g, (word) => titleCaseWord(word));
+}
+
 function normalizeName(name: string): string {
   return name.toLowerCase().replace(/\s+/g, "");
 }
@@ -106,8 +143,11 @@ const FAMILY_PRICED_SLUGS = new Set(
   FAMILIES.filter((f) => f.priced.length > 0).map((f) => f.slug),
 );
 
-function toRow(s: Service): TreatmentRow {
-  const name = displayNameOf(s);
+function toRow(s: Service, familyHrefByBookingSlug: Map<string, string>): TreatmentRow {
+  // Sorting (buildTreatmentsView, below) uses displayNameOf(s) directly, unaffected
+  // by the title-casing here, so an all-caps name's position in the list never
+  // moves just because its rendered text changed case.
+  const name = toDisplayName(displayNameOf(s));
   return {
     slug: s.slug,
     name,
@@ -116,6 +156,7 @@ function toRow(s: Service): TreatmentRow {
     duration: s.duration,
     waHref: waLink(name, s.slug),
     waAriaLabel: `Ask about ${name} on WhatsApp`,
+    familyHref: familyHrefByBookingSlug.get(s.slug) ?? null,
   };
 }
 
@@ -124,6 +165,26 @@ function toRow(s: Service): TreatmentRow {
  * this output because liveServices() already excludes them. */
 export function buildTreatmentsView(): GroupSection[] {
   const live = liveServices();
+  const familyPages = getFamilyPages();
+
+  // Booking slug -> /treatments/<family slug>/, for every priced row of every built
+  // family page (Q12 part 2: the price-list row name becomes a link there).
+  const familyHrefByBookingSlug = new Map<string, string>();
+  for (const page of familyPages) {
+    for (const row of page.priced) {
+      familyHrefByBookingSlug.set(row.slug, `/treatments/${page.slug}/`);
+    }
+  }
+
+  // Built family pages with 0 priced rows (e.g. Cryopen), grouped by category, in
+  // lib/families.ts's declared order -- otherwise unreachable from /treatments/.
+  const zeroPricedFamiliesByCategory = new Map<CategoryId, CategoryFamilyLink[]>();
+  for (const page of familyPages) {
+    if (page.priced.length > 0) continue;
+    const list = zeroPricedFamiliesByCategory.get(page.category) ?? [];
+    list.push({ slug: page.slug, title: page.title });
+    zeroPricedFamiliesByCategory.set(page.category, list);
+  }
 
   const byCategory = new Map<string, Service[]>();
   for (const s of live) {
@@ -160,7 +221,8 @@ export function buildTreatmentsView(): GroupSection[] {
         id: categoryId,
         title: CATEGORY_TITLES[categoryId] ?? categoryId,
         image: CATEGORY_IMAGE[categoryId],
-        rows: [...priced, ...quote].map(toRow),
+        rows: [...priced, ...quote].map((r) => toRow(r, familyHrefByBookingSlug)),
+        familyLinks: zeroPricedFamiliesByCategory.get(categoryId) ?? [],
       };
     }),
   }));
