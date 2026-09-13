@@ -162,3 +162,29 @@ the finger count are recorded on queue row Q24.
   public: no real faces without consent, no clinic customer data in any image.
 - **PEL decides which images go on the site.** PWEB proposes a set with the checklist results; PEL
   approves before deploy.
+
+## 10. Image register (chosen images and their provenance)
+
+Lead check 2026-09-13: every image below was viewed on a contact sheet and its hands at full-size crop;
+each visible hand has 4 fingers and 1 thumb on one wrist, no merging between people, no needle, no
+readable text, brightness 55 or more on the 24x24 scale (measured by the executor, 55.5 to 68.6).
+Sources and prompt sidecars are on OneDrive `10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/`.
+Model for all: gemini-3.1-flash-image via bin/ask-gemini, generated 2026-09-13. All are AI images: alt text
+follows section 4. Approval before deploy: PEL.
+
+| Slot | Chosen file | Rejected alternative and why |
+|---|---|---|
+| home-hero | home-hero-a.jpg (crop top edge) | none generated |
+| face-card | face-card-b.jpg | a: fine, b has the cleaner hand line |
+| body-card | body-card-a.jpg | b: fine, a is warmer |
+| laser-card | laser-card-a.jpg | b: REJECT, the word LASER printed on the device |
+| wellness-card | wellness-card-b.jpg | a: fine |
+| step-1-message | step-1-message-b.jpg | a: fine |
+| step-2-consultation | step-2-consultation-a.jpg | b: fine |
+| step-3-treatment | step-3-treatment-b.jpg | a: fine; both show the therapist's face, accepted (generated person) |
+| step-4-aftercare | step-4-aftercare-b.jpg | a: fine, b smiles |
+| contact-welcome | contact-welcome-a.jpg | b: fine |
+| story-hifu | story-hifu-b.jpg | a: fine, b has fewer hands |
+| story-facials | story-facials-b.jpg | a: fine |
+| story-body-contouring | story-body-contouring-b.jpg | a: tablet shows an unreadable body diagram, b keeps the screen out of view |
+| story-laser-hair | pending attempts c to e | a and b: REJECT, fabricated brand text on the handpiece |
