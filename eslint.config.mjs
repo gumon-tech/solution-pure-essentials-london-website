@@ -10,7 +10,7 @@ const eslintConfig = [
   {
     // `next lint` skipped these implicitly. Flat config has no such default,
     // so linting would otherwise walk the build output.
-    ignores: ["node_modules/**", ".next/**", ".next-*/**", "out/**", "next-env.d.ts"],
+    ignores: [".claude/**", "node_modules/**", ".next/**", ".next-*/**", "out/**", "next-env.d.ts"],
   },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
