@@ -103,3 +103,8 @@ M1  dig +short MX pureessentialslondon.com (2026-09-13)
 | Links to WhatsApp, Treatwell, Instagram | G2; lib/site.ts |
 | Governed by the law of England and Wales | Q15 spec; lib/site.ts `jurisdiction` |
 | WhatsApp from any page | app/layout.tsx renders Header, Footer and StickyBar on every page, each with a WhatsApp link |
+
+
+## PEL approval and interim wording, 2026-09-13
+
+Approved under standing order A7 (lead repo brief section 15). PEL supplied verbatim: the GitHub logs sentence, the retention sentence (a criterion instead of fixed periods), and the cancellation sentence. "Last updated" is filled with the deploy date in ISO form at publish. The 3 sentences removed by the executor stay out until the clinic confirms them.

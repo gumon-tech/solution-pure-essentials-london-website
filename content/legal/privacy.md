@@ -34,7 +34,7 @@ companies until you click a link.
 
 The website is hosted by GitHub Pages, a service of GitHub. When you visit, your browser connects
 to GitHub's servers, and GitHub receives your IP address. GitHub logs IP addresses for security
-purposes. GitHub handles those logs under its own privacy statement. We do not receive them.
+purposes. GitHub keeps those logs; we have no access to them.
 
 ## When you contact us
 
@@ -97,9 +97,7 @@ Their own privacy notices explain how they protect it.
 
 ## How long we keep your information
 
-- WhatsApp chats: [PEL to confirm with the clinic]
-- Emails: [PEL to confirm with the clinic]
-- Booking records: [PEL to confirm with the clinic]
+We keep WhatsApp chats, emails and booking records for as long as we need them to arrange and provide your appointment and to meet our legal duties, and then delete them.
 
 ## Your rights
 

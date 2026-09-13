@@ -28,7 +28,7 @@ This website does not take bookings or payments. Availability and bookings are c
 clinic, either on WhatsApp or through Treatwell. A booking made through Treatwell is also covered by
 Treatwell's own terms.
 
-Cancellations and changes: [PEL to confirm the clinic's cancellation policy]
+Cancellations and changes: Please tell us as early as you can if you need to change or cancel. The clinic confirms its cancellation terms when you book, on WhatsApp or through Treatwell.
 
 ## Treatments
 
