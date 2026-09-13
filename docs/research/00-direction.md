@@ -75,7 +75,7 @@ autoplay video, no cursor effects.
 - White rooms: warm grade (+8 to +12 warmth, slight lift of shadows), use small in a row of 3
   arches on /contact and in category cards, never full-bleed.
 - Certificate wall: not published until blurred (already ruled).
-- The Valmont room: origin unknown; not published until the clinic confirms it is theirs.
+- The Valmont room: confirmed the clinic's own (PEL 2026-09-13, F sent it in the venue set). Usable; crop so the brand sign is not the subject.
 - Photo brief for the clinic (after Monday, through PEL): 12 to 20 photos of people being made
   beautiful (hands on a face during a facial, a client at reception, a therapist preparing a
   room), warm light, no needle in frame, no faces of real clients without written permission,
