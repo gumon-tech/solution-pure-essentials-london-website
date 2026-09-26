@@ -17,6 +17,15 @@
 // aesthetics_body_3d_lipo, aesthetics_body_hifu_body). aesthetics_1_emsculpt is still
 // listed below as a family, with an empty priced list, so both merged rows show up in
 // the report and neither is silently dropped.
+//
+// Queue row Q42 (clinic feedback 2026-09-18): the Etherea MX and Eberlin Facial families
+// are gone (their rows are status "removed" in data/services.json). Titles follow the
+// clinic's new names. CryoPen lists its own cms row as priced, because that row now
+// carries the price (From £65) and CryoPen is a family page of its own; a family that
+// lists only itself keeps its row on /treatments/ (lib/treatments-view.ts). The
+// Carboxytherapy family lists the clinic's 3 carboxytherapy rows so its unpriced cms row
+// no longer shows next to them, and HIFU Body now includes the large area row, which the
+// clinic renamed to a HIFU row.
 import type { CategoryId } from "./groups";
 
 export interface Family {
@@ -33,7 +42,7 @@ export const FAMILIES: Family[] = [
     slug: "aesthetics_1_cryopen",
     title: "CryoPen",
     category: "laser",
-    priced: [],
+    priced: ["aesthetics_1_cryopen"],
   },
   {
     slug: "aesthetics_1_emsculpt",
@@ -45,14 +54,8 @@ export const FAMILIES: Family[] = [
     priced: [],
   },
   {
-    slug: "aesthetics_1_etherea_mx",
-    title: "Etherea MX",
-    category: "laser",
-    priced: [],
-  },
-  {
     slug: "aesthetics_1_golden_micro_needling",
-    title: "Golden Micro Needling",
+    title: "Fractional Radiofrequency Microneedling",
     category: "skin",
     priced: [],
   },
@@ -109,7 +112,9 @@ export const FAMILIES: Family[] = [
     slug: "aesthetics_body_carboxytherapy",
     title: "Carboxytherapy",
     category: "carboxy",
-    priced: [], // both rows moved to review by PEL 2026-09-13 (lead repo bf55134)
+    // The 2 condition-named rows were moved to review by PEL 2026-09-13 (lead repo bf55134);
+    // these are the clinic's carboxytherapy rows of 2026-09-18 (Q42 A14).
+    priced: ["collagen", "carboxytherapy_face_eyes_45", "carboxytherapy_body"],
   },
   {
     slug: "aesthetics_body_emsculpt",
@@ -124,6 +129,7 @@ export const FAMILIES: Family[] = [
     priced: [
       "hifu_med_area_flappy_arms_lovehandle",
       "hifu_small_area_knees_armpit_bust_lift",
+      "large_area_outer_thighs_full_stomach",
     ],
   },
   {
@@ -148,7 +154,7 @@ export const FAMILIES: Family[] = [
   },
   {
     slug: "aesthetics_body_profhilo_body",
-    title: "Profhilo Body",
+    title: "Profhilo Body Treatment",
     category: "skinboosters",
     priced: [],
   },
@@ -165,19 +171,13 @@ export const FAMILIES: Family[] = [
   },
   {
     slug: "facials_1_age_defence_sensitive_skin_treatment",
-    title: "Age Defence Sensitive Skin Treatment",
+    title: "Anti-Aging Facial",
     category: "facials",
     priced: [],
   },
   {
     slug: "facials_1_diamondtome_microdermabrasion",
-    title: "Diamondtome Microdermabrasion",
-    category: "facials",
-    priced: [],
-  },
-  {
-    slug: "facials_1_eberlin_facial",
-    title: "Eberlin Facial",
+    title: "DiamondTome Microdermabrasion",
     category: "facials",
     priced: [],
   },

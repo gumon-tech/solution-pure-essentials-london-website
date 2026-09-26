@@ -12,7 +12,6 @@ import type { ImageSlot } from "@/lib/images";
 export const FAMILY_IMAGE_SLOT: Partial<Record<string, ImageSlot>> = {
   aesthetics_1_hifu: "fam-hifu-face",
   aesthetics_1_cryopen: "fam-cryotherapy",
-  aesthetics_1_etherea_mx: "fam-light-platform",
   aesthetics_1_ipl_intense_pulsed_light: "fam-ipl",
   aesthetics_1_pico_laser: "fam-pico-laser",
   aesthetics_body_tattoo_removal: "fam-tattoo-removal",
@@ -30,5 +29,4 @@ export const FAMILY_IMAGE_SLOT: Partial<Record<string, ImageSlot>> = {
   aesthetics_1_hydro_facial: "fam-hydrating-facial",
   facials_1_age_defence_sensitive_skin_treatment: "fam-sensitive-skin-facial",
   facials_1_diamondtome_microdermabrasion: "fam-microdermabrasion",
-  facials_1_eberlin_facial: "fam-botanical-facial",
 };

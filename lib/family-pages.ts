@@ -18,6 +18,7 @@ import { FAMILIES, type Family } from "./families";
 import { liveServices, waLink } from "./services";
 import { GROUPS, groupOf, type GroupId } from "./groups";
 import { storyForCategory } from "./story-map";
+import { titleCase } from "./titleCase";
 
 export interface FamilyPriceRow {
   slug: string;
@@ -130,7 +131,8 @@ function getDescribedFamilies(): FamilyPage[] {
     for (const bookingSlug of family.priced) {
       const service = liveBySlug.get(bookingSlug);
       if (!service) continue; // defensive: only live priced rows render
-      const name = service.display_name ?? service.name;
+      // Queue row Q42 section C: service names render in Title Case.
+      const name = titleCase(service.display_name ?? service.name);
       priced.push({
         slug: service.slug,
         name,
@@ -145,7 +147,7 @@ function getDescribedFamilies(): FamilyPage[] {
     const groupId = groupOf(family.category);
     pages.push({
       slug: family.slug,
-      title: section.title,
+      title: titleCase(section.title),
       category: family.category,
       groupId,
       groupLabel: GROUPS.find((g) => g.id === groupId)?.label ?? "",

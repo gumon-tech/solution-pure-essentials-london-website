@@ -32,6 +32,8 @@ import { FAMILIES } from "./families";
 import { getFamilyPages } from "./family-pages";
 import { getStoryPage, storyShortTitle } from "./stories";
 import { storyForCategory, storyHref, topicInSentence } from "./story-map";
+import { getRowDescriptions } from "./row-descriptions";
+import { titleCase } from "./titleCase";
 
 import servicesFile from "@/data/services.json";
 
@@ -41,6 +43,9 @@ export interface TreatmentRow {
   priceGbp: number | null;
   priceFrom: boolean;
   duration: string | null;
+  /** The clinic's own description of the row, when content/treatment-descriptions.md's
+   * row-descriptions section has one (queue row Q42: the Japanese Head Spa rows). */
+  description: string | null;
   waHref: string;
   waAriaLabel: string;
 }
@@ -59,6 +64,9 @@ export interface CategoryBlock {
   /** 1 link to the category's story when lib/story-map.ts maps one; otherwise 1 link per
    * built family page in the category (skin laser); otherwise none (carboxy). */
   readMore: CategoryReadMore[];
+  /** An ordered steps list shown under the category's prices (queue row Q42: the Japanese
+   * Head Spa steps, in the clinic's words); empty for every other category. */
+  steps: string[];
 }
 
 export interface GroupSection {
@@ -79,6 +87,9 @@ export const CATEGORY_IMAGE: Record<CategoryId, keyof typeof IMAGES> = {
   hair: "story-laser-hair",
   facials: "face-card",
   massage: "wellness-card",
+  // Queue row Q42: an existing picture of a therapist's hands resting on a client's
+  // shoulders, freed when the Eberlin Facial family it illustrated was removed. No new image.
+  "head-spa": "fam-botanical-facial",
   "waxing-ladies": "cat-waxing-ladies",
   "waxing-men": "cat-waxing-men",
 };
@@ -86,7 +97,7 @@ export const CATEGORY_IMAGE: Record<CategoryId, keyof typeof IMAGES> = {
 const CATEGORY_TITLES: Record<string, string> = Object.fromEntries(
   (servicesFile as { categories: { id: string; title: string }[] }).categories.map((c) => [
     c.id,
-    c.title,
+    titleCase(c.title),
   ]),
 );
 
@@ -145,20 +156,23 @@ function isBookingSource(source: string): boolean {
  * showing "Ask for a quote" next to a price for the same treatment (Q8 pt 2
  * addition, Lead message 2026-09-13). */
 const FAMILY_PRICED_SLUGS = new Set(
-  FAMILIES.filter((f) => f.priced.length > 0).map((f) => f.slug),
+  // A family whose priced list is only its own row (CryoPen, queue row Q42) keeps that row.
+  FAMILIES.filter((f) => f.priced.some((slug) => slug !== f.slug)).map((f) => f.slug),
 );
 
 function toRow(s: Service): TreatmentRow {
   // Sorting (buildTreatmentsView, below) uses displayNameOf(s) directly, unaffected
   // by the title-casing here, so an all-caps name's position in the list never
   // moves just because its rendered text changed case.
-  const name = toDisplayName(displayNameOf(s));
+  // Queue row Q42 section C: every service name renders in Title Case (lib/titleCase.ts).
+  const name = titleCase(toDisplayName(displayNameOf(s)));
   return {
     slug: s.slug,
     name,
     priceGbp: s.price_gbp,
     priceFrom: s.price_from,
     duration: s.duration,
+    description: getRowDescriptions().rows.get(s.slug) ?? null,
     waHref: waLink(name, s.slug),
     waAriaLabel: `Ask about ${name} on WhatsApp`,
   };
@@ -181,13 +195,13 @@ export function buildTreatmentsView(): GroupSection[] {
       return [
         {
           href: storyHref(storySlug),
-          label: `Read about ${topicInSentence(storyShortTitle(story.frontMatter))}`,
+          label: titleCase(`Read about ${topicInSentence(storyShortTitle(story.frontMatter))}`),
         },
       ];
     }
     return familyPages
       .filter((page) => page.category === categoryId)
-      .map((page) => ({ href: `/treatments/${page.slug}/`, label: `Read about ${page.title}` }));
+      .map((page) => ({ href: `/treatments/${page.slug}/`, label: titleCase(`Read about ${page.title}`) }));
   }
 
   const byCategory = new Map<string, Service[]>();
@@ -227,6 +241,7 @@ export function buildTreatmentsView(): GroupSection[] {
         image: CATEGORY_IMAGE[categoryId],
         rows: [...priced, ...quote].map((r) => toRow(r)),
         readMore: readMoreFor(categoryId),
+        steps: getRowDescriptions().steps.get(categoryId) ?? [],
       };
     }),
   }));

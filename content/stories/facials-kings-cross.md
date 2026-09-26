@@ -1,6 +1,6 @@
 ---
 title: "Facials in King's Cross | Pure Essentials London"
-description: "Facials at 155 King's Cross Road, London, including a Hydrofacial and a Hydrating facial from £70. Every treatment starts with a free consultation."
+description: "Facials at 155 King's Cross Road, London, including a Hydrofacial and a Calming and Hydrating Facial, from £70. Every treatment starts with a free consultation."
 h1: "Facials in King's Cross"
 short: "Facials"
 ---
@@ -11,16 +11,16 @@ short: "Facials"
 
 Facials at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
 
-- Button (primary): Message us on WhatsApp
-- Button (secondary): See treatments and prices
+- Button (primary): Message Us on WhatsApp
+- Button (secondary): See Treatments and Prices
 
 ## what-it-is
 
 [image: fam-hydrating-facial]
 
-The facial menu includes a Hydrofacial and a Hydrating facial. An Age Defence Sensitive Skin Treatment, Diamondtome Microdermabrasion and an Eberlin Facial are also on the menu.
+The facial menu includes a Hydrofacial and a Calming and Hydrating Facial. An Anti-Aging Facial, a Brightening and Glowing Facial and DiamondTome Microdermabrasion are also on the menu.
 
-The Hydrofacial takes 1 hour and the Hydrating facial takes 1 hour 45 minutes.
+The Hydrofacial takes 1 hour and the Calming and Hydrating Facial takes 1 hour 45 minutes.
 
 ## who-it-may-suit
 
@@ -34,9 +34,9 @@ If you have a skin or health condition, or you are unsure about a facial, ask be
 
 [image: step-3-treatment]
 
-1. **Message us.** Tell us what you would like to ask about, on WhatsApp or by email.
-2. **Free consultation.** We look at your skin or your goal and recommend what suits you.
-3. **Your treatment.** Booked at a time that suits you, 7 days a week. The duration of each priced option is listed below.
+1. **Message Us.** Tell us what you would like to ask about, on WhatsApp or by email.
+2. **Free Consultation.** We look at your skin or your goal and recommend what suits you.
+3. **Your Treatment.** Booked at a time that suits you, 7 days a week. The duration of each priced option is listed below.
 
 You can also book through Treatwell.
 
@@ -44,11 +44,12 @@ You can also book through Treatwell.
 
 | Treatment | Duration | Price | Source slug |
 |---|---|---|---|
-| Hydrating | 1 hr 45 min | GBP 70 | hydrating |
+| DiamondTome Microdermabrasion (30 mins) | 30 min | GBP 70 | facials_1_diamondtome_microdermabrasion |
+| DiamondTome Microdermabrasion (1 hour) | 1 hr | GBP 85 | diamondtome_microdermabrasion_1_hr |
+| Calming and Hydrating Facial | 1 hr 45 min | GBP 90 | hydrating |
+| Anti-Aging Facial | ask | GBP 90 | facials_1_age_defence_sensitive_skin_treatment |
+| Brightening and Glowing Facial | ask | GBP 90 | brightening_and_glowing_facial |
 | Hydrofacial | 1 hr | GBP 100 | hydrofacial |
-| Age Defence Sensitive Skin Treatment | ask | Ask for a quote | facials_1_age_defence_sensitive_skin_treatment |
-| Diamondtome Microdermabrasion | ask | Ask for a quote | facials_1_diamondtome_microdermabrasion |
-| Eberlin Facial | ask | Ask for a quote | facials_1_eberlin_facial |
 
 [image: fam-sensitive-skin-facial]
 
@@ -62,22 +63,22 @@ You leave with clear aftercare advice and can message us with any question.
 
 ## faq
 
-**Where is the clinic?**
+**Where Is the Clinic?**
 155 King's Cross Road, London WC1X 9BN.
 
-**When are you open?**
+**When Are You Open?**
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
-**How much is a facial?**
-The Hydrating facial is £70 and the Hydrofacial is £100. For the other facials, ask for a quote on WhatsApp.
+**How Much Is a Facial?**
+DiamondTome Microdermabrasion starts at £70, the Calming and Hydrating Facial, the Anti-Aging Facial and the Brightening and Glowing Facial are £90, and the Hydrofacial is £100. Every option is listed on this page.
 
-**How long does a facial take?**
-The Hydrofacial takes 1 hour and the Hydrating facial takes 1 hour 45 minutes.
+**How Long Does a Facial Take?**
+The Hydrofacial takes 1 hour and the Calming and Hydrating Facial takes 1 hour 45 minutes.
 
-**Is the consultation free?**
+**Is the Consultation Free?**
 Yes. Consultations are free.
 
-**How do I book?**
+**How Do I Book?**
 Message us on WhatsApp. You can also book through Treatwell.
 
 ## call-to-action
@@ -86,5 +87,5 @@ Message us on WhatsApp. You can also book through Treatwell.
 
 Message us on WhatsApp and we will reply during opening hours.
 
-- Button (primary): Message us on WhatsApp
+- Button (primary): Message Us on WhatsApp
 - Button (secondary): Book on Treatwell

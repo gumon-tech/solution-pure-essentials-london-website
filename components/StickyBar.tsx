@@ -30,7 +30,7 @@ export default function StickyBar() {
           WhatsApp
         </a>
         <Link href="/book-online/" className={`${BUTTON_BASE} bg-cream text-espresso hover:bg-sand`}>
-          Book online
+          Book Online
         </Link>
       </div>
     </>

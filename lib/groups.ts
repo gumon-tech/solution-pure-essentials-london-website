@@ -3,7 +3,8 @@
 // "@/data/services.json" alias import needs a tsconfig path that does not exist yet
 // in this repo, and this module should typecheck on its own in the meantime.
 
-/** The 11 real category ids from data/services.json's `categories` list. */
+/** The real category ids from data/services.json's `categories` list (12 since queue row
+ * Q42 added "head-spa", the Japanese Head Spa). */
 export type CategoryId =
   | "hifu"
   | "laser"
@@ -14,6 +15,7 @@ export type CategoryId =
   | "hair"
   | "facials"
   | "massage"
+  | "head-spa"
   | "waxing-ladies"
   | "waxing-men";
 
@@ -25,7 +27,7 @@ export interface Group {
   categories: CategoryId[];
 }
 
-/** 4 groups over the 11 categories, in nav display order. */
+/** 4 groups over the 12 categories, in nav display order. */
 export const GROUPS: Group[] = [
   {
     id: "face",
@@ -39,13 +41,13 @@ export const GROUPS: Group[] = [
   },
   {
     id: "laser",
-    label: "Laser and hair removal",
+    label: "Laser and Hair Removal",
     categories: ["laser", "hair"],
   },
   {
     id: "wellness",
     label: "Wellness",
-    categories: ["massage", "waxing-ladies", "waxing-men"],
+    categories: ["massage", "head-spa", "waxing-ladies", "waxing-men"],
   },
 ];
 

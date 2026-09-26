@@ -1,8 +1,8 @@
 ---
 title: "Laser Hair Removal in King's Cross | Pure Essentials London"
 description: "Laser and IPL hair removal at 155 King's Cross Road, London, priced by area size. IPL from £25, laser from £35. Consultations are free."
-h1: "Laser hair removal in King's Cross"
-short: "Laser hair removal"
+h1: "Laser Hair Removal in King's Cross"
+short: "Laser Hair Removal"
 ---
 
 ## hero
@@ -11,8 +11,8 @@ short: "Laser hair removal"
 
 Laser and IPL hair removal at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
 
-- Button (primary): Message us on WhatsApp
-- Button (secondary): See treatments and prices
+- Button (primary): Message Us on WhatsApp
+- Button (secondary): See Treatments and Prices
 
 ## what-it-is
 
@@ -45,9 +45,9 @@ If you have a health condition, or you are unsure whether laser or IPL is right 
 
 [image: step-3-treatment]
 
-1. **Message us.** Tell us what you would like to ask about, on WhatsApp or by email.
-2. **Free consultation.** We look at your skin or your goal and recommend what suits you.
-3. **Your treatment.** Booked at a time that suits you, 7 days a week. The duration of each option is listed below.
+1. **Message Us.** Tell us what you would like to ask about, on WhatsApp or by email.
+2. **Free Consultation.** We look at your skin or your goal and recommend what suits you.
+3. **Your Treatment.** Booked at a time that suits you, 7 days a week. The duration of each option is listed below.
 
 You can also book through Treatwell.
 
@@ -55,7 +55,7 @@ You can also book through Treatwell.
 
 [image: fam-laser-hair]
 
-Laser hair removal
+Laser Hair Removal
 
 | Treatment | Duration | Price | Source slug |
 |---|---|---|---|
@@ -63,7 +63,7 @@ Laser hair removal
 | Laser Hair Removal Large Area | 45 min | GBP 60 | laser_hair_removal_large_area |
 | Laser Hair Removal Extra Large Area | 1 hr 30 min | GBP 80 | laser_hair_removal_extra_large_area |
 
-IPL hair removal
+IPL Hair Removal
 
 | Treatment | Duration | Price | Source slug |
 |---|---|---|---|
@@ -82,22 +82,22 @@ You leave with clear aftercare advice and can message us with any question.
 
 ## faq
 
-**Where is the clinic?**
+**Where Is the Clinic?**
 155 King's Cross Road, London WC1X 9BN.
 
-**When are you open?**
+**When Are You Open?**
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
-**How much does hair removal cost?**
+**How Much Does Hair Removal Cost?**
 IPL starts at £25 for a small area and laser at £35 for a medium area. Every option is listed on this page.
 
-**Should I choose laser or IPL?**
+**Should I Choose Laser or IPL?**
 Ask at the free consultation. We look at your skin or your goal and recommend what suits you.
 
-**How long does a session take?**
+**How Long Does a Session Take?**
 From 15 minutes for a small IPL area to 1 hour 30 minutes for an extra large area.
 
-**How do I book?**
+**How Do I Book?**
 Message us on WhatsApp. You can also book through Treatwell.
 
 ## call-to-action
@@ -106,5 +106,5 @@ Message us on WhatsApp. You can also book through Treatwell.
 
 Message us on WhatsApp and we will reply during opening hours.
 
-- Button (primary): Message us on WhatsApp
+- Button (primary): Message Us on WhatsApp
 - Button (secondary): Book on Treatwell

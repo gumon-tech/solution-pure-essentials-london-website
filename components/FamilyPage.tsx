@@ -27,6 +27,7 @@ const CATEGORY_IMAGE_SLOT: Record<CategoryId, ImageSlot> = {
   hair: "story-laser-hair",
   facials: "face-card",
   massage: "wellness-card",
+  "head-spa": "fam-botanical-facial",
   "waxing-ladies": "cat-waxing-ladies",
   "waxing-men": "cat-waxing-men",
 };
@@ -144,7 +145,7 @@ function RelatedCard({ page }: { page: FamilyPageData }) {
       <p className="mt-3 font-display text-lg text-espresso group-hover:text-oak">
         {page.title}
       </p>
-      <ReadMoreLabel className="mt-1">Read more</ReadMoreLabel>
+      <ReadMoreLabel className="mt-1">Read More</ReadMoreLabel>
     </Link>
   );
 }
@@ -251,7 +252,7 @@ export default function FamilyPage({ page }: { page: FamilyPageData }) {
             rel="noopener"
             className="pill inline-block rounded-full bg-oak px-6 py-3 text-white hover:opacity-90"
           >
-            Ask for a quote on WhatsApp
+            Ask for a Quote on WhatsApp
           </a>
         )}
       </section>
@@ -282,7 +283,7 @@ export default function FamilyPage({ page }: { page: FamilyPageData }) {
 
       {related.length > 0 ? (
         <section className="mx-auto max-w-6xl px-4 py-12 md:px-6">
-          <h2 className="font-display text-2xl text-espresso">You may also like</h2>
+          <h2 className="font-display text-2xl text-espresso">You May Also Like</h2>
           <div className="reveal mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3">
             {related.map((relatedPage) => (
               <RelatedCard key={relatedPage.slug} page={relatedPage} />

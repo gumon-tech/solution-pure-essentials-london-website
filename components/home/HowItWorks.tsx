@@ -13,17 +13,17 @@ const STEP_SIZES = "(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw";
 // the numbering visually).
 const STEPS: { title: string; sentence: string; slot: ImageSlot }[] = [
   {
-    title: "Message us",
+    title: "Message Us",
     sentence: "Tell us what you would like to change or ask about, on WhatsApp or by email.",
     slot: "step-1-message",
   },
   {
-    title: "Free consultation",
+    title: "Free Consultation",
     sentence: "We look at your skin or your goal and recommend what suits you.",
     slot: "step-2-consultation",
   },
   {
-    title: "Your treatment",
+    title: "Your Treatment",
     sentence: "Booked at a time that suits you, 7 days a week.",
     slot: "step-3-treatment",
   },
@@ -38,7 +38,7 @@ export default function HowItWorks() {
   return (
     <section className="bg-linen">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-16 lg:px-8">
-        <h2 className="reveal font-display text-4xl text-espresso">How it works</h2>
+        <h2 className="reveal font-display text-4xl text-espresso">How It Works</h2>
 
         <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {STEPS.map((step, index) => {

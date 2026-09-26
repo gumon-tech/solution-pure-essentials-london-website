@@ -23,7 +23,9 @@ const REQUIRED_SERVICE_KEYS = [
   "source",
   "note",
 ];
-const STATUS_ENUM = ["live", "held", "review"];
+// "removed" (queue row Q42): a row the clinic asked to take off the site. It stays in the
+// file for history and is never rendered (only "live" rows render).
+const STATUS_ENUM = ["live", "held", "review", "removed"];
 // The "held" sentinel is not one of the 11 real category ids in `categories`, but every
 // held-status row in the real file uses it as its category (verified 2026-09-13: all 59
 // held rows, no exception) instead of a real category id. Treated as always-valid here
@@ -115,6 +117,7 @@ function main() {
   let liveCount = 0;
   let heldCount = 0;
   let reviewCount = 0;
+  let removedCount = 0;
   let livePricedCount = 0;
   let liveNoPriceCount = 0;
 
@@ -190,6 +193,8 @@ function main() {
       heldCount++;
     } else if (svc.status === "review") {
       reviewCount++;
+    } else if (svc.status === "removed") {
+      removedCount++;
     }
   });
 
@@ -201,6 +206,7 @@ function main() {
   console.log(`live ${liveCount}`);
   console.log(`held ${heldCount}`);
   console.log(`review ${reviewCount}`);
+  console.log(`removed ${removedCount}`);
   console.log(`live priced ${livePricedCount}`);
   console.log(`live without price ${liveNoPriceCount}`);
 

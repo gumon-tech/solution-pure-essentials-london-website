@@ -4,7 +4,7 @@
   "categories": [
     {
       "id": "hifu",
-      "title": "HIFU face and neck"
+      "title": "HIFU (High-Intensity Focused Ultrasound)"
     },
     {
       "id": "laser",
@@ -37,6 +37,10 @@
     {
       "id": "massage",
       "title": "Massage"
+    },
+    {
+      "id": "head-spa",
+      "title": "Japanese Head Spa"
     },
     {
       "id": "waxing-ladies",
@@ -223,14 +227,38 @@
     {
       "slug": "collagen",
       "name": "Collagen",
+      "display_name": "Carboxytherapy - Face (30 mins)",
+      "category": "carboxy",
+      "status": "live",
+      "price_gbp": 150,
+      "price_from": false,
+      "duration": "30 min",
+      "source": "booking",
+      "note": "same name as another row, verify on /pricing"
+    },
+    {
+      "slug": "carboxytherapy_face_eyes_45",
+      "name": "Carboxytherapy - Face & Eyes (45 mins)",
       "display_name": null,
       "category": "carboxy",
       "status": "live",
-      "price_gbp": 90,
+      "price_gbp": 180,
       "price_from": false,
-      "duration": "1 hr 30 min",
-      "source": "booking",
-      "note": "same name as another row, verify on /pricing"
+      "duration": "45 min",
+      "source": "clinic WhatsApp 2026-09-18",
+      "note": "new row from K 2026-09-18 23:13 (Q42 A14)"
+    },
+    {
+      "slug": "carboxytherapy_body",
+      "name": "Carboxytherapy - Body",
+      "display_name": null,
+      "category": "carboxy",
+      "status": "live",
+      "price_gbp": 150,
+      "price_from": true,
+      "duration": null,
+      "source": "clinic WhatsApp 2026-09-18",
+      "note": "new row from K 2026-09-18 23:13; a from price (Q42 A14)"
     },
     {
       "slug": "collagen_production_full_face",
@@ -331,7 +359,7 @@
     {
       "slug": "cosmelan_depigmenting_including_home_kit",
       "name": "Cosmelan Depigmenting including home kit",
-      "display_name": null,
+      "display_name": "Cosmelan Depigmenting Chemical Peel Treatment (Including Home Kit)",
       "category": "skin",
       "status": "live",
       "price_gbp": 1300,
@@ -631,22 +659,22 @@
     {
       "slug": "hifu_med_area_flappy_arms_lovehandle",
       "name": "Hifu Med Area (Flappy arms/lovehandle)",
-      "display_name": "HIFU medium area (upper arms or waist)",
+      "display_name": "HIFU Medium Area (Upper Arms or Waist)",
       "category": "body",
       "status": "live",
-      "price_gbp": 280,
+      "price_gbp": 320,
       "price_from": false,
-      "duration": "1 hr 30 min",
+      "duration": "45 min",
       "source": "booking",
       "note": ""
     },
     {
       "slug": "hifu_small_area_knees_armpit_bust_lift",
       "name": "Hifu Small Area (Knees/Armpit/Bust lift)",
-      "display_name": "HIFU small area (knees, underarm or bust)",
+      "display_name": "HIFU Small Area (Knees, Underarm or Bust)",
       "category": "body",
       "status": "live",
-      "price_gbp": 140,
+      "price_gbp": 200,
       "price_from": false,
       "duration": "45 min",
       "source": "booking",
@@ -655,10 +683,10 @@
     {
       "slug": "hydrating",
       "name": "Hydrating",
-      "display_name": null,
+      "display_name": "Calming and Hydrating Facial",
       "category": "facials",
       "status": "live",
-      "price_gbp": 70,
+      "price_gbp": 90,
       "price_from": false,
       "duration": "1 hr 45 min",
       "source": "booking",
@@ -1039,12 +1067,12 @@
     {
       "slug": "large_area_outer_thighs_full_stomach",
       "name": "Large Area (Outer thighs/full stomach)",
-      "display_name": null,
+      "display_name": "HIFU Large Area (Outer Thighs or Full Stomach)",
       "category": "body",
       "status": "live",
       "price_gbp": 420,
       "price_from": false,
-      "duration": "1 hr 30 min",
+      "duration": "45 min",
       "source": "booking",
       "note": ""
     },
@@ -1087,7 +1115,7 @@
     {
       "slug": "lip_0_55ml",
       "name": "Lip (0.55ml)",
-      "display_name": null,
+      "display_name": "Dermal Filler (1mL)",
       "category": "skinboosters",
       "status": "live",
       "price_gbp": 350,
@@ -1095,6 +1123,18 @@
       "duration": "1 hr",
       "source": "booking",
       "note": ""
+    },
+    {
+      "slug": "prp_platelet_rich_plasma_injections",
+      "name": "PRP (Platelet-Rich Plasma) Injections",
+      "display_name": null,
+      "category": "skinboosters",
+      "status": "live",
+      "price_gbp": null,
+      "price_from": false,
+      "duration": null,
+      "source": "clinic WhatsApp 2026-09-21",
+      "note": "new row from F 2026-09-21 20:00; no price, consultation first (Q42 A23)"
     },
     {
       "slug": "localised_fat",
@@ -1363,7 +1403,7 @@
     {
       "slug": "pigmentations_ipl",
       "name": "Pigmentations IPL",
-      "display_name": null,
+      "display_name": "Pigmentation Reduction (IPL)",
       "category": "laser",
       "status": "live",
       "price_gbp": 99,
@@ -1375,7 +1415,7 @@
     {
       "slug": "pigmentations_picosure",
       "name": "Pigmentations Picosure",
-      "display_name": null,
+      "display_name": "Pigmentation Reduction (Picosure)",
       "category": "laser",
       "status": "live",
       "price_gbp": 150,
@@ -1387,7 +1427,7 @@
     {
       "slug": "pigmentations_qswitch",
       "name": "Pigmentations Qswitch",
-      "display_name": null,
+      "display_name": "Pigmentation Reduction (Q-switch)",
       "category": "laser",
       "status": "live",
       "price_gbp": 100,
@@ -1399,7 +1439,7 @@
     {
       "slug": "profhilo",
       "name": "Profhilo",
-      "display_name": null,
+      "display_name": "Profhilo Treatment (1 Session)",
       "category": "skinboosters",
       "status": "live",
       "price_gbp": 250,
@@ -1411,7 +1451,7 @@
     {
       "slug": "profhilo_2_sessions",
       "name": "Profhilo 2 Sessions",
-      "display_name": null,
+      "display_name": "Profhilo Treatment Course (2 Sessions)",
       "category": "skinboosters",
       "status": "live",
       "price_gbp": 400,
@@ -1543,7 +1583,7 @@
     {
       "slug": "skinox_pigmentation",
       "name": "Skinox Pigmentation",
-      "display_name": null,
+      "display_name": "Pigmentation Reduction Chemical Peel + Serum Treatment + LED Therapy",
       "category": "skin",
       "status": "live",
       "price_gbp": 135,
@@ -1555,7 +1595,7 @@
     {
       "slug": "skinox_redness",
       "name": "Skinox Redness",
-      "display_name": null,
+      "display_name": "Redness Reduction Chemical Peel + Serum Treatment + LED Therapy",
       "category": "skin",
       "status": "live",
       "price_gbp": 135,
@@ -1567,7 +1607,7 @@
     {
       "slug": "skinox_wrinkles",
       "name": "Skinox Wrinkles",
-      "display_name": null,
+      "display_name": "Wrinkle Reduction Chemical Peel + Serum Treatment + LED Therapy",
       "category": "skin",
       "status": "live",
       "price_gbp": 135,
@@ -1697,6 +1737,54 @@
       "note": "same name as another row, verify on /pricing"
     },
     {
+      "slug": "head_spa_ritual",
+      "name": "Ritual Head Spa",
+      "display_name": null,
+      "category": "head-spa",
+      "status": "live",
+      "price_gbp": 60,
+      "price_from": false,
+      "duration": "45 min",
+      "source": "clinic WhatsApp 2026-09-21",
+      "note": "new row from F 2026-09-21 13:36; description in content/treatment-descriptions.md row-descriptions (Q42 A22)"
+    },
+    {
+      "slug": "head_spa_exotic",
+      "name": "Exotic Head Spa",
+      "display_name": null,
+      "category": "head-spa",
+      "status": "live",
+      "price_gbp": 85,
+      "price_from": false,
+      "duration": "1 hr",
+      "source": "clinic WhatsApp 2026-09-21",
+      "note": "new row from F 2026-09-21 13:36; description in content/treatment-descriptions.md row-descriptions (Q42 A22)"
+    },
+    {
+      "slug": "head_spa_serenity",
+      "name": "Serenity Head Spa",
+      "display_name": null,
+      "category": "head-spa",
+      "status": "live",
+      "price_gbp": 125,
+      "price_from": false,
+      "duration": "1 hr 30 min",
+      "source": "clinic WhatsApp 2026-09-21",
+      "note": "new row from F 2026-09-21 13:36; description in content/treatment-descriptions.md row-descriptions (Q42 A22)"
+    },
+    {
+      "slug": "head_spa_royal_glow",
+      "name": "Royal Glow Head Spa",
+      "display_name": null,
+      "category": "head-spa",
+      "status": "live",
+      "price_gbp": 175,
+      "price_from": false,
+      "duration": "2 hr 15 min",
+      "source": "clinic WhatsApp 2026-09-21",
+      "note": "new row from F 2026-09-21 13:36; description in content/treatment-descriptions.md row-descriptions (Q42 A22)"
+    },
+    {
       "slug": "thermal_peel_rejuvenations",
       "name": "Thermal peel/Rejuvenations",
       "display_name": null,
@@ -1735,7 +1823,7 @@
     {
       "slug": "vascular_removal_vein_broken_capillari_1",
       "name": "Vascular removal(vein /broken capillari)",
-      "display_name": null,
+      "display_name": "Laser Vascular Reduction (Veins or Broken Capillaries)",
       "category": "laser",
       "status": "live",
       "price_gbp": 69,
@@ -1759,11 +1847,11 @@
     {
       "slug": "aesthetics_1_cryopen",
       "name": "CRYOPEN",
-      "display_name": null,
+      "display_name": "CryoPen",
       "category": "laser",
       "status": "live",
-      "price_gbp": null,
-      "price_from": false,
+      "price_gbp": 65,
+      "price_from": true,
       "duration": null,
       "source": "cms/aesthetics-1",
       "note": ""
@@ -1785,17 +1873,17 @@
       "name": "ETHEREA MX",
       "display_name": null,
       "category": "laser",
-      "status": "live",
+      "status": "removed",
       "price_gbp": null,
       "price_from": false,
       "duration": null,
       "source": "cms/aesthetics-1",
-      "note": ""
+      "note": "removed at the clinic's request 2026-09-18 (K)"
     },
     {
       "slug": "aesthetics_1_golden_micro_needling",
       "name": "GOLDEN MICRO NEEDLING",
-      "display_name": null,
+      "display_name": "Fractional Radiofrequency Microneedling",
       "category": "skin",
       "status": "live",
       "price_gbp": null,
@@ -1975,11 +2063,11 @@
     {
       "slug": "aesthetics_body_profhilo_body",
       "name": "PROFHILO BODY",
-      "display_name": null,
+      "display_name": "Profhilo Body Treatment",
       "category": "skinboosters",
       "status": "live",
-      "price_gbp": null,
-      "price_from": false,
+      "price_gbp": 580,
+      "price_from": true,
       "duration": null,
       "source": "cms/aesthetics-body",
       "note": ""
@@ -1999,38 +2087,62 @@
     {
       "slug": "facials_1_age_defence_sensitive_skin_treatment",
       "name": "AGE DEFENCE SENSITIVE SKIN TREATMENT",
-      "display_name": null,
+      "display_name": "Anti-Aging Facial",
       "category": "facials",
       "status": "live",
-      "price_gbp": null,
+      "price_gbp": 90,
       "price_from": false,
       "duration": null,
       "source": "cms/facials-1",
       "note": ""
     },
     {
-      "slug": "facials_1_diamondtome_microdermabrasion",
-      "name": "DIAMONDTOME MICRODERMABRASION",
+      "slug": "brightening_and_glowing_facial",
+      "name": "Brightening and Glowing Facial",
       "display_name": null,
       "category": "facials",
       "status": "live",
-      "price_gbp": null,
+      "price_gbp": 90,
       "price_from": false,
       "duration": null,
+      "source": "clinic WhatsApp 2026-09-18",
+      "note": "new row from K 2026-09-18 23:09; duration not given (Q42 A11)"
+    },
+    {
+      "slug": "facials_1_diamondtome_microdermabrasion",
+      "name": "DIAMONDTOME MICRODERMABRASION",
+      "display_name": "DiamondTome Microdermabrasion (30 mins)",
+      "category": "facials",
+      "status": "live",
+      "price_gbp": 70,
+      "price_from": false,
+      "duration": "30 min",
       "source": "cms/facials-1",
       "note": ""
+    },
+    {
+      "slug": "diamondtome_microdermabrasion_1_hr",
+      "name": "DiamondTome Microdermabrasion (1 hour)",
+      "display_name": null,
+      "category": "facials",
+      "status": "live",
+      "price_gbp": 85,
+      "price_from": false,
+      "duration": "1 hr",
+      "source": "clinic WhatsApp 2026-09-18",
+      "note": "new row from K 2026-09-18 23:11 (Q42 A12)"
     },
     {
       "slug": "facials_1_eberlin_facial",
       "name": "EBERLIN FACIAL",
       "display_name": null,
       "category": "facials",
-      "status": "live",
+      "status": "removed",
       "price_gbp": null,
       "price_from": false,
       "duration": null,
       "source": "cms/facials-1",
-      "note": ""
+      "note": "removed at the clinic's request 2026-09-18 (K)"
     },
     {
       "slug": "facials_1_mesotherapy_radio_frequency",

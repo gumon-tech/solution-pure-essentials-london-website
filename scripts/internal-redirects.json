@@ -1,5 +1,5 @@
 {
-  "_about": "In-site redirect map (queue row Q36, owner decision 2026-09-13: stories are separate from the price list). The 16 family pages whose category has a story in lib/story-map.ts are no longer built (lib/family-pages.ts skips them); each old path gets a redirect stub to that story. scripts/build-redirect-stubs.mjs writes out/<old>/index.html for every entry after next build, alongside scripts/redirects.json, and refuses to overwrite a real page; scripts/check-redirect-stubs.mjs verifies both maps. The 5 skin-laser family pages (no story) stay real pages and are not listed.",
+  "_about": "In-site redirect map (queue row Q36, owner decision 2026-09-13: stories are separate from the price list). The family pages whose category has a story (16 on 2026-09-13; 15 since queue row Q42 removed the Eberlin Facial row, whose stub went with it) in lib/story-map.ts are no longer built (lib/family-pages.ts skips them); each old path gets a redirect stub to that story. scripts/build-redirect-stubs.mjs writes out/<old>/index.html for every entry after next build, alongside scripts/redirects.json, and refuses to overwrite a real page; scripts/check-redirect-stubs.mjs verifies both maps. The 5 skin-laser family pages (no story) stay real pages and are not listed.",
   "entries": [
     { "old": "/treatments/aesthetics_1_hifu", "target": "/hifu-kings-cross/", "reason": "category hifu has a story" },
     { "old": "/treatments/aesthetics_1_golden_micro_needling", "target": "/microneedling-peels-kings-cross/", "reason": "category skin has a story" },
@@ -15,7 +15,6 @@
     { "old": "/treatments/aesthetics_body_laser_hair_removal_2F_ipl", "target": "/laser-hair-removal-kings-cross/", "reason": "category hair has a story" },
     { "old": "/treatments/aesthetics_1_hydro_facial", "target": "/facials-kings-cross/", "reason": "category facials has a story" },
     { "old": "/treatments/facials_1_age_defence_sensitive_skin_treatment", "target": "/facials-kings-cross/", "reason": "category facials has a story" },
-    { "old": "/treatments/facials_1_diamondtome_microdermabrasion", "target": "/facials-kings-cross/", "reason": "category facials has a story" },
-    { "old": "/treatments/facials_1_eberlin_facial", "target": "/facials-kings-cross/", "reason": "category facials has a story" }
+    { "old": "/treatments/facials_1_diamondtome_microdermabrasion", "target": "/facials-kings-cross/", "reason": "category facials has a story" }
   ]
 }

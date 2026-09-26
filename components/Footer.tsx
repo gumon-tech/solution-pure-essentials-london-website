@@ -5,6 +5,7 @@ import WhatsAppIcon from "./WhatsAppIcon";
 import { SITE, waSite } from "@/lib/site";
 import ReadMoreLink from "./ReadMoreLink";
 import { getStoryPage, storyShortTitle } from "@/lib/stories";
+import { titleCase } from "@/lib/titleCase";
 
 const ABOUT_SLUGS = ["our-clinic-kings-cross", "your-visit", "first-visit-guide"];
 
@@ -21,7 +22,7 @@ export default function Footer() {
             <p className="mt-3 text-sm">{SITE.address}</p>
             <p className="mt-2 text-sm">
               <Link href="/contact/" className={LINK_CLASS}>
-                Contact and map
+                Contact and Map
               </Link>
             </p>
           </div>
@@ -43,7 +44,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className="font-display text-lg text-espresso">About the clinic</h2>
+            <h2 className="font-display text-lg text-espresso">About the Clinic</h2>
             {/* Queue row Q36: entry points to the 3 set-3 story pages, named by their h1
                 without " in King's Cross". */}
             <ul className="mt-3 flex flex-col items-start gap-2 text-sm">
@@ -53,7 +54,7 @@ export default function Footer() {
                 return (
                   <li key={slug}>
                     <ReadMoreLink href={`/${slug}/`} className="focus-visible:ring-offset-sand">
-                      {storyShortTitle(page.frontMatter)}
+                      {titleCase(storyShortTitle(page.frontMatter))}
                     </ReadMoreLink>
                   </li>
                 );

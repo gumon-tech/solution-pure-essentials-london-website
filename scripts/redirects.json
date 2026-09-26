@@ -51,11 +51,10 @@
     {
       "old": "/aesthetics-1/etherea-mx",
       "rule": 1,
-      "target": "/treatments/aesthetics_1_etherea_mx/",
-      "stub_paths": [
-        "/aesthetics-1/etherea-mx/"
-      ],
+      "target": null,
       "row_slug": "aesthetics_1_etherea_mx",
+      "no_stub": "removed",
+      "reason": "row removed at the clinic's request 2026-09-18 (queue row Q42 A13/A21; data/services.json status removed): no stub",
       "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_etherea_mx, name \"ETHEREA MX\") = collection \"aesthetics-1\" + item slug \"etherea-mx\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category laser; out/treatments/aesthetics_1_etherea_mx/index.html built"
     },
     {
@@ -344,11 +343,10 @@
     {
       "old": "/facials-1/eberlin-facial",
       "rule": 1,
-      "target": "/facials-kings-cross/",
-      "stub_paths": [
-        "/facials-1/eberlin-facial/"
-      ],
+      "target": null,
       "row_slug": "facials_1_eberlin_facial",
+      "no_stub": "removed",
+      "reason": "row removed at the clinic's request 2026-09-18 (queue row Q42 A13/A21; data/services.json status removed): no stub",
       "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/facials-1, slug facials_1_eberlin_facial, name \"EBERLIN FACIAL\") = collection \"facials-1\" + item slug \"eberlin-facial\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category facials; family page facials_1_eberlin_facial retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
     },
     {

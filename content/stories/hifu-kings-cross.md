@@ -11,14 +11,14 @@ short: "HIFU"
 
 HIFU for the face and neck at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
 
-- Button (primary): Message us on WhatsApp
-- Button (secondary): See treatments and prices
+- Button (primary): Message Us on WhatsApp
+- Button (secondary): See Treatments and Prices
 
 ## what-it-is
 
 [image: fam-hifu-face]
 
-HIFU at Pure Essentials London is available for the full face, half face and neck, and for combinations of these areas. Sessions take from 45 minutes to 2 hours, depending on the area. HIFU is also available for small and medium areas of the body.
+HIFU at Pure Essentials London is available for the full face, half face and neck, and for combinations of these areas. Sessions take from 45 minutes to 2 hours, depending on the area. HIFU is also available for small, medium and large areas of the body.
 
 [image: room-analyser]
 
@@ -36,15 +36,15 @@ If you have a health condition, or you are unsure whether HIFU is right for you,
 
 [image: step-3-treatment]
 
-1. **Message us.** Tell us what you would like to ask about, on WhatsApp or by email.
-2. **Free consultation.** We look at your skin or your goal and recommend what suits you.
-3. **Your treatment.** Booked at a time that suits you, 7 days a week. The duration of each option is listed below.
+1. **Message Us.** Tell us what you would like to ask about, on WhatsApp or by email.
+2. **Free Consultation.** We look at your skin or your goal and recommend what suits you.
+3. **Your Treatment.** Booked at a time that suits you, 7 days a week. The duration of each option is listed below.
 
 You can also book through Treatwell.
 
 ## prices
 
-HIFU face and neck
+HIFU Face and Neck
 
 | Treatment | Duration | Price | Source slug |
 |---|---|---|---|
@@ -57,12 +57,13 @@ HIFU face and neck
 
 [image: fam-hifu-body]
 
-HIFU for the body
+HIFU for the Body
 
 | Treatment | Duration | Price | Source slug |
 |---|---|---|---|
-| HIFU small area (knees, underarm or bust) | 45 min | GBP 140 | hifu_small_area_knees_armpit_bust_lift |
-| HIFU medium area (upper arms or waist) | 1 hr 30 min | GBP 280 | hifu_med_area_flappy_arms_lovehandle |
+| HIFU Small Area (Knees, Underarm or Bust) | 45 min | GBP 200 | hifu_small_area_knees_armpit_bust_lift |
+| HIFU Medium Area (Upper Arms or Waist) | 45 min | GBP 320 | hifu_med_area_flappy_arms_lovehandle |
+| HIFU Large Area (Outer Thighs or Full Stomach) | 45 min | GBP 420 | large_area_outer_thighs_full_stomach |
 
 Aesthetic treatments are for adults aged 18 and over. The price shown is the price you pay.
 
@@ -74,22 +75,22 @@ You leave with clear aftercare advice and can message us with any question.
 
 ## faq
 
-**Where is the clinic?**
+**Where Is the Clinic?**
 155 King's Cross Road, London WC1X 9BN.
 
-**When are you open?**
+**When Are You Open?**
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
-**How much does HIFU cost?**
+**How Much Does HIFU Cost?**
 Face and neck options run from £280 for a half face to £560 for full face, chin and neck. Every option is listed on this page.
 
-**How long does a session take?**
+**How Long Does a Session Take?**
 From 45 minutes for the neck to 2 hours for full face, chin and neck.
 
-**Is the consultation free?**
+**Is the Consultation Free?**
 Yes. Consultations are free.
 
-**How do I book?**
+**How Do I Book?**
 Message us on WhatsApp. You can also book through Treatwell.
 
 ## call-to-action
@@ -98,5 +99,5 @@ Message us on WhatsApp. You can also book through Treatwell.
 
 Message us on WhatsApp and we will reply during opening hours.
 
-- Button (primary): Message us on WhatsApp
+- Button (primary): Message Us on WhatsApp
 - Button (secondary): Book on Treatwell

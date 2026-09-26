@@ -8,7 +8,8 @@
 // it for that reason.
 import data from "@/data/services.json";
 
-export type ServiceStatus = "live" | "held" | "review";
+/** "removed" (queue row Q42): taken off the site at the clinic's request; never rendered. */
+export type ServiceStatus = "live" | "held" | "review" | "removed";
 
 /** The 11 real category ids, plus the "held" sentinel used only on held-status rows. */
 export type CategoryId =
@@ -21,6 +22,7 @@ export type CategoryId =
   | "hair"
   | "facials"
   | "massage"
+  | "head-spa"
   | "waxing-ladies"
   | "waxing-men"
   | "held";

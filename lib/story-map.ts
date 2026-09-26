@@ -6,7 +6,7 @@
 //  - /treatments/ shows "Read about <topic>" under each category that has a story;
 //  - each story shows "See <topic> prices" going to /treatments/#cat-<first category>;
 //  - the header menus and home cards list the stories of each group in GROUPS order.
-// Categories with no story (laser: skin laser; carboxy) are left out on purpose.
+// Categories with no story (laser: skin laser; carboxy; head-spa) are left out on purpose.
 import { GROUPS, type CategoryId, type GroupId } from "./groups";
 
 export const CATEGORY_STORY: Partial<Record<CategoryId, string>> = {
@@ -23,10 +23,10 @@ export const CATEGORY_STORY: Partial<Record<CategoryId, string>> = {
 
 /** "<Group> prices" label for each group's price anchor. */
 export const GROUP_PRICES_LABEL: Record<GroupId, string> = {
-  face: "Face prices",
-  body: "Body prices",
-  laser: "Laser prices",
-  wellness: "Wellness prices",
+  face: "Face Prices",
+  body: "Body Prices",
+  laser: "Laser Prices",
+  wellness: "Wellness Prices",
 };
 
 /** Extra links in a group's header menu, between its stories and its prices link. The
@@ -34,7 +34,9 @@ export const GROUP_PRICES_LABEL: Record<GroupId, string> = {
  * section 34 condition 5 did not approve "Skin laser treatments", because CryoPen is a
  * cold treatment, not a laser. */
 export const GROUP_EXTRA_LINKS: Partial<Record<GroupId, { label: string; href: string }[]>> = {
-  laser: [{ label: "Laser and IPL skin treatments", href: `/treatments/#${categoryAnchor("laser")}` }],
+  laser: [{ label: "Laser and IPL Skin Treatments", href: `/treatments/#${categoryAnchor("laser")}` }],
+  // Queue row Q42 A22: the Japanese Head Spa has no story; its menu link goes to its prices.
+  wellness: [{ label: "Japanese Head Spa", href: `/treatments/#${categoryAnchor("head-spa")}` }],
 };
 
 /** The element id of a category block on /treatments/ (and its chip link). Prefixed so it

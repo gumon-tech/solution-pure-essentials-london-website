@@ -1,8 +1,8 @@
 ---
 title: "Body Contouring in King's Cross | Pure Essentials London"
 description: "Body contouring at 155 King's Cross Road, London: 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. From £99. Consultations are free."
-h1: "Body contouring in King's Cross"
-short: "Body contouring"
+h1: "Body Contouring in King's Cross"
+short: "Body Contouring"
 ---
 
 ## hero
@@ -11,14 +11,14 @@ short: "Body contouring"
 
 Body contouring at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
 
-- Button (primary): Message us on WhatsApp
-- Button (secondary): See treatments and prices
+- Button (primary): Message Us on WhatsApp
+- Button (secondary): See Treatments and Prices
 
 ## what-it-is
 
 [image: fam-fat-reduction]
 
-Body contouring here covers 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. Cryoelectrolipolysis is priced for 1, 2 or 3 areas, and HIFU for small and medium areas. Sessions take from 30 minutes to 2 hours.
+Body contouring here covers 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. Cryoelectrolipolysis is priced for 1, 2 or 3 areas, and HIFU for small, medium and large areas. Sessions take from 30 minutes to 2 hours.
 
 What each treatment aims to do, and which one may suit you, is a question for the free consultation.
 
@@ -34,9 +34,9 @@ If you have a health condition, or you are unsure which treatment is right for y
 
 [image: step-3-treatment]
 
-1. **Message us.** Tell us what you would like to ask about, on WhatsApp or by email.
-2. **Free consultation.** We look at your skin or your goal and recommend what suits you.
-3. **Your treatment.** Booked at a time that suits you, 7 days a week. The duration of each option is listed below.
+1. **Message Us.** Tell us what you would like to ask about, on WhatsApp or by email.
+2. **Free Consultation.** We look at your skin or your goal and recommend what suits you.
+3. **Your Treatment.** Booked at a time that suits you, 7 days a week. The duration of each option is listed below.
 
 You can also book through Treatwell.
 
@@ -49,9 +49,9 @@ You can also book through Treatwell.
 | Cryoelectrolipolysis Two Areas | 1 hr 30 min | GBP 150 | cryoelectrolipolysis_two_areas |
 | Cryoelectrolipolysis Three Areas | 2 hr | GBP 250 | cryoelectrolipolysis_three_areas |
 | Emsculpt | 30 min | GBP 99 | emsculpt |
-| HIFU small area (knees, underarm or bust) | 45 min | GBP 140 | hifu_small_area_knees_armpit_bust_lift |
-| HIFU medium area (upper arms or waist) | 1 hr 30 min | GBP 280 | hifu_med_area_flappy_arms_lovehandle |
-| Large Area (Outer thighs/full stomach) | 1 hr 30 min | GBP 420 | large_area_outer_thighs_full_stomach |
+| HIFU Small Area (Knees, Underarm or Bust) | 45 min | GBP 200 | hifu_small_area_knees_armpit_bust_lift |
+| HIFU Medium Area (Upper Arms or Waist) | 45 min | GBP 320 | hifu_med_area_flappy_arms_lovehandle |
+| HIFU Large Area (Outer Thighs or Full Stomach) | 45 min | GBP 420 | large_area_outer_thighs_full_stomach |
 
 [image: fam-muscle-toning]
 
@@ -65,22 +65,22 @@ You leave with clear aftercare advice and can message us with any question.
 
 ## faq
 
-**Where is the clinic?**
+**Where Is the Clinic?**
 155 King's Cross Road, London WC1X 9BN.
 
-**When are you open?**
+**When Are You Open?**
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
-**How much does body contouring cost?**
+**How Much Does Body Contouring Cost?**
 Prices start at £99 for Emsculpt or for 1 area of cryoelectrolipolysis. Every option is listed on this page.
 
-**How long does a session take?**
+**How Long Does a Session Take?**
 From 30 minutes for Emsculpt to 2 hours for 3 areas of cryoelectrolipolysis.
 
-**Is the consultation free?**
+**Is the Consultation Free?**
 Yes. Consultations are free.
 
-**How do I book?**
+**How Do I Book?**
 Message us on WhatsApp. You can also book through Treatwell.
 
 ## call-to-action
@@ -89,5 +89,5 @@ Message us on WhatsApp. You can also book through Treatwell.
 
 Message us on WhatsApp and we will reply during opening hours.
 
-- Button (primary): Message us on WhatsApp
+- Button (primary): Message Us on WhatsApp
 - Button (secondary): Book on Treatwell

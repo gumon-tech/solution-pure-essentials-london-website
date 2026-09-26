@@ -1,15 +1,15 @@
 ---
-title: Website terms
+title: Website Terms
 status: draft for PEL review
 ---
 
-# Website terms
+# Website Terms
 
 Last updated: [date to fill on publish]
 
 These terms apply when you use this website. Please read them. By using the website you accept them.
 
-## Who runs this website
+## Who Runs This Website
 
 This website is run by PURE ESSENTIALS (LONDON) LTD, a company registered in England and Wales,
 company number 09500632. Our registered office is 129 Station Road, London NW4 4NJ. You can email us
@@ -37,7 +37,7 @@ consultation. We will not recommend a treatment that is not right for you.
 
 Aesthetic treatments are for adults aged 18 and over.
 
-## Information on this website
+## Information on This Website
 
 The content on this website is general information about our treatments. It is not medical advice.
 It does not replace your consultation. Please do not rely on it to decide whether a treatment is
@@ -49,13 +49,13 @@ We try to keep the website accurate and up to date, but details can change.
 
 Some images on this site are illustrative.
 
-## Links to other websites
+## Links to Other Websites
 
 This website links to other websites, including WhatsApp, Treatwell and Instagram. Those websites are
 run by other companies under their own terms and privacy notices. We are not responsible for their
 content.
 
-## Your privacy
+## Your Privacy
 
 Our privacy notice explains how we handle your information.
 

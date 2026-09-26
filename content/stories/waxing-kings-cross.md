@@ -11,8 +11,8 @@ short: "Waxing"
 
 Waxing for ladies and men at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
 
-- Button (primary): Message us on WhatsApp
-- Button (secondary): See treatments and prices
+- Button (primary): Message Us on WhatsApp
+- Button (secondary): See Treatments and Prices
 
 ## what-it-is
 
@@ -32,15 +32,15 @@ If you have a skin or health condition, or you are unsure about waxing, ask befo
 
 [image: room-couch]
 
-1. **Message us.** Tell us what you would like to ask about, on WhatsApp or by email.
-2. **Free consultation.** We look at your skin or your goal and recommend what suits you.
-3. **Your treatment.** Booked at a time that suits you, 7 days a week. The duration of each option is listed below.
+1. **Message Us.** Tell us what you would like to ask about, on WhatsApp or by email.
+2. **Free Consultation.** We look at your skin or your goal and recommend what suits you.
+3. **Your Treatment.** Booked at a time that suits you, 7 days a week. The duration of each option is listed below.
 
 You can also book through Treatwell.
 
 ## prices
 
-Waxing, ladies
+Waxing, Ladies
 
 | Treatment | Duration | Price | Source slug |
 |---|---|---|---|
@@ -67,7 +67,7 @@ Waxing, ladies
 
 [image: cat-waxing-men]
 
-Waxing, men
+Waxing, Men
 
 | Treatment | Duration | Price | Source slug |
 |---|---|---|---|
@@ -88,27 +88,27 @@ Your therapist gives aftercare advice at the appointment. You can message us wit
 
 ## faq
 
-**Where is the clinic?**
+**Where Is the Clinic?**
 155 King's Cross Road, London WC1X 9BN.
 
-**When are you open?**
+**When Are You Open?**
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
-**How much does waxing cost?**
+**How Much Does Waxing Cost?**
 Ladies' waxing starts at £10 for the full chin or the upper lip, and men's waxing at £15 for the eyebrow. Every option is listed on this page.
 
-**How long does waxing take?**
+**How Long Does Waxing Take?**
 From 10 minutes for ladies' sideburns to 1 hour for a men's full leg.
 
-**Is the consultation free?**
+**Is the Consultation Free?**
 Yes. Consultations are free.
 
-**How do I book?**
+**How Do I Book?**
 Message us on WhatsApp. You can also book through Treatwell.
 
 ## call-to-action
 
 Message us on WhatsApp and we will reply during opening hours.
 
-- Button (primary): Message us on WhatsApp
+- Button (primary): Message Us on WhatsApp
 - Button (secondary): Book on Treatwell

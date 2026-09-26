@@ -84,6 +84,9 @@ jobs:
         run: node scripts/build-redirect-stubs.mjs
       - name: Check redirect stubs
         run: node scripts/check-redirect-stubs.mjs
+      # Every heading, button and menu item in Title Case (Q42, owner's order 2026-09-26).
+      - name: Check Title Case
+        run: node scripts/check-title-case.mjs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:

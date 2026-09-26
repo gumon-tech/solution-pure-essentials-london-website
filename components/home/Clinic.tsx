@@ -17,7 +17,7 @@ export default function Clinic() {
         />
 
         <div className="reveal">
-          <h2 className="font-display text-4xl text-espresso">The clinic</h2>
+          <h2 className="font-display text-4xl text-espresso">The Clinic</h2>
           <p className="mt-4 max-w-prose text-cocoa">{SENTENCE}</p>
 
           <table className="mt-6 text-cocoa">

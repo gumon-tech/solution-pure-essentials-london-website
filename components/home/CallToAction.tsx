@@ -17,7 +17,7 @@ export default function CallToAction() {
           />
 
           <div className="reveal">
-            <h2 className="font-display text-4xl text-espresso">Ready when you are</h2>
+            <h2 className="font-display text-4xl text-espresso">Ready When You Are</h2>
             <p className="mt-4 max-w-prose text-cocoa">{SENTENCE}</p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -27,19 +27,19 @@ export default function CallToAction() {
                 rel="noopener"
                 className="pill inline-flex items-center justify-center rounded-full bg-oak px-6 py-3 font-body text-white hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
               >
-                Message us on WhatsApp
+                Message Us on WhatsApp
               </a>
               <Link
                 href="/book-online/"
                 className="pill inline-flex items-center justify-center rounded-full border border-oak bg-cream px-6 py-3 font-body text-espresso hover:bg-oak hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
               >
-                Book online on Treatwell
+                Book Online on Treatwell
               </Link>
               <Link
                 href="/treatments/"
                 className="pill inline-flex items-center justify-center rounded-full px-6 py-3 font-body text-espresso underline underline-offset-4 hover:text-oak focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
               >
-                See treatments and prices
+                See Treatments and Prices
               </Link>
             </div>
           </div>

@@ -46,7 +46,7 @@
         "name": { "type": "string" },
         "category": {
           "type": "string",
-          "$comment": "The 11 real category ids from `categories`, plus \"held\" — the sentinel every held-status row uses instead of a real category id (verified against data/services.json 2026-09-13: all 59 held rows, no exception). The brief asked for an enum of just the 11 ids; that would fail validate-services.mjs against the real file, so \"held\" is included here. Flagged in the Q4 executor report.",
+          "$comment": "The 11 real category ids from `categories`, plus \"held\" — the sentinel every held-status row uses instead of a real category id (verified against data/services.json 2026-09-13: all 59 held rows, no exception). The brief asked for an enum of just the 11 ids; that would fail validate-services.mjs against the real file, so \"held\" is included here. Flagged in the Q4 executor report. \"head-spa\" (Japanese Head Spa) added by queue row Q42, 2026-09-26.",
           "enum": [
             "hifu",
             "laser",
@@ -57,6 +57,7 @@
             "hair",
             "facials",
             "massage",
+            "head-spa",
             "waxing-ladies",
             "waxing-men",
             "held"
@@ -64,7 +65,8 @@
         },
         "status": {
           "type": "string",
-          "enum": ["live", "held", "review"]
+          "enum": ["live", "held", "review", "removed"],
+          "$comment": "removed: a row the clinic asked to take off the site (Q42, 2026-09-18). Kept in the file for history, never rendered."
         },
         "price_gbp": {
           "type": ["number", "null"]

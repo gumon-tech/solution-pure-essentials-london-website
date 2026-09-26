@@ -11,18 +11,19 @@ import {
   type NavMenu,
   type NavMenuItem,
 } from "./story-map";
+import { titleCase } from "./titleCase";
 
 export function getNavMenus(): NavMenu[] {
   return GROUPS.map((group) => {
     const items: NavMenuItem[] = storiesOfGroup(group.id).map((slug) => {
       const page = getStoryPage(slug);
       if (!page) throw new Error(`lib/nav.ts: story "${slug}" is not built`);
-      return { label: storyShortTitle(page.frontMatter), href: storyHref(slug), kind: "story" };
+      return { label: titleCase(storyShortTitle(page.frontMatter)), href: storyHref(slug), kind: "story" };
     });
     for (const extra of GROUP_EXTRA_LINKS[group.id] ?? []) {
-      items.push({ ...extra, kind: "link" });
+      items.push({ ...extra, label: titleCase(extra.label), kind: "link" });
     }
-    items.push({ label: GROUP_PRICES_LABEL[group.id], href: `/treatments/#${group.id}`, kind: "link" });
-    return { id: group.id, label: group.label, items };
+    items.push({ label: titleCase(GROUP_PRICES_LABEL[group.id]), href: `/treatments/#${group.id}`, kind: "link" });
+    return { id: group.id, label: titleCase(group.label), items };
   });
 }

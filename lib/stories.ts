@@ -15,6 +15,7 @@ import { IMAGES, type ImageSlot } from "@/lib/images";
 import { waLink, liveServices, type Service } from "@/lib/services";
 import { SITE, waSite } from "@/lib/site";
 import { categoryAnchor, priceCategoryForStory, topicInSentence } from "@/lib/story-map";
+import { titleCase } from "@/lib/titleCase";
 
 export interface StoryFrontMatter {
   title: string;
@@ -258,7 +259,8 @@ function parseTable(tableLines: string[], slug: string, servicesBySlug: Map<stri
     }
     const waName = service.display_name ?? service.name;
     return {
-      name,
+      // Queue row Q42 section C: service names render in Title Case.
+      name: titleCase(name),
       duration,
       price: formatPrice(price, slug),
       slug: rowSlug,
@@ -455,7 +457,7 @@ function pricesLinkFor(slug: string, frontMatter: StoryFrontMatter): StoryPage["
   if (!category) return null;
   return {
     href: `${TREATMENTS_HREF}#${categoryAnchor(category)}`,
-    label: `See ${topicInSentence(storyShortTitle(frontMatter))} prices`,
+    label: titleCase(`See ${topicInSentence(storyShortTitle(frontMatter))} prices`),
   };
 }
 

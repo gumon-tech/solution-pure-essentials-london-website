@@ -1,7 +1,7 @@
 ---
 title: "Treatments in King's Cross | Pure Essentials London"
 description: "Facials, HIFU, laser, body contouring, massage and waxing at 155 King's Cross Road. The price shown is the price you pay."
-h1: "Treatments and prices"
+h1: "Treatments and Prices"
 ---
 
 ## intro
@@ -32,7 +32,7 @@ Pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal
 
 [image: wellness-card]
 
-Massage and waxing
+Massage, Japanese head spa and waxing
 
 ## row-without-price
 

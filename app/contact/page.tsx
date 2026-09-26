@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const H1 = "Find us";
+const H1 = "Find Us";
 
 export default function ContactPage() {
   return (

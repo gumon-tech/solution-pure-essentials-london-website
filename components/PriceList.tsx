@@ -14,6 +14,7 @@ export default function PriceList({ rows }: { rows: TreatmentRow[] }) {
           <div className="min-w-0">
             <p className="text-espresso">{row.name}</p>
             {row.duration ? <p className="text-walnut text-sm">{row.duration}</p> : null}
+            {row.description ? <p className="mt-1 max-w-prose text-sm text-cocoa">{row.description}</p> : null}
           </div>
           <div className="flex items-center gap-4">
             {row.priceGbp !== null ? (

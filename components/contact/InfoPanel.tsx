@@ -32,7 +32,7 @@ export default function InfoPanel() {
         </div>
 
         <div>
-          <h2 className="font-body text-xs uppercase tracking-[0.12em] text-walnut">Get in touch</h2>
+          <h2 className="font-body text-xs uppercase tracking-[0.12em] text-walnut">Get in Touch</h2>
           <ul className="mt-3 flex flex-col gap-3">
             <li>
               <a
@@ -42,7 +42,7 @@ export default function InfoPanel() {
                 className="pill inline-flex items-center gap-2 rounded-full bg-oak px-5 py-2.5 font-body text-white hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-sand"
               >
                 <WhatsAppIcon className="h-4 w-4" />
-                Message us
+                Message Us
               </a>
             </li>
             <li>
@@ -63,7 +63,7 @@ export default function InfoPanel() {
             </li>
             <li>
               <Link href="/book-online/" className={LINK_CLASS}>
-                Book online
+                Book Online
               </Link>
             </li>
           </ul>

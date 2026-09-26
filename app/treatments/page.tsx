@@ -27,7 +27,7 @@ const GROUP_LINE: Record<string, string> = {
   face: "HIFU, skin boosters, microneedling, peels and facials",
   body: "3D lipo, HIFU body and Emsculpt",
   laser: "Pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal",
-  wellness: "Massage and waxing",
+  wellness: "Massage, Japanese head spa and waxing",
 };
 
 export default function TreatmentsPage() {
@@ -42,7 +42,7 @@ export default function TreatmentsPage() {
         <div className="grid items-center gap-8 md:grid-cols-[1.2fr_1fr]">
           <div>
             <h1 className="rise-in font-display text-4xl text-espresso md:text-5xl">
-              Treatments and prices
+              Treatments and Prices
             </h1>
             <p className="rise-in rise-delay-1 mt-4 text-cocoa">
               The price shown is the price you pay. Where a price says &ldquo;from&rdquo;, the
@@ -105,6 +105,18 @@ export default function TreatmentsPage() {
                   />
                   <PriceList rows={category.rows} />
                 </div>
+
+                {category.steps.length > 0 ? (
+                  // Queue row Q42 A22: the clinic's own steps for the Japanese Head Spa.
+                  <div className="reveal mt-8 max-w-3xl">
+                    <h4 className="font-display text-xl text-espresso">{`${category.title} Steps`}</h4>
+                    <ol className="mt-3 list-inside list-decimal space-y-2 text-cocoa">
+                      {category.steps.map((step, i) => (
+                        <li key={i}>{step}</li>
+                      ))}
+                    </ol>
+                  </div>
+                ) : null}
               </div>
             ))}
           </div>

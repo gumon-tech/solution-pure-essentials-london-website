@@ -302,7 +302,7 @@ export default function Header({ menus }: { menus: NavMenu[] }) {
             href="/book-online/"
             className="pill hidden items-center whitespace-nowrap rounded-full border border-oak px-4 py-2 text-sm font-body text-espresso hover:bg-oak hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream sm:inline-flex"
           >
-            Book online
+            Book Online
           </Link>
           <a
             href={waSite("SITE-HEADER")}
@@ -322,7 +322,7 @@ export default function Header({ menus }: { menus: NavMenu[] }) {
             className="pill inline-flex items-center justify-center rounded-full border border-beige p-2 text-cocoa hover:border-oak focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream lg:hidden"
           >
             <span className="sr-only">
-              {isOpen ? "Close menu" : "Open menu"}
+              {isOpen ? "Close Menu" : "Open Menu"}
             </span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="h-6 w-6" aria-hidden="true">
               {isOpen ? (
@@ -388,7 +388,7 @@ export default function Header({ menus }: { menus: NavMenu[] }) {
               onClick={closeMenu}
               className="pill inline-flex items-center justify-center rounded-full border border-oak px-4 py-2 text-sm font-body text-espresso hover:bg-oak hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
             >
-              Book online
+              Book Online
             </Link>
             <a
               href={waSite("SITE-HEADER")}

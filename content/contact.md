@@ -1,7 +1,7 @@
 ---
 title: "Contact and Hours, King's Cross | Pure Essentials London"
 description: "Find us at 155 King's Cross Road, London WC1X 9BN. Open Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00."
-h1: "Find us"
+h1: "Find Us"
 ---
 
 ## welcome
@@ -22,10 +22,10 @@ h1: "Find us"
 
 ## contact
 
-- WhatsApp: Message us (button)
+- WhatsApp: Message Us (button)
 - Email: info@pureessentialslondon.com
 - Link text: Book on Treatwell
-- Link text: Book online (links to /book-online/)
+- Link text: Book Online (links to /book-online/)
 
 [image: room-couch]
 
@@ -35,7 +35,7 @@ King's Cross St Pancras (Circle, Hammersmith and City, Metropolitan, Northern, P
 
 ## map
 
-### Find us on the map
+### Find Us on the Map
 
 [embed: Google map of Pure Essentials London, 155 King's Cross Road, loads with the section]
 

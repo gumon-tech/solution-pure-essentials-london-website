@@ -1,7 +1,7 @@
 ---
 title: "Your Visit, King's Cross | Pure Essentials London"
 description: "Your visit to Pure Essentials London at 155 King's Cross Road, from your first message to the free consultation, your treatment and aftercare advice."
-h1: "Your visit"
+h1: "Your Visit"
 ---
 
 ## hero
@@ -10,8 +10,8 @@ h1: "Your visit"
 
 Every treatment starts with a free consultation. This page walks through a visit, from your first message to aftercare.
 
-- Button (primary): Message us on WhatsApp
-- Button (secondary): See treatments and prices
+- Button (primary): Message Us on WhatsApp
+- Button (secondary): See Treatments and Prices
 
 ## message-us
 
@@ -59,16 +59,16 @@ To book again, message us on WhatsApp. You can also book through Treatwell. The 
 
 ## faq
 
-**Where is the clinic?**
+**Where Is the Clinic?**
 155 King's Cross Road, London WC1X 9BN.
 
-**When are you open?**
+**When Are You Open?**
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
-**Is the consultation free?**
+**Is the Consultation Free?**
 Yes. Consultations are free.
 
-**How do I book?**
+**How Do I Book?**
 Message us on WhatsApp. You can also book through Treatwell.
 
 ## call-to-action
@@ -77,5 +77,5 @@ Message us on WhatsApp. You can also book through Treatwell.
 
 Message us on WhatsApp and we will reply during opening hours.
 
-- Button (primary): Message us on WhatsApp
+- Button (primary): Message Us on WhatsApp
 - Button (secondary): Book on Treatwell

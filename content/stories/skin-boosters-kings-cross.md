@@ -1,8 +1,8 @@
 ---
 title: "Skin Boosters Consultation in King's Cross | Pure Essentials London"
 description: "Skin boosters and dermal fillers at 155 King's Cross Road, London. Every treatment starts with a free consultation, and we recommend what suits you."
-h1: "Skin boosters consultation in King's Cross"
-short: "Skin boosters"
+h1: "Skin Boosters Consultation in King's Cross"
+short: "Skin Boosters"
 ---
 
 ## hero
@@ -11,8 +11,8 @@ short: "Skin boosters"
 
 Every skin booster and dermal filler treatment starts with a free consultation, at 155 King's Cross Road, 7 days a week.
 
-- Button (primary): Message us on WhatsApp
-- Button (secondary): See treatments and prices
+- Button (primary): Message Us on WhatsApp
+- Button (secondary): See Treatments and Prices
 
 ## what-it-is
 
@@ -34,20 +34,21 @@ If you have a health condition, or you are unsure whether a treatment is right f
 
 [image: room-trolley]
 
-1. **Message us.** Tell us what you would like to ask about, on WhatsApp or by email.
-2. **Free consultation.** We look at your skin or your goal and recommend what suits you.
-3. **Your treatment.** Booked at a time that suits you, 7 days a week. Sessions take from 45 minutes to 1 hour 30 minutes.
+1. **Message Us.** Tell us what you would like to ask about, on WhatsApp or by email.
+2. **Free Consultation.** We look at your skin or your goal and recommend what suits you.
+3. **Your Treatment.** Booked at a time that suits you, 7 days a week. Sessions take from 45 minutes to 1 hour 30 minutes.
 
 ## prices
 
 | Treatment | Duration | Price | Source slug |
 |---|---|---|---|
-| Profhilo | 45 min | GBP 250 | profhilo |
-| Profhilo 2 Sessions | 45 min | GBP 400 | profhilo_2_sessions |
+| Profhilo Treatment (1 Session) | 45 min | GBP 250 | profhilo |
+| Profhilo Treatment Course (2 Sessions) | 45 min | GBP 400 | profhilo_2_sessions |
 | Cheeks, jaw line, nasolabial (1ml) | 1 hr | GBP 350 | cheeks_jaw_line_nasolabial_1ml |
-| Lip (0.55ml) | 1 hr | GBP 350 | lip_0_55ml |
+| Dermal Filler (1mL) | 1 hr | GBP 350 | lip_0_55ml |
 | Facial Fillers | 1 hr 30 min | from GBP 350 | facial_fillers |
-| Profhilo Body | ask | Ask for a quote | aesthetics_body_profhilo_body |
+| Profhilo Body Treatment | ask | from GBP 580 | aesthetics_body_profhilo_body |
+| PRP (Platelet-Rich Plasma) Injections | ask | Ask for a quote | prp_platelet_rich_plasma_injections |
 
 [image: fam-skin-booster-hydration]
 
@@ -61,27 +62,27 @@ Your therapist gives aftercare advice at the appointment.
 
 ## faq
 
-**Where is the clinic?**
+**Where Is the Clinic?**
 155 King's Cross Road, London WC1X 9BN.
 
-**When are you open?**
+**When Are You Open?**
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
-**Do I need a consultation first?**
+**Do I Need a Consultation First?**
 Yes. Every treatment starts with a free consultation.
 
-**Is the consultation free?**
+**Is the Consultation Free?**
 Yes. Consultations are free.
 
-**Who can have these treatments?**
+**Who Can Have These Treatments?**
 Aesthetic treatments are for adults aged 18 and over.
 
-**How do I book a consultation?**
+**How Do I Book a Consultation?**
 Message us on WhatsApp.
 
 ## call-to-action
 
 Message us on WhatsApp and we will reply during opening hours.
 
-- Button (primary): Message us on WhatsApp
-- Button (secondary): See treatments and prices
+- Button (primary): Message Us on WhatsApp
+- Button (secondary): See Treatments and Prices

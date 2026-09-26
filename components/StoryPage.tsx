@@ -283,7 +283,7 @@ export default function StoryPage({ page }: { page: StoryPageData }) {
   const familiesSection =
     families.length > 0 ? (
       <section className="mx-auto max-w-6xl px-4 py-8 md:px-6">
-        <h2 className="reveal font-display text-2xl text-espresso md:text-3xl">Treatments in this group</h2>
+        <h2 className="reveal font-display text-2xl text-espresso md:text-3xl">Treatments in This Group</h2>
         <div className="mt-6 grid gap-x-12 gap-y-8 md:grid-cols-2">
           {families.map((family) => {
             const slot = FAMILY_IMAGE_SLOT[family.slug];
@@ -375,7 +375,7 @@ export default function StoryPage({ page }: { page: StoryPageData }) {
 
       {faqSection && (
         <section className="mx-auto max-w-6xl px-4 py-12 md:px-6">
-          <h2 className="reveal font-display text-2xl text-espresso">Frequently asked questions</h2>
+          <h2 className="reveal font-display text-2xl text-espresso">Frequently Asked Questions</h2>
           <div className="mt-6 max-w-3xl space-y-6">
             {faqSection.blocks.map((b, i) =>
               b.kind === "faq-item" ? <FaqItem key={i} question={b.question} answer={b.answer} /> : null,

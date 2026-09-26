@@ -32,13 +32,13 @@ export default function Hero({ h1 }: { h1: string }) {
               rel="noopener"
               className="pill hidden items-center justify-center rounded-full bg-oak px-6 py-3 font-body text-white hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream md:inline-flex"
             >
-              Message us on WhatsApp
+              Message Us on WhatsApp
             </a>
             <Link
               href="/treatments/"
               className="pill inline-flex items-center justify-center rounded-full border border-espresso px-6 py-3 font-body text-espresso hover:bg-espresso hover:text-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
             >
-              See treatments and prices
+              See Treatments and Prices
             </Link>
           </div>
         </div>

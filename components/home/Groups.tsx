@@ -25,14 +25,14 @@ const CARDS: { id: GroupId; title: string; line: string; slot: ImageSlot }[] = [
   },
   {
     id: "laser",
-    title: "Laser and hair removal",
+    title: "Laser and Hair Removal",
     line: "Pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal",
     slot: "laser-card",
   },
   {
     id: "wellness",
     title: "Wellness",
-    line: "Massage and waxing",
+    line: "Massage, Japanese head spa and waxing",
     slot: "wellness-card",
   },
 ];
@@ -81,7 +81,7 @@ export default function Groups() {
                   </li>
                 ))}
                 <li>
-                  <ReadMoreLink href={`/treatments/#${card.id}`}>See prices</ReadMoreLink>
+                  <ReadMoreLink href={`/treatments/#${card.id}`}>See Prices</ReadMoreLink>
                 </li>
               </ul>
             </div>

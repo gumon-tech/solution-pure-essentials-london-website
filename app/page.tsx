@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const H1 = "Beauty and skin treatments in King's Cross";
+const H1 = "Beauty and Skin Treatments in King's Cross";
 
 export default function Home() {
   return (
