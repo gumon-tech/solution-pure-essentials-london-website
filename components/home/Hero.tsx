@@ -13,11 +13,13 @@ export default function Hero({ h1 }: { h1: string }) {
         {/* Image renders first in the DOM so it is first on a stacked mobile
             layout; lg:order-2 moves it to the right on the 2-column layout. */}
         <div className="settle-in lg:order-2">
+          {/* Queue row Q43: the clinic's real reception, not a generated image. Portrait,
+              so it is capped on a stacked mobile layout to keep the h1 near the fold. */}
           <Picture
-            slot="home-hero"
+            slot="real-reception"
             sizes="(min-width: 1024px) 50vw, 100vw"
             priority
-            className="rounded-arch w-full object-cover"
+            className="rounded-arch mx-auto max-h-[60vh] w-full object-cover lg:max-h-[700px]"
           />
         </div>
 

@@ -6,7 +6,7 @@ h1: "Find Us"
 
 ## welcome
 
-[image: contact-welcome]
+[image: real-reception]
 
 155 King's Cross Road, London WC1X 9BN
 

@@ -7,33 +7,34 @@ import type { GroupId } from "@/lib/groups";
 import { getStoryPage, storyShortTitle } from "@/lib/stories";
 import { storiesOfGroup, storyHref } from "@/lib/story-map";
 
-// Titles, 1-line descriptions and image slots verbatim from content/home.md's
-// "## groups" section, in the same order and with the same group ids as
+// Titles and 1-line descriptions verbatim from content/home.md's "## groups" section.
+// Images (queue row Q43, the clinic's feedback of 2026-09-27 that the site looked too AI):
+// the clinic's own rooms and its head spa, not generated people. Same order in the same order and with the same group ids as
 // lib/groups.ts (GROUPS) so the /treatments/#<id> anchors line up.
 const CARDS: { id: GroupId; title: string; line: string; slot: ImageSlot }[] = [
   {
     id: "face",
     title: "Face",
     line: "HIFU, skin boosters, microneedling, peels and facials",
-    slot: "face-card",
+    slot: "room-analyser",
   },
   {
     id: "body",
     title: "Body",
     line: "3D lipo, HIFU body and Emsculpt",
-    slot: "body-card",
+    slot: "room-trolley",
   },
   {
     id: "laser",
     title: "Laser and Hair Removal",
     line: "Pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal",
-    slot: "laser-card",
+    slot: "room-couch",
   },
   {
     id: "wellness",
     title: "Wellness",
     line: "Massage, Japanese head spa and waxing",
-    slot: "wellness-card",
+    slot: "headspa-halo",
   },
 ];
 

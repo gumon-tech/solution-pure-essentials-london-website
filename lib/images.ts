@@ -16,7 +16,7 @@ export interface ImageEntry {
   fallback: string;
 }
 
-export type ImageSlot = "home-hero" | "face-card" | "body-card" | "laser-card" | "wellness-card" | "step-1-message" | "step-2-consultation" | "step-3-treatment" | "step-4-aftercare" | "contact-welcome" | "story-hifu" | "story-facials" | "story-body-contouring" | "story-laser-hair" | "room-warm" | "room-trolley" | "room-analyser" | "room-couch" | "cat-laser-skin" | "cat-skin" | "cat-skinboosters" | "cat-carboxy" | "cat-waxing-ladies" | "cat-waxing-men" | "fam-hifu-face" | "fam-cryotherapy" | "fam-light-platform" | "fam-ipl" | "fam-pico-laser" | "fam-tattoo-removal" | "fam-gold-microneedling" | "fam-microneedling" | "fam-chemical-peel" | "fam-radiofrequency" | "fam-skin-booster-body" | "fam-skin-booster-face" | "fam-skin-booster-hydration" | "fam-fat-reduction" | "fam-muscle-toning" | "fam-hifu-body" | "fam-laser-hair" | "fam-hydrating-facial" | "fam-sensitive-skin-facial" | "fam-microdermabrasion" | "fam-botanical-facial";
+export type ImageSlot = "home-hero" | "face-card" | "body-card" | "laser-card" | "wellness-card" | "step-1-message" | "step-2-consultation" | "step-3-treatment" | "step-4-aftercare" | "contact-welcome" | "story-hifu" | "story-facials" | "story-body-contouring" | "story-laser-hair" | "room-warm" | "room-trolley" | "room-analyser" | "room-couch" | "cat-laser-skin" | "cat-skin" | "cat-skinboosters" | "cat-carboxy" | "cat-waxing-ladies" | "cat-waxing-men" | "fam-hifu-face" | "fam-cryotherapy" | "fam-light-platform" | "fam-ipl" | "fam-pico-laser" | "fam-tattoo-removal" | "fam-gold-microneedling" | "fam-microneedling" | "fam-chemical-peel" | "fam-radiofrequency" | "fam-skin-booster-body" | "fam-skin-booster-face" | "fam-skin-booster-hydration" | "fam-fat-reduction" | "fam-muscle-toning" | "fam-hifu-body" | "fam-laser-hair" | "fam-hydrating-facial" | "fam-sensitive-skin-facial" | "fam-microdermabrasion" | "fam-botanical-facial" | "real-reception" | "headspa-halo" | "headspa-wash" | "headspa-shampoo";
 
 export const IMAGES: Record<ImageSlot, ImageEntry> = {
   "home-hero": {
@@ -128,14 +128,14 @@ export const IMAGES: Record<ImageSlot, ImageEntry> = {
     fallback: "/img/gen/step-4-aftercare-800.jpg",
   },
   "contact-welcome": {
-    alt: "Two women smiling across a curved wooden reception desk",
+    alt: "A treatment room at Pure Essentials London with a laser platform, a couch and a wall print",
     ratio: "3:2",
-    width: 1264,
-    height: 843,
+    width: 1527,
+    height: 1018,
     srcset: {
-      avif: "/img/gen/contact-welcome-480.avif 480w, /img/gen/contact-welcome-800.avif 800w, /img/gen/contact-welcome-1200.avif 1200w, /img/gen/contact-welcome-1264.avif 1264w",
-      webp: "/img/gen/contact-welcome-480.webp 480w, /img/gen/contact-welcome-800.webp 800w, /img/gen/contact-welcome-1200.webp 1200w, /img/gen/contact-welcome-1264.webp 1264w",
-      jpg: "/img/gen/contact-welcome-480.jpg 480w, /img/gen/contact-welcome-800.jpg 800w, /img/gen/contact-welcome-1200.jpg 1200w, /img/gen/contact-welcome-1264.jpg 1264w",
+      avif: "/img/gen/contact-welcome-480.avif 480w, /img/gen/contact-welcome-800.avif 800w, /img/gen/contact-welcome-1200.avif 1200w, /img/gen/contact-welcome-1527.avif 1527w",
+      webp: "/img/gen/contact-welcome-480.webp 480w, /img/gen/contact-welcome-800.webp 800w, /img/gen/contact-welcome-1200.webp 1200w, /img/gen/contact-welcome-1527.webp 1527w",
+      jpg: "/img/gen/contact-welcome-480.jpg 480w, /img/gen/contact-welcome-800.jpg 800w, /img/gen/contact-welcome-1200.jpg 1200w, /img/gen/contact-welcome-1527.jpg 1527w",
     },
     fallback: "/img/gen/contact-welcome-800.jpg",
   },
@@ -188,7 +188,7 @@ export const IMAGES: Record<ImageSlot, ImageEntry> = {
     fallback: "/img/gen/story-laser-hair-800.jpg",
   },
   "room-warm": {
-    alt: "A treatment room at Pure Essentials London with a wood-slat wall and couch",
+    alt: "The head spa room at Pure Essentials London, with gold walls and a wood-slat frame",
     ratio: "4:5",
     width: 1200,
     height: 1500,
@@ -200,38 +200,38 @@ export const IMAGES: Record<ImageSlot, ImageEntry> = {
     fallback: "/img/gen/room-warm-800.jpg",
   },
   "room-trolley": {
-    alt: "A treatment room at Pure Essentials London with a trolley of products",
+    alt: "A treatment room at Pure Essentials London with a couch and rolled towels",
     ratio: "4:5",
-    width: 980,
-    height: 1225,
+    width: 1086,
+    height: 1358,
     srcset: {
-      avif: "/img/gen/room-trolley-480.avif 480w, /img/gen/room-trolley-800.avif 800w, /img/gen/room-trolley-980.avif 980w",
-      webp: "/img/gen/room-trolley-480.webp 480w, /img/gen/room-trolley-800.webp 800w, /img/gen/room-trolley-980.webp 980w",
-      jpg: "/img/gen/room-trolley-480.jpg 480w, /img/gen/room-trolley-800.jpg 800w, /img/gen/room-trolley-980.jpg 980w",
+      avif: "/img/gen/room-trolley-480.avif 480w, /img/gen/room-trolley-800.avif 800w, /img/gen/room-trolley-1086.avif 1086w",
+      webp: "/img/gen/room-trolley-480.webp 480w, /img/gen/room-trolley-800.webp 800w, /img/gen/room-trolley-1086.webp 1086w",
+      jpg: "/img/gen/room-trolley-480.jpg 480w, /img/gen/room-trolley-800.jpg 800w, /img/gen/room-trolley-1086.jpg 1086w",
     },
     fallback: "/img/gen/room-trolley-800.jpg",
   },
   "room-analyser": {
-    alt: "A treatment room at Pure Essentials London with white cabinetry and a couch",
+    alt: "A facial room at Pure Essentials London with a marble splashback and a skin analysis mirror",
     ratio: "4:5",
-    width: 922,
-    height: 1152,
+    width: 1086,
+    height: 1358,
     srcset: {
-      avif: "/img/gen/room-analyser-480.avif 480w, /img/gen/room-analyser-800.avif 800w, /img/gen/room-analyser-922.avif 922w",
-      webp: "/img/gen/room-analyser-480.webp 480w, /img/gen/room-analyser-800.webp 800w, /img/gen/room-analyser-922.webp 922w",
-      jpg: "/img/gen/room-analyser-480.jpg 480w, /img/gen/room-analyser-800.jpg 800w, /img/gen/room-analyser-922.jpg 922w",
+      avif: "/img/gen/room-analyser-480.avif 480w, /img/gen/room-analyser-800.avif 800w, /img/gen/room-analyser-1086.avif 1086w",
+      webp: "/img/gen/room-analyser-480.webp 480w, /img/gen/room-analyser-800.webp 800w, /img/gen/room-analyser-1086.webp 1086w",
+      jpg: "/img/gen/room-analyser-480.jpg 480w, /img/gen/room-analyser-800.jpg 800w, /img/gen/room-analyser-1086.jpg 1086w",
     },
     fallback: "/img/gen/room-analyser-800.jpg",
   },
   "room-couch": {
-    alt: "A treatment room at Pure Essentials London with rolled towels on the couch",
+    alt: "A treatment room at Pure Essentials London with a laser platform beside the couch",
     ratio: "4:5",
-    width: 922,
-    height: 1152,
+    width: 814,
+    height: 1018,
     srcset: {
-      avif: "/img/gen/room-couch-480.avif 480w, /img/gen/room-couch-800.avif 800w, /img/gen/room-couch-922.avif 922w",
-      webp: "/img/gen/room-couch-480.webp 480w, /img/gen/room-couch-800.webp 800w, /img/gen/room-couch-922.webp 922w",
-      jpg: "/img/gen/room-couch-480.jpg 480w, /img/gen/room-couch-800.jpg 800w, /img/gen/room-couch-922.jpg 922w",
+      avif: "/img/gen/room-couch-480.avif 480w, /img/gen/room-couch-800.avif 800w, /img/gen/room-couch-814.avif 814w",
+      webp: "/img/gen/room-couch-480.webp 480w, /img/gen/room-couch-800.webp 800w, /img/gen/room-couch-814.webp 814w",
+      jpg: "/img/gen/room-couch-480.jpg 480w, /img/gen/room-couch-800.jpg 800w, /img/gen/room-couch-814.jpg 814w",
     },
     fallback: "/img/gen/room-couch-800.jpg",
   },
@@ -558,5 +558,53 @@ export const IMAGES: Record<ImageSlot, ImageEntry> = {
       jpg: "/img/gen/fam-botanical-facial-480.jpg 480w, /img/gen/fam-botanical-facial-800.jpg 800w, /img/gen/fam-botanical-facial-922.jpg 922w",
     },
     fallback: "/img/gen/fam-botanical-facial-800.jpg",
+  },
+  "real-reception": {
+    alt: "The reception desk at Pure Essentials London, King's Cross",
+    ratio: "3:4",
+    width: 1086,
+    height: 1448,
+    srcset: {
+      avif: "/img/gen/real-reception-480.avif 480w, /img/gen/real-reception-800.avif 800w, /img/gen/real-reception-1086.avif 1086w",
+      webp: "/img/gen/real-reception-480.webp 480w, /img/gen/real-reception-800.webp 800w, /img/gen/real-reception-1086.webp 1086w",
+      jpg: "/img/gen/real-reception-480.jpg 480w, /img/gen/real-reception-800.jpg 800w, /img/gen/real-reception-1086.jpg 1086w",
+    },
+    fallback: "/img/gen/real-reception-800.jpg",
+  },
+  "headspa-halo": {
+    alt: "The Halo water ritual during a Japanese Head Spa at Pure Essentials London",
+    ratio: "4:5",
+    width: 576,
+    height: 720,
+    srcset: {
+      avif: "/img/gen/headspa-halo-480.avif 480w, /img/gen/headspa-halo-576.avif 576w",
+      webp: "/img/gen/headspa-halo-480.webp 480w, /img/gen/headspa-halo-576.webp 576w",
+      jpg: "/img/gen/headspa-halo-480.jpg 480w, /img/gen/headspa-halo-576.jpg 576w",
+    },
+    fallback: "/img/gen/headspa-halo-576.jpg",
+  },
+  "headspa-wash": {
+    alt: "A therapist washing a client's hair at the head spa basin, the client wearing an eye mask",
+    ratio: "4:5",
+    width: 576,
+    height: 720,
+    srcset: {
+      avif: "/img/gen/headspa-wash-480.avif 480w, /img/gen/headspa-wash-576.avif 576w",
+      webp: "/img/gen/headspa-wash-480.webp 480w, /img/gen/headspa-wash-576.webp 576w",
+      jpg: "/img/gen/headspa-wash-480.jpg 480w, /img/gen/headspa-wash-576.jpg 576w",
+    },
+    fallback: "/img/gen/headspa-wash-576.jpg",
+  },
+  "headspa-shampoo": {
+    alt: "A double shampoo cleanse with scalp massage at the head spa basin",
+    ratio: "4:5",
+    width: 576,
+    height: 720,
+    srcset: {
+      avif: "/img/gen/headspa-shampoo-480.avif 480w, /img/gen/headspa-shampoo-576.avif 576w",
+      webp: "/img/gen/headspa-shampoo-480.webp 480w, /img/gen/headspa-shampoo-576.webp 576w",
+      jpg: "/img/gen/headspa-shampoo-480.jpg 480w, /img/gen/headspa-shampoo-576.jpg 576w",
+    },
+    fallback: "/img/gen/headspa-shampoo-576.jpg",
   },
 };

@@ -6,7 +6,7 @@ h1: "Our Clinic in King's Cross"
 
 ## hero
 
-[image: home-hero]
+[image: real-reception]
 
 Pure Essentials London is a salon and clinic at 155 King's Cross Road, WC1X 9BN. Every treatment starts with a free consultation.
 
@@ -15,7 +15,7 @@ Pure Essentials London is a salon and clinic at 155 King's Cross Road, WC1X 9BN.
 
 ## where-it-is
 
-[image: contact-welcome]
+[image: headspa-halo]
 
 Find us at 155 King's Cross Road, London WC1X 9BN. King's Cross St Pancras (Circle, Hammersmith and City, Metropolitan, Northern, Piccadilly, Victoria lines) is the nearest station.
 
@@ -35,7 +35,7 @@ For the body: 3D lipo, HIFU body and Emsculpt, from £99.
 
 Laser and hair removal: pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal, from £25.
 
-[image: wellness-card]
+[image: headspa-shampoo]
 
 Wellness: massage and waxing, from £10.
 

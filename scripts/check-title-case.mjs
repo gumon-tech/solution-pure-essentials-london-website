@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Post-build check for queue row Q42 section C (owner's order 2026-09-26): every heading,
-// button, menu item and button-styled link on the built site is in Title Case.
+// button, menu item and button-styled link on the built site is in Title Case. Queue row
+// Q43 (2026-09-27) adds the page <title> and og:title.
 // Dependency-free (Node 22, no npm packages), in the style of the other check scripts.
 //
 // For every out/**/*.html it collects the visible text of:
@@ -127,6 +128,12 @@ function clean(html) {
 function labelsOf(rawHtml) {
   const html = clean(rawHtml);
   const out = [];
+  // Queue row Q43 (owner, 2026-09-27: "both buttons and titles"): the page <title>, read
+  // from the raw head that clean() drops, and the og:title that shares it.
+  const title = /<title>([\s\S]*?)<\/title>/i.exec(rawHtml);
+  if (title) out.push({ kind: "title", text: visible(title[1]) });
+  const og = /<meta\s+property="og:title"\s+content="([^"]*)"/i.exec(rawHtml);
+  if (og) out.push({ kind: "og:title", text: decodeEntities(og[1]) });
   for (const m of html.matchAll(/<(h[1-6]|button|summary)\b[^>]*>([\s\S]*?)<\/\1>/gi)) {
     out.push({ kind: m[1].toLowerCase(), text: visible(m[2]) });
   }

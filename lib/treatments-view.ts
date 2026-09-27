@@ -87,9 +87,8 @@ export const CATEGORY_IMAGE: Record<CategoryId, keyof typeof IMAGES> = {
   hair: "story-laser-hair",
   facials: "face-card",
   massage: "wellness-card",
-  // Queue row Q42: an existing picture of a therapist's hands resting on a client's
-  // shoulders, freed when the Eberlin Facial family it illustrated was removed. No new image.
-  "head-spa": "fam-botanical-facial",
+  // Queue row Q43: a still from the clinic's own head spa video (F, 2026-09-21).
+  "head-spa": "headspa-halo",
   "waxing-ladies": "cat-waxing-ladies",
   "waxing-men": "cat-waxing-men",
 };

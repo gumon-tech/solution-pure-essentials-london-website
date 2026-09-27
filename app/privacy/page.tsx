@@ -3,7 +3,7 @@ import LegalPage from "@/components/LegalPage";
 import { getLegalDocument } from "@/lib/legal";
 
 export const metadata: Metadata = {
-  title: "Privacy notice | Pure Essentials London",
+  title: "Privacy Notice | Pure Essentials London",
   alternates: {
     canonical: "/privacy/",
   },

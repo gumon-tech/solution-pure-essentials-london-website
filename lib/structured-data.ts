@@ -148,7 +148,7 @@ export function familyServiceJsonLd(family: FamilyPage) {
 /** Site-level JSON-LD for the clinic itself, rendered once each on the home and
  * contact pages via components/JsonLd.tsx. */
 export function clinicJsonLd() {
-  const homeHero = IMAGES["home-hero"];
+  const homeHero = IMAGES["real-reception"];
   return {
     "@context": "https://schema.org",
     "@type": ["HealthAndBeautyBusiness", "MedicalBusiness"],

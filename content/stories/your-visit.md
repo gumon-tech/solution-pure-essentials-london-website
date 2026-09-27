@@ -6,7 +6,7 @@ h1: "Your Visit"
 
 ## hero
 
-[image: contact-welcome]
+[image: real-reception]
 
 Every treatment starts with a free consultation. This page walks through a visit, from your first message to aftercare.
 

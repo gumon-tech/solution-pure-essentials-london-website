@@ -39,7 +39,7 @@ Your therapist gives aftercare advice at the appointment. You can message us wit
 
 ## hours
 
-[image: contact-welcome]
+[image: real-reception]
 
 | Day | Hours |
 |---|---|

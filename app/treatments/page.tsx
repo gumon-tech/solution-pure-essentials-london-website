@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeadSpaVideos from "@/components/HeadSpaVideos";
 import ArchImage from "@/components/ArchImage";
 import ReadMoreLink from "@/components/ReadMoreLink";
 import CategoryChips from "@/components/CategoryChips";
@@ -13,7 +14,7 @@ import { categoryAnchor } from "@/lib/story-map";
 // spec's "Treatments and prices in King's Cross | ...") -- flagged in the executor
 // report rather than silently picking one.
 export const metadata: Metadata = {
-  title: "Treatments and prices in King's Cross | Pure Essentials London",
+  title: "Treatments and Prices in King's Cross | Pure Essentials London",
   description:
     "Facials, HIFU, laser, body contouring, massage and waxing at 155 King's Cross Road. The price shown is the price you pay.",
   alternates: {
@@ -50,7 +51,7 @@ export default function TreatmentsPage() {
               yours.
             </p>
           </div>
-          <ArchImage slot="step-2-consultation" priority className="settle-in w-full" />
+          <ArchImage slot="room-couch" priority className="settle-in w-full" />
         </div>
       </section>
 
@@ -117,6 +118,8 @@ export default function TreatmentsPage() {
                     </ol>
                   </div>
                 ) : null}
+
+                {category.id === "head-spa" ? <HeadSpaVideos /> : null}
               </div>
             ))}
           </div>

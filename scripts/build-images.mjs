@@ -53,6 +53,17 @@ function expandHome(p) {
   return p;
 }
 
+// The OneDrive folder is mounted as "OneDrive-GumonTechnology 2" on komphet-mac and as
+// "OneDrive-GumonTechnology" on komphet-air (2026-09-27). Try the path as written, then the
+// other mount name, so the manifest keeps one spelling.
+function resolveSource(p) {
+  if (existsSync(p)) return p;
+  const other = p.includes("OneDrive-GumonTechnology 2/")
+    ? p.replace("OneDrive-GumonTechnology 2/", "OneDrive-GumonTechnology/")
+    : p.replace("OneDrive-GumonTechnology/", "OneDrive-GumonTechnology 2/");
+  return existsSync(other) ? other : p;
+}
+
 function budgetFor(width) {
   if (WIDE_WIDTHS.has(width)) return WIDE_BUDGET_BYTES;
   if (NARROW_WIDTHS.has(width)) return NARROW_BUDGET_BYTES;
@@ -91,7 +102,7 @@ async function main() {
 
   for (const entry of manifest) {
     const { slot, source, crop, ratio, alt } = entry;
-    const sourcePath = expandHome(source);
+    const sourcePath = resolveSource(expandHome(source));
 
     if (!existsSync(sourcePath)) {
       throw new Error(`Source for slot "${slot}" not found: ${sourcePath}`);
@@ -167,7 +178,10 @@ async function main() {
         srcHeight = targetHeightForWidth;
       } else {
         const targetWidthForHeight = Math.round((srcHeight * rw) / rh);
-        const left = Math.round((srcWidth - targetWidthForHeight) / 2);
+        // crop.focusX (0 to 1) moves a sides-trimming crop off centre: 0 keeps the left
+        // edge, 1 the right edge. Used for landscape room photos cut to a portrait arch.
+        const focusX = crop && typeof crop.focusX === "number" ? crop.focusX : 0.5;
+        const left = Math.round((srcWidth - targetWidthForHeight) * focusX);
         pipeline = pipeline.extract({
           left,
           top: 0,

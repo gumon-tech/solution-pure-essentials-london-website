@@ -7,10 +7,10 @@ export default function Welcome({ h1 }: { h1: string }) {
       <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16">
         <div className="settle-in lg:order-2">
           <Picture
-            slot="contact-welcome"
+            slot="real-reception"
             sizes="(min-width: 1024px) 50vw, 100vw"
             priority
-            className="rounded-arch w-full object-cover"
+            className="rounded-arch mx-auto max-h-[60vh] w-full object-cover lg:max-h-[700px]"
           />
         </div>
 

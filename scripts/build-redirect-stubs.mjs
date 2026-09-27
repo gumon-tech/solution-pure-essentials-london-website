@@ -57,7 +57,7 @@ export function stubHtml(target, origin) {
 <head>
 <meta charset="utf-8">
 ${STUB_MARKER}
-<title>Page moved | Pure Essentials London</title>
+<title>Page Moved | Pure Essentials London</title>
 <meta name="robots" content="noindex">
 <meta http-equiv="refresh" content="0; url=${t}">
 <link rel="canonical" href="${abs}">

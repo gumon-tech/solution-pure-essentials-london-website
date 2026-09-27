@@ -2,7 +2,10 @@
   {
     "slot": "home-hero",
     "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/home-hero-a.jpg",
-    "crop": { "topPct": 8, "ratio": "3:2" },
+    "crop": {
+      "topPct": 8,
+      "ratio": "3:2"
+    },
     "ratio": "3:2",
     "alt": "Woman lying back, eyes closed, as a therapist's hands apply cream to her cheek",
     "ai": true
@@ -65,10 +68,11 @@
   },
   {
     "slot": "contact-welcome",
-    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/contact-welcome-a.jpg",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/venue-real-5/room-devices.jpg",
     "ratio": "3:2",
-    "alt": "Two women smiling across a curved wooden reception desk",
-    "ai": true
+    "alt": "A treatment room at Pure Essentials London with a laser platform, a couch and a wall print",
+    "ai": false,
+    "note": "Q43 2026-09-27: the clinic's own photo of 2026-09-18 replaces the earlier source"
   },
   {
     "slot": "story-hifu",
@@ -100,31 +104,39 @@
   },
   {
     "slot": "room-warm",
-    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/edited-client-2026-09-13/room-07.jpg",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/venue-real-5/room-headspa-gold.jpg",
     "ratio": "4:5",
-    "alt": "A treatment room at Pure Essentials London with a wood-slat wall and couch",
-    "ai": false
+    "alt": "The head spa room at Pure Essentials London, with gold walls and a wood-slat frame",
+    "ai": false,
+    "note": "Q43 2026-09-27: the clinic's own photo of 2026-09-18 replaces the earlier source"
   },
   {
     "slot": "room-trolley",
-    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/edited-client-2026-09-13/room-02.jpg",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/venue-real-5/room-white-couch.jpg",
     "ratio": "4:5",
-    "alt": "A treatment room at Pure Essentials London with a trolley of products",
-    "ai": false
+    "alt": "A treatment room at Pure Essentials London with a couch and rolled towels",
+    "ai": false,
+    "note": "Q43 2026-09-27: the clinic's own photo of 2026-09-18 replaces the earlier source"
   },
   {
     "slot": "room-analyser",
-    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/edited-client-2026-09-13/gemini/contact-room-c-a.jpg",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/venue-real-5/room-facial-mirror.jpg",
     "ratio": "4:5",
-    "alt": "A treatment room at Pure Essentials London with white cabinetry and a couch",
-    "ai": false
+    "alt": "A facial room at Pure Essentials London with a marble splashback and a skin analysis mirror",
+    "ai": false,
+    "note": "Q43 2026-09-27: the clinic's own photo of 2026-09-18 replaces the earlier source"
   },
   {
     "slot": "room-couch",
-    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/edited-client-2026-09-13/gemini/contact-room-d-a.jpg",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/venue-real-5/room-devices.jpg",
     "ratio": "4:5",
-    "alt": "A treatment room at Pure Essentials London with rolled towels on the couch",
-    "ai": false
+    "alt": "A treatment room at Pure Essentials London with a laser platform beside the couch",
+    "ai": false,
+    "crop": {
+      "focusX": 0.18,
+      "ratio": "4:5"
+    },
+    "note": "Q43 2026-09-27: the clinic's own photo of 2026-09-18 replaces the earlier source"
   },
   {
     "slot": "cat-laser-skin",
@@ -136,7 +148,10 @@
   {
     "slot": "cat-skin",
     "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/cat-skin-a.jpg",
-    "crop": { "rightPct": 12, "ratio": "4:5" },
+    "crop": {
+      "rightPct": 12,
+      "ratio": "4:5"
+    },
     "ratio": "4:5",
     "alt": "Woman lying back, eyes closed, a gloved hand holding a device to her cheek",
     "ai": true
@@ -151,7 +166,10 @@
   {
     "slot": "cat-carboxy",
     "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/cat-carboxy-a.jpg",
-    "crop": { "topKeepPct": 72, "ratio": "4:5" },
+    "crop": {
+      "topKeepPct": 72,
+      "ratio": "4:5"
+    },
     "ratio": "4:5",
     "alt": "Two smiling women looking together at pages in an open book",
     "ai": true
@@ -222,7 +240,10 @@
   {
     "slot": "fam-microneedling",
     "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/generated-2026-09-13/fam-microneedling-c.jpg",
-    "crop": { "topKeepPct": 72, "ratio": "4:5" },
+    "crop": {
+      "topKeepPct": 72,
+      "ratio": "4:5"
+    },
     "ratio": "4:5",
     "alt": "A client lying back with eyes closed, a gloved hand holding a pen-shaped device along her cheek",
     "ai": true
@@ -317,5 +338,33 @@
     "ratio": "4:5",
     "alt": "A seated therapist resting her hands on a client's shoulders at the start of a facial",
     "ai": true
+  },
+  {
+    "slot": "real-reception",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/venue-real-5/reception.jpg",
+    "ratio": "3:4",
+    "alt": "The reception desk at Pure Essentials London, King's Cross",
+    "ai": false
+  },
+  {
+    "slot": "headspa-halo",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/head-spa-stills/halo-waterfall.jpg",
+    "ratio": "4:5",
+    "alt": "The Halo water ritual during a Japanese Head Spa at Pure Essentials London",
+    "ai": false
+  },
+  {
+    "slot": "headspa-wash",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/head-spa-stills/scalp-wash.jpg",
+    "ratio": "4:5",
+    "alt": "A therapist washing a client's hair at the head spa basin, the client wearing an eye mask",
+    "ai": false
+  },
+  {
+    "slot": "headspa-shampoo",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/head-spa-stills/shampoo.jpg",
+    "ratio": "4:5",
+    "alt": "A double shampoo cleanse with scalp massage at the head spa basin",
+    "ai": false
   }
 ]
