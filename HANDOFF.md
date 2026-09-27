@@ -136,6 +136,15 @@ ls "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essen
 
 Measured 2026-09-27 after main e1c9e54 (Lead, second resume). Standing order A8: re-measure every time.
 
+**Update 2026-09-28 (KPEL on komphet-air, owner's direct request):** Q43 and Q44 live, main 0a8a2eb, deploy success.
+Q43: the clinic said the site looked too AI; every room and reception image is now the clinic's own photo, the
+Japanese Head Spa section has 4 videos, the 2 held names are published on the owner's ruling, page titles are Title
+Case. Q44: calm motion for buttons, links, price rows and images, and a drawn arch ornament. Specs:
+docs/plans/Q43-real-photos-and-titles.md, docs/plans/Q44-motion-and-ornament.md. Still generated: the people
+images on treatment story and family pages (the clinic has no treatment photos). Not yet seen by anyone:
+motion and video autoplay on a real iPhone. OneDrive on air is "OneDrive-GumonTechnology" (no " 2");
+scripts/build-images.mjs accepts both.
+
 **Last reached:** Q42 live. The clinic's WhatsApp feedback of 18 and 21 Sep (K and F) is applied and the
 owner's Title Case order (2026-09-26) is site-wide; deploy run 36223681076 success; live /treatments/ 200
 with Japanese Head Spa, read from outside and seen in a browser. Spec and the item-by-item map:
@@ -145,9 +154,9 @@ docs/plans/Q42-client-feedback-2026-09-18-21.md. Queue: docs/plans/QUEUE.md, 42 
 |---|---|---|---|
 | 1 | Q1 to Q12, Q15, Q18, Q20, Q21, Q23 to Q39 build and fixes | DONE and live | - |
 | 2 | Q42 client feedback + Title Case | DONE and live | - |
-| 3 | Q42 held: "Anti-Wrinkle Injections", "IV (Intravenous) Drips" | HELD (POM advertising, lead repo pel-pom-review-en.html s7, group 2) | owner decides; PEL told nothing yet (PEL room was closed) |
-| 4 | Q42 media: K's 6 venue photos, F's 4 head spa videos | OPEN | owner saves them to OneDrive client-photos (downloads from the owner's browser did not reach this Mac) |
-| 5 | Page title tags still sentence case ("Treatments and prices ...") | OPEN, small | PWEB, if the owner wants |
+| 3 | Q42 held: "Anti-Wrinkle Injections", "IV (Intravenous) Drips" | DONE and live (Q43): owner ruled 2026-09-27 to publish as the clinic asked, after being told the POM advertising risk | - |
+| 4 | Q42 media: K's venue photos, F's 4 head spa videos | DONE and live (Q43): real photos on every room and reception slot, 4 videos under Japanese Head Spa; owner 2026-09-28: no stills cut from video as page images | - |
+| 5 | Page title tags sentence case | DONE and live (Q43): all <title> Title Case, check-title-case now reads <title> and og:title | - |
 | 6 | PEL review of story sentences rewritten in Q42 (facials, HIFU, body, microneedling) | OPEN | PEL |
 | 7 | Q41 story re-layout | Built on branch q41-story-layout (3025a65), NOT merged; branch predates Q42, rebase needed | PEL or WS review of before and after (A6: owner no longer the gate) |
 | 8 | Q40 re-verify | open; round 1 PASS 28 of 28 | Q20 and Safari need the owner's session |
