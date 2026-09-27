@@ -351,27 +351,45 @@
     "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/head-spa-stills/halo-waterfall.jpg",
     "ratio": "4:5",
     "alt": "The Halo water ritual during a Japanese Head Spa at Pure Essentials London",
-    "ai": false
+    "ai": false,
+    "note": "video poster only (HeadSpaVideos); owner 2026-09-28: no stills cut from video as page images"
   },
   {
     "slot": "headspa-wash",
     "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/head-spa-stills/scalp-wash.jpg",
     "ratio": "4:5",
     "alt": "A therapist washing a client's hair at the head spa basin, the client wearing an eye mask",
-    "ai": false
+    "ai": false,
+    "note": "video poster only (HeadSpaVideos); owner 2026-09-28: no stills cut from video as page images"
   },
   {
     "slot": "headspa-shampoo",
     "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/head-spa-stills/shampoo.jpg",
     "ratio": "4:5",
     "alt": "A double shampoo cleanse with scalp massage at the head spa basin",
-    "ai": false
+    "ai": false,
+    "note": "video poster only (HeadSpaVideos); owner 2026-09-28: no stills cut from video as page images"
   },
   {
     "slot": "headspa-massage",
     "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/head-spa-stills/scalp-massage.jpg",
     "ratio": "4:5",
     "alt": "Gloved hands giving a scalp massage at the head spa basin, the client wearing an eye mask",
+    "ai": false,
+    "note": "video poster only (HeadSpaVideos); owner 2026-09-28: no stills cut from video as page images"
+  },
+  {
+    "slot": "room-products",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/edited-client-2026-09-13/room-02.jpg",
+    "ratio": "4:5",
+    "alt": "A treatment room at Pure Essentials London with a product trolley and a magnifier lamp",
+    "ai": false
+  },
+  {
+    "slot": "room-towels",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/site-images/edited-client-2026-09-13/room-04.jpg",
+    "ratio": "4:5",
+    "alt": "Rolled towels on a prepared treatment couch at Pure Essentials London",
     "ai": false
   }
 ]

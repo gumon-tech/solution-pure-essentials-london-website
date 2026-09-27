@@ -41,7 +41,7 @@ From GBP 25
 
 ### Wellness
 
-[image: headspa-halo]
+[image: room-warm]
 
 Massage, Japanese head spa and waxing
 
@@ -75,13 +75,13 @@ You leave with clear aftercare advice and can message us with any question.
 
 ## the-clinic
 
-[image: room-warm]
+[image: room-products]
 
 Pure Essentials London is a salon and clinic at 155 King's Cross Road, WC1X 9BN. Open Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00. Consultations are free.
 
 ## call-to-action
 
-[image: headspa-wash]
+[image: room-towels]
 
 ### Ready When You Are
 

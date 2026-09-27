@@ -87,8 +87,8 @@ export const CATEGORY_IMAGE: Record<CategoryId, keyof typeof IMAGES> = {
   hair: "story-laser-hair",
   facials: "face-card",
   massage: "wellness-card",
-  // Queue row Q43: a still from the clinic's own head spa video (F, 2026-09-21).
-  "head-spa": "headspa-halo",
+  // Queue row Q43: the clinic's head spa room (not a still cut from video, owner 2026-09-28).
+  "head-spa": "room-warm",
   "waxing-ladies": "cat-waxing-ladies",
   "waxing-men": "cat-waxing-men",
 };

@@ -16,7 +16,7 @@ export interface ImageEntry {
   fallback: string;
 }
 
-export type ImageSlot = "home-hero" | "face-card" | "body-card" | "laser-card" | "wellness-card" | "step-1-message" | "step-2-consultation" | "step-3-treatment" | "step-4-aftercare" | "contact-welcome" | "story-hifu" | "story-facials" | "story-body-contouring" | "story-laser-hair" | "room-warm" | "room-trolley" | "room-analyser" | "room-couch" | "cat-laser-skin" | "cat-skin" | "cat-skinboosters" | "cat-carboxy" | "cat-waxing-ladies" | "cat-waxing-men" | "fam-hifu-face" | "fam-cryotherapy" | "fam-light-platform" | "fam-ipl" | "fam-pico-laser" | "fam-tattoo-removal" | "fam-gold-microneedling" | "fam-microneedling" | "fam-chemical-peel" | "fam-radiofrequency" | "fam-skin-booster-body" | "fam-skin-booster-face" | "fam-skin-booster-hydration" | "fam-fat-reduction" | "fam-muscle-toning" | "fam-hifu-body" | "fam-laser-hair" | "fam-hydrating-facial" | "fam-sensitive-skin-facial" | "fam-microdermabrasion" | "fam-botanical-facial" | "real-reception" | "headspa-halo" | "headspa-wash" | "headspa-shampoo" | "headspa-massage";
+export type ImageSlot = "home-hero" | "face-card" | "body-card" | "laser-card" | "wellness-card" | "step-1-message" | "step-2-consultation" | "step-3-treatment" | "step-4-aftercare" | "contact-welcome" | "story-hifu" | "story-facials" | "story-body-contouring" | "story-laser-hair" | "room-warm" | "room-trolley" | "room-analyser" | "room-couch" | "cat-laser-skin" | "cat-skin" | "cat-skinboosters" | "cat-carboxy" | "cat-waxing-ladies" | "cat-waxing-men" | "fam-hifu-face" | "fam-cryotherapy" | "fam-light-platform" | "fam-ipl" | "fam-pico-laser" | "fam-tattoo-removal" | "fam-gold-microneedling" | "fam-microneedling" | "fam-chemical-peel" | "fam-radiofrequency" | "fam-skin-booster-body" | "fam-skin-booster-face" | "fam-skin-booster-hydration" | "fam-fat-reduction" | "fam-muscle-toning" | "fam-hifu-body" | "fam-laser-hair" | "fam-hydrating-facial" | "fam-sensitive-skin-facial" | "fam-microdermabrasion" | "fam-botanical-facial" | "real-reception" | "headspa-halo" | "headspa-wash" | "headspa-shampoo" | "headspa-massage" | "room-products" | "room-towels";
 
 export const IMAGES: Record<ImageSlot, ImageEntry> = {
   "home-hero": {
@@ -618,5 +618,29 @@ export const IMAGES: Record<ImageSlot, ImageEntry> = {
       jpg: "/img/gen/headspa-massage-480.jpg 480w, /img/gen/headspa-massage-576.jpg 576w",
     },
     fallback: "/img/gen/headspa-massage-576.jpg",
+  },
+  "room-products": {
+    alt: "A treatment room at Pure Essentials London with a product trolley and a magnifier lamp",
+    ratio: "4:5",
+    width: 980,
+    height: 1225,
+    srcset: {
+      avif: "/img/gen/room-products-480.avif 480w, /img/gen/room-products-800.avif 800w, /img/gen/room-products-980.avif 980w",
+      webp: "/img/gen/room-products-480.webp 480w, /img/gen/room-products-800.webp 800w, /img/gen/room-products-980.webp 980w",
+      jpg: "/img/gen/room-products-480.jpg 480w, /img/gen/room-products-800.jpg 800w, /img/gen/room-products-980.jpg 980w",
+    },
+    fallback: "/img/gen/room-products-800.jpg",
+  },
+  "room-towels": {
+    alt: "Rolled towels on a prepared treatment couch at Pure Essentials London",
+    ratio: "4:5",
+    width: 770,
+    height: 962,
+    srcset: {
+      avif: "/img/gen/room-towels-480.avif 480w, /img/gen/room-towels-770.avif 770w",
+      webp: "/img/gen/room-towels-480.webp 480w, /img/gen/room-towels-770.webp 770w",
+      jpg: "/img/gen/room-towels-480.jpg 480w, /img/gen/room-towels-770.jpg 770w",
+    },
+    fallback: "/img/gen/room-towels-770.jpg",
   },
 };

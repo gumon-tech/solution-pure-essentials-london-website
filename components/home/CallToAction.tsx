@@ -11,7 +11,7 @@ export default function CallToAction() {
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-16 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16">
           <Picture
-            slot="headspa-wash"
+            slot="room-towels"
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="reveal rounded-arch w-full object-cover"
           />

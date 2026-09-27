@@ -9,7 +9,8 @@ import { storiesOfGroup, storyHref } from "@/lib/story-map";
 
 // Titles and 1-line descriptions verbatim from content/home.md's "## groups" section.
 // Images (queue row Q43, the clinic's feedback of 2026-09-27 that the site looked too AI):
-// the clinic's own rooms and its head spa, not generated people. Same order in the same order and with the same group ids as
+// the clinic's own rooms, not generated people; Wellness shows the head spa room. No stills
+// cut from video (owner 2026-09-28). Same order in the same order and with the same group ids as
 // lib/groups.ts (GROUPS) so the /treatments/#<id> anchors line up.
 const CARDS: { id: GroupId; title: string; line: string; slot: ImageSlot }[] = [
   {
@@ -34,7 +35,7 @@ const CARDS: { id: GroupId; title: string; line: string; slot: ImageSlot }[] = [
     id: "wellness",
     title: "Wellness",
     line: "Massage, Japanese head spa and waxing",
-    slot: "headspa-halo",
+    slot: "room-warm",
   },
 ];
 
