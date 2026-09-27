@@ -128,40 +128,41 @@ buttons. Treatwell is the secondary route: one link on /contact and in the foote
 cat ~/dev/gumon-workspace/.machine-id                      # komphet-mac
 gh repo view gumon-tech/solution-pure-essentials-london-website --json visibility,url
 dig +short CNAME pel.gumon.io                              # gumon-tech.github.io.
-python3 -B -c "import json;d=json.load(open('$HOME/dev/solution-pure-essentials-london/data/pel-new-site-services.json'));print(len(d['services']),sum(s['status']=='live' for s in d['services']))"   # 176 115
+python3 -B -c "import json;d=json.load(open('$HOME/dev/solution-pure-essentials-london/data/pel-new-site-services.json'));print(len(d['services']),sum(s['status']=='live' for s in d['services']))"   # 188 111 (lead repo, 2026-09-27)
 ls "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-11-client-photos/venue-real-9" | wc -l   # 9
 ```
 
 ## กระดานเป้าหมาย
 
-Measured 2026-09-13 after main 97aa58d. Standing order A8: re-measure every time.
+Measured 2026-09-27 after main e1c9e54 (Lead, second resume). Standing order A8: re-measure every time.
 
-**Last reached:** PEL ruled the site fit for the owner's Monday progress showing (lead repo brief section 21).
-Live at https://pel.gumon.io and read from outside: home, /treatments/ (97 rows, 11 people category images,
-links to 21 family pages), 21 family pages, 11 story pages, /contact/, /privacy/, /terms/, sitemap.xml 37 URLs all
-200, robots.txt, favicon, JSON-LD on home and contact. Lighthouse first pass: performance 96 to 100, SEO 100, CLS 0;
-the only accessibility and best-practice failures (oak text 4.43:1, favicon 404) are fixed and live.
-Data file = PEL 0c07854 (111 live), identical to lead repo origin/main. Every image, sentence and legal text approved by PEL.
+**Last reached:** Q42 live. The clinic's WhatsApp feedback of 18 and 21 Sep (K and F) is applied and the
+owner's Title Case order (2026-09-26) is site-wide; deploy run 36223681076 success; live /treatments/ 200
+with Japanese Head Spa, read from outside and seen in a browser. Spec and the item-by-item map:
+docs/plans/Q42-client-feedback-2026-09-18-21.md. Queue: docs/plans/QUEUE.md, 42 rows.
 
 | # | Goal | State | Holder / waiting on |
 |---|---|---|---|
-| 1 | Research, direction, owner decisions, Lead and Executor setup | DONE | - |
-| 2 | Scaffold, imagery guideline, image set, image pipeline (24 slots) | DONE | - |
-| 3 | Home, treatments, contact, domain (Q7 Q8 Q9 Q10) with PEL fixes | DONE and live | - |
-| 4 | Family pages, links, sitemap, robots (Q12) | DONE and live | - |
-| 5 | Privacy and terms (Q15) | DONE and live | - |
-| 6 | Story pages set 1 and 2 (Q25 Q26, 8 pages) | DONE and live; PEL outside check passed (brief section 24) | - |
-| 7 | Story pages set 3 (Q27, 3 pages) | DONE and live; PEL final outside check passed, build phase closed (brief section 25) | - |
-| 8 | Clinic editing guide (Q20) | DONE; clinic needs a GitHub username | clinic via owner |
-| 9 | Structured data (Q18 part 1) | DONE and live; Search Console after domain switch | - |
-| 10 | Lighthouse (Q21) | DONE and live | - |
-| 11 | Consent banner (Q16) | HOLD on branch q16-consent-banner, wording approved | merge with Q17 |
-| 12 | Google Ads tag (Q17) | HOLD, spec from PEL (3 click conversions) | PEL reads the tag ID after the showing |
-| 13 | Photo brief and clinic questions (Q19) | photo brief CANCELLED 2026-09-13: owner ruled the 20 AI people images are production images (PEL commit a9e5a76); clinic questions still PEL's | owner sends the questions |
-| 14 | About page (Q14) | OPEN | clinic answers |
-| 15 | Clinic domain switch (Q22) | OPEN | owner's order only |
+| 1 | Q1 to Q12, Q15, Q18, Q20, Q21, Q23 to Q39 build and fixes | DONE and live | - |
+| 2 | Q42 client feedback + Title Case | DONE and live | - |
+| 3 | Q42 held: "Anti-Wrinkle Injections", "IV (Intravenous) Drips" | HELD (POM advertising, lead repo pel-pom-review-en.html s7, group 2) | owner decides; PEL told nothing yet (PEL room was closed) |
+| 4 | Q42 media: K's 6 venue photos, F's 4 head spa videos | OPEN | owner saves them to OneDrive client-photos (downloads from the owner's browser did not reach this Mac) |
+| 5 | Page title tags still sentence case ("Treatments and prices ...") | OPEN, small | PWEB, if the owner wants |
+| 6 | PEL review of story sentences rewritten in Q42 (facials, HIFU, body, microneedling) | OPEN | PEL |
+| 7 | Q41 story re-layout | Built on branch q41-story-layout (3025a65), NOT merged; branch predates Q42, rebase needed | PEL or WS review of before and after (A6: owner no longer the gate) |
+| 8 | Q40 re-verify | open; round 1 PASS 28 of 28 | Q20 and Safari need the owner's session |
+| 9 | Q13 /prices/ | queued, likely obsolete after Q36 | PEL |
+| 10 | Q14 about page | queued | clinic answers |
+| 11 | Q16 consent + Q17 Google tag | hold | tag ID from PEL |
+| 12 | Q22 clinic domain switch | queued | owner's order only |
 
-**Done: 11 of 15.** Build phase closed by PEL (brief section 25). Every open row waits on PEL, the clinic or the owner; no PWEB-only work is unblocked.
+**Done: 2 of 12 goal rows fully, 36 of 42 queue rows done.** Next unblocked PWEB work: row 5, then rebase Q41 onto main.
+
+Resume notes: HANDOFF sections above "กระดานเป้าหมาย" were written 2026-09-13 and are background only.
+Data now: lead repo file 188 rows / 111 live (PEL, not updated with Q42); this repo data/services.json 197 rows /
+118 live after Q42, so the two files now differ on purpose; tell PEL. PEL is reached by ticket in
+~/dev/.gumon-queue/PWEB/machines/komphet-mac/queue/PEL/. About 30 stale executor worktrees under .claude/worktrees
+can be removed. The owner's WhatsApp is in Chrome "Browser 1" (select_browser), not the Business account.
 
 Lessons recorded this session (docs/plans/INCIDENTS.md and memory): quote a check only after reading its exit code,
 and capture the exit code explicitly because shell errexit did not gate a heredoc check here; one polite fetch script
@@ -174,6 +175,6 @@ servers by the PID captured at launch, never by matching a name pattern.
 ```bash
 /bin/ls docs/plans docs/research                        # LEAD EXECUTOR-BRIEF DEFINITION-OF-DONE QUEUE; 00 01 02 03
 git log --oneline | head -3
-grep -c '^| Q[0-9]' docs/plans/QUEUE.md                   # 22
+grep -c '^| Q[0-9]' docs/plans/QUEUE.md                   # 42
 ```
 Note: `ls` is aliased to eza on this machine and prints nothing inside the agent's shell; use /bin/ls.
