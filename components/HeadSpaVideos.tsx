@@ -6,12 +6,13 @@ import { IMAGES, type ImageSlot } from "@/lib/images";
 // Queue row Q43: the clinic's own head spa videos (F, 2026-09-21), shown under the
 // Japanese Head Spa prices. Muted, no sound track in the files, and each clip only plays
 // while it is on screen. With reduced motion the clips stay on their poster and show
-// controls, so nothing moves unless the visitor presses play. The fourth clip the clinic
-// sent shows the client's face and is not used until the clinic confirms consent.
+// controls, so nothing moves unless the visitor presses play. The fourth clip shows the
+// client's face; the owner confirmed the client's consent on 2026-09-27.
 const CLIPS: { src: string; poster: ImageSlot; caption: string }[] = [
   { src: "/video/head-spa-2.mp4", poster: "headspa-halo", caption: "Halo Water Ritual" },
-  { src: "/video/head-spa-1.mp4", poster: "headspa-wash", caption: "Scalp Massage and Wash" },
+  { src: "/video/head-spa-1.mp4", poster: "headspa-wash", caption: "Scalp Wash" },
   { src: "/video/head-spa-3.mp4", poster: "headspa-shampoo", caption: "Double Shampoo Cleanse" },
+  { src: "/video/head-spa-4.mp4", poster: "headspa-massage", caption: "Scalp Massage" },
 ];
 
 function Clip({ src, poster, caption }: (typeof CLIPS)[number]) {
@@ -63,7 +64,7 @@ function Clip({ src, poster, caption }: (typeof CLIPS)[number]) {
 
 export default function HeadSpaVideos() {
   return (
-    <div className="reveal mt-8 grid max-w-3xl grid-cols-3 gap-3 sm:gap-6">
+    <div className="reveal mt-8 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6">
       {CLIPS.map((clip) => (
         <Clip key={clip.src} {...clip} />
       ))}

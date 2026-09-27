@@ -18,7 +18,7 @@
 //   - every info-table row's cells (a table whose header's last column is not "Source
 //     slug" -- e.g. set 3's "Day | Hours") appear verbatim in the visible text
 //   - hard checks on the visible text: no leaked "#", "|", "[image", "Button (", "**",
-//     "£ " + digit, "GBP ", "include VAT", or botox/botulinum/anti-wrinkle/lidocaine
+//     "£ " + digit, "GBP ", "include VAT", or botox/botulinum/lidocaine
 //   - every visible link whose text contains "Treatwell" has an href starting with
 //     https://www.treatwell.co.uk/ (fails if a page's md has a Treatwell button but 0
 //     such links are found)
@@ -36,7 +36,9 @@ import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
-const FORBIDDEN_WORDS_RE = /botox|botulinum|anti-?wrinkle|lidocaine/gi;
+// "anti-wrinkle" left this list on 2026-09-27 (queue row Q43): the owner ruled that the clinic's
+// service name "Anti-Wrinkle Injections" is published. Medicine names stay banned.
+const FORBIDDEN_WORDS_RE = /botox|botulinum|lidocaine/gi;
 const ROOM_PHOTO_SENTENCE = "The photographs in this section show treatment rooms at Pure Essentials London.";
 const ROOM_SLOTS = new Set(["room-warm", "room-trolley", "room-analyser", "room-couch"]);
 const RECOMMEND_SENTENCE_RE = /we will not recommend a treatment that is not right for you/g;
@@ -435,7 +437,7 @@ function main() {
       { label: '"£ " + digit', re: /£ \d/ },
       { label: '"GBP "', re: /GBP / },
       { label: '"include VAT"', re: /include VAT/ },
-      { label: "botox/botulinum/anti-wrinkle/lidocaine", re: FORBIDDEN_WORDS_RE },
+      { label: "botox/botulinum/lidocaine", re: FORBIDDEN_WORDS_RE },
     ];
     const hardFailures = [];
     for (const check of hardChecks) {

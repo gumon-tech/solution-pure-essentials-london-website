@@ -19,7 +19,9 @@ import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
-const FORBIDDEN_WORDS_RE = /botox|botulinum|anti-?wrinkle|lidocaine|include vat/gi;
+// "anti-wrinkle" left this list on 2026-09-27 (queue row Q43): the owner ruled that the clinic's
+// service name "Anti-Wrinkle Injections" is published. Medicine names stay banned.
+const FORBIDDEN_WORDS_RE = /botox|botulinum|lidocaine|include vat/gi;
 
 function readText(p) {
   return readFileSync(p, "utf8");

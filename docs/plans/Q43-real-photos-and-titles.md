@@ -1,8 +1,8 @@
 # Q43: the clinic's real photos in place of generated ones, head spa videos, Title Case page titles
 
 Written 2026-09-27 on komphet-air (room KPEL, at the owner's direct request in chat).
-Built on branch `q43-real-photos`. **Not merged to main and not deployed**: waits for the
-owner to look at it.
+Built on branch `q43-real-photos`, merged to main on the owner's order of 2026-09-27
+("ขึ้นเว็บจริงเลย").
 
 ## What the owner passed on (2026-09-27)
 
@@ -104,3 +104,24 @@ phone after deploy.
 4. If the clinic wants less AI on the treatment pages too: a short photo session of real
    treatments (hands, devices, no faces needed) is the only way to replace them without
    repeating the same 5 rooms.
+
+## Owner's rulings, 2026-09-27 (after reading the report above)
+
+```
+deploy          "ขึ้นเว็บจริงเลย"          merge to main and deploy
+held items      "ทำตามลูกค้าแจ้งนะครับ"      publish as the clinic asked
+video 4         "ใส่ได้ ลูกค้ายินยอมแล้ว"    the client in the video has consented
+```
+
+- New live rows in `skinboosters`, the same shape as PRP (no price, "Ask for a quote",
+  consultation first): `anti_wrinkle_injections` "Anti-Wrinkle Injections" and
+  `iv_intravenous_drips` "IV (Intravenous) Drips". They render on /treatments/ only. The older
+  held IV, vitamin and B12 rows from the Wix menu stay held; the clinic did not ask for them.
+- The owner was told before ruling that UK law bars advertising prescription-only medicines
+  to the public and that the ASA treats "anti-wrinkle injections" as naming one (lead repo
+  pel-pom-review-en.html section 7). The ruling is the owner's and the clinic's risk decision.
+- check-family-pages and check-story-pages no longer ban the word "anti-wrinkle"; botox,
+  botulinum and lidocaine stay banned, and no page names a medicine.
+- Video 4 added (caption "Scalp Massage", poster slot `headspa-massage`); the grid is 2 by 2 on a
+  phone and 4 across from 640 px. 4 files, 5.2 MB together, none fetched until the visitor
+  reaches the section.

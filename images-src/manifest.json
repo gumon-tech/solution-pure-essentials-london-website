@@ -366,5 +366,12 @@
     "ratio": "4:5",
     "alt": "A double shampoo cleanse with scalp massage at the head spa basin",
     "ai": false
+  },
+  {
+    "slot": "headspa-massage",
+    "source": "$HOME/Library/CloudStorage/OneDrive-GumonTechnology 2/10-Work/PEL-Pure-Essentials-London/2026-09-18-client-photos/head-spa-stills/scalp-massage.jpg",
+    "ratio": "4:5",
+    "alt": "Gloved hands giving a scalp massage at the head spa basin, the client wearing an eye mask",
+    "ai": false
   }
 ]

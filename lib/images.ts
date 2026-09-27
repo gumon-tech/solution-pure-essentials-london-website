@@ -16,7 +16,7 @@ export interface ImageEntry {
   fallback: string;
 }
 
-export type ImageSlot = "home-hero" | "face-card" | "body-card" | "laser-card" | "wellness-card" | "step-1-message" | "step-2-consultation" | "step-3-treatment" | "step-4-aftercare" | "contact-welcome" | "story-hifu" | "story-facials" | "story-body-contouring" | "story-laser-hair" | "room-warm" | "room-trolley" | "room-analyser" | "room-couch" | "cat-laser-skin" | "cat-skin" | "cat-skinboosters" | "cat-carboxy" | "cat-waxing-ladies" | "cat-waxing-men" | "fam-hifu-face" | "fam-cryotherapy" | "fam-light-platform" | "fam-ipl" | "fam-pico-laser" | "fam-tattoo-removal" | "fam-gold-microneedling" | "fam-microneedling" | "fam-chemical-peel" | "fam-radiofrequency" | "fam-skin-booster-body" | "fam-skin-booster-face" | "fam-skin-booster-hydration" | "fam-fat-reduction" | "fam-muscle-toning" | "fam-hifu-body" | "fam-laser-hair" | "fam-hydrating-facial" | "fam-sensitive-skin-facial" | "fam-microdermabrasion" | "fam-botanical-facial" | "real-reception" | "headspa-halo" | "headspa-wash" | "headspa-shampoo";
+export type ImageSlot = "home-hero" | "face-card" | "body-card" | "laser-card" | "wellness-card" | "step-1-message" | "step-2-consultation" | "step-3-treatment" | "step-4-aftercare" | "contact-welcome" | "story-hifu" | "story-facials" | "story-body-contouring" | "story-laser-hair" | "room-warm" | "room-trolley" | "room-analyser" | "room-couch" | "cat-laser-skin" | "cat-skin" | "cat-skinboosters" | "cat-carboxy" | "cat-waxing-ladies" | "cat-waxing-men" | "fam-hifu-face" | "fam-cryotherapy" | "fam-light-platform" | "fam-ipl" | "fam-pico-laser" | "fam-tattoo-removal" | "fam-gold-microneedling" | "fam-microneedling" | "fam-chemical-peel" | "fam-radiofrequency" | "fam-skin-booster-body" | "fam-skin-booster-face" | "fam-skin-booster-hydration" | "fam-fat-reduction" | "fam-muscle-toning" | "fam-hifu-body" | "fam-laser-hair" | "fam-hydrating-facial" | "fam-sensitive-skin-facial" | "fam-microdermabrasion" | "fam-botanical-facial" | "real-reception" | "headspa-halo" | "headspa-wash" | "headspa-shampoo" | "headspa-massage";
 
 export const IMAGES: Record<ImageSlot, ImageEntry> = {
   "home-hero": {
@@ -606,5 +606,17 @@ export const IMAGES: Record<ImageSlot, ImageEntry> = {
       jpg: "/img/gen/headspa-shampoo-480.jpg 480w, /img/gen/headspa-shampoo-576.jpg 576w",
     },
     fallback: "/img/gen/headspa-shampoo-576.jpg",
+  },
+  "headspa-massage": {
+    alt: "Gloved hands giving a scalp massage at the head spa basin, the client wearing an eye mask",
+    ratio: "4:5",
+    width: 576,
+    height: 720,
+    srcset: {
+      avif: "/img/gen/headspa-massage-480.avif 480w, /img/gen/headspa-massage-576.avif 576w",
+      webp: "/img/gen/headspa-massage-480.webp 480w, /img/gen/headspa-massage-576.webp 576w",
+      jpg: "/img/gen/headspa-massage-480.jpg 480w, /img/gen/headspa-massage-576.jpg 576w",
+    },
+    fallback: "/img/gen/headspa-massage-576.jpg",
   },
 };

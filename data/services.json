@@ -1137,6 +1137,30 @@
       "note": "new row from F 2026-09-21 20:00; no price, consultation first (Q42 A23)"
     },
     {
+      "slug": "anti_wrinkle_injections",
+      "name": "Anti-Wrinkle Injections",
+      "display_name": null,
+      "category": "skinboosters",
+      "status": "live",
+      "price_gbp": null,
+      "price_from": false,
+      "duration": null,
+      "source": "clinic WhatsApp 2026-09-21",
+      "note": "new row from F 2026-09-21 20:00; no price, consultation first. Held in Q42 (POM advertising, lead repo pel-pom-review-en.html s7); published on the owner's ruling of 2026-09-27 after being told the risk (Q43)"
+    },
+    {
+      "slug": "iv_intravenous_drips",
+      "name": "IV (Intravenous) Drips",
+      "display_name": null,
+      "category": "skinboosters",
+      "status": "live",
+      "price_gbp": null,
+      "price_from": false,
+      "duration": null,
+      "source": "clinic WhatsApp 2026-09-21",
+      "note": "new row from F 2026-09-21 20:00; no price, consultation first. Held in Q42 (group 2); published on the owner's ruling of 2026-09-27 after being told the risk (Q43). Old held IV rows stay held"
+    },
+    {
       "slug": "localised_fat",
       "name": "Localised fat",
       "display_name": null,
