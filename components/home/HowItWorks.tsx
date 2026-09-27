@@ -1,5 +1,6 @@
 import ReadMoreLink from "@/components/ReadMoreLink";
 import { IMAGES, type ImageSlot } from "@/lib/images";
+import ArchOrnament from "@/components/ArchOrnament";
 
 // These 4 step images sit right after the group cards, not in the initial
 // viewport but close to it -- loaded eagerly (not lib/Picture's default
@@ -38,6 +39,7 @@ export default function HowItWorks() {
   return (
     <section className="bg-linen">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-16 lg:px-8">
+        <ArchOrnament className="mb-4" />
         <h2 className="reveal font-display text-4xl text-espresso">How It Works</h2>
 
         <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">

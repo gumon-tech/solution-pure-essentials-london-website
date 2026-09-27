@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 const FOCUS =
   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream";
 
-const TEXT_CLASS = `group/rm inline-flex items-center gap-1.5 rounded-sm font-body text-oak underline decoration-oak/40 underline-offset-4 transition-colors duration-300 hover:text-espresso hover:decoration-espresso ${FOCUS}`;
+const TEXT_CLASS = `group/rm inline-flex items-center gap-1.5 rounded-sm font-body text-oak underline decoration-oak/40 underline-offset-4 duration-300 hover:text-espresso hover:decoration-espresso ${FOCUS}`;
 
 const PILL_CLASS = `group/rm pill inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-oak px-4 py-2 text-sm font-body text-oak hover:bg-oak hover:text-white ${FOCUS}`;
 

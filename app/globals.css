@@ -148,6 +148,45 @@ html {
       animation-timeline: view();
       animation-range: entry 0% entry min(100%, 30vh);
     }
+
+    /* 7. Queue row Q44: a revealed image is unveiled rather than slid: the arch rises from
+     * its base like a curtain while the photo settles from a slight zoom. Scroll-linked,
+     * so it moves only as fast as the visitor scrolls. */
+    @keyframes unveil {
+      from {
+        clip-path: inset(35% 0 0 0);
+        opacity: 0.4;
+        transform: scale(1.06);
+      }
+      to {
+        clip-path: inset(0 0 0 0);
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    img.reveal {
+      animation-name: unveil;
+      animation-range: entry 0% entry min(100%, 45vh);
+    }
+
+    /* 8. Queue row Q44: the arch ornament above a section heading draws its own outline
+     * as it enters (components/ArchOrnament.tsx; the path uses pathLength="1"). */
+    @keyframes draw-line {
+      from {
+        stroke-dashoffset: 1;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .arch-ornament path {
+      stroke-dasharray: 1;
+      animation: draw-line linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 35%;
+    }
   }
 }
 
@@ -174,6 +213,76 @@ html {
   .pill:active {
     transform: scale(0.98);
     transition-duration: 120ms;
+  }
+
+  /* Queue row Q44 (research: restraint reads as premium; hover only where a pointer can
+   * hover, touch gets the press above). Every pill lifts 2 px; a filled pill also gets one
+   * soft band of light that crosses it once, like light passing over a polished surface. */
+  .pill {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  .pill::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      105deg,
+      transparent 30%,
+      rgba(255, 250, 242, 0.28) 48%,
+      transparent 66%
+    );
+    transform: translateX(-120%);
+    pointer-events: none;
+  }
+
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .pill:hover {
+      transform: translateY(-2px);
+    }
+
+    .pill:hover:active {
+      transform: translateY(-2px) scale(0.98);
+    }
+
+    .pill:hover::after {
+      transform: translateX(120%);
+      transition: transform 900ms var(--ease-soft);
+    }
+
+    a:hover > .wa-icon {
+      transform: rotate(-10deg) scale(1.08);
+    }
+
+    /* Read more text links: the underline eases away from the text as the arrow moves. */
+    .group\/rm:not(.pill):hover {
+      text-underline-offset: 7px;
+    }
+
+    /* Price rows: a quiet linen band under the row the pointer is on, for scanning a
+     * long list. Padding is added on both sides and taken back with a negative margin, so
+     * nothing moves. */
+    .price-row {
+      margin-inline: -0.75rem;
+      padding-inline: 0.75rem;
+      border-radius: 0.75rem;
+      transition: background-color 300ms var(--ease-soft);
+    }
+
+    .price-row:hover {
+      background-color: rgba(243, 237, 227, 0.8);
+    }
+  }
+
+  .wa-icon {
+    transition: transform 300ms var(--ease-soft);
+  }
+
+  .group\/rm:not(.pill) {
+    transition-property: color, text-decoration-color, text-underline-offset;
   }
 
   /* Image cards that are links (home category cards, "You may also like" cards): a slow

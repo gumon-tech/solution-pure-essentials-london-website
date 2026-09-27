@@ -1,6 +1,7 @@
 import Picture from "@/components/Picture";
 import ReadMoreLink from "@/components/ReadMoreLink";
 import { SITE } from "@/lib/site";
+import ArchOrnament from "@/components/ArchOrnament";
 
 // Verbatim from content/home.md's "## the-clinic" section.
 const SENTENCE =
@@ -17,6 +18,7 @@ export default function Clinic() {
         />
 
         <div className="reveal">
+          <ArchOrnament className="mb-4" />
           <h2 className="font-display text-4xl text-espresso">The Clinic</h2>
           <p className="mt-4 max-w-prose text-cocoa">{SENTENCE}</p>
 

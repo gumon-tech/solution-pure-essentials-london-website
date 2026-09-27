@@ -9,7 +9,7 @@ export default function PriceList({ rows }: { rows: TreatmentRow[] }) {
       {rows.map((row) => (
         <li
           key={row.slug}
-          className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 py-4"
+          className="price-row flex flex-wrap items-center justify-between gap-x-6 gap-y-2 py-4"
         >
           <div className="min-w-0">
             <p className="text-espresso">{row.name}</p>

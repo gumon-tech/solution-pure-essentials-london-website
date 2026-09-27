@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Picture from "@/components/Picture";
 import { waSite } from "@/lib/site";
+import ArchOrnament from "@/components/ArchOrnament";
 
 // Verbatim from content/home.md's "## call-to-action" section.
 const SENTENCE = "Message us on WhatsApp, or book online any time on Treatwell.";
@@ -17,6 +18,7 @@ export default function CallToAction() {
           />
 
           <div className="reveal">
+            <ArchOrnament className="mb-4" />
             <h2 className="font-display text-4xl text-espresso">Ready When You Are</h2>
             <p className="mt-4 max-w-prose text-cocoa">{SENTENCE}</p>
 
