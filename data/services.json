@@ -1314,7 +1314,7 @@
       "price_from": false,
       "duration": null,
       "source": "clinic WhatsApp 2026-09-29",
-      "note": "new row from F 2026-09-29 21:54; duration not given (Q45)"
+      "note": "new row from F 2026-09-29 21:54; no duration, shown without one as confirmed by the owner 2026-09-29 (Q45)"
     },
     {
       "slug": "men_s_waxing_full_back",
@@ -1326,7 +1326,7 @@
       "price_from": false,
       "duration": null,
       "source": "clinic WhatsApp 2026-09-29",
-      "note": "new row from F 2026-09-29 21:54; duration not given (Q45)"
+      "note": "new row from F 2026-09-29 21:54; no duration, shown without one as confirmed by the owner 2026-09-29 (Q45)"
     },
     {
       "slug": "men_s_waxing_half_leg",
@@ -1758,7 +1758,7 @@
       "price_from": false,
       "duration": "1 hr",
       "source": "clinic WhatsApp 2026-09-29",
-      "note": "new row from F 2026-09-29 21:42; F wrote '£65 ?(1h)', duration 1 hr to confirm (Q45)"
+      "note": "new row from F 2026-09-29 21:42; F wrote '£65 ?(1h)'; 1 hr confirmed by the owner 2026-09-29 (Q45)"
     },
     {
       "slug": "tattoo_large_area_8_15cm",

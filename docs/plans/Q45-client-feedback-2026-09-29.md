@@ -13,10 +13,10 @@ rename sets `display_name`.
 | A1 | 21:00 | HIFU: remove both "Full Face" rows (full_face £450, full_face_1 £300) |
 | A2 | 21:00 | HIFU: new rows "Cheek, Jawline & Neck" £550 1 hr, "Eyes" £200 30 min, "Smile Line" £150 30 min |
 | A3 | 21:17 | remove half_face_with_led_and_mask and aesthetics_1_skymedic_chemical_peels (row, family, description, story sentence) |
-| A4 | 21:42 | new row "Swedish Massage" £65 1 hr. F wrote "£65 ?(1h)"; 1 hr is to be confirmed |
+| A4 | 21:42 | new row "Swedish Massage" £65 1 hr. F wrote "£65 ?(1h)"; 1 hr confirmed by the owner |
 | A5 | 21:49 | ladies_waxing_upper_leg_strip_wax £20 to £26 |
 | A6 | 21:51 | "(Hot Wax)" added to Bikini, Brazilian, G-String and Hollywood |
-| A7 | 21:54 | new rows "Men's Waxing Half Back" £28 and "Men's Waxing Full Back" £35, no duration given |
+| A7 | 21:54 | new rows "Men's Waxing Half Back" £28 and "Men's Waxing Full Back" £35, no duration given (shown without one, owner confirmed) |
 
 Prose that A1 to A7 made untrue was rewritten from the rows: HIFU now runs from £150 and 30 min
 (was £280 and 45 min); hot wax now covers the bikini, Brazilian, G-String and Hollywood; men's
@@ -43,7 +43,7 @@ waxing now covers the back. Removed rows' old URLs get no stub (Q42 precedent).
 ## Open for PEL
 
 - data/services.json now 205 rows / 122 live; the lead repo file differs on purpose (Q42, Q45)
-- Swedish Massage 1 hr duration and the 2 back waxing durations: confirm with the clinic
+- Swedish Massage 1 hr and the 2 back waxing rows without a duration: confirmed by the owner 2026-09-29
 
 ## B1 extended to every page (owner 2026-09-29, after the first deploy)
 
