@@ -1,6 +1,6 @@
 ---
 title: "Body Contouring in King's Cross | Pure Essentials London"
-description: "Body contouring at King's Cross, London: 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. From £99. Consultations are free."
+description: "Body Contouring at King's Cross, London: 3D Lipo, Cryoelectrolipolysis, Emsculpt and HIFU for the body. From £99. Consultations are free."
 h1: "Body Contouring in King's Cross"
 short: "Body Contouring"
 ---
@@ -9,7 +9,7 @@ short: "Body Contouring"
 
 [image: story-body-contouring]
 
-Body contouring at King's Cross, 7 days a week. Every treatment starts with a free consultation.
+Body Contouring at King's Cross, 7 days a week. Every treatment starts with a free consultation.
 
 - Button (primary): Message Us on WhatsApp
 - Button (secondary): See Treatments and Prices
@@ -18,7 +18,7 @@ Body contouring at King's Cross, 7 days a week. Every treatment starts with a fr
 
 [image: fam-fat-reduction]
 
-Body contouring here covers 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. Cryoelectrolipolysis is priced for 1, 2 or 3 areas, and HIFU for small, medium and large areas. Sessions take from 30 minutes to 2 hours.
+Body Contouring here covers 3D Lipo, Cryoelectrolipolysis, Emsculpt and HIFU for the body. Cryoelectrolipolysis is priced for 1, 2 or 3 areas, and HIFU for small, medium and large areas. Sessions take from 30 minutes to 2 hours.
 
 What each treatment aims to do, and which one may suit you, is a question for the free consultation.
 
@@ -26,7 +26,7 @@ What each treatment aims to do, and which one may suit you, is a question for th
 
 [image: step-2-consultation]
 
-Body contouring treatments are aesthetic treatments for adults aged 18 and over. At the consultation we look at your skin or your goal and recommend what suits you. Results vary from person to person.
+Body Contouring treatments are aesthetic treatments for adults aged 18 and over. At the consultation we look at your skin or your goal and recommend what suits you. Results vary from person to person.
 
 If you have a health condition, or you are unsure which treatment is right for you, ask at the consultation before you book.
 
@@ -72,10 +72,10 @@ You leave with clear aftercare advice and can message us with any question.
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 **How Much Does Body Contouring Cost?**
-Prices start at £99 for Emsculpt or for 1 area of cryoelectrolipolysis. Every option is listed on this page.
+Prices start at £99 for Emsculpt or for 1 area of Cryoelectrolipolysis. Every option is listed on this page.
 
 **How Long Does a Session Take?**
-From 30 minutes for Emsculpt to 2 hours for 3 areas of cryoelectrolipolysis.
+From 30 minutes for Emsculpt to 2 hours for 3 areas of Cryoelectrolipolysis.
 
 **Is the Consultation Free?**
 Yes. Consultations are free.

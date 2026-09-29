@@ -53,7 +53,7 @@ sources:
 ## aesthetics_1_golden_micro_needling
 title: Fractional Radiofrequency Microneedling
 
-Fractional Radiofrequency Microneedling is radiofrequency microneedling, which directs radiofrequency heat into the deep dermis and sub-dermal layers of the skin. Its session length is not on the price list yet, so ask on WhatsApp before you book. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
+Fractional Radiofrequency Microneedling is Radiofrequency Microneedling, which directs radiofrequency heat into the deep dermis and sub-dermal layers of the skin. Its session length is not on the price list yet, so ask on WhatsApp before you book. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
 
 sources:
 - S1: https://www.pureessentialslondon.com/aesthetics-1/golden-micro-needling, facts taken: method "Radiofrequency Microneedling"; "radiofrequency heat"; "deep dermis and sub-dermal layers"
@@ -134,7 +134,7 @@ sources:
 ## aesthetics_body_laser_hair_removal_2F_ipl
 title: Laser Hair Removal / IPL
 
-This treatment uses either a LONGPULSE laser or IPL (intense pulsed light), and common areas include the legs, armpits, upper lip, chin and bikini line. Both are priced by the size of the area: IPL sessions take from 15 min for a small area to 1 hr 30 min for an extra large area, and laser sessions take from 30 min for a medium area to 1 hr 30 min for an extra large area. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
+This treatment uses either a LONGPULSE laser or IPL (intense pulsed light), and common areas include the legs, armpits, upper lip, chin and bikini line. Both are priced by the size of the area: IPL sessions take from 15 min for a small area to 1 hr 30 min for an extra large area, and Laser sessions take from 30 min for a medium area to 1 hr 30 min for an extra large area. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
 
 sources:
 - S1: https://www.pureessentialslondon.com/aesthetics-body/laser-hair-removal-%2F-ipl, facts taken: "LONGPULSE"; "IPL (Intense Pulsed Light)"; "Common treatment locations include legs, armpits, upper lip, chin and the bikini line"
@@ -152,7 +152,7 @@ sources:
 ## facials_1_age_defence_sensitive_skin_treatment
 title: Anti-Aging Facial
 
-The Anti-Aging Facial is a facial that uses the Katherine Daniels Collagen Mask for Sensitive Skin. Its session length is not on the price list yet, so ask on WhatsApp before you book. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
+The Anti-Aging Facial is a Facial that uses the Katherine Daniels Collagen Mask for Sensitive Skin. Its session length is not on the price list yet, so ask on WhatsApp before you book. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
 
 sources:
 - S1: https://www.pureessentialslondon.com/facials-1/age-defence-sensitive-skin-treatment-, fact taken: "Katherine Daniels Collagen Mask for Sensitive Skin"; data/services.json `category` "facials"
@@ -180,7 +180,7 @@ sources:
 
 ### laser-hair-removal-kings-cross
 
-This treatment uses either a LONGPULSE laser or IPL (intense pulsed light), and common areas include the legs, armpits, upper lip, chin and bikini line. Both are priced by the size of the area: IPL sessions take from 15 min for a small area to 1 hr 30 min for an extra large area, and laser sessions take from 30 min for a medium area to 1 hr 30 min for an extra large area. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
+This treatment uses either a LONGPULSE laser or IPL (intense pulsed light), and common areas include the legs, armpits, upper lip, chin and bikini line. Both are priced by the size of the area: IPL sessions take from 15 min for a small area to 1 hr 30 min for an extra large area, and Laser sessions take from 30 min for a medium area to 1 hr 30 min for an extra large area. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
 
 sources:
 - S1: https://www.pureessentialslondon.com/aesthetics-body/laser-hair-removal-%2F-ipl, facts taken: "LONGPULSE"; "IPL (Intense Pulsed Light)"; "legs, armpits, upper lip, chin and the bikini line"
@@ -220,13 +220,13 @@ Shown under a price row on /treatments/ (lib/row-descriptions.ts), keyed by the 
 A restorative ritual featuring scalp, neck and shoulder massage, Gua Sha therapy, and targeted pressure point techniques to release tension and promote deep relaxation.
 
 ### head_spa_exotic
-A rejuvenating head spa experience including scalp, shoulder and arm massage, double shampoo cleanse, steam therapy, nourishing hair treatment, Halo water ritual, and rough dry finish.
+A rejuvenating Head Spa experience including scalp, shoulder and arm massage, double shampoo cleanse, steam therapy, nourishing hair treatment, Halo water ritual, and rough dry finish.
 
 ### head_spa_serenity
 A deeply relaxing ritual combining scalp, neck and shoulder massage, therapeutic scalp tools, ritual combing massage, steam therapy, nourishing treatment, double shampoo cleanse, mini radiance facial, Halo water ritual, and rough dry finish.
 
 ### head_spa_royal_glow
-Our signature luxury head spa experience featuring therapeutic scalp brushing and massage, fresh herb steam therapy, Halo waterfall ritual, intensive hair mask with steam infusion, luxury facial cleanse, exfoliation and hydration, lifting facial massage, lymphatic drainage, soothing aromatherapy, and mindful relaxation.
+Our signature luxury Head Spa experience featuring therapeutic scalp brushing and massage, fresh herb steam therapy, Halo waterfall ritual, intensive hair mask with steam infusion, luxury facial cleanse, exfoliation and hydration, lifting facial massage, lymphatic drainage, soothing aromatherapy, and mindful relaxation.
 
 ### steps: head-spa
 1. Shampoo with massage on the scalp.

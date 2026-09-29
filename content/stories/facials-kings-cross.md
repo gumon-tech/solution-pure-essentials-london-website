@@ -18,7 +18,7 @@ Facials at King's Cross, 7 days a week. Every treatment starts with a free consu
 
 [image: fam-hydrating-facial]
 
-The facial menu includes a Hydrofacial and a Calming and Hydrating Facial. An Anti-Aging Facial, a Brightening and Glowing Facial and DiamondTome Microdermabrasion are also on the menu.
+The Facial menu includes a Hydrofacial and a Calming and Hydrating Facial. An Anti-Aging Facial, a Brightening and Glowing Facial and DiamondTome Microdermabrasion are also on the menu.
 
 The Hydrofacial takes 1 hour and the Calming and Hydrating Facial takes 1 hour 45 minutes.
 
@@ -26,9 +26,9 @@ The Hydrofacial takes 1 hour and the Calming and Hydrating Facial takes 1 hour 4
 
 [image: step-2-consultation]
 
-Not sure which facial fits your skin? At the consultation we look at your skin or your goal and recommend what suits you. Results vary from person to person.
+Not sure which Facial fits your skin? At the consultation we look at your skin or your goal and recommend what suits you. Results vary from person to person.
 
-If you have a skin or health condition, or you are unsure about a facial, ask before you book.
+If you have a skin or health condition, or you are unsure about a Facial, ask before you book.
 
 ## your-visit
 

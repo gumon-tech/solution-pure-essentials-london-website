@@ -12,11 +12,11 @@
     },
     {
       "id": "skin",
-      "title": "Microneedling, radio frequency and peels"
+      "title": "Microneedling, Radio Frequency and Peels"
     },
     {
       "id": "skinboosters",
-      "title": "Skin boosters and dermal fillers"
+      "title": "Skin Boosters and Dermal Fillers"
     },
     {
       "id": "carboxy",
@@ -24,11 +24,11 @@
     },
     {
       "id": "body",
-      "title": "Body contouring"
+      "title": "Body Contouring"
     },
     {
       "id": "hair",
-      "title": "Laser and IPL hair removal"
+      "title": "Laser and IPL Hair Removal"
     },
     {
       "id": "facials",
@@ -52,7 +52,7 @@
     },
     {
       "id": "brows-lashes",
-      "title": "Brows, lashes and other"
+      "title": "Brows, Lashes and Other"
     }
   ],
   "services": [
@@ -1787,7 +1787,7 @@
     {
       "slug": "tension_neck_sculp_massage_intense",
       "name": "Tension neck & sculp massage (intense)",
-      "display_name": "Tension neck and scalp massage (intense)",
+      "display_name": "Tension Neck and Scalp Massage (Intense)",
       "category": "massage",
       "status": "live",
       "price_gbp": 45,

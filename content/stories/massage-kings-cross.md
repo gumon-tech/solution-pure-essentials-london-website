@@ -16,7 +16,7 @@ Massage at King's Cross, 7 days a week. Every treatment starts with a free consu
 
 ## what-it-is
 
-The massage menu includes Deep Tissue Massage, Swedish Massage, Thai Massage and Therapeutic Lymphatic Drainage Massage. A Face Massage, a Foot & Leg Massage and a Tension neck and scalp massage (intense) are also on the menu.
+The Massage menu includes Deep Tissue Massage, Swedish Massage, Thai Massage and Therapeutic Lymphatic Drainage Massage. A Face Massage, a Foot & Leg Massage and a Tension Neck and Scalp Massage (Intense) are also on the menu.
 
 [image: body-card]
 
@@ -24,9 +24,9 @@ Sessions take from 20 minutes to 1 hour. Therapeutic Lymphatic Drainage Massage 
 
 ## who-it-may-suit
 
-Not sure which massage to choose? At the consultation we look at your goal and recommend what suits you.
+Not sure which Massage to choose? At the consultation we look at your goal and recommend what suits you.
 
-If you have a health condition, or you are unsure which massage is right for you, ask at the consultation before you book.
+If you have a health condition, or you are unsure which Massage is right for you, ask at the consultation before you book.
 
 ## your-visit
 
@@ -47,7 +47,7 @@ You can also book through Treatwell.
 | Foot & Leg Massage | 30 min | GBP 45 | foot_leg_massage |
 | Swedish Massage | 30 min | GBP 45 | swedish_massage |
 | Swedish Massage | 1 hr | GBP 65 | swedish_massage_1_hr |
-| Tension neck and scalp massage (intense) | 20 min | GBP 45 | tension_neck_sculp_massage_intense |
+| Tension Neck and Scalp Massage (Intense) | 20 min | GBP 45 | tension_neck_sculp_massage_intense |
 | Thai Massage | 1 hr | GBP 70 | thai_massage |
 | Therapeutic Lymphatic Drainage Massage | 30 min | GBP 45 | therapeutic_lymphatic_drainage_massage |
 | Therapeutic Lymphatic Drainage Massage | 1 hr | GBP 80 | therapeutic_lymphatic_drainage_massage_1 |
@@ -72,7 +72,7 @@ Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 Prices run from £40 for a Face Massage to £80 for a 1 hour Therapeutic Lymphatic Drainage Massage. Every option is listed on this page.
 
 **How Long Does a Massage Take?**
-From 20 minutes for the Tension neck and scalp massage (intense) to 1 hour for a Deep Tissue, Thai or Therapeutic Lymphatic Drainage Massage.
+From 20 minutes for the Tension Neck and Scalp Massage (Intense) to 1 hour for a Deep Tissue, Thai or Therapeutic Lymphatic Drainage Massage.
 
 **Is the Consultation Free?**
 Yes. Consultations are free.

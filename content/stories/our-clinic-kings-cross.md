@@ -33,11 +33,11 @@ For the body: 3D Lipo, HIFU Body and Emsculpt, from £99.
 
 [image: laser-card]
 
-Laser and hair removal: pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal, from £25.
+Laser and Hair Removal: Pigmentation, Rejuvenation and Tattoo Removal; Laser and IPL Hair Removal, from £25.
 
 [image: room-towels]
 
-Wellness: massage and waxing, from £10.
+Wellness: Massage and Waxing, from £10.
 
 ## how-it-works
 

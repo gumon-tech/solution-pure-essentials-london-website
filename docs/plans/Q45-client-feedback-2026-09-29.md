@@ -44,3 +44,13 @@ waxing now covers the back. Removed rows' old URLs get no stub (Q42 precedent).
 
 - data/services.json now 205 rows / 122 live; the lead repo file differs on purpose (Q42, Q45)
 - Swedish Massage 1 hr duration and the 2 back waxing durations: confirm with the clinic
+
+## B1 extended to every page (owner 2026-09-29, after the first deploy)
+
+Owner: "fix it on every page", and "the rest as you judge". Treatment names in body text on every
+story page and in the family descriptions now start with capitals (Body Contouring,
+Cryoelectrolipolysis, Laser Hair Removal, Dermal Fillers, Ladies' Waxing, Hot Wax, ...), as do the
+category titles in data/services.json. Measured on out/: 67 lower-case treatment names before,
+21 after. The 21 kept on purpose: equipment ("a laser that works with ultra-short pulses", "a
+microdermabrasion wand") and steps inside the clinic's head spa ritual texts ("scalp massage").
+B2 judged: full postal addresses with the postcode stay as they are, for maps and search.

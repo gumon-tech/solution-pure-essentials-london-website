@@ -16,9 +16,9 @@ Waxing for ladies and men at King's Cross, 7 days a week. Every treatment starts
 
 ## what-it-is
 
-Ladies' waxing covers the face, underarm, arms, legs and body, and the bikini, Brazilian, G-String and Hollywood. The face, underarm, bikini, Brazilian, G-String and Hollywood are waxed with hot wax, and the arms and legs with strip wax.
+Ladies' Waxing covers the face, underarm, arms, legs and body, and the bikini, Brazilian, G-String and Hollywood. The face, underarm, bikini, Brazilian, G-String and Hollywood are waxed with Hot Wax, and the arms and legs with Strip Wax.
 
-Men's waxing covers the eyebrow, arms, legs, half chest, back, shoulder and stomach. Men's waxing does not include intimate areas. Sessions take from 10 minutes to 1 hour.
+Men's Waxing covers the eyebrow, arms, legs, half chest, back, shoulder and stomach. Men's Waxing does not include intimate areas. Sessions take from 10 minutes to 1 hour.
 
 ## who-it-may-suit
 
@@ -26,7 +26,7 @@ Men's waxing covers the eyebrow, arms, legs, half chest, back, shoulder and stom
 
 Not sure which area to book? Ask on WhatsApp, or at the free consultation.
 
-If you have a skin or health condition, or you are unsure about waxing, ask before you book.
+If you have a skin or health condition, or you are unsure about Waxing, ask before you book.
 
 ## your-visit
 
@@ -97,7 +97,7 @@ Your therapist gives aftercare advice at the appointment. You can message us wit
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 **How Much Does Waxing Cost?**
-Ladies' waxing starts at £10 for the full chin or the upper lip, and men's waxing at £15 for the eyebrow. Every option is listed on this page.
+Ladies' Waxing starts at £10 for the full chin or the upper lip, and Men's Waxing at £15 for the eyebrow. Every option is listed on this page.
 
 **How Long Does Waxing Take?**
 From 10 minutes for ladies' sideburns to 1 hour for a men's full leg.

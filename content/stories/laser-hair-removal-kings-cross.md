@@ -1,6 +1,6 @@
 ---
 title: "Laser Hair Removal in King's Cross | Pure Essentials London"
-description: "Laser and IPL hair removal at King's Cross, London, priced by area size. IPL from £25, laser from £35. Consultations are free."
+description: "Laser and IPL Hair Removal at King's Cross, London, priced by area size. IPL from £25, Laser from £35. Consultations are free."
 h1: "Laser Hair Removal in King's Cross"
 short: "Laser Hair Removal"
 ---
@@ -9,22 +9,22 @@ short: "Laser Hair Removal"
 
 [image: story-laser-hair]
 
-Laser and IPL hair removal at King's Cross, 7 days a week. Every treatment starts with a free consultation.
+Laser and IPL Hair Removal at King's Cross, 7 days a week. Every treatment starts with a free consultation.
 
 - Button (primary): Message Us on WhatsApp
 - Button (secondary): See Treatments and Prices
 
 ## what-it-is
 
-Hair removal here is available with laser or with IPL, and each is priced by the size of the area. Sessions take from 15 minutes for a small IPL area to 1 hour 30 minutes for an extra large area.
+Hair Removal here is available with Laser or with IPL, and each is priced by the size of the area. Sessions take from 15 minutes for a small IPL area to 1 hour 30 minutes for an extra large area.
 
-Laser hair removal area sizes:
+Laser Hair Removal area sizes:
 
 - Medium area: underarms, buttocks, bikini line, neck, shoulders, tummy line, face, full front bikini
 - Large area: arms, half legs, tummy, lower back, upper back, chest
 - Extra large area: full legs, Hollywood
 
-IPL hair removal area sizes:
+IPL Hair Removal area sizes:
 
 - Small area: upper lip, chin, sideburns
 - Medium area: underarms, bikini line
@@ -37,9 +37,9 @@ If your area is not listed, ask on WhatsApp which size it counts as.
 
 [image: step-2-consultation]
 
-Laser and IPL hair removal are aesthetic treatments for adults aged 18 and over. At the consultation we look at your skin or your goal and recommend what suits you. Results vary from person to person.
+Laser and IPL Hair Removal are aesthetic treatments for adults aged 18 and over. At the consultation we look at your skin or your goal and recommend what suits you. Results vary from person to person.
 
-If you have a health condition, or you are unsure whether laser or IPL is right for you, ask at the consultation before you book.
+If you have a health condition, or you are unsure whether Laser or IPL is right for you, ask at the consultation before you book.
 
 ## your-visit
 
@@ -89,7 +89,7 @@ You leave with clear aftercare advice and can message us with any question.
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 **How Much Does Hair Removal Cost?**
-IPL starts at £25 for a small area and laser at £35 for a medium area. Every option is listed on this page.
+IPL starts at £25 for a small area and Laser at £35 for a medium area. Every option is listed on this page.
 
 **Should I Choose Laser or IPL?**
 Ask at the free consultation. We look at your skin or your goal and recommend what suits you.

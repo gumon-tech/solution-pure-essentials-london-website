@@ -1,6 +1,6 @@
 ---
 title: "Skin Boosters Consultation in King's Cross | Pure Essentials London"
-description: "Skin boosters and dermal fillers at King's Cross, London. Every treatment starts with a free consultation, and we recommend what suits you."
+description: "Skin Boosters and Dermal Fillers at King's Cross, London. Every treatment starts with a free consultation, and we recommend what suits you."
 h1: "Skin Boosters Consultation in King's Cross"
 short: "Skin Boosters"
 ---
@@ -9,7 +9,7 @@ short: "Skin Boosters"
 
 [image: cat-skinboosters]
 
-Every skin booster and dermal filler treatment starts with a free consultation, at King's Cross, 7 days a week.
+Every Skin Booster and Dermal Filler treatment starts with a free consultation, at King's Cross, 7 days a week.
 
 - Button (primary): Message Us on WhatsApp
 - Button (secondary): See Treatments and Prices
@@ -18,7 +18,7 @@ Every skin booster and dermal filler treatment starts with a free consultation, 
 
 [image: fam-skin-booster-face]
 
-Skin boosters and dermal fillers are consultation-led treatments. At the consultation we look at your skin or your goal and recommend what suits you.
+Skin Boosters and Dermal Fillers are consultation-led treatments. At the consultation we look at your skin or your goal and recommend what suits you.
 
 Every treatment starts with a consultation; we will not recommend a treatment that is not right for you.
 

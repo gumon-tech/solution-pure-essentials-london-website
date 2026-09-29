@@ -32,7 +32,7 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | Sentence start | Source |
 |---|---|
 | title "Beauty Treatments in King's Cross" | PEL:Home Hero heading, cut |
-| description "Facials, HIFU, laser, body contouring..." | PEL:Home Hero sub-line |
+| description "Facials, HIFU, laser, Body Contouring..." | PEL:Home Hero sub-line |
 | h1 "Beauty and skin treatments in King's Cross" | PEL:Home Hero heading |
 | "Facials, HIFU, Laser, Body Contouring, Massage and Waxing at 155..." | PEL:Home Hero sub-line; F1, F2 |
 | "Every treatment starts with a free consultation." | PEL:Home Hero sub-line; F5 |
@@ -149,15 +149,15 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 
 | Sentence start | Source |
 |---|---|
-| title, h1 "Laser hair removal in King's Cross" | C:hair; F1 |
+| title, h1 "Laser Hair Removal in King's Cross" | C:hair; F1 |
 | description "...priced by area size. IPL from GBP 25, laser from GBP 35. Consultations are free." | S:ipl_small_area, S:laser_hair_removal_medium_area; F1; F5 |
-| hero "Laser and IPL hair removal at King's Cross, 7 days a week." | C:hair; F1; F2 |
-| "Hair removal here is available with laser or with IPL, and each is priced by the size of the area." | S: 7 hair rows (Small, Medium, Large, Extra Large Area names) |
+| hero "Laser and IPL Hair Removal at King's Cross, 7 days a week." | C:hair; F1; F2 |
+| "Hair Removal here is available with Laser or with IPL, and each is priced by the size of the area." | S: 7 hair rows (Small, Medium, Large, Extra Large Area names) |
 | "Sessions take from 15 minutes for a small IPL area to 1 hour 30 minutes for an extra large area." | S:ipl_small_area, S:ipl_extra_large_area, S:laser_hair_removal_extra_large_area |
-| "Laser hair removal area sizes:" and 3 bullets: "Medium area: underarms, buttocks, bikini line, neck, shoulders, tummy line, face, full front bikini", "Large area: arms, half legs, tummy, lower back, upper back, chest", "Extra large area: full legs, Hollywood" | https://www.pureessentialslondon.com/pricing, Laser hair removal block, old wording "* Medium area: Underarms, buttocks, bikini line, crack, neck, shoulders, tummy line, face, full front bikini" / "* Large area: Arms, half legs, tummy, lower back, upper back, chest" / "* Extra large: Full legs, Hollywood" (the capture splits "tummy" across 2 spans as "tu" and "mmy", joined here); PEL ruling 2026-09-13 brief section 27; band names from S:laser_hair_removal_medium_area, _large_area, _extra_large_area. The old "* Small area: Feet, hands, lip, chin" is left out: no live laser small-area row. The word "crack" is left out of the story list by PEL ruling 2026-09-13 (reads coarse in prose; the price row name keeps it) |
-| "IPL hair removal area sizes:" and 4 bullets: "Small area: upper lip, chin, sideburns", "Medium area: underarms, bikini line", "Large area: Hollywood, half leg, half arm", "Extra large area: full leg, full back, full arms" | https://www.pureessentialslondon.com/pricing, IPL Hair Removal block, old wording "* Small area: Upper lip/ Chin/ Sideburn" / "* Medium area: underarms/ Bikini line" / "* Large area: Hollywood/ half leg/ half arm" / "* Extra large: Full leg / full back /full arms"; PEL ruling 2026-09-13 brief section 27; band names from S:ipl_small_area, _medium_area, _large_area, _extra_large_area |
+| "Laser Hair Removal area sizes:" and 3 bullets: "Medium area: underarms, buttocks, bikini line, neck, shoulders, tummy line, face, full front bikini", "Large area: arms, half legs, tummy, lower back, upper back, chest", "Extra large area: full legs, Hollywood" | https://www.pureessentialslondon.com/pricing, Laser Hair Removal block, old wording "* Medium area: Underarms, buttocks, bikini line, crack, neck, shoulders, tummy line, face, full front bikini" / "* Large area: Arms, half legs, tummy, lower back, upper back, chest" / "* Extra large: Full legs, Hollywood" (the capture splits "tummy" across 2 spans as "tu" and "mmy", joined here); PEL ruling 2026-09-13 brief section 27; band names from S:laser_hair_removal_medium_area, _large_area, _extra_large_area. The old "* Small area: Feet, hands, lip, chin" is left out: no live laser small-area row. The word "crack" is left out of the story list by PEL ruling 2026-09-13 (reads coarse in prose; the price row name keeps it) |
+| "IPL Hair Removal area sizes:" and 4 bullets: "Small area: upper lip, chin, sideburns", "Medium area: underarms, bikini line", "Large area: Hollywood, half leg, half arm", "Extra large area: full leg, full back, full arms" | https://www.pureessentialslondon.com/pricing, IPL Hair Removal block, old wording "* Small area: Upper lip/ Chin/ Sideburn" / "* Medium area: underarms/ Bikini line" / "* Large area: Hollywood/ half leg/ half arm" / "* Extra large: Full leg / full back /full arms"; PEL ruling 2026-09-13 brief section 27; band names from S:ipl_small_area, _medium_area, _large_area, _extra_large_area |
 | "If your area is not listed, ask on WhatsApp which size it counts as." | F4 (replaces "To find out which size your area counts as, ask on WhatsApp.", reworded because the sizes are now listed) |
-| "Laser and IPL hair removal are aesthetic treatments for adults aged 18 and over." | B18 |
+| "Laser and IPL Hair Removal are aesthetic treatments for adults aged 18 and over." | B18 |
 | Price tables (7 rows) | S: slug in each row |
 | FAQ "IPL starts at GBP 25 for a small area and laser at GBP 35 for a medium area." | S:ipl_small_area, S:laser_hair_removal_medium_area |
 | FAQ "Should I choose laser or IPL?" / "Ask at the free consultation." | F5; PEL:Home How it works 2 |
@@ -170,10 +170,10 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | title, h1 "Facials in King's Cross" | C:facials; F1 |
 | description "...including a Hydrofacial and a Hydrating facial from GBP 70..." | S:hydrofacial, S:hydrating; F1; PEL:Home Hero sub-line |
 | hero "Facials at King's Cross, 7 days a week." | PEL:Home Hero sub-line, cut; F1; F2 |
-| "The facial menu includes a Hydrofacial and a Hydrating facial." | S:hydrofacial, S:hydrating |
+| "The Facial menu includes a Hydrofacial and a Hydrating facial." | S:hydrofacial, S:hydrating |
 | "An Age Defence Sensitive Skin Treatment, Diamondtome Microdermabrasion and an Eberlin Facial are also on the menu." | S:facials_1_age_defence_sensitive_skin_treatment, S:facials_1_diamondtome_microdermabrasion, S:facials_1_eberlin_facial |
 | "The Hydrofacial takes 1 hour and the Hydrating facial takes 1 hour 45 minutes." (body and FAQ) | S:hydrofacial, S:hydrating |
-| "Not sure which facial fits your skin?" | question, leads into PEL:Home How it works 2 |
+| "Not sure which Facial fits your skin?" | question, leads into PEL:Home How it works 2 |
 | Price table (5 rows) | S: slug in each row; D4 for the 3 rows without a price |
 | FAQ "The Hydrating facial is GBP 70 and the Hydrofacial is GBP 100." | S:hydrating, S:hydrofacial |
 | FAQ "For the other facials, ask for a quote on WhatsApp." | D4; F4 |
@@ -182,17 +182,17 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 
 | Sentence start | Source |
 |---|---|
-| title, h1 "Body contouring in King's Cross" | C:body; F1 |
-| description "...3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. From GBP 99..." | S:3d_lipo, S:cryoelectrolipolysis_one_area, S:emsculpt, S:hifu_small_area_knees_armpit_bust_lift; F1; F5 |
-| hero "Body contouring at King's Cross, 7 days a week." | C:body; F1; F2 |
-| "Body contouring here covers 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body." | S:3d_lipo, S:cryoelectrolipolysis_one_area, S:emsculpt, S:hifu_small_area_knees_armpit_bust_lift, S:hifu_med_area_flappy_arms_lovehandle |
+| title, h1 "Body Contouring in King's Cross" | C:body; F1 |
+| description "...3D Lipo, Cryoelectrolipolysis, Emsculpt and HIFU for the body. From GBP 99..." | S:3d_lipo, S:cryoelectrolipolysis_one_area, S:emsculpt, S:hifu_small_area_knees_armpit_bust_lift; F1; F5 |
+| hero "Body Contouring at King's Cross, 7 days a week." | C:body; F1; F2 |
+| "Body Contouring here covers 3D Lipo, Cryoelectrolipolysis, Emsculpt and HIFU for the body." | S:3d_lipo, S:cryoelectrolipolysis_one_area, S:emsculpt, S:hifu_small_area_knees_armpit_bust_lift, S:hifu_med_area_flappy_arms_lovehandle |
 | "Cryoelectrolipolysis is priced for 1, 2 or 3 areas, and HIFU for small and medium areas." | S:cryoelectrolipolysis_one_area, _two_areas, _three_areas; S:hifu_small_area..., S:hifu_med_area... |
 | "Sessions take from 30 minutes to 2 hours." | S:emsculpt (30 min), S:cryoelectrolipolysis_three_areas (2 hr) |
 | "What each treatment aims to do, and which one may suit you, is a question for the free consultation." | F5; BH |
-| "Body contouring treatments are aesthetic treatments for adults aged 18 and over." | B18 |
+| "Body Contouring treatments are aesthetic treatments for adults aged 18 and over." | B18 |
 | Price table (8 rows) | S: slug in each row |
-| FAQ "Prices start at GBP 99 for Emsculpt or for 1 area of cryoelectrolipolysis." | S:emsculpt, S:cryoelectrolipolysis_one_area |
-| FAQ "From 30 minutes for Emsculpt to 2 hours for 3 areas of cryoelectrolipolysis." | S:emsculpt, S:cryoelectrolipolysis_three_areas |
+| FAQ "Prices start at GBP 99 for Emsculpt or for 1 area of Cryoelectrolipolysis." | S:emsculpt, S:cryoelectrolipolysis_one_area |
+| FAQ "From 30 minutes for Emsculpt to 2 hours for 3 areas of Cryoelectrolipolysis." | S:emsculpt, S:cryoelectrolipolysis_three_areas |
 
 ## Story pages set 2 (queue row Q26)
 
@@ -240,11 +240,11 @@ Change to the shared aftercare line: set 1's "You leave with clear aftercare adv
 |---|---|
 | title, h1 "Massage in King's Cross" | C:massage; F1 |
 | description "Massage at 155..., including Deep Tissue, Swedish and Thai Massage, from GBP 40..." | S:deep_tissue_massage, S:swedish_massage, S:thai_massage, S:face_massage (GBP 40); F1; F5 |
-| "The massage menu includes Deep Tissue Massage, Swedish Massage, Thai Massage and Therapeutic Lymphatic Drainage Massage." | S:deep_tissue_massage, S:swedish_massage, S:thai_massage, S:therapeutic_lymphatic_drainage_massage |
+| "The Massage menu includes Deep Tissue Massage, Swedish Massage, Thai Massage and Therapeutic Lymphatic Drainage Massage." | S:deep_tissue_massage, S:swedish_massage, S:thai_massage, S:therapeutic_lymphatic_drainage_massage |
 | "A Face Massage, a Foot & Leg Massage and a Tension neck & sculp massage (intense) are also on the menu." | S:face_massage, S:foot_leg_massage, S:tension_neck_sculp_massage_intense (name verbatim, ruling 6) |
 | "Sessions take from 20 minutes to 1 hour." | S:tension_neck_sculp_massage_intense (20 min); S:deep_tissue_massage, S:thai_massage (1 hr) |
 | "Therapeutic Lymphatic Drainage Massage is booked as 30 minutes or 1 hour." | S:therapeutic_lymphatic_drainage_massage (30 min), S:therapeutic_lymphatic_drainage_massage_1 (1 hr) |
-| "Not sure which massage to choose?" | question, leads into PEL:Home How it works 2 (set 1 facials pattern) |
+| "Not sure which Massage to choose?" | question, leads into PEL:Home How it works 2 (set 1 facials pattern) |
 | Price table (8 rows) | S: slug in each row; the 2 same-name rows told apart by duration (D51 practice) |
 | FAQ "Prices run from GBP 40 for a Face Massage to GBP 80 for a 1 hour Therapeutic Lymphatic Drainage Massage." | S:face_massage, S:therapeutic_lymphatic_drainage_massage_1 |
 | FAQ "Every option is listed on this page." | the page's price table |
@@ -257,15 +257,15 @@ Change to the shared aftercare line: set 1's "You leave with clear aftercare adv
 | title, h1 "Waxing in King's Cross" | C:waxing-ladies, C:waxing-men; F1 |
 | description "Waxing for ladies and men at 155..., from GBP 10..." | S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip (GBP 10); F1; F5 |
 | hero "Waxing for ladies and men at King's Cross, 7 days a week." | C:waxing-ladies, C:waxing-men; F1; F2 |
-| "Ladies' waxing covers the face, underarm, arms, legs and body, and the bikini, Brazilian, G-String and Hollywood." | S: the 20 waxing-ladies rows (area words in their names) |
-| "The face, underarm, bikini, Brazilian, G-String and Hollywood are waxed with hot wax, and the arms and legs with strip wax." | S:ladies_waxing_face_hot_wax_ (5 rows), S:ladies_waxing_underarm_hot_wax; S:ladies_waxing_half_arm_with_strip_wax, _full_arm_with_strip_wax, _lower_leg_strip_wax, _upper_leg_strip_wax, _full_leg_strip_wax; hot wax on bikini, Brazilian, G-String, Hollywood from F 2026-09-29 (Q45) |
-| "Men's waxing covers the eyebrow, arms, legs, half chest, shoulder and stomach." | S: the 9 waxing-men rows |
-| "Men's waxing does not include intimate areas." | https://www.pureessentialslondon.com/mens, old wording "Hair removal waxing (no intimate waxing)"; PEL ruling 2026-09-13 brief section 27 |
+| "Ladies' Waxing covers the face, underarm, arms, legs and body, and the bikini, Brazilian, G-String and Hollywood." | S: the 20 waxing-ladies rows (area words in their names) |
+| "The face, underarm, bikini, Brazilian, G-String and Hollywood are waxed with Hot Wax, and the arms and legs with Strip Wax." | S:ladies_waxing_face_hot_wax_ (5 rows), S:ladies_waxing_underarm_hot_wax; S:ladies_waxing_half_arm_with_strip_wax, _full_arm_with_strip_wax, _lower_leg_strip_wax, _upper_leg_strip_wax, _full_leg_strip_wax; hot wax on bikini, Brazilian, G-String, Hollywood from F 2026-09-29 (Q45) |
+| "Men's Waxing covers the eyebrow, arms, legs, half chest, shoulder and stomach." | S: the 9 waxing-men rows |
+| "Men's Waxing does not include intimate areas." | https://www.pureessentialslondon.com/mens, old wording "Hair removal waxing (no intimate waxing)"; PEL ruling 2026-09-13 brief section 27 |
 | "Sessions take from 10 minutes to 1 hour." | S:ladies_waxing_face_hot_wax_sideburns (10 min), S:men_s_waxing_full_leg (1 hr) |
 | "Not sure which area to book? Ask on WhatsApp, or at the free consultation." | question; F4; F5 |
-| "If you have a skin or health condition, or you are unsure about waxing, ask before you book." | set 1 facials sentence, "a facial" changed to "waxing"; F5 |
+| "If you have a skin or health condition, or you are unsure about Waxing, ask before you book." | set 1 facials sentence, "a facial" changed to "waxing"; F5 |
 | Price tables "Waxing, ladies" (20 rows), "Waxing, men" (9 rows) | C:waxing-ladies, C:waxing-men; S: slug in each row; the 2 "Men's Waxing Full Leg" rows told apart by duration (D51 practice) |
-| FAQ "Ladies' waxing starts at GBP 10 for the full chin or the upper lip, and men's waxing at GBP 15 for the eyebrow." | S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip, S:men_s_waxing_eyebrow |
+| FAQ "Ladies' Waxing starts at GBP 10 for the full chin or the upper lip, and Men's Waxing at GBP 15 for the eyebrow." | S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip, S:men_s_waxing_eyebrow |
 | FAQ "From 10 minutes for ladies' sideburns to 1 hour for a men's full leg." | S:ladies_waxing_face_hot_wax_sideburns, S:men_s_waxing_full_leg |
 
 ### content/stories/microneedling-peels-kings-cross.md
@@ -273,7 +273,7 @@ Change to the shared aftercare line: set 1's "You leave with clear aftercare adv
 | Sentence start | Source |
 |---|---|
 | title, h1 "Microneedling and peels in King's Cross" | C:skin, cut; F1 |
-| description and hero "Microneedling, radio frequency and peels at 155..." (hero: 7 days a week; description: from GBP 75) | C:skin; F1; F2; S:gycolic_acid_peel, S:radio_frequency_indiba (GBP 75); F5 |
+| description and hero "Microneedling, Radio Frequency and Peels at 155..." (hero: 7 days a week; description: from GBP 75) | C:skin; F1; F2; S:gycolic_acid_peel, S:radio_frequency_indiba (GBP 75); F5 |
 | "The Microneedling treatment uses the Skin Needling System, which pierces the skin vertically to make hundreds of tiny open channels." | DESC:aesthetics_1_microneedling, verbatim |
 | "It is booked for the face, or for the face and neck." | DESC:aesthetics_1_microneedling, cut; S:microneedling_face, S:microneedling_face_neck |
 | "INDIBA Deep Beauty is a radiofrequency device that works at 448 kHz through the Proionic System." | DESC:aesthetics_body_indiba_deep_beauty, cut (areas clause dropped) |
@@ -291,9 +291,9 @@ Left out of the table on purpose: aesthetics_1_microneedling and aesthetics_body
 | Sentence start | Source |
 |---|---|
 | title, h1 "Skin boosters consultation in King's Cross" | C:skinboosters, cut; F5; F1 |
-| description "Skin boosters and dermal fillers at 155... Every treatment starts with a free consultation, and we recommend what suits you." | C:skinboosters; F1; PEL:Home Hero sub-line; PEL:Home How it works 2, cut |
-| hero "Every skin booster and dermal filler treatment starts with a free consultation, at King's Cross, 7 days a week." | PEL:Home Hero sub-line, narrowed to C:skinboosters; F5; F1; F2 |
-| "Skin boosters and dermal fillers are consultation-led treatments." | CL; C:skinboosters |
+| description "Skin Boosters and Dermal Fillers at 155... Every treatment starts with a free consultation, and we recommend what suits you." | C:skinboosters; F1; PEL:Home Hero sub-line; PEL:Home How it works 2, cut |
+| hero "Every Skin Booster and Dermal Filler treatment starts with a free consultation, at King's Cross, 7 days a week." | PEL:Home Hero sub-line, narrowed to C:skinboosters; F5; F1; F2 |
+| "Skin Boosters and Dermal Fillers are consultation-led treatments." | CL; C:skinboosters |
 | "Every treatment starts with a consultation; we will not recommend a treatment that is not right for you." | PEL:Treatments note, verbatim |
 | Step 3 addition "Sessions take from 45 minutes to 1 hour 30 minutes." | S:profhilo, S:profhilo_2_sessions (45 min); S:facial_fillers (1 hr 30 min) |
 | Price table (6 rows) | S: slug in each row; FAM:aesthetics_body_profhilo_body for the row without a price; D4 |
@@ -350,8 +350,8 @@ Written 2026-09-13 by a PWEB executor for Q27, at website commit f4c37dc. Data r
 | "Find us at 155 King's Cross Road, London WC1X 9BN." | PEL:Contact description, cut; F1 |
 | "For the face: HIFU, Skin Boosters, Microneedling, Peels and Facials, from GBP 70." | PEL:Home groups, Face line and figure; `lib/groups.ts`; S:hydrating |
 | "For the body: 3D Lipo, HIFU Body and Emsculpt, from GBP 99." | PEL:Home groups, Body line and figure; S:emsculpt, S:cryoelectrolipolysis_one_area |
-| "Laser and hair removal: pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal, from GBP 25." | PEL:Home groups, Laser line and figure; S:ipl_small_area |
-| "Wellness: massage and waxing, from GBP 10." | PEL:Home groups, Wellness line and figure; S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip |
+| "Laser and Hair Removal: Pigmentation, Rejuvenation and Tattoo Removal; Laser and IPL Hair Removal, from GBP 25." | PEL:Home groups, Laser line and figure; S:ipl_small_area |
+| "Wellness: Massage and Waxing, from GBP 10." | PEL:Home groups, Wellness line and figure; S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip |
 | "The photographs in this section show treatment rooms at Pure Essentials London." | RP |
 
 ### content/stories/your-visit.md
@@ -393,7 +393,7 @@ Written 2026-09-13 by a PWEB executor for Q36 (owner decision 2026-09-13: story 
 
 | Label | Where it shows | Source |
 |---|---|---|
-| Front matter `short`: "HIFU", "Microneedling and peels", "Skin boosters", "Facials", "Body contouring", "Laser hair removal", "Massage", "Waxing" | header menus, home cards, and inside the labels below | each story's h1 with " in King's Cross" cut (skin boosters: "consultation" also cut); NAV36 |
+| Front matter `short`: "HIFU", "Microneedling and peels", "Skin boosters", "Facials", "Body Contouring", "Laser Hair Removal", "Massage", "Waxing" | header menus, home cards, and inside the labels below | each story's h1 with " in King's Cross" cut (skin boosters: "consultation" also cut); NAV36 |
 | "Read about <topic>", e.g. "Read about HIFU", "Read about microneedling and peels" | /treatments/, under each category that has a story (waxing: under both waxing categories) | NAV36; topic = `short`, first letter lower case unless the first word is in capitals |
 | "Read about CryoPen", "Read about Etherea MX", "Read about IPL (Intense Pulsed Light)", "Read about Pico Laser", "Read about Tattoo Removal" | /treatments/, under the skin laser category | NAV36; family title in content/treatment-descriptions.md |
 | "See <topic> prices", e.g. "See HIFU prices", "See waxing prices" | the 8 treatment stories, straight after the prices section | NAV36; topic as above |

@@ -1,6 +1,6 @@
 ---
 title: "Microneedling and Peels in King's Cross | Pure Essentials London"
-description: "Microneedling, radio frequency and peels at King's Cross, London, from £75. Every treatment starts with a free consultation."
+description: "Microneedling, Radio Frequency and Peels at King's Cross, London, from £75. Every treatment starts with a free consultation."
 h1: "Microneedling and Peels in King's Cross"
 short: "Microneedling and Peels"
 ---
@@ -9,7 +9,7 @@ short: "Microneedling and Peels"
 
 [image: cat-skin]
 
-Microneedling, radio frequency and peels at King's Cross, 7 days a week. Every treatment starts with a free consultation.
+Microneedling, Radio Frequency and Peels at King's Cross, 7 days a week. Every treatment starts with a free consultation.
 
 - Button (primary): Message Us on WhatsApp
 - Button (secondary): See Treatments and Prices
@@ -22,7 +22,7 @@ The Microneedling treatment uses the Skin Needling System, which pierces the ski
 
 [image: face-card]
 
-INDIBA Deep Beauty is a radiofrequency device that works at 448 kHz through the Proionic System. Fractional Radiofrequency Microneedling is a form of radiofrequency microneedling.
+INDIBA Deep Beauty is a radiofrequency device that works at 448 kHz through the Proionic System. Fractional Radiofrequency Microneedling is a form of Radiofrequency Microneedling.
 
 Sessions take from 30 minutes to 1 hour 30 minutes.
 
@@ -79,7 +79,7 @@ Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 Microneedling Face is £100 and Microneedling Face + Neck is £150. Every option is listed on this page.
 
 **How Long Does a Session Take?**
-From 30 minutes for Radio Frequency INDIBA to 1 hour 30 minutes for a chemical peel with serum treatment and LED therapy.
+From 30 minutes for Radio Frequency INDIBA to 1 hour 30 minutes for a Chemical Peel with Serum Treatment and LED Therapy.
 
 **Is the Consultation Free?**
 Yes. Consultations are free.
