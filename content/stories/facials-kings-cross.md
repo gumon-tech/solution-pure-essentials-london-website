@@ -1,6 +1,6 @@
 ---
 title: "Facials in King's Cross | Pure Essentials London"
-description: "Facials at 155 King's Cross Road, London, including a Hydrofacial and a Calming and Hydrating Facial, from £70. Every treatment starts with a free consultation."
+description: "Facials at King's Cross, London, including a Hydrofacial and a Calming and Hydrating Facial, from £70. Every treatment starts with a free consultation."
 h1: "Facials in King's Cross"
 short: "Facials"
 ---
@@ -9,7 +9,7 @@ short: "Facials"
 
 [image: story-facials]
 
-Facials at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
+Facials at King's Cross, 7 days a week. Every treatment starts with a free consultation.
 
 - Button (primary): Message Us on WhatsApp
 - Button (secondary): See Treatments and Prices

@@ -1,6 +1,6 @@
 ---
 title: "Waxing in King's Cross | Pure Essentials London"
-description: "Waxing for ladies and men at 155 King's Cross Road, London, from £10. Every treatment starts with a free consultation."
+description: "Waxing for ladies and men at King's Cross, London, from £10. Every treatment starts with a free consultation."
 h1: "Waxing in King's Cross"
 short: "Waxing"
 ---
@@ -9,16 +9,16 @@ short: "Waxing"
 
 [image: cat-waxing-ladies]
 
-Waxing for ladies and men at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
+Waxing for ladies and men at King's Cross, 7 days a week. Every treatment starts with a free consultation.
 
 - Button (primary): Message Us on WhatsApp
 - Button (secondary): See Treatments and Prices
 
 ## what-it-is
 
-Ladies' waxing covers the face, underarm, arms, legs and body, and the bikini, Brazilian, G-String and Hollywood. The face and underarm are waxed with hot wax, and the arms and legs with strip wax.
+Ladies' waxing covers the face, underarm, arms, legs and body, and the bikini, Brazilian, G-String and Hollywood. The face, underarm, bikini, Brazilian, G-String and Hollywood are waxed with hot wax, and the arms and legs with strip wax.
 
-Men's waxing covers the eyebrow, arms, legs, half chest, shoulder and stomach. Men's waxing does not include intimate areas. Sessions take from 10 minutes to 1 hour.
+Men's waxing covers the eyebrow, arms, legs, half chest, back, shoulder and stomach. Men's waxing does not include intimate areas. Sessions take from 10 minutes to 1 hour.
 
 ## who-it-may-suit
 
@@ -53,17 +53,17 @@ Waxing, Ladies
 | Ladies' Waxing - Half Arm with strip wax | 15 min | GBP 18 | ladies_waxing_half_arm_with_strip_wax |
 | Ladies' Waxing - Full Arm with strip wax | 30 min | GBP 25 | ladies_waxing_full_arm_with_strip_wax |
 | Ladies' Waxing - Lower Leg (Strip Wax) | 30 min | GBP 23 | ladies_waxing_lower_leg_strip_wax |
-| Ladies' Waxing - Upper Leg (Strip Wax) | 35 min | GBP 20 | ladies_waxing_upper_leg_strip_wax |
+| Ladies' Waxing - Upper Leg (Strip Wax) | 35 min | GBP 26 | ladies_waxing_upper_leg_strip_wax |
 | Ladies' Waxing - Full Leg (Strip Wax) | 45 min | GBP 35 | ladies_waxing_full_leg_strip_wax |
 | Ladies' Waxing - Body (Hot Wax) Abdomen | 15 min | GBP 40 | ladies_waxing_body_hot_wax_abdomen |
 | Ladies' Waxing - Body (Hot Wax) Bottom | 15 min | GBP 23 | ladies_waxing_body_hot_wax_bottom |
 | Ladies' Waxing - Body (Hot Wax) Crack | 15 min | GBP 18 | ladies_waxing_body_hot_wax_crack |
 | Ladies' Waxing Body (Strip Wax) Abdomen | 15 min | GBP 23 | ladies_waxing_body_strip_wax_abdomen |
 | Ladies' Waxing - Body (Strip Wax) Bottom | 15 min | GBP 20 | ladies_waxing_body_strip_wax_bottom |
-| Ladies' Waxing - Bikini | 15 min | GBP 25 | ladies_waxing_bikini |
-| Ladies' Waxing - Brazilian | 45 min | GBP 42 | ladies_waxing_brazilian |
-| Ladies' Waxing - G-String | 30 min | GBP 32 | ladies_waxing_g_string |
-| Ladies' Waxing - Hollywood | 45 min | GBP 42 | ladies_waxing_hollywood |
+| Ladies' Waxing - Bikini (Hot Wax) | 15 min | GBP 25 | ladies_waxing_bikini |
+| Ladies' Waxing - Brazilian (Hot Wax) | 45 min | GBP 42 | ladies_waxing_brazilian |
+| Ladies' Waxing - G-String (Hot Wax) | 30 min | GBP 32 | ladies_waxing_g_string |
+| Ladies' Waxing - Hollywood (Hot Wax) | 45 min | GBP 42 | ladies_waxing_hollywood |
 
 [image: cat-waxing-men]
 
@@ -77,6 +77,8 @@ Waxing, Men
 | Men's Waxing Half Leg | 30 min | GBP 20 | men_s_waxing_half_leg |
 | Men's Waxing Full Leg | 1 hr | GBP 35 | men_s_waxing_full_leg |
 | Men's Waxing Half Chest | 30 min | GBP 22 | men_s_waxing_half_chest |
+| Men's Waxing Half Back | ask | GBP 28 | men_s_waxing_half_back |
+| Men's Waxing Full Back | ask | GBP 35 | men_s_waxing_full_back |
 | Men's Waxing Shoulder | 20 min | GBP 22 | men_s_waxing_shoulder |
 | Men's Waxing Stomach | 45 min | GBP 25 | men_s_waxing_stomach |
 

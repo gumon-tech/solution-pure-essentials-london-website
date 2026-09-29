@@ -1,6 +1,6 @@
 ---
 title: "Massage in King's Cross | Pure Essentials London"
-description: "Massage at 155 King's Cross Road, London, including Deep Tissue, Swedish and Thai Massage, from £40. Every treatment starts with a free consultation."
+description: "Massage at King's Cross, London, including Deep Tissue, Swedish and Thai Massage, from £40. Every treatment starts with a free consultation."
 h1: "Massage in King's Cross"
 short: "Massage"
 ---
@@ -9,7 +9,7 @@ short: "Massage"
 
 [image: wellness-card]
 
-Massage at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
+Massage at King's Cross, 7 days a week. Every treatment starts with a free consultation.
 
 - Button (primary): Message Us on WhatsApp
 - Button (secondary): See Treatments and Prices
@@ -46,6 +46,7 @@ You can also book through Treatwell.
 | Face Massage | 30 min | GBP 40 | face_massage |
 | Foot & Leg Massage | 30 min | GBP 45 | foot_leg_massage |
 | Swedish Massage | 30 min | GBP 45 | swedish_massage |
+| Swedish Massage | 1 hr | GBP 65 | swedish_massage_1_hr |
 | Tension neck and scalp massage (intense) | 20 min | GBP 45 | tension_neck_sculp_massage_intense |
 | Thai Massage | 1 hr | GBP 70 | thai_massage |
 | Therapeutic Lymphatic Drainage Massage | 30 min | GBP 45 | therapeutic_lymphatic_drainage_massage |

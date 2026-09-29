@@ -37,7 +37,7 @@ King's Cross St Pancras (Circle, Hammersmith and City, Metropolitan, Northern, P
 
 ### Find Us on the Map
 
-[embed: Google map of Pure Essentials London, 155 King's Cross Road, loads with the section]
+[embed: Google map of Pure Essentials London, King's Cross, loads with the section]
 
 Open in Google Maps (link)
 

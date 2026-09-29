@@ -1,6 +1,6 @@
 ---
 title: "Treatments in King's Cross | Pure Essentials London"
-description: "Facials, HIFU, laser, body contouring, massage and waxing at 155 King's Cross Road. The price shown is the price you pay."
+description: "Facials, HIFU, Laser, Body Contouring, Massage and Waxing at King's Cross. The price shown is the price you pay."
 h1: "Treatments and Prices"
 ---
 
@@ -14,25 +14,25 @@ The price shown is the price you pay. Where a price says "from", the figure is t
 
 [image: face-card]
 
-HIFU, skin boosters, microneedling, peels and facials
+HIFU, Skin Boosters, Microneedling, Peels and Facials
 
 ## body
 
 [image: body-card]
 
-3D lipo, HIFU body and Emsculpt
+3D Lipo, HIFU Body and Emsculpt
 
 ## laser-and-hair-removal
 
 [image: laser-card]
 
-Pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal
+Pigmentation, Rejuvenation and Tattoo Removal; Laser and IPL Hair Removal
 
 ## wellness
 
 [image: wellness-card]
 
-Massage, Japanese head spa and waxing
+Massage, Japanese Head Spa and Waxing
 
 ## row-without-price
 

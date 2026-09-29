@@ -553,24 +553,24 @@
       "name": "Full Face",
       "display_name": null,
       "category": "hifu",
-      "status": "live",
+      "status": "removed",
       "price_gbp": 450,
       "price_from": false,
       "duration": "1 hr 45 min",
       "source": "booking",
-      "note": "same name as another row, verify on /pricing"
+      "note": "removed at the clinic's request 2026-09-29 (F), HIFU Full Face £450 (Q45)"
     },
     {
       "slug": "full_face_1",
       "name": "Full Face",
       "display_name": null,
       "category": "hifu",
-      "status": "live",
+      "status": "removed",
       "price_gbp": 300,
       "price_from": false,
       "duration": "1 hr 30 min",
       "source": "booking",
-      "note": "same name as another row, verify on /pricing"
+      "note": "removed at the clinic's request 2026-09-29 (F), HIFU Full Face £300 (Q45)"
     },
     {
       "slug": "full_face_chin_neck",
@@ -595,6 +595,42 @@
       "duration": "1 hr",
       "source": "booking",
       "note": ""
+    },
+    {
+      "slug": "hifu_cheek_jawline_neck",
+      "name": "Cheek, Jawline & Neck",
+      "display_name": null,
+      "category": "hifu",
+      "status": "live",
+      "price_gbp": 550,
+      "price_from": false,
+      "duration": "1 hr",
+      "source": "clinic WhatsApp 2026-09-29",
+      "note": "new row from F 2026-09-29 21:00 (Q45)"
+    },
+    {
+      "slug": "hifu_eyes",
+      "name": "Eyes",
+      "display_name": null,
+      "category": "hifu",
+      "status": "live",
+      "price_gbp": 200,
+      "price_from": false,
+      "duration": "30 min",
+      "source": "clinic WhatsApp 2026-09-29",
+      "note": "new row from F 2026-09-29 21:00 (Q45)"
+    },
+    {
+      "slug": "hifu_smile_line",
+      "name": "Smile Line",
+      "display_name": null,
+      "category": "hifu",
+      "status": "live",
+      "price_gbp": 150,
+      "price_from": false,
+      "duration": "30 min",
+      "source": "clinic WhatsApp 2026-09-29",
+      "note": "new row from F 2026-09-29 21:00 (Q45)"
     },
     {
       "slug": "gycolic_acid_peel",
@@ -637,12 +673,12 @@
       "name": "Half face With LED and Mask",
       "display_name": null,
       "category": "skin",
-      "status": "live",
+      "status": "removed",
       "price_gbp": 150,
       "price_from": false,
       "duration": "45 min",
       "source": "booking",
-      "note": ""
+      "note": "removed at the clinic's request 2026-09-29 (F) (Q45)"
     },
     {
       "slug": "hand_rejuvenation",
@@ -827,14 +863,14 @@
     {
       "slug": "ladies_waxing_bikini",
       "name": "Ladies' Waxing - Bikini",
-      "display_name": null,
+      "display_name": "Ladies' Waxing - Bikini (Hot Wax)",
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 25,
       "price_from": false,
       "duration": "15 min",
       "source": "booking",
-      "note": ""
+      "note": "(Hot Wax) added at the clinic's request 2026-09-29 (F) (Q45)"
     },
     {
       "slug": "ladies_waxing_body_hot_wax_abdomen",
@@ -899,14 +935,14 @@
     {
       "slug": "ladies_waxing_brazilian",
       "name": "Ladies' Waxing - Brazilian",
-      "display_name": null,
+      "display_name": "Ladies' Waxing - Brazilian (Hot Wax)",
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 42,
       "price_from": false,
       "duration": "45 min",
       "source": "booking",
-      "note": ""
+      "note": "(Hot Wax) added at the clinic's request 2026-09-29 (F) (Q45)"
     },
     {
       "slug": "ladies_waxing_face_hot_wax_forehead",
@@ -995,14 +1031,14 @@
     {
       "slug": "ladies_waxing_g_string",
       "name": "Ladies' Waxing - G-String",
-      "display_name": null,
+      "display_name": "Ladies' Waxing - G-String (Hot Wax)",
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 32,
       "price_from": false,
       "duration": "30 min",
       "source": "booking",
-      "note": ""
+      "note": "(Hot Wax) added at the clinic's request 2026-09-29 (F) (Q45)"
     },
     {
       "slug": "ladies_waxing_half_arm_with_strip_wax",
@@ -1019,14 +1055,14 @@
     {
       "slug": "ladies_waxing_hollywood",
       "name": "Ladies' Waxing - Hollywood",
-      "display_name": null,
+      "display_name": "Ladies' Waxing - Hollywood (Hot Wax)",
       "category": "waxing-ladies",
       "status": "live",
       "price_gbp": 42,
       "price_from": false,
       "duration": "45 min",
       "source": "booking",
-      "note": ""
+      "note": "(Hot Wax) added at the clinic's request 2026-09-29 (F) (Q45)"
     },
     {
       "slug": "ladies_waxing_lower_leg_strip_wax",
@@ -1058,11 +1094,11 @@
       "display_name": null,
       "category": "waxing-ladies",
       "status": "live",
-      "price_gbp": 20,
+      "price_gbp": 26,
       "price_from": false,
       "duration": "35 min",
       "source": "booking",
-      "note": ""
+      "note": "price 20 to 26 at the clinic's request 2026-09-29 (F) (Q45)"
     },
     {
       "slug": "large_area_outer_thighs_full_stomach",
@@ -1267,6 +1303,30 @@
       "duration": "30 min",
       "source": "booking",
       "note": ""
+    },
+    {
+      "slug": "men_s_waxing_half_back",
+      "name": "Men's Waxing Half Back",
+      "display_name": null,
+      "category": "waxing-men",
+      "status": "live",
+      "price_gbp": 28,
+      "price_from": false,
+      "duration": null,
+      "source": "clinic WhatsApp 2026-09-29",
+      "note": "new row from F 2026-09-29 21:54; duration not given (Q45)"
+    },
+    {
+      "slug": "men_s_waxing_full_back",
+      "name": "Men's Waxing Full Back",
+      "display_name": null,
+      "category": "waxing-men",
+      "status": "live",
+      "price_gbp": 35,
+      "price_from": false,
+      "duration": null,
+      "source": "clinic WhatsApp 2026-09-29",
+      "note": "new row from F 2026-09-29 21:54; duration not given (Q45)"
     },
     {
       "slug": "men_s_waxing_half_leg",
@@ -1689,6 +1749,18 @@
       "note": ""
     },
     {
+      "slug": "swedish_massage_1_hr",
+      "name": "Swedish Massage",
+      "display_name": null,
+      "category": "massage",
+      "status": "live",
+      "price_gbp": 65,
+      "price_from": false,
+      "duration": "1 hr",
+      "source": "clinic WhatsApp 2026-09-29",
+      "note": "new row from F 2026-09-29 21:42; F wrote '£65 ?(1h)', duration 1 hr to confirm (Q45)"
+    },
+    {
       "slug": "tattoo_large_area_8_15cm",
       "name": "Tattoo Large Area (8-15cm)",
       "display_name": null,
@@ -2005,12 +2077,12 @@
       "name": "SKYMEDIC CHEMICAL PEELS",
       "display_name": null,
       "category": "skin",
-      "status": "live",
+      "status": "removed",
       "price_gbp": null,
       "price_from": false,
       "duration": null,
       "source": "cms/aesthetics-1",
-      "note": ""
+      "note": "removed at the clinic's request 2026-09-29 (F) (Q45)"
     },
     {
       "slug": "aesthetics_body_3d_lipo",

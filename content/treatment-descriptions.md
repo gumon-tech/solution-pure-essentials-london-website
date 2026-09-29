@@ -5,7 +5,7 @@ Drafted 2026-09-13 by PWEB under PEL ruling 8. Families are in category order (h
 ## aesthetics_1_hifu
 title: HIFU
 
-HIFU stands for high intensity focused ultrasound, a method that uses ultrasound energy. For the face and neck it is booked as "Full Face", "Half Face", "Neck", "Full Face + Neck" or "Full Face + Chin + Neck". A session takes from 45 min for the neck to 2 hr for full face, chin and neck, and the length depends on the area booked. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
+HIFU stands for high intensity focused ultrasound, a method that uses ultrasound energy. For the face and neck it is booked as "Half Face", "Neck", "Eyes", "Smile Line", "Full Face + Neck", "Cheek, Jawline & Neck" or "Full Face + Chin + Neck". A session takes from 30 min for the eyes or the smile line to 2 hr for full face, chin and neck, and the length depends on the area booked. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
 
 sources:
 - S1: https://www.pureessentialslondon.com/aesthetics-1/hifu, fact taken: "(Hifu) high intensity focused ultrasound", uses "ultrasound energy"
@@ -67,16 +67,6 @@ The Microneedling treatment uses the Skin Needling System, which pierces the ski
 sources:
 - S1: https://www.pureessentialslondon.com/aesthetics-1/microneedling, facts taken: "The Skin Needling System"; "used to vertically pierce the skin to produce hundreds of tiny open channels"
 - S2: data/services.json `name` and `duration` of `microneedling_face` ("1 hr") and `microneedling_face_neck` ("1 hr 15 min")
-
-## aesthetics_1_skymedic_chemical_peels
-title: Skymedic Chemical Peels
-
-Skymedic Chemical Peels are chemical peels, in which a chemical solution is applied to the skin, typically on the face and also on the body. The clinic's page describes the peel combined with photobiodynamic therapy, using the Fotoage device and Skinox products. Its session length is not on the price list yet, so ask on WhatsApp before you book. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
-
-sources:
-- S1: https://www.pureessentialslondon.com/aesthetics-1/skymedic-chemical-peels, facts taken: "SKYMEDIC" chemical peels; "a chemical solution is applied to the skin"; "typically on the face but also can treat body" (areas only)
-- S2: same URL, facts taken: "photobiodynamic therapy"; "Fotoage device"; "Skinox products"
-- S3: data/services.json `aesthetics_1_skymedic_chemical_peels` `duration` null, lib/families.ts `priced: []`
 
 ## aesthetics_body_indiba_deep_beauty
 title: Indiba Deep Beauty
@@ -181,7 +171,7 @@ sources:
 
 ### hifu-kings-cross
 
-HIFU stands for high intensity focused ultrasound, a method that uses ultrasound energy. For the face it is booked as full face, half face, neck, full face and neck, or full face, chin and neck, and a session takes from 45 min to 2 hr depending on the area. For the body it is booked as a small, medium or large area, each at 45 min. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
+HIFU stands for high intensity focused ultrasound, a method that uses ultrasound energy. For the face it is booked as half face, neck, eyes, smile line, full face and neck, cheek, jawline and neck, or full face, chin and neck, and a session takes from 30 min to 2 hr depending on the area. For the body it is booked as a small, medium or large area, each at 45 min. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
 
 sources:
 - S1: https://www.pureessentialslondon.com/aesthetics-1/hifu, fact taken: "(Hifu) high intensity focused ultrasound", "ultrasound energy"

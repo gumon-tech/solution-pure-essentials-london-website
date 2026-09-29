@@ -16,7 +16,7 @@ import { categoryAnchor } from "@/lib/story-map";
 export const metadata: Metadata = {
   title: "Treatments and Prices in King's Cross | Pure Essentials London",
   description:
-    "Facials, HIFU, laser, body contouring, massage and waxing at 155 King's Cross Road. The price shown is the price you pay.",
+    "Facials, HIFU, Laser, Body Contouring, Massage and Waxing at King's Cross. The price shown is the price you pay.",
   alternates: {
     canonical: "/treatments/",
   },
@@ -25,10 +25,10 @@ export const metadata: Metadata = {
 // 1-line group descriptions, verbatim from content/treatments-intro.md (see
 // content/COPY-SOURCES.md), keyed by the same 4 group ids as lib/groups.ts.
 const GROUP_LINE: Record<string, string> = {
-  face: "HIFU, skin boosters, microneedling, peels and facials",
-  body: "3D lipo, HIFU body and Emsculpt",
-  laser: "Pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal",
-  wellness: "Massage, Japanese head spa and waxing",
+  face: "HIFU, Skin Boosters, Microneedling, Peels and Facials",
+  body: "3D Lipo, HIFU Body and Emsculpt",
+  laser: "Pigmentation, Rejuvenation and Tattoo Removal; Laser and IPL Hair Removal",
+  wellness: "Massage, Japanese Head Spa and Waxing",
 };
 
 export default function TreatmentsPage() {

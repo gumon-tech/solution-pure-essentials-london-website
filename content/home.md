@@ -1,6 +1,6 @@
 ---
 title: "Beauty Treatments in King's Cross | Pure Essentials London"
-description: "Facials, HIFU, laser, body contouring, massage and waxing at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation."
+description: "Facials, HIFU, Laser, Body Contouring, Massage and Waxing at King's Cross, 7 days a week. Every treatment starts with a free consultation."
 h1: "Beauty and Skin Treatments in King's Cross"
 ---
 
@@ -8,7 +8,7 @@ h1: "Beauty and Skin Treatments in King's Cross"
 
 [image: real-reception]
 
-Facials, HIFU, laser, body contouring, massage and waxing at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
+Facials, HIFU, Laser, Body Contouring, Massage and Waxing at King's Cross, 7 days a week. Every treatment starts with a free consultation.
 
 - Button (primary): Message Us on WhatsApp
 - Button (secondary): See Treatments and Prices
@@ -19,7 +19,7 @@ Facials, HIFU, laser, body contouring, massage and waxing at 155 King's Cross Ro
 
 [image: room-analyser]
 
-HIFU, skin boosters, microneedling, peels and facials
+HIFU, Skin Boosters, Microneedling, Peels and Facials
 
 From GBP 70
 
@@ -27,7 +27,7 @@ From GBP 70
 
 [image: room-trolley]
 
-3D lipo, HIFU body and Emsculpt
+3D Lipo, HIFU Body and Emsculpt
 
 From GBP 99
 
@@ -35,7 +35,7 @@ From GBP 99
 
 [image: room-couch]
 
-Pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal
+Pigmentation, Rejuvenation and Tattoo Removal; Laser and IPL Hair Removal
 
 From GBP 25
 
@@ -43,7 +43,7 @@ From GBP 25
 
 [image: room-warm]
 
-Massage, Japanese head spa and waxing
+Massage, Japanese Head Spa and Waxing
 
 From GBP 10
 

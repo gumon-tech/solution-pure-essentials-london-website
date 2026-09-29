@@ -138,12 +138,11 @@
     {
       "old": "/aesthetics-1/skymedic-chemical-peels",
       "rule": 1,
-      "target": "/microneedling-peels-kings-cross/",
-      "stub_paths": [
-        "/aesthetics-1/skymedic-chemical-peels/"
-      ],
+      "target": null,
       "row_slug": "aesthetics_1_skymedic_chemical_peels",
-      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_skymedic_chemical_peels, name \"SKYMEDIC CHEMICAL PEELS\") = collection \"aesthetics-1\" + item slug \"skymedic-chemical-peels\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; family page aesthetics_1_skymedic_chemical_peels retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target"
+      "evidence": "PEL origin/main:data/pel-website-service-inventory.tsv row (source cms/aesthetics-1, slug aesthetics_1_skymedic_chemical_peels, name \"SKYMEDIC CHEMICAL PEELS\") = collection \"aesthetics-1\" + item slug \"skymedic-chemical-peels\" with non-alphanumerics as underscores (%2F kept as 2F); data/services.json status live, category skin; family page aesthetics_1_skymedic_chemical_peels retired into its category story (queue row Q36, scripts/internal-redirects.json), which is also the section 7 draft target",
+      "no_stub": "removed",
+      "reason": "row removed at the clinic's request 2026-09-29 (queue row Q45; data/services.json status removed): no stub"
     },
     {
       "old": "/aesthetics-body/3d-lipo",
@@ -975,22 +974,20 @@
     {
       "old": "/service-page/full-face",
       "rule": 3,
-      "target": "/hifu-kings-cross/",
-      "stub_paths": [
-        "/service-page/full-face/"
-      ],
+      "target": null,
       "row_slug": "full_face",
-      "evidence": "service-page slug \"full-face\" with hyphens as underscores = data/services.json row \"full_face\" (source booking, name \"Full Face\", status live, category hifu); lib/families.ts lists \"full_face\" under family \"aesthetics_1_hifu\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hifu\""
+      "evidence": "service-page slug \"full-face\" with hyphens as underscores = data/services.json row \"full_face\" (source booking, name \"Full Face\", status live, category hifu); lib/families.ts lists \"full_face\" under family \"aesthetics_1_hifu\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hifu\"",
+      "no_stub": "removed",
+      "reason": "row removed at the clinic's request 2026-09-29 (queue row Q45; data/services.json status removed): no stub"
     },
     {
       "old": "/service-page/full-face-1",
       "rule": 3,
-      "target": "/hifu-kings-cross/",
-      "stub_paths": [
-        "/service-page/full-face-1/"
-      ],
+      "target": null,
       "row_slug": "full_face_1",
-      "evidence": "service-page slug \"full-face-1\" with hyphens as underscores = data/services.json row \"full_face_1\" (source booking, name \"Full Face\", status live, category hifu); lib/families.ts lists \"full_face_1\" under family \"aesthetics_1_hifu\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hifu\""
+      "evidence": "service-page slug \"full-face-1\" with hyphens as underscores = data/services.json row \"full_face_1\" (source booking, name \"Full Face\", status live, category hifu); lib/families.ts lists \"full_face_1\" under family \"aesthetics_1_hifu\", whose page was retired into its category story (queue row Q36, scripts/internal-redirects.json), so the story page of category \"hifu\"",
+      "no_stub": "removed",
+      "reason": "row removed at the clinic's request 2026-09-29 (queue row Q45; data/services.json status removed): no stub"
     },
     {
       "old": "/service-page/full-face-chin-neck",
@@ -1044,12 +1041,11 @@
     {
       "old": "/service-page/half-face-with-led-and-mask",
       "rule": 3,
-      "target": "/microneedling-peels-kings-cross/",
-      "stub_paths": [
-        "/service-page/half-face-with-led-and-mask/"
-      ],
+      "target": null,
       "row_slug": "half_face_with_led_and_mask",
-      "evidence": "service-page slug \"half-face-with-led-and-mask\" with hyphens as underscores = data/services.json row \"half_face_with_led_and_mask\" (source booking, name \"Half face With LED and Mask\", status live, category skin); no family page lists this row, so the story page of category \"skin\" per PEL ruling 2026-09-13 (rule 5 amended)"
+      "evidence": "service-page slug \"half-face-with-led-and-mask\" with hyphens as underscores = data/services.json row \"half_face_with_led_and_mask\" (source booking, name \"Half face With LED and Mask\", status live, category skin); no family page lists this row, so the story page of category \"skin\" per PEL ruling 2026-09-13 (rule 5 amended)",
+      "no_stub": "removed",
+      "reason": "row removed at the clinic's request 2026-09-29 (queue row Q45; data/services.json status removed): no stub"
     },
     {
       "old": "/service-page/hand-rejuvenation",

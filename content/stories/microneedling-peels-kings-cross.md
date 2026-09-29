@@ -1,6 +1,6 @@
 ---
 title: "Microneedling and Peels in King's Cross | Pure Essentials London"
-description: "Microneedling, radio frequency and peels at 155 King's Cross Road, London, from £75. Every treatment starts with a free consultation."
+description: "Microneedling, radio frequency and peels at King's Cross, London, from £75. Every treatment starts with a free consultation."
 h1: "Microneedling and Peels in King's Cross"
 short: "Microneedling and Peels"
 ---
@@ -9,7 +9,7 @@ short: "Microneedling and Peels"
 
 [image: cat-skin]
 
-Microneedling, radio frequency and peels at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
+Microneedling, radio frequency and peels at King's Cross, 7 days a week. Every treatment starts with a free consultation.
 
 - Button (primary): Message Us on WhatsApp
 - Button (secondary): See Treatments and Prices
@@ -22,7 +22,7 @@ The Microneedling treatment uses the Skin Needling System, which pierces the ski
 
 [image: face-card]
 
-INDIBA Deep Beauty is a radiofrequency device that works at 448 kHz through the Proionic System. Skymedic Chemical Peels are chemical peels, in which a chemical solution is applied to the skin. Fractional Radiofrequency Microneedling is a form of radiofrequency microneedling.
+INDIBA Deep Beauty is a radiofrequency device that works at 448 kHz through the Proionic System. Fractional Radiofrequency Microneedling is a form of radiofrequency microneedling.
 
 Sessions take from 30 minutes to 1 hour 30 minutes.
 
@@ -53,13 +53,11 @@ If you have a skin or health condition, or you are unsure which treatment is rig
 | Collagen Production (full Face) | 1 hr | GBP 130 | collagen_production_full_face |
 | Cosmelan Depigmenting Chemical Peel Treatment (Including Home Kit) | 1 hr | GBP 1300 | cosmelan_depigmenting_including_home_kit |
 | Glycolic Acid Peel | 1 hr | GBP 75 | gycolic_acid_peel |
-| Half face With LED and Mask | 45 min | GBP 150 | half_face_with_led_and_mask |
 | Rejuvenation (Full Face) | 45 min | GBP 130 | rejuvenation_full_face |
 | Pigmentation Reduction Chemical Peel + Serum Treatment + LED Therapy | 1 hr 30 min | GBP 135 | skinox_pigmentation |
 | Redness Reduction Chemical Peel + Serum Treatment + LED Therapy | 1 hr 30 min | GBP 135 | skinox_redness |
 | Wrinkle Reduction Chemical Peel + Serum Treatment + LED Therapy | 1 hr 30 min | GBP 135 | skinox_wrinkles |
 | Fractional Radiofrequency Microneedling | ask | Ask for a quote | aesthetics_1_golden_micro_needling |
-| Skymedic Chemical Peels | ask | Ask for a quote | aesthetics_1_skymedic_chemical_peels |
 
 [image: fam-radiofrequency]
 

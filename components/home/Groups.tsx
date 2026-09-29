@@ -16,25 +16,25 @@ const CARDS: { id: GroupId; title: string; line: string; slot: ImageSlot }[] = [
   {
     id: "face",
     title: "Face",
-    line: "HIFU, skin boosters, microneedling, peels and facials",
+    line: "HIFU, Skin Boosters, Microneedling, Peels and Facials",
     slot: "room-analyser",
   },
   {
     id: "body",
     title: "Body",
-    line: "3D lipo, HIFU body and Emsculpt",
+    line: "3D Lipo, HIFU Body and Emsculpt",
     slot: "room-trolley",
   },
   {
     id: "laser",
     title: "Laser and Hair Removal",
-    line: "Pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal",
+    line: "Pigmentation, Rejuvenation and Tattoo Removal; Laser and IPL Hair Removal",
     slot: "room-couch",
   },
   {
     id: "wellness",
     title: "Wellness",
-    line: "Massage, Japanese head spa and waxing",
+    line: "Massage, Japanese Head Spa and Waxing",
     slot: "room-warm",
   },
 ];

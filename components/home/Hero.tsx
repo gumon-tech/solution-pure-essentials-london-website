@@ -4,7 +4,7 @@ import { waSite } from "@/lib/site";
 
 // Copy verbatim from content/home.md's "## hero" section.
 const SENTENCE =
-  "Facials, HIFU, laser, body contouring, massage and waxing at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.";
+  "Facials, HIFU, Laser, Body Contouring, Massage and Waxing at King's Cross, 7 days a week. Every treatment starts with a free consultation.";
 
 export default function Hero({ h1 }: { h1: string }) {
   return (

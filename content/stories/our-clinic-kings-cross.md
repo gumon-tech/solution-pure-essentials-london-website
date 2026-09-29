@@ -25,11 +25,11 @@ Open Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 [image: face-card]
 
-For the face: HIFU, skin boosters, microneedling, peels and facials, from £70.
+For the face: HIFU, Skin Boosters, Microneedling, Peels and Facials, from £70.
 
 [image: body-card]
 
-For the body: 3D lipo, HIFU body and Emsculpt, from £99.
+For the body: 3D Lipo, HIFU Body and Emsculpt, from £99.
 
 [image: laser-card]
 

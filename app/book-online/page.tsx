@@ -6,7 +6,7 @@ import { SITE, waSite } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Book Online | Pure Essentials London",
   description:
-    "Book a treatment at Pure Essentials London, 155 King's Cross Road, online on Treatwell. Choose a treatment and a time, and book straight away.",
+    "Book a treatment at Pure Essentials London, King's Cross, online on Treatwell. Choose a treatment and a time, and book straight away.",
   alternates: {
     canonical: "/book-online/",
   },

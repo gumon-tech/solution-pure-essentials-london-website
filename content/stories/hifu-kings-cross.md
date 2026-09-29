@@ -1,6 +1,6 @@
 ---
 title: "HIFU in King's Cross | Pure Essentials London"
-description: "HIFU for the face and neck at 155 King's Cross Road, London. Face and neck options from £280. Every treatment starts with a free consultation."
+description: "HIFU for the face and neck at King's Cross, London. Face and neck options from £150. Every treatment starts with a free consultation."
 h1: "HIFU in King's Cross"
 short: "HIFU"
 ---
@@ -9,7 +9,7 @@ short: "HIFU"
 
 [image: story-hifu]
 
-HIFU for the face and neck at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
+HIFU for the face and neck at King's Cross, 7 days a week. Every treatment starts with a free consultation.
 
 - Button (primary): Message Us on WhatsApp
 - Button (secondary): See Treatments and Prices
@@ -18,7 +18,7 @@ HIFU for the face and neck at 155 King's Cross Road, 7 days a week. Every treatm
 
 [image: fam-hifu-face]
 
-HIFU at Pure Essentials London is available for the full face, half face and neck, and for combinations of these areas. Sessions take from 45 minutes to 2 hours, depending on the area. HIFU is also available for small, medium and large areas of the body.
+HIFU at Pure Essentials London is available for the half face, neck, eyes and smile lines, and for combinations of face and neck areas. Sessions take from 30 minutes to 2 hours, depending on the area. HIFU is also available for small, medium and large areas of the body.
 
 [image: room-analyser]
 
@@ -48,10 +48,11 @@ HIFU Face and Neck
 
 | Treatment | Duration | Price | Source slug |
 |---|---|---|---|
-| HIFU full face | 1 hr 45 min | GBP 450 | full_face |
-| HIFU full face | 1 hr 30 min | GBP 300 | full_face_1 |
 | Full Face + Chin + Neck | 2 hr | GBP 560 | full_face_chin_neck |
 | Full Face + Neck | 1 hr | GBP 350 | full_face_neck |
+| Cheek, Jawline & Neck | 1 hr | GBP 550 | hifu_cheek_jawline_neck |
+| Eyes | 30 min | GBP 200 | hifu_eyes |
+| Smile Line | 30 min | GBP 150 | hifu_smile_line |
 | Half Face | 1 hr | GBP 280 | half_face |
 | Neck | 45 min | GBP 299 | neck |
 
@@ -82,10 +83,10 @@ You leave with clear aftercare advice and can message us with any question.
 Monday to Saturday 10:00 to 20:00, Sunday and bank holidays 11:00 to 20:00.
 
 **How Much Does HIFU Cost?**
-Face and neck options run from £280 for a half face to £560 for full face, chin and neck. Every option is listed on this page.
+Face and neck options run from £150 for the smile lines to £560 for full face, chin and neck. Every option is listed on this page.
 
 **How Long Does a Session Take?**
-From 45 minutes for the neck to 2 hours for full face, chin and neck.
+From 30 minutes for the eyes or the smile lines to 2 hours for full face, chin and neck.
 
 **Is the Consultation Free?**
 Yes. Consultations are free.

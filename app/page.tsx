@@ -11,7 +11,7 @@ import { clinicJsonLd } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Beauty Treatments in King's Cross | Pure Essentials London",
   description:
-    "Facials, HIFU, laser, body contouring, massage and waxing at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.",
+    "Facials, HIFU, Laser, Body Contouring, Massage and Waxing at King's Cross, 7 days a week. Every treatment starts with a free consultation.",
   alternates: {
     canonical: "/",
   },

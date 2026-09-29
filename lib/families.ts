@@ -64,12 +64,13 @@ export const FAMILIES: Family[] = [
     title: "HIFU",
     category: "hifu",
     priced: [
-      "full_face",
-      "full_face_1",
       "full_face_chin_neck",
       "full_face_neck",
       "half_face",
       "neck",
+      "hifu_cheek_jawline_neck",
+      "hifu_eyes",
+      "hifu_smile_line",
     ],
   },
   {
@@ -95,12 +96,6 @@ export const FAMILIES: Family[] = [
     title: "Pico Laser",
     category: "laser",
     priced: ["pigmentations_picosure", "rejuvenation_picosure"],
-  },
-  {
-    slug: "aesthetics_1_skymedic_chemical_peels",
-    title: "Skymedic Chemical Peels",
-    category: "skin",
-    priced: [],
   },
   {
     slug: "aesthetics_body_3d_lipo",

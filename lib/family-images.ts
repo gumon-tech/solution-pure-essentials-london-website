@@ -17,7 +17,6 @@ export const FAMILY_IMAGE_SLOT: Partial<Record<string, ImageSlot>> = {
   aesthetics_body_tattoo_removal: "fam-tattoo-removal",
   aesthetics_1_golden_micro_needling: "fam-gold-microneedling",
   aesthetics_1_microneedling: "fam-microneedling",
-  aesthetics_1_skymedic_chemical_peels: "fam-chemical-peel",
   aesthetics_body_indiba_deep_beauty: "fam-radiofrequency",
   aesthetics_body_profhilo_body: "fam-skin-booster-body",
   injections_profhilo_skin_booster: "fam-skin-booster-face",

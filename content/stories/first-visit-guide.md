@@ -1,6 +1,6 @@
 ---
 title: "First Visit Guide, King's Cross | Pure Essentials London"
-description: "Planning your first visit to 155 King's Cross Road? What to message us, the free consultation, opening hours, how prices are shown and aftercare."
+description: "Planning your first visit to King's Cross? What to message us, the free consultation, opening hours, how prices are shown and aftercare."
 h1: "Your First Visit"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Your Visit, King's Cross | Pure Essentials London"
-description: "Your visit to Pure Essentials London at 155 King's Cross Road, from your first message to the free consultation, your treatment and aftercare advice."
+description: "Your visit to Pure Essentials London at King's Cross, from your first message to the free consultation, your treatment and aftercare advice."
 h1: "Your Visit"
 ---
 

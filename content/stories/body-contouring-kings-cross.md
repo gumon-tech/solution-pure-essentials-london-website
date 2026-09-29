@@ -1,6 +1,6 @@
 ---
 title: "Body Contouring in King's Cross | Pure Essentials London"
-description: "Body contouring at 155 King's Cross Road, London: 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. From £99. Consultations are free."
+description: "Body contouring at King's Cross, London: 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. From £99. Consultations are free."
 h1: "Body Contouring in King's Cross"
 short: "Body Contouring"
 ---
@@ -9,7 +9,7 @@ short: "Body Contouring"
 
 [image: story-body-contouring]
 
-Body contouring at 155 King's Cross Road, 7 days a week. Every treatment starts with a free consultation.
+Body contouring at King's Cross, 7 days a week. Every treatment starts with a free consultation.
 
 - Button (primary): Message Us on WhatsApp
 - Button (secondary): See Treatments and Prices

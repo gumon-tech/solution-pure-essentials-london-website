@@ -34,14 +34,14 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | title "Beauty Treatments in King's Cross" | PEL:Home Hero heading, cut |
 | description "Facials, HIFU, laser, body contouring..." | PEL:Home Hero sub-line |
 | h1 "Beauty and skin treatments in King's Cross" | PEL:Home Hero heading |
-| "Facials, HIFU, laser, body contouring, massage and waxing at 155..." | PEL:Home Hero sub-line; F1, F2 |
+| "Facials, HIFU, Laser, Body Contouring, Massage and Waxing at 155..." | PEL:Home Hero sub-line; F1, F2 |
 | "Every treatment starts with a free consultation." | PEL:Home Hero sub-line; F5 |
 | Buttons "Message us on WhatsApp" / "See treatments and prices" | PEL:Home Hero buttons; F4 |
-| "HIFU, skin boosters, microneedling, peels and facials" | PEL:Home groups, Face line, cut |
+| "HIFU, Skin Boosters, Microneedling, Peels and Facials" | PEL:Home groups, Face line, cut |
 | "From GBP 70" | PEL:Home groups; S:hydrating (script check 4) |
-| "3D lipo, HIFU body and Emsculpt" | PEL:Home groups, Body line, cut |
+| "3D Lipo, HIFU Body and Emsculpt" | PEL:Home groups, Body line, cut |
 | "From GBP 99" | PEL:Home groups; S:emsculpt, S:cryoelectrolipolysis_one_area |
-| "Pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal" | PEL:Home groups, Laser line |
+| "Pigmentation, Rejuvenation and Tattoo Removal; Laser and IPL Hair Removal" | PEL:Home groups, Laser line |
 | "From GBP 25" | PEL:Home groups; S:ipl_small_area |
 | "Massage and waxing" | PEL:Home groups, Wellness line |
 | "From GBP 10" | PEL:Home groups; S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip |
@@ -62,7 +62,7 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | Sentence start | Source |
 |---|---|
 | title "Contact and Hours, King's Cross" | PEL:Contact heading and hours line, cut and reordered |
-| description "Find us at 155 King's Cross Road..." | PEL:Contact heading, address, hours; F1, F2 |
+| description "Find us at King's Cross..." | PEL:Contact heading, address, hours; F1, F2 |
 | h1 "Find us" | PEL:Contact heading |
 | "155 King's Cross Road, London WC1X 9BN" | PEL:Contact; F1 |
 | Hours table (3 rows) | PEL:Contact hours; F2 |
@@ -81,7 +81,7 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | Sentence start | Source |
 |---|---|
 | title "Book Online" | Lead brief 2026-09-13; old Wix path /book-online |
-| description "Book a treatment at Pure Essentials London, 155 King's Cross Road, online on Treatwell..." | Lead brief 2026-09-13; F1, F4 |
+| description "Book a treatment at Pure Essentials London, King's Cross, online on Treatwell..." | Lead brief 2026-09-13; F1, F4 |
 | h1 "Book online" | Lead brief 2026-09-13; OD13 |
 | "Choose a treatment and a time, and book straight away on Treatwell." | Lead brief 2026-09-13; F4 |
 | "This booking calendar and its treatment menu are provided by Treatwell, which sets its own cookies. See our privacy notice." | PELC, verbatim, with "and its treatment menu are" added by PEL ruling 2026-09-13 brief section 30 condition 3 |
@@ -94,7 +94,7 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 | Sentence start | Source |
 |---|---|
 | title "Treatments in King's Cross" | PEL:Home Hero buttons "See treatments and prices", cut |
-| description "Facials, HIFU, laser, body contouring, massage and waxing at 155..." | PEL:Home Hero sub-line, cut; PEL:Treatments intro |
+| description "Facials, HIFU, Laser, Body Contouring, Massage and Waxing at 155..." | PEL:Home Hero sub-line, cut; PEL:Treatments intro |
 | h1 "Treatments and prices" | PEL:Home Hero button, cut |
 | "Every price below is the price you pay." | PEL:Treatments intro |
 | "The price shown is the price you pay." | PEL:Treatments intro |
@@ -108,7 +108,7 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 
 | Sentence start | Files | Source |
 |---|---|---|
-| "...at 155 King's Cross Road, 7 days a week." (hero) | all 4 | PEL:Home Hero sub-line, cut; F1, F2; category from C:hifu, C:hair, C:facials, C:body |
+| "...at King's Cross, 7 days a week." (hero) | all 4 | PEL:Home Hero sub-line, cut; F1, F2; category from C:hifu, C:hair, C:facials, C:body |
 | "Every treatment starts with a free consultation." | all 4 | PEL:Home Hero sub-line; F5 |
 | Buttons "Message us on WhatsApp" / "See treatments and prices" / "Book on Treatwell" | all 4 | PEL:Home Hero buttons, PEL:Contact; F4 |
 | "At the consultation we look at your skin or your goal and recommend what suits you." | all 4 | PEL:Home How it works 2 |
@@ -134,16 +134,16 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 |---|---|
 | title, h1 "HIFU in King's Cross" | C:hifu; F1 |
 | description "HIFU for the face and neck at 155..." | C:hifu; F1; S:half_face (GBP 280); PEL:Home Hero sub-line |
-| hero "HIFU for the face and neck at 155 King's Cross Road, 7 days a week." | C:hifu; F1; F2 |
+| hero "HIFU for the face and neck at King's Cross, 7 days a week." | C:hifu; F1; F2 |
 | "HIFU at Pure Essentials London is available for the full face, half face and neck, and for combinations..." | S:full_face, S:full_face_1, S:half_face, S:neck, S:full_face_neck, S:full_face_chin_neck |
-| "Sessions take from 45 minutes to 2 hours, depending on the area." | S:neck (45 min), S:full_face_chin_neck (2 hr) |
+| "Sessions take from 30 minutes to 2 hours, depending on the area." | S:hifu_eyes, S:hifu_smile_line (30 min), S:full_face_chin_neck (2 hr); Q45 |
 | "HIFU is also available for small and medium areas of the body." | S:hifu_small_area_knees_armpit_bust_lift, S:hifu_med_area_flappy_arms_lovehandle |
 | "At the free consultation you can ask how the treatment works and what it aims to do for you." | F5; BH |
 | "HIFU is an aesthetic treatment for adults aged 18 and over." | B18 |
 | Price tables (8 rows) | S: slug in each row; D51 for the 2 "HIFU full face" names |
-| FAQ "Face and neck options run from GBP 280 for a half face to GBP 560 for full face, chin and neck." | S:half_face, S:full_face_chin_neck |
+| FAQ "Face and neck options run from GBP 150 for the smile lines to GBP 560 for full face, chin and neck." | S:hifu_smile_line, S:full_face_chin_neck; Q45 |
 | FAQ "Every option is listed on this page." | the page's price tables |
-| FAQ "From 45 minutes for the neck to 2 hours for full face, chin and neck." | S:neck, S:full_face_chin_neck |
+| FAQ "From 30 minutes for the eyes or the smile lines to 2 hours for full face, chin and neck." | S:hifu_eyes, S:hifu_smile_line, S:full_face_chin_neck; Q45 |
 
 ## content/stories/laser-hair-removal-kings-cross.md
 
@@ -151,7 +151,7 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 |---|---|
 | title, h1 "Laser hair removal in King's Cross" | C:hair; F1 |
 | description "...priced by area size. IPL from GBP 25, laser from GBP 35. Consultations are free." | S:ipl_small_area, S:laser_hair_removal_medium_area; F1; F5 |
-| hero "Laser and IPL hair removal at 155 King's Cross Road, 7 days a week." | C:hair; F1; F2 |
+| hero "Laser and IPL hair removal at King's Cross, 7 days a week." | C:hair; F1; F2 |
 | "Hair removal here is available with laser or with IPL, and each is priced by the size of the area." | S: 7 hair rows (Small, Medium, Large, Extra Large Area names) |
 | "Sessions take from 15 minutes for a small IPL area to 1 hour 30 minutes for an extra large area." | S:ipl_small_area, S:ipl_extra_large_area, S:laser_hair_removal_extra_large_area |
 | "Laser hair removal area sizes:" and 3 bullets: "Medium area: underarms, buttocks, bikini line, neck, shoulders, tummy line, face, full front bikini", "Large area: arms, half legs, tummy, lower back, upper back, chest", "Extra large area: full legs, Hollywood" | https://www.pureessentialslondon.com/pricing, Laser hair removal block, old wording "* Medium area: Underarms, buttocks, bikini line, crack, neck, shoulders, tummy line, face, full front bikini" / "* Large area: Arms, half legs, tummy, lower back, upper back, chest" / "* Extra large: Full legs, Hollywood" (the capture splits "tummy" across 2 spans as "tu" and "mmy", joined here); PEL ruling 2026-09-13 brief section 27; band names from S:laser_hair_removal_medium_area, _large_area, _extra_large_area. The old "* Small area: Feet, hands, lip, chin" is left out: no live laser small-area row. The word "crack" is left out of the story list by PEL ruling 2026-09-13 (reads coarse in prose; the price row name keeps it) |
@@ -169,7 +169,7 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 |---|---|
 | title, h1 "Facials in King's Cross" | C:facials; F1 |
 | description "...including a Hydrofacial and a Hydrating facial from GBP 70..." | S:hydrofacial, S:hydrating; F1; PEL:Home Hero sub-line |
-| hero "Facials at 155 King's Cross Road, 7 days a week." | PEL:Home Hero sub-line, cut; F1; F2 |
+| hero "Facials at King's Cross, 7 days a week." | PEL:Home Hero sub-line, cut; F1; F2 |
 | "The facial menu includes a Hydrofacial and a Hydrating facial." | S:hydrofacial, S:hydrating |
 | "An Age Defence Sensitive Skin Treatment, Diamondtome Microdermabrasion and an Eberlin Facial are also on the menu." | S:facials_1_age_defence_sensitive_skin_treatment, S:facials_1_diamondtome_microdermabrasion, S:facials_1_eberlin_facial |
 | "The Hydrofacial takes 1 hour and the Hydrating facial takes 1 hour 45 minutes." (body and FAQ) | S:hydrofacial, S:hydrating |
@@ -184,7 +184,7 @@ Edits made to PEL sentences (cuts and number format only, no additions): "seven"
 |---|---|
 | title, h1 "Body contouring in King's Cross" | C:body; F1 |
 | description "...3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body. From GBP 99..." | S:3d_lipo, S:cryoelectrolipolysis_one_area, S:emsculpt, S:hifu_small_area_knees_armpit_bust_lift; F1; F5 |
-| hero "Body contouring at 155 King's Cross Road, 7 days a week." | C:body; F1; F2 |
+| hero "Body contouring at King's Cross, 7 days a week." | C:body; F1; F2 |
 | "Body contouring here covers 3D Lipo, cryoelectrolipolysis, Emsculpt and HIFU for the body." | S:3d_lipo, S:cryoelectrolipolysis_one_area, S:emsculpt, S:hifu_small_area_knees_armpit_bust_lift, S:hifu_med_area_flappy_arms_lovehandle |
 | "Cryoelectrolipolysis is priced for 1, 2 or 3 areas, and HIFU for small and medium areas." | S:cryoelectrolipolysis_one_area, _two_areas, _three_areas; S:hifu_small_area..., S:hifu_med_area... |
 | "Sessions take from 30 minutes to 2 hours." | S:emsculpt (30 min), S:cryoelectrolipolysis_three_areas (2 hr) |
@@ -214,7 +214,7 @@ Change to the shared aftercare line: set 1's "You leave with clear aftercare adv
 
 | Sentence start | Files | Source |
 |---|---|---|
-| "...at 155 King's Cross Road, 7 days a week." (hero) | all 4 | PEL:Home Hero sub-line, cut; F1, F2; category from C:massage, C:waxing-ladies, C:waxing-men, C:skin, C:skinboosters |
+| "...at King's Cross, 7 days a week." (hero) | all 4 | PEL:Home Hero sub-line, cut; F1, F2; category from C:massage, C:waxing-ladies, C:waxing-men, C:skin, C:skinboosters |
 | "Every treatment starts with a free consultation." | massage, waxing, microneedling | PEL:Home Hero sub-line; F5 |
 | Buttons "Message us on WhatsApp" / "See treatments and prices" / "Book on Treatwell" | all 4 (skin boosters: no Treatwell button) | PEL:Home Hero buttons, PEL:Contact; F4 |
 | "At the consultation we look at your skin or your goal and recommend what suits you." | microneedling, skin boosters (massage: "your goal" only) | PEL:Home How it works 2 (massage: cut) |
@@ -256,9 +256,9 @@ Change to the shared aftercare line: set 1's "You leave with clear aftercare adv
 |---|---|
 | title, h1 "Waxing in King's Cross" | C:waxing-ladies, C:waxing-men; F1 |
 | description "Waxing for ladies and men at 155..., from GBP 10..." | S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip (GBP 10); F1; F5 |
-| hero "Waxing for ladies and men at 155 King's Cross Road, 7 days a week." | C:waxing-ladies, C:waxing-men; F1; F2 |
+| hero "Waxing for ladies and men at King's Cross, 7 days a week." | C:waxing-ladies, C:waxing-men; F1; F2 |
 | "Ladies' waxing covers the face, underarm, arms, legs and body, and the bikini, Brazilian, G-String and Hollywood." | S: the 20 waxing-ladies rows (area words in their names) |
-| "The face and underarm are waxed with hot wax, and the arms and legs with strip wax." | S:ladies_waxing_face_hot_wax_ (5 rows), S:ladies_waxing_underarm_hot_wax; S:ladies_waxing_half_arm_with_strip_wax, _full_arm_with_strip_wax, _lower_leg_strip_wax, _upper_leg_strip_wax, _full_leg_strip_wax |
+| "The face, underarm, bikini, Brazilian, G-String and Hollywood are waxed with hot wax, and the arms and legs with strip wax." | S:ladies_waxing_face_hot_wax_ (5 rows), S:ladies_waxing_underarm_hot_wax; S:ladies_waxing_half_arm_with_strip_wax, _full_arm_with_strip_wax, _lower_leg_strip_wax, _upper_leg_strip_wax, _full_leg_strip_wax; hot wax on bikini, Brazilian, G-String, Hollywood from F 2026-09-29 (Q45) |
 | "Men's waxing covers the eyebrow, arms, legs, half chest, shoulder and stomach." | S: the 9 waxing-men rows |
 | "Men's waxing does not include intimate areas." | https://www.pureessentialslondon.com/mens, old wording "Hair removal waxing (no intimate waxing)"; PEL ruling 2026-09-13 brief section 27 |
 | "Sessions take from 10 minutes to 1 hour." | S:ladies_waxing_face_hot_wax_sideburns (10 min), S:men_s_waxing_full_leg (1 hr) |
@@ -277,10 +277,9 @@ Change to the shared aftercare line: set 1's "You leave with clear aftercare adv
 | "The Microneedling treatment uses the Skin Needling System, which pierces the skin vertically to make hundreds of tiny open channels." | DESC:aesthetics_1_microneedling, verbatim |
 | "It is booked for the face, or for the face and neck." | DESC:aesthetics_1_microneedling, cut; S:microneedling_face, S:microneedling_face_neck |
 | "INDIBA Deep Beauty is a radiofrequency device that works at 448 kHz through the Proionic System." | DESC:aesthetics_body_indiba_deep_beauty, cut (areas clause dropped) |
-| "Skymedic Chemical Peels are chemical peels, in which a chemical solution is applied to the skin." | DESC:aesthetics_1_skymedic_chemical_peels, cut |
 | "Golden Micro Needling is radiofrequency microneedling." | DESC:aesthetics_1_golden_micro_needling, cut |
 | "Sessions take from 30 minutes to 1 hour 30 minutes." | S:radio_frequency_indiba (30 min); S:skinox_pigmentation, S:skinox_redness, S:skinox_wrinkles (1 hr 30 min) |
-| Price table (14 rows) | S: slug in each row; FAM:aesthetics_1_golden_micro_needling, FAM:aesthetics_1_skymedic_chemical_peels for the 2 rows without a price; D4 |
+| Price table (12 rows) | S: slug in each row; FAM:aesthetics_1_golden_micro_needling for the row without a price; D4 |
 | FAQ "Microneedling Face is GBP 100 and Microneedling Face + Neck is GBP 150." | S:microneedling_face, S:microneedling_face_neck |
 | FAQ "Every option is listed on this page." | the page's price table |
 | FAQ "From 30 minutes for Radio Frequency INDIBA to 1 hour 30 minutes for a Skinox treatment." | S:radio_frequency_indiba, S:skinox_pigmentation, S:skinox_redness, S:skinox_wrinkles |
@@ -293,7 +292,7 @@ Left out of the table on purpose: aesthetics_1_microneedling and aesthetics_body
 |---|---|
 | title, h1 "Skin boosters consultation in King's Cross" | C:skinboosters, cut; F5; F1 |
 | description "Skin boosters and dermal fillers at 155... Every treatment starts with a free consultation, and we recommend what suits you." | C:skinboosters; F1; PEL:Home Hero sub-line; PEL:Home How it works 2, cut |
-| hero "Every skin booster and dermal filler treatment starts with a free consultation, at 155 King's Cross Road, 7 days a week." | PEL:Home Hero sub-line, narrowed to C:skinboosters; F5; F1; F2 |
+| hero "Every skin booster and dermal filler treatment starts with a free consultation, at King's Cross, 7 days a week." | PEL:Home Hero sub-line, narrowed to C:skinboosters; F5; F1; F2 |
 | "Skin boosters and dermal fillers are consultation-led treatments." | CL; C:skinboosters |
 | "Every treatment starts with a consultation; we will not recommend a treatment that is not right for you." | PEL:Treatments note, verbatim |
 | Step 3 addition "Sessions take from 45 minutes to 1 hour 30 minutes." | S:profhilo, S:profhilo_2_sessions (45 min); S:facial_fillers (1 hr 30 min) |
@@ -349,8 +348,8 @@ Written 2026-09-13 by a PWEB executor for Q27, at website commit f4c37dc. Data r
 | title, h1 "Our clinic in King's Cross" | PEL:Home The clinic ("a salon and clinic"), cut; F1 |
 | description "Open 7 days a week." | PEL:Home How it works 3 ("7 days a week"), cut; F2 |
 | "Find us at 155 King's Cross Road, London WC1X 9BN." | PEL:Contact description, cut; F1 |
-| "For the face: HIFU, skin boosters, microneedling, peels and facials, from GBP 70." | PEL:Home groups, Face line and figure; `lib/groups.ts`; S:hydrating |
-| "For the body: 3D lipo, HIFU body and Emsculpt, from GBP 99." | PEL:Home groups, Body line and figure; S:emsculpt, S:cryoelectrolipolysis_one_area |
+| "For the face: HIFU, Skin Boosters, Microneedling, Peels and Facials, from GBP 70." | PEL:Home groups, Face line and figure; `lib/groups.ts`; S:hydrating |
+| "For the body: 3D Lipo, HIFU Body and Emsculpt, from GBP 99." | PEL:Home groups, Body line and figure; S:emsculpt, S:cryoelectrolipolysis_one_area |
 | "Laser and hair removal: pigmentation, rejuvenation and tattoo removal; laser and IPL hair removal, from GBP 25." | PEL:Home groups, Laser line and figure; S:ipl_small_area |
 | "Wellness: massage and waxing, from GBP 10." | PEL:Home groups, Wellness line and figure; S:ladies_waxing_face_hot_wax_full_chin, S:ladies_waxing_face_hot_wax_upper_lip |
 | "The photographs in this section show treatment rooms at Pure Essentials London." | RP |
@@ -360,7 +359,7 @@ Written 2026-09-13 by a PWEB executor for Q27, at website commit f4c37dc. Data r
 | Sentence start | Source |
 |---|---|
 | title "Your Visit, King's Cross", h1 "Your visit" | SIGN; F1 |
-| description "Your visit to Pure Essentials London at 155 King's Cross Road, from your first message to the free consultation, your treatment and aftercare advice." | PEL:Home How it works 1 to 4, cut; F1; F5; AC |
+| description "Your visit to Pure Essentials London at King's Cross, from your first message to the free consultation, your treatment and aftercare advice." | PEL:Home How it works 1 to 4, cut; F1; F5; AC |
 | "This page walks through a visit, from your first message to aftercare." | SIGN |
 | "The photographs in this section show treatment rooms at Pure Essentials London." | RP |
 | "Booked at a time that suits you, 7 days a week." | PEL:Home How it works 3, verbatim; F2 |
@@ -371,7 +370,7 @@ Written 2026-09-13 by a PWEB executor for Q27, at website commit f4c37dc. Data r
 | Sentence start | Source |
 |---|---|
 | title "First Visit Guide, King's Cross", h1 "Your first visit" | SIGN; F1 |
-| description "Planning your first visit to 155 King's Cross Road?" | SIGN; F1 |
+| description "Planning your first visit to King's Cross?" | SIGN; F1 |
 | description "What to message us, the free consultation, opening hours, how prices are shown and aftercare." | SIGN; F5 |
 | "This guide covers what to message us, what to expect, opening hours and how prices are shown." | SIGN |
 | "Not sure which treatment to choose?" | question, leads into PEL:Home How it works 2 (set 1 facials pattern) |
