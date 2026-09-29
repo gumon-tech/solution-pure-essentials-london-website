@@ -147,8 +147,8 @@ scripts/build-images.mjs accepts both.
 
 **Update 2026-09-29 (KPEL on komphet-air, owner's direct request):** Q45 live, main f53d078, deploy run 36595758926
 success, read from outside. F's WhatsApp changes of 29 Sep: HIFU rows, LED mask and Skymedic removed, Swedish 1 hr,
-waxing prices and (Hot Wax), capitalised treatment names on home and /treatments/, "155 ... Road" out of sentences
-(postal addresses kept). Spec docs/plans/Q45-client-feedback-2026-09-29.md. Open: ask F whether the full postal
+waxing prices and (Hot Wax), capitalised treatment names on every page (8f86178), "155 ... Road" out of sentences
+(postal addresses kept by Lead judgement, owner delegated). Spec docs/plans/Q45-client-feedback-2026-09-29.md. Open: ask F whether the full postal
 address should change too, and confirm Swedish 1 hr and the back waxing durations. Q41 was rebased onto 0a8a2eb locally
 on air (conflicts resolved: Title Case headings, price-row class, row description kept), build 0; NOT pushed and now
 behind Q45; rebase again before review. Data now 205 rows / 122 live.
