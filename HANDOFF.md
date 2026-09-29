@@ -145,6 +145,14 @@ images on treatment story and family pages (the clinic has no treatment photos).
 motion and video autoplay on a real iPhone. OneDrive on air is "OneDrive-GumonTechnology" (no " 2");
 scripts/build-images.mjs accepts both.
 
+**Update 2026-09-29 (KPEL on komphet-air, owner's direct request):** Q45 live, main f53d078, deploy run 36595758926
+success, read from outside. F's WhatsApp changes of 29 Sep: HIFU rows, LED mask and Skymedic removed, Swedish 1 hr,
+waxing prices and (Hot Wax), capitalised treatment names on home and /treatments/, "155 ... Road" out of sentences
+(postal addresses kept). Spec docs/plans/Q45-client-feedback-2026-09-29.md. Open: ask F whether the full postal
+address should change too, and confirm Swedish 1 hr and the back waxing durations. Q41 was rebased onto 0a8a2eb locally
+on air (conflicts resolved: Title Case headings, price-row class, row description kept), build 0; NOT pushed and now
+behind Q45; rebase again before review. Data now 205 rows / 122 live.
+
 **Last reached:** Q42 live. The clinic's WhatsApp feedback of 18 and 21 Sep (K and F) is applied and the
 owner's Title Case order (2026-09-26) is site-wide; deploy run 36223681076 success; live /treatments/ 200
 with Japanese Head Spa, read from outside and seen in a browser. Spec and the item-by-item map:
