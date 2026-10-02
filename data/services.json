@@ -1005,6 +1005,30 @@
       "note": ""
     },
     {
+      "slug": "ladies_waxing_eyebrows",
+      "name": "Ladies' Waxing - Eyebrows",
+      "display_name": null,
+      "category": "waxing-ladies",
+      "status": "live",
+      "price_gbp": 15,
+      "price_from": false,
+      "duration": null,
+      "source": "clinic WhatsApp, owner 2026-10-02",
+      "note": "new row from F, WhatsApp 21:29, passed on by the owner 2026-10-02 (\"Eyebrows £15\"); no duration given, shown without one as for the back rows in Q45 (Q46)"
+    },
+    {
+      "slug": "eyebrow_threading",
+      "name": "Eyebrow Threading",
+      "display_name": null,
+      "category": "waxing-ladies",
+      "status": "live",
+      "price_gbp": 15,
+      "price_from": false,
+      "duration": null,
+      "source": "clinic WhatsApp, owner 2026-10-02",
+      "note": "new row from F, WhatsApp 21:29, passed on by the owner 2026-10-02 (\"Eyebrows Threading £15\"); no duration given, shown without one as for the back rows in Q45 (Q46)"
+    },
+    {
       "slug": "ladies_waxing_full_arm_with_strip_wax",
       "name": "Ladies' Waxing - Full Arm with strip wax",
       "display_name": null,

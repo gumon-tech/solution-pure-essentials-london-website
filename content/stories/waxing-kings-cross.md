@@ -16,7 +16,7 @@ Waxing for ladies and men at King's Cross, 7 days a week. Every treatment starts
 
 ## what-it-is
 
-Ladies' Waxing covers the face, underarm, arms, legs and body, and the bikini, Brazilian, G-String and Hollywood. The face, underarm, bikini, Brazilian, G-String and Hollywood are waxed with Hot Wax, and the arms and legs with Strip Wax.
+Ladies' Waxing covers the eyebrows, face, underarm, arms, legs and body, and the bikini, Brazilian, G-String and Hollywood. The face, underarm, bikini, Brazilian, G-String and Hollywood are waxed with Hot Wax, and the arms and legs with Strip Wax. Eyebrow Threading is also available.
 
 Men's Waxing covers the eyebrow, arms, legs, half chest, back, shoulder and stomach. Men's Waxing does not include intimate areas. Sessions take from 10 minutes to 1 hour.
 
@@ -49,6 +49,8 @@ Waxing, Ladies
 | Ladies' Waxing Face (Hot Wax) Full Face | 40 min | GBP 50 | ladies_waxing_face_hot_wax_full_face |
 | Ladies' Waxing Face (Hot Wax) Sideburns | 10 min | GBP 15 | ladies_waxing_face_hot_wax_sideburns |
 | Ladies' Waxing Face (Hot Wax) Upper Lip | 15 min | GBP 10 | ladies_waxing_face_hot_wax_upper_lip |
+| Ladies' Waxing - Eyebrows | ask | GBP 15 | ladies_waxing_eyebrows |
+| Eyebrow Threading | ask | GBP 15 | eyebrow_threading |
 | Ladies' Waxing - Underarm (Hot Wax) | 15 min | GBP 18 | ladies_waxing_underarm_hot_wax |
 | Ladies' Waxing - Half Arm with strip wax | 15 min | GBP 18 | ladies_waxing_half_arm_with_strip_wax |
 | Ladies' Waxing - Full Arm with strip wax | 30 min | GBP 25 | ladies_waxing_full_arm_with_strip_wax |

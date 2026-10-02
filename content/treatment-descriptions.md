@@ -152,10 +152,10 @@ sources:
 ## facials_1_age_defence_sensitive_skin_treatment
 title: Anti-Aging Facial
 
-The Anti-Aging Facial is a Facial that uses the Katherine Daniels Collagen Mask for Sensitive Skin. Its session length is not on the price list yet, so ask on WhatsApp before you book. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
+The Anti-Aging Facial is a Facial that uses a Collagen Mask for Sensitive Skin. Its session length is not on the price list yet, so ask on WhatsApp before you book. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
 
 sources:
-- S1: https://www.pureessentialslondon.com/facials-1/age-defence-sensitive-skin-treatment-, fact taken: "Katherine Daniels Collagen Mask for Sensitive Skin"; data/services.json `category` "facials"
+- S1: https://www.pureessentialslondon.com/facials-1/age-defence-sensitive-skin-treatment-, fact taken: "Collagen Mask for Sensitive Skin" (brand name removed at the clinic's request, F, Q46); data/services.json `category` "facials"
 - S2: data/services.json `facials_1_age_defence_sensitive_skin_treatment` `duration` null, lib/families.ts `priced: []` (the page's own "60 minutes" is not in the data and was not used)
 
 ## facials_1_diamondtome_microdermabrasion
@@ -188,7 +188,7 @@ sources:
 
 ### facials-kings-cross
 
-The Hydrofacial uses HYDRO ampoule solutions and takes 1 hr, running through cleansing with gentle exfoliation, extraction by suction, a mask chosen for the skin type, and antioxidants and peptides on the skin's surface. The Calming and Hydrating Facial takes 1 hr 45 min. The Anti-Aging Facial uses the Katherine Daniels Collagen Mask for Sensitive Skin, and DiamondTome Microdermabrasion uses a wand plated with pure nickel and natural diamond chips. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
+The Hydrofacial uses HYDRO ampoule solutions and takes 1 hr, running through cleansing with gentle exfoliation, extraction by suction, a mask chosen for the skin type, and antioxidants and peptides on the skin's surface. The Calming and Hydrating Facial takes 1 hr 45 min. The Anti-Aging Facial uses a Collagen Mask for Sensitive Skin, and DiamondTome Microdermabrasion uses a wand plated with pure nickel and natural diamond chips. Your therapist gives aftercare advice at the appointment. Every treatment starts with a free consultation.
 
 sources:
 - S1: https://www.pureessentialslondon.com/aesthetics-1/hydro-facial, facts as in `aesthetics_1_hydro_facial` above; data/services.json `hydrofacial` `duration` ("1 hr")
