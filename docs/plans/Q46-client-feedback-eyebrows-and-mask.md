@@ -10,7 +10,7 @@ passed on by the owner on 2026-10-02 as 4 screenshots with "please fix". Built o
 | B1 | 20:59 | Anti-Aging Facial: brand name of the mask removed ("uses a Collagen Mask for Sensitive Skin"), on its family page and in the facials summary. |
 
 Not changed: the old review rows `eyebrow_shaping` (£15) and `eyebrow_cleaning` (£10) stay in review.
-Closed, not asked (owner 2026-10-03: no more questions to the clinic; show what we have, visitors ask on WhatsApp): the new rows show no duration, the review rows stay unrendered.
+Ask F whether eyebrow waxing replaces them, and the session length for both new rows.
 
 ## Acceptance
 

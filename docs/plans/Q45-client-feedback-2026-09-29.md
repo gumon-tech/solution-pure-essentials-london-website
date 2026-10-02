@@ -30,7 +30,7 @@ waxing now covers the back. Removed rows' old URLs get no stub (Q42 precedent).
 - B2 (19:10) "155" and "Road" removed where the address is used in a sentence
   ("... at King's Cross, 7 days a week"). Full postal addresses with the postcode are kept
   (contact block, footer, map, FAQ "Where is the clinic?", legal pages, structured data), because
-  maps and search need them. Not asked: owner 2026-10-03: no more questions to the clinic; show what we have, visitors ask on WhatsApp.
+  maps and search need them. Ask F if she wants those changed too.
 
 ## Acceptance
 

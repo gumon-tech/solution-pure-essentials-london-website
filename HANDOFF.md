@@ -148,18 +148,18 @@ scripts/build-images.mjs accepts both.
 **Update 2026-09-29 (KPEL on komphet-air, owner's direct request):** Q45 live, main f53d078, deploy run 36595758926
 success, read from outside. F's WhatsApp changes of 29 Sep: HIFU rows, LED mask and Skymedic removed, Swedish 1 hr,
 waxing prices and (Hot Wax), capitalised treatment names on every page (8f86178), "155 ... Road" out of sentences
-(postal addresses kept by Lead judgement, owner delegated). Spec docs/plans/Q45-client-feedback-2026-09-29.md. Full postal address kept, not asked. Swedish 1 hr and back waxing without duration: owner confirmed. Q41 was rebased onto 0a8a2eb locally
+(postal addresses kept by Lead judgement, owner delegated). Spec docs/plans/Q45-client-feedback-2026-09-29.md. Open: ask F whether the full postal
+address should change too (Lead kept it). Swedish 1 hr and back waxing without duration: owner confirmed. Q41 was rebased onto 0a8a2eb locally
 on air (conflicts resolved: Title Case headings, price-row class, row description kept), build 0; NOT pushed and now
 behind Q45; rebase again before review. Data now 205 rows / 122 live.
 
 **Update 2026-10-02 (PWEB on komphet-mac):** Q46 live, main 5f459c1, deploy run 37024245297 success, read from
 outside. F's WhatsApp (passed on by the owner): "Ladies' Waxing - Eyebrows" £15 and "Eyebrow Threading" £15 added to
 Waxing, Ladies (no duration, shown without one); the mask brand name removed from the Anti-Aging Facial (0 on every
-sitemap page). Spec docs/plans/Q46-client-feedback-eyebrows-and-mask.md. No duration shown; review rows stay unrendered. Q41 rebased onto 5f459c1 and pushed (origin
+sitemap page). Spec docs/plans/Q46-client-feedback-eyebrows-and-mask.md. Open: session length for both rows; whether
+the review rows eyebrow_shaping and eyebrow_cleaning are replaced. Q41 rebased onto 5f459c1 and pushed (origin
 q41-story-layout 50abd40, force-with-lease over 3025a65), build and all checks 0; ready for PEL or WS review. Owner
 2026-10-02: pushing is the Lead room's call, no need to ask the owner. Data now 207 rows / 124 live.
-
-**Owner rule 2026-10-03:** we do not ask the clinic any more. Show the data we have; anything missing (a duration, a detail) is left out and visitors ask on WhatsApp. Review and held rows stay unrendered.
 
 **Last reached:** Q42 live. The clinic's WhatsApp feedback of 18 and 21 Sep (K and F) is applied and the
 owner's Title Case order (2026-09-26) is site-wide; deploy run 36223681076 success; live /treatments/ 200
@@ -177,7 +177,7 @@ docs/plans/Q42-client-feedback-2026-09-18-21.md. Queue: docs/plans/QUEUE.md, 42 
 | 7 | Q41 story re-layout | Branch q41-story-layout 50abd40, rebased onto Q46 and pushed 2026-10-02, all checks 0; NOT merged | PEL or WS review of before and after (A6: owner no longer the gate) |
 | 8 | Q40 re-verify | open; round 1 PASS 28 of 28 | Q20 and Safari need the owner's session |
 | 9 | Q13 /prices/ | queued, likely obsolete after Q36 | PEL |
-| 10 | Q14 about page | queued | PEL: copy from public facts only, no questions to the clinic |
+| 10 | Q14 about page | queued | clinic answers |
 | 11 | Q16 consent + Q17 Google tag | hold | tag ID from PEL |
 | 12 | Q22 clinic domain switch | queued | owner's order only |
 
