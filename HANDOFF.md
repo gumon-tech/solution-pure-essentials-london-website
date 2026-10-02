@@ -156,8 +156,7 @@ behind Q45; rebase again before review. Data now 205 rows / 122 live.
 **Update 2026-10-02 (PWEB on komphet-mac):** Q46 live, main 5f459c1, deploy run 37024245297 success, read from
 outside. F's WhatsApp (passed on by the owner): "Ladies' Waxing - Eyebrows" £15 and "Eyebrow Threading" £15 added to
 Waxing, Ladies (no duration, shown without one); the mask brand name removed from the Anti-Aging Facial (0 on every
-sitemap page). Spec docs/plans/Q46-client-feedback-eyebrows-and-mask.md. Open: session length for both rows; whether
-the review rows eyebrow_shaping and eyebrow_cleaning are replaced. Q41 rebased onto 5f459c1 and pushed (origin
+sitemap page). Spec docs/plans/Q46-client-feedback-eyebrows-and-mask.md. Closed as shown: owner 2026-10-03, not taken back to F. Q41 rebased onto 5f459c1 and pushed (origin
 q41-story-layout 50abd40, force-with-lease over 3025a65), build and all checks 0; ready for PEL or WS review. Owner
 2026-10-02: pushing is the Lead room's call, no need to ask the owner. Data now 207 rows / 124 live.
 
