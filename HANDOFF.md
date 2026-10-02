@@ -160,6 +160,15 @@ sitemap page). Spec docs/plans/Q46-client-feedback-eyebrows-and-mask.md. Closed 
 q41-story-layout 50abd40, force-with-lease over 3025a65), build and all checks 0; ready for PEL or WS review. Owner
 2026-10-02: pushing is the Lead room's call, no need to ask the owner. Data now 207 rows / 124 live.
 
+**Update 2026-10-03 (PWEB on komphet-mac, room closed by the owner):** F checked Q46 on the live site and
+replied "every things looks good" (WhatsApp, 2026-10-03 00:23). The owner decided Q46 is not taken back to F; other
+open items for F (Q45 full postal address, Q14 about page) stay open. Next call with F: Tuesday 4pm (agreed in the
+WhatsApp group, time zone not stated). The owner will present 1) the plan to move the website to the new site (website
+only) and 2) a small Google Ads pilot, to test and start collecting data. Prep that the pilot needs: Q16 consent banner
+then Q17 Google tag (tag ID from PEL), and Q22 domain switch (owner's order). No PEL ticket filed for Q46: the queue
+clone ~/dev/.gumon-queue/PWEB does not exist on komphet-mac; the next room should create it (bin/queue-clone PWEB)
+and report Q46 and the Q41 push to PEL.
+
 **Last reached:** Q42 live. The clinic's WhatsApp feedback of 18 and 21 Sep (K and F) is applied and the
 owner's Title Case order (2026-09-26) is site-wide; deploy run 36223681076 success; live /treatments/ 200
 with Japanese Head Spa, read from outside and seen in a browser. Spec and the item-by-item map:
