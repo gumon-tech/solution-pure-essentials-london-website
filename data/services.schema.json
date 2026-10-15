@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://pel.gumon.io/schema/services.schema.json",
+  "$id": "https://www.pureessentialslondon.com/schema/services.schema.json",
   "title": "Pure Essentials London services file",
   "type": "object",
   "required": ["_about", "currency", "categories", "services"],

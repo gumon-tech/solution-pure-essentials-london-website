@@ -1,6 +1,8 @@
 export const SITE = {
   name: "Pure Essentials London",
-  url: "https://pel.gumon.io",
+  // Live on the clinic's own domain from 2026-10-16 (Q22, owner's order); www kept as the
+  // canonical host because the Wix site used it and the apex already redirected there.
+  url: "https://www.pureessentialslondon.com",
   address: "155 King's Cross Road, London WC1X 9BN",
   email: "info@pureessentialslondon.com",
   // Clinic landline (PEL ruling 2026-09-13, queue row Q29): 0207 278 5812 written in

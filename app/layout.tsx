@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyBar from "@/components/StickyBar";
 import { getNavMenus } from "@/lib/nav";
+import { SITE } from "@/lib/site";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   title: "Pure Essentials London",
   description:
     "Aesthetics and beauty treatments at 155 King's Cross Road, London WC1X 9BN.",
-  metadataBase: new URL("https://pel.gumon.io"),
+  metadataBase: new URL(SITE.url),
 };
 
 export default function RootLayout({
