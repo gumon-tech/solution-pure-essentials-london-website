@@ -7,6 +7,7 @@ import { getNavMenus } from "@/lib/nav";
 import { SITE } from "@/lib/site";
 import ConsentScript from "@/components/ConsentScript";
 import ConsentBanner from "@/components/ConsentBanner";
+import AdsTag from "@/components/AdsTag";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -51,6 +52,7 @@ export default function RootLayout({
         <Footer />
         <StickyBar />
         <ConsentBanner />
+        <AdsTag />
       </body>
     </html>
   );

@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   CONSENT_RESET_EVENT,
   clearConsent,
+  pushConsentDeniedUpdate,
   pushConsentGrantedUpdate,
   readConsent,
   writeConsent,
@@ -49,7 +50,9 @@ export default function ConsentBanner() {
   }
 
   function handleReject() {
+    const before = readConsent()?.choice;
     writeConsent("denied");
+    if (before === "granted") pushConsentDeniedUpdate();
     setVisible(false);
   }
 
@@ -61,7 +64,7 @@ export default function ConsentBanner() {
       aria-labelledby="consent-banner-heading"
       aria-describedby="consent-banner-text"
       tabIndex={-1}
-      className="fixed inset-x-0 bottom-[calc(64px+env(safe-area-inset-bottom,0px))] z-40 border-t border-beige bg-cream px-4 py-4 shadow-soft focus:outline-none md:bottom-0"
+      className="fixed inset-x-0 bottom-[calc(70px+env(safe-area-inset-bottom,0px))] z-40 border-t border-beige bg-cream px-4 py-4 shadow-soft focus:outline-none md:bottom-0"
     >
       <div className="mx-auto flex max-w-[1280px] flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="max-w-2xl">
@@ -69,9 +72,9 @@ export default function ConsentBanner() {
             Cookies
           </h2>
           <p id="consent-banner-text" className="mt-1 text-sm text-cocoa">
-            We would like to use cookies to measure visits and the performance of our adverts. We
-            only do this if you accept. You can change your choice at any time with Cookie
-            settings at the bottom of every page.{" "}
+            We would like to use Google Ads cookies to see which of our adverts lead people to
+            contact us or book. We only do this if you accept. You can change your choice at any time with Cookie
+            Settings at the bottom of every page.{" "}
             <Link
               href="/privacy/"
               className="underline underline-offset-4 hover:text-espresso focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm"
@@ -94,13 +97,13 @@ export default function ConsentBanner() {
 }
 
 /**
- * Footer "Cookie settings" button: clears the stored choice and lets the
+ * Footer "Cookie Settings" button: clears the stored choice and lets the
  * mounted ConsentBanner reopen itself via the reset event.
  */
 export function CookieSettingsButton({ className }: { className?: string }) {
   return (
     <button type="button" onClick={clearConsent} className={className}>
-      Cookie settings
+      Cookie Settings
     </button>
   );
 }

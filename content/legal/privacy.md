@@ -23,9 +23,11 @@ To contact us about your information, email info@pureessentialslondon.com.
 
 This website does not ask you for any information. It has no forms and no account.
 
-The pages of this website do not use cookies of their own, do not save information in your
-browser's storage, and have no analytics or advertising tags. The fonts are stored on the
-website itself, so your browser does not fetch them from anyone else.
+The pages of this website use one advertising tag, from Google Ads, and only if you press Accept
+on the cookie banner. Until you choose, and if you press Reject, the tag does not load and no
+cookie is set. Your browser stores one small note of your choice so the banner does not ask
+again; that note is not a cookie and is not sent anywhere. The fonts are stored on the website
+itself, so your browser does not fetch them from anyone else.
 
 Two things on this website come from other companies, and they are described below: the
 online booking calendar from Treatwell on the Book online page, and the map from Google Maps on
@@ -104,6 +106,7 @@ The law asks us to say why we use your information and on what legal basis.
 |---|---|---|
 | Answer your enquiry and arrange a booking | So we can reply and give you the appointment you ask for | Steps you ask us to take before a contract, and our legitimate interest in answering people who contact us |
 | Use health details you choose to send us | Only to arrange the right treatment for you | Your explicit consent, which you give by sending the details to us |
+| Measure which of our Google adverts lead to a contact or booking | To spend our advertising budget on adverts that work | Your consent, which you give by pressing Accept |
 
 You can withdraw your consent at any time by telling us. This does not affect what we did before you
 told us.
@@ -114,7 +117,8 @@ told us.
 - Treatwell, which provides the booking calendar on the "Book online" page and handles
   bookings made through it.
 - Meta, when you use WhatsApp or Instagram.
-- Google, which delivers our email and provides the map on our contact page.
+- Google, which delivers our email, provides the map on our contact page, and runs our advertising
+  measurement if you press Accept.
 
 GitHub, Treatwell, Meta and Google may process information outside the UK, including in the
 United States. Their own privacy notices explain how they protect it.
@@ -144,18 +148,28 @@ If you are unhappy with how we handle your information, please tell us first so 
 right. You also have the right to complain to the Information Commissioner's Office (ICO), the UK
 regulator for data protection. Its website is ico.org.uk.
 
-## When We Add Cookies
+## Advertising Cookies (Google Ads)
 
-We plan to add measurement to this website later. Before that happens:
+We advertise on Google. If you press Accept, the website loads the Google Ads tag so we can see
+which adverts lead people to contact us or book. It records that you clicked our WhatsApp,
+Treatwell, email or phone link. It does not record what you write or say after that click.
 
-- the website will ask you before it uses any advertising or analytics cookies;
-- no such cookies will be set, and no such tag will load, until you choose;
-- Reject will be as easy to choose as Accept;
-- you will be able to change your choice at any time from a link at the bottom of every page;
-- this notice will be updated to list each cookie, who sets it, why, and how long it lasts.
+When we checked on 16 October 2026, pressing Accept set these cookies:
 
-The Treatwell cookies on the "Book online" page are described above and are not part of this
-plan.
+| Cookie | Set by | Why | How long |
+|---|---|---|---|
+| _gcl_au | Google Ads, on this website | Links a click on our link to an earlier visit | 90 days |
+| _gcl_aw | Google Ads, on this website, only if you arrived from one of our Google adverts | Links your visit to the advert you clicked | 90 days |
+| GCL_AW_P | Google, on google.com, googleadservices.com and doubleclick.net, only if you arrived from one of our Google adverts | The same, on Google's own sites | 90 days |
+
+Google receives your IP address and details of your browser when the tag loads. Google explains
+how it uses this information in its own privacy notice.
+
+Reject is as easy to choose as Accept. You can change your choice at any time with Cookie
+Settings at the bottom of every page. If you change to Reject, the tag stops using these cookies
+from that moment; you can delete cookies already set in your browser's settings.
+
+The Treatwell cookies on the "Book online" page are described above and are separate from this.
 
 ## Changes to This Notice
 

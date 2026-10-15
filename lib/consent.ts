@@ -5,12 +5,18 @@
 // of its own). No Google tag is loaded by this module or by anything it
 // calls: it only pushes entries onto window.dataLayer via window.gtag, the
 // same stub function the inline default script in ConsentScript.tsx defines.
+// The Google Ads tag itself is loaded by components/AdsTag.tsx, and only after
+// CONSENT_GRANTED_EVENT fires or a stored "granted" choice is found.
 
 export const CONSENT_STORAGE_KEY = "pel-consent";
 
 // Fired on window whenever the stored choice is cleared (by the footer
-// "Cookie settings" button) so the banner can reopen itself.
+// "Cookie Settings" button) so the banner can reopen itself.
 export const CONSENT_RESET_EVENT = "pel-consent-reset";
+
+// Fired on window when the visitor presses Accept, so AdsTag can load the tag
+// in the same page view without a reload.
+export const CONSENT_GRANTED_EVENT = "pel-consent-granted";
 
 export type ConsentChoice = "granted" | "denied";
 
@@ -88,5 +94,22 @@ export function pushConsentGrantedUpdate(): void {
     ad_user_data: "granted",
     ad_personalization: "granted",
     analytics_storage: "granted",
+  });
+  window.dispatchEvent(new Event(CONSENT_GRANTED_EVENT));
+}
+
+/**
+ * Pushes a consent update back to "denied". Only needed when a visitor who
+ * accepted earlier reopens Cookie Settings and presses Reject: the tag may
+ * already be loaded in this page view, and this tells it to stop using
+ * advertising storage straight away.
+ */
+export function pushConsentDeniedUpdate(): void {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("consent", "update", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "denied",
   });
 }

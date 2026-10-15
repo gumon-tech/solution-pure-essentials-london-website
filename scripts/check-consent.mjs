@@ -176,13 +176,13 @@ async function main() {
     fail("banner still visible immediately after Accept");
   }
 
-  // --- 5: footer Cookie settings reopens the banner ---
-  await page.getByRole("button", { name: "Cookie settings" }).click();
+  // --- 5: footer Cookie Settings reopens the banner ---
+  await page.getByRole("button", { name: "Cookie Settings" }).click();
   await page.waitForTimeout(200);
   const visibleAfterSettings = await bannerVisible(page);
-  log("banner visible after footer Cookie settings click", visibleAfterSettings);
+  log("banner visible after footer Cookie Settings click", visibleAfterSettings);
   if (!visibleAfterSettings) {
-    fail("banner did not reopen after clicking footer Cookie settings");
+    fail("banner did not reopen after clicking footer Cookie Settings");
   }
 
   await context.close();
@@ -208,12 +208,12 @@ async function main() {
       Math.abs(acceptBox390.height - rejectBox390.height) < 1;
     console.log(`buttons equal size at 390: ${equalAt390}`);
 
-    // The home page has more than one "Message us on WhatsApp" link (Hero,
-    // CallToAction), so identify the sticky one by its fixed positioning
-    // rather than by an ambiguous accessible name.
+    // The home page has more than one WhatsApp link (Hero, CallToAction), so
+    // identify the sticky one by its fixed positioning. Matched by href, not
+    // by text: Q42 renamed the button and the old text match silently failed.
     const stickyBarVisible = await mobilePage.evaluate(() => {
       const link = Array.from(document.querySelectorAll("a")).find((a) => {
-        if (!a.textContent?.trim().startsWith("Message us on WhatsApp")) return false;
+        if (!(a.getAttribute("href") ?? "").startsWith("https://wa.me/")) return false;
         for (let el = a; el; el = el.parentElement) {
           if (getComputedStyle(el).position === "fixed") return true;
         }
