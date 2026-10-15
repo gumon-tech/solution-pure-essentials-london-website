@@ -83,7 +83,7 @@ for example `"duration": "1 hr 15 min",`.
 2. The top line in the list is the latest change. If someone else changed the file at the same
    time, look for the line with the message you wrote. Wait until that line shows a green
    tick. This usually takes a few minutes.
-3. Open https://pel.gumon.io/treatments/ and find the treatment. If you still see the old
+3. Open https://www.pureessentialslondon.com/treatments/ and find the treatment. If you still see the old
    price, refresh the page (Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac) after 1 or 2 minutes.
 
 If you see a red cross instead of a green tick, the website did not change and the old price
