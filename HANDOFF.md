@@ -169,6 +169,14 @@ then Q17 Google tag (tag ID from PEL), and Q22 domain switch (owner's order). No
 clone ~/dev/.gumon-queue/PWEB does not exist on komphet-mac; the next room should create it (bin/queue-clone PWEB)
 and report Q46 and the Q41 push to PEL.
 
+**Update 2026-10-16 (PWEB on komphet-air, owner's order):** Q22 started. Owner moved pureessentialslondon.com to
+Cloudflare (NS milan/dell) and ordered the move to the new site. main 88a7396: SITE.url, metadataBase, canonical,
+sitemap and robots now https://www.pureessentialslondon.com (www kept as canonical: Wix used it); deploy run
+38784459878 success; build, stubs, title case, lint 0; 0 pel.gumon.io in out/. Pages cname set to
+www.pureessentialslondon.com. Waiting on the owner: Cloudflare DNS still proxies both hosts to Wix; needs www CNAME
+gumon-tech.github.io and apex A 185.199.108-111.153, both DNS only, MX/TXT untouched. Then: certificate, enforce HTTPS,
+measure 200 and old Wix paths from outside.
+
 **Last reached:** Q42 live. The clinic's WhatsApp feedback of 18 and 21 Sep (K and F) is applied and the
 owner's Title Case order (2026-09-26) is site-wide; deploy run 36223681076 success; live /treatments/ 200
 with Japanese Head Spa, read from outside and seen in a browser. Spec and the item-by-item map:
