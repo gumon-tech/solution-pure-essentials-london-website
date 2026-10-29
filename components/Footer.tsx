@@ -113,18 +113,38 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col items-start gap-4 border-t border-beige pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-2xl text-xs text-walnut">
-            {SITE.company.legalName}, registered in {SITE.company.jurisdiction}, company number{" "}
-            {SITE.company.number}. Registered office: {SITE.company.registeredOffice}.{" "}
-            <Link href="/privacy/" className="underline hover:text-cocoa">
-              Privacy
-            </Link>
-            {" · "}<Link href="/terms/" className="underline hover:text-cocoa">Terms</Link>
-            {" · "}
-            <CookieSettingsButton className="underline hover:text-cocoa focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-sand rounded-sm" />
-            <br />
-            Some images on this site are illustrative.
-          </p>
+          <div>
+            <p className="max-w-2xl text-xs text-walnut">
+              {SITE.company.legalName}, registered in {SITE.company.jurisdiction}, company number{" "}
+              {SITE.company.number}. Registered office: {SITE.company.registeredOffice}.{" "}
+              <Link href="/privacy/" className="underline hover:text-cocoa">
+                Privacy
+              </Link>
+              {" · "}<Link href="/terms/" className="underline hover:text-cocoa">Terms</Link>
+              {" · "}
+              <CookieSettingsButton className="underline hover:text-cocoa focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-sand rounded-sm" />
+              <br />
+              Some images on this site are illustrative.
+            </p>
+            {/* Maintainer credit, kept faint so the clinic's brand stays the loudest thing here. */}
+            <a
+              href="https://gumon.io"
+              target="_blank"
+              rel="noopener"
+              className="mt-3 inline-flex items-center gap-1.5 text-xs text-walnut/70 hover:text-cocoa focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oak focus-visible:ring-offset-2 focus-visible:ring-offset-sand rounded-sm"
+            >
+              <Image
+                src="/logo/gumon-mark-olive.png"
+                alt=""
+                aria-hidden="true"
+                unoptimized
+                width={18}
+                height={18}
+                className="h-[18px] w-[18px] opacity-70"
+              />
+              Website by Gumon Technology
+            </a>
+          </div>
           <Image
             src="/logo/pel-mark-oak.svg"
             alt=""
