@@ -191,6 +191,11 @@ over Q16 and Q17 (Cookie Settings kept in the legal line); build, lint, title-ca
 story and family checks 0; check-consent and check-ads-tag need the playwright package, which is not installed on air, so
 they were not run here. Permission: owner confirmed 2026-10-29 (Gumon keeps the site free in return for being a reference).
 
+**Update 2026-10-29 (PWEB on komphet-air, owner's WhatsApp screenshot):** Ritual Head Spa £60 to £75 (clinic's request,
+passed on by the owner; row head_spa_ritual in data/services.json, source and note updated). main b243a20, deploy
+success, read from outside: live /treatments/ shows £75 for Ritual Head Spa, no other row changed. The £60 still on
+that page is Laser Hair Removal Large Area, not this row. Validate, build, lint, stubs and the check scripts 0.
+
 **Last reached:** Q42 live. The clinic's WhatsApp feedback of 18 and 21 Sep (K and F) is applied and the
 owner's Title Case order (2026-09-26) is site-wide; deploy run 36223681076 success; live /treatments/ 200
 with Japanese Head Spa, read from outside and seen in a browser. Spec and the item-by-item map:
