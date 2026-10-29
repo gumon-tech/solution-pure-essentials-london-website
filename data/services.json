@@ -1862,11 +1862,11 @@
       "display_name": null,
       "category": "head-spa",
       "status": "live",
-      "price_gbp": 60,
+      "price_gbp": 75,
       "price_from": false,
       "duration": "45 min",
-      "source": "clinic WhatsApp 2026-09-21",
-      "note": "new row from F 2026-09-21 13:36; description in content/treatment-descriptions.md row-descriptions (Q42 A22)"
+      "source": "clinic WhatsApp 2026-10-29",
+      "note": "new row from F 2026-09-21 13:36, price 60 to 75 on the clinic's request 2026-10-29 (passed on by the owner); description in content/treatment-descriptions.md row-descriptions (Q42 A22)"
     },
     {
       "slug": "head_spa_exotic",
