@@ -181,6 +181,16 @@ mail: report to PEL), m. CNAME to Wix. Measured from outside 01:4x: apex and htt
 200 on 3 retries). pel.gumon.io is no longer the Pages host. Next: Q16 consent then Q17 tag; owner is setting up
 marketing tools and will start the campaign.
 
+**Update 2026-10-29 (PWEB on komphet-air, owner's order via KWS): Gumon credit LIVE.** Footer of every page (23 of 23
+built pages) has a small "Website by Gumon Technology" line with the Gumon mark (18 px, 70% opacity), linking to
+https://gumon.io (target _blank, rel noopener, no script, no tracking). main 7d9d271, deploy run 40799067817 success,
+read from outside: /, /contact/, /treatments/, /privacy/ 200 with the text once each, /logo/gumon-mark-olive.png 200.
+The logo is gumon-olive.png copied unchanged from gumon-company-website/public/assets/logo (that repo has no SVG; ask for
+an SVG original if wanted). Only components/Footer.tsx and public/logo/gumon-mark-olive.png changed. The commit was rebased
+over Q16 and Q17 (Cookie Settings kept in the legal line); build, lint, title-case, legal, structured-data, redirect-stub,
+story and family checks 0; check-consent and check-ads-tag need the playwright package, which is not installed on air, so
+they were not run here. Permission: owner confirmed 2026-10-29 (Gumon keeps the site free in return for being a reference).
+
 **Last reached:** Q42 live. The clinic's WhatsApp feedback of 18 and 21 Sep (K and F) is applied and the
 owner's Title Case order (2026-09-26) is site-wide; deploy run 36223681076 success; live /treatments/ 200
 with Japanese Head Spa, read from outside and seen in a browser. Spec and the item-by-item map:
